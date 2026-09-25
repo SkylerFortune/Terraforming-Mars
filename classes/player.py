@@ -45,7 +45,7 @@ class Player:
         if card.reward:
             self.receive_reward(card.reward, board)
 
-    def receive_reward(self, reward: Reward, board: "Board" | None = None):
+    def receive_reward(self, reward: Reward, board: Board | None = None):
         if reward.production:
             self.production.money += reward.production.money
             self.production.steel += reward.production.steel
@@ -62,8 +62,11 @@ class Player:
             self.resources.heat += reward.resources.heat
             self.resources.energy += reward.resources.energy
 
-        if reward.tile:
-            self.place_tile(board, reward.tile)
+        if board:
+            if reward.tile:
+                location = self.place_tile(board, reward.tile)
+                tile = board.place_tile(self, reward.tile, location)
+                self.add_tile(tile)
 
     def increase_terraform_rating(self, amount: int) -> None:
         self.terraform_rating += amount
@@ -81,6 +84,7 @@ class Player:
         return getattr(self.production, resource) >= amount
 
     def place_tile(self, board: "Board", tile_type: str) -> tuple[int, int, int]:
+        #TODO: tile placement is random
         possible_locations = board.get_available_locations()
         return random.choice(possible_locations)
 
@@ -96,11 +100,11 @@ class Player:
         #TODO: logic for picking a card to buy
         pass
 
+    def choose_target(self, game_state: "GameState", resource: str, amount: int) -> "Player":
+        return random.sample(game_state.players, 1)[0]
+
     def reset_fleets(self):
         self.available_fleets = self.trade_fleets
-
-    def calculate_points(self):
-        pass
 
     def get_tags(self, tag: str) -> int:
         count = 0
@@ -108,7 +112,7 @@ class Player:
             count += card.get_tags(tag)
         return count
 
-    def get_card_by_type(self, card_type: str) -> list[Card]:
+    def get_cards_by_type(self, card_type: str) -> list[Card]:
         return [card for card in self.cards if card.type == card_type]
 
 
@@ -131,3 +135,12 @@ class TileCollection:
             self.oceans.append(tile)
         elif tile.occupied_with == "land_claim":
             self.land_claims.append(tile)
+
+    def get_as_dict(self):
+        return {
+            "cities": self.cities,
+            "forests": self.forests,
+            "special": self.special,
+            "oceans": self.oceans,
+            "land_claims": self.land_claims
+        }

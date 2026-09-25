@@ -3,8 +3,11 @@ from classes.tile import Tile
 from game_manager import Reward
 
 class Board:
-    def __init__(self) -> None:
+    def __init__(self, ocean_locations: list[tuple[int, int, int]], volcano_locations: list[tuple[int, int, int]]) -> None:
+        self.ocean_locations = ocean_locations
+        self.volcano_locations = volcano_locations
         self.tiles: list[Tile] = []
+        self._create_board()
         self.directions = [
             [1, -1, 0],
             [1, 0, -1],
@@ -37,13 +40,14 @@ class Board:
             pass
         return True
 
-    def place_tile(self, player: Player, tile_type: str, location: tuple[int, int, int]):
+    def place_tile(self, player: Player, tile_type: str, location: tuple[int, int, int]) -> Tile:
         target = self.get_tile_target(location)
         target.occupied_with = tile_type
         reward = self.get_placement_bonus(location)
         if reward:
             player.receive_reward(reward, self)
         target.add_neighbor(self.get_tile_target(location))
+        return target
 
     def get_tile_target(self, position: tuple[int, int, int]) -> Tile:
         return [tile for tile in self.tiles if tile.position == position][0]
@@ -68,19 +72,19 @@ class Board:
             return [tile.position for tile in self.tiles if not tile.is_ocean_tile and tile.occupied_with is None]
         elif tile_type == "ocean":
             return [tile.position for tile in self.tiles if tile.is_ocean_tile and tile.occupied_with is None]
+        elif tile_type == "volcano":
+            return [tile.position for tile in self.tiles if tile.is_volcano and tile.occupied_with is None]
         return []
 
-    def create_board(self) -> None:
-        self.tiles: list[Tile] = []
-
+    def _create_board(self) -> None:
         center = (0, 0, 0)
     
         seed_tile = Tile(position=center, is_ocean_tile=False, reserved_by_player=None, occupied_with="test", placement_bonus=None, owner=None)
         self.tiles.append(seed_tile)
     
-        self.create_all_tiles(seed_tile, self.tiles)
+        self._create_all_tiles(seed_tile, self.tiles)
 
-    def create_all_tiles(self, center_tile: Tile, tiles: list[Tile]) -> None:
+    def _create_all_tiles(self, center_tile: Tile, tiles: list[Tile]) -> None:
         directions = [(+1, -1, 0),
                            (+1, 0, -1),
                            (0, +1, -1),
@@ -107,11 +111,31 @@ class Board:
                     
                     tiles.append(new_tile)
 
+        def assign_tiles(locations: list[tuple[int, int, int]], tile_type: str):
+            for location in locations:
+                tile = self.get_tile_target(location)
+                if tile:
+                    tile.occupied_with = tile_type
+
         create_ring_tiles(center_tile)
         
         #second ring
         first_ring: list[Tile] = tiles[1:7]
         for tile in first_ring:
             create_ring_tiles(tile)
+
+        #third ring
+        second_ring: list[Tile] = tiles[7:19]
+        for tile in second_ring:
+            create_ring_tiles(tile)
+
+        #fourth ring
+        third_ring: list[Tile] = tiles[19:37]
+        for tile in third_ring:
+            create_ring_tiles(tile)
+
+        assign_tiles(self.ocean_locations, "ocean")
+        assign_tiles(self.volcano_locations, "volcano")
+
 
             

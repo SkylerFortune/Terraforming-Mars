@@ -5,13 +5,14 @@ from classes.board import Board
 from classes.card import Card
 from classes.planet import Planet
 from classes.player import Player
+from classes.requirement import Requirement
 from classes.tile import Tile
 
 
 class GameManager:
-    def __init__(self) -> None:
+    def __init__(self, ocean_locations: list[tuple[int, int, int]], volcano_locations: list[tuple[int, int, int]]) -> None:
  
-        self.game_state = GameState()
+        self.game_state = GameState(ocean_locations=ocean_locations, volcano_locations=volcano_locations)
 
         self.milestones = self.generate_milestones()
         self.awards = self.generate_awards()
@@ -40,14 +41,18 @@ class GameManager:
         while not self.is_game_over():
             self.resolve_current_player_turn()
             self.game_state.current_player = self.game_state.next_player()
-            if self.game_state.generation_over == True:
+            if self.game_state.generation_over:
                 self.production()
                 self.game_state.generation_over = False
 
         self.endgame()
 
     def endgame(self):
+        #place greenery tiles
         pass
+        #count points
+        for player in self.game_state.players:
+            print(f"{player.id}: {self.calculate_points(player)}")
 
     def production(self):
         for player in self.game_state.players:
@@ -82,10 +87,10 @@ class GameManager:
         return Reward(resources=Resources(steel=1))
 
     def place_tile(self, player: Player, tile_type: str, location: tuple[int, int, int]) -> None:
-        self.game_state.board.place_tile(tile_type, location)
+        self.game_state.board.place_tile(player, tile_type, location)
         placement_bonus = self.get_placement_bonus(location)
         if placement_bonus:
-            player.recieve_reward(placement_bonus, self.game_state.board)
+            player.receive_reward(placement_bonus, self.game_state.board)
 
     def get_placement_bonus(self, position: tuple[int, int, int]) -> Reward | None:
         return self.game_state.board.get_tile_target(position).placement_bonus
@@ -152,7 +157,8 @@ class GameManager:
 
     #TODO: add card playing logic
     def play_card(self, player: Player, card: Card) -> None:
-        pass
+        space_port = Card("space port", "", "green", ["city", "building"], 22, [Requirement(colonies=1)], Reward(production=Production(energy=-1, money=4), tile="city"))
+        player.play_card(card, self.game_state.board)
 
     ## --- STANDARD ACTIONS --- ##
     def can_place_colony(self, player: Player, planet_name: str) -> bool:
@@ -215,7 +221,7 @@ class GameManager:
     def power_plant(self, player: Player):
         if self.can_buy_power_plant(player):
             player.spend("money", 11)
-            player.recieve_reward(Reward(production=Production(energy=1)))
+            player.receive_reward(Reward(production=Production(energy=1)))
 
     def can_buy_asteroid(self, player: Player) -> bool:
         return player.has_resource("money", 14)
@@ -232,7 +238,7 @@ class GameManager:
         if self.can_buy_aquifer(player):
             player.spend("money", 18)
             location = player.place_tile(self.game_state.board, "ocean")
-            self.game_state.board.place_tile("oceans", location)
+            self.game_state.board.place_tile(player, "oceans", location)
             player.increase_terraform_rating(1)
 
     def can_place_greenery(self, player: Player) -> bool:
@@ -241,8 +247,8 @@ class GameManager:
     def greenery(self, player: Player) -> None:
         if self.can_place_greenery(player):
             player.spend("money", 23)
-            location = player.place_tile(self.game_state.board)
-            self.game_state.board.place_tile("greenery", location)
+            location = player.place_tile(self.game_state.board, "greenery")
+            self.game_state.board.place_tile(player, "greenery", location)
             self.raise_oxygen(player)
 
     def can_place_city(self, player: Player) -> bool:
@@ -251,9 +257,9 @@ class GameManager:
     def city(self, player: Player) -> None:
         if self.can_place_city(player):
             player.spend("money", 25)
-            location = player.place_tile(self.game_state.board)
-            self.game_state.board.place_tile("city", location)
-            player.recieve_reward(Reward(production=Production(money=1)))
+            location = player.place_tile(self.game_state.board, "city")
+            self.game_state.board.place_tile(player, "city", location)
+            player.receive_reward(Reward(production=Production(money=1)))
 
     def is_game_over(self) -> bool:
         if (self.game_state.board.oxygen == 14 and
@@ -262,6 +268,27 @@ class GameManager:
             self.game_state.board.oceans == 9):
             return True
         return False
+
+    def calculate_points(self, player: Player) -> int:
+        points = 0
+        #points from awards
+        for award in player.awards:
+            points += self.calculate_award(award)
+        #points from milestones
+        for milestone in player.milestones:
+            points += 5
+        #points from greeneries
+        points += len(player.tiles.forests)
+        #points from cities
+        for city in player.tiles.cities:
+            for adj in self.game_state.board.get_adjacent(city):
+                if adj.occupied_with == "greenery":
+                    points += 1
+        #points from cards
+        for card in player.cards:
+            points += card.resolve_points(self.game_state.board)
+
+        return points
 
     ## --- INIT --- ##
     def generate_awards(self) -> list[str]:
@@ -276,7 +303,7 @@ class GameManager:
         # Generate a list of planets for the game
         ceres = Planet("Ceres", placement_bonus=Reward(production=Production(steel=1)), colony_bonus=Reward(resources=Resources(steel=1)), track_values=[1, 2, 3, 4, 6, 8, 10], resource="steel")
         enceladus = Planet("Enceladus", placement_bonus=Reward(resources=Resources(microbes=3)), colony_bonus=Reward(resources=Resources(microbes=1)), track_values=[0, 1, 2, 3, 4, 4, 5], resource="microbes")
-        europa = Planet("Europa", placement_bonus=Reward(tiles=Tiles(oceans=1)), colony_bonus=Reward(resources=Resources(money=1)), track_values=[0, 1, 2, 3, 4, 5, 6], resource="money")
+        europa = Planet("Europa", placement_bonus=Reward(tile='ocean'), colony_bonus=Reward(resources=Resources(money=1)), track_values=[0, 1, 2, 3, 4, 5, 6], resource="money")
         titan = Planet("Titan", placement_bonus=Reward(resources=Resources(floaters=3)), colony_bonus=Reward(resources=Resources(floaters=1)), track_values=[0, 1, 1, 2, 3, 3, 4], resource="floaters")
         luna = Planet("luna", placement_bonus=Reward(production=Production(money=2)), colony_bonus=Reward(resources=Resources(money=2)), track_values=[1, 2, 4, 7, 10, 13, 17], resource="money")
         io = Planet("Io", placement_bonus=Reward(production=Production(heat=1)), colony_bonus=Reward(resources=Resources(heat=2)), track_values=[2, 3, 4, 6, 8, 10, 13], resource="heat")
@@ -291,8 +318,8 @@ class GameManager:
 
 
 class GameState:
-    def __init__(self) -> None:
-        self.board = Board()
+    def __init__(self, ocean_locations: list[tuple[int, int, int]], volcano_locations: list[tuple[int, int, int]]) -> None:
+        self.board = Board(ocean_locations=ocean_locations, volcano_locations=volcano_locations)
         self.draw_pile: list[Card] = []
         self.discard_pile: list[Card] = []
         self.available_prelude_cards: list[Card] = []
@@ -346,7 +373,10 @@ class GameState:
 class Reward:
     production: Production | None = None
     resources: Resources | None = None
-    tile: str | None = None
+    city: int = 0
+    greenery: int = 0
+    ocean: int = 0
+    special: str = ""
 
 @dataclass
 class Production:
