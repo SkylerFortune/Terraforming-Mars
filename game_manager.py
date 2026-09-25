@@ -70,6 +70,7 @@ class GameManager:
         player.gain_cards(cards)
 
     def find_europa_reward(self) -> Reward:
+        points_func = lambda: self.points(points)
         # Find the reward for Europa based on the current game state
         europa = next((p for p in self.game_state.planets if p.name == "Europa"), None)
         if europa:
