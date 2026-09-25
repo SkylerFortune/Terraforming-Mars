@@ -376,6 +376,7 @@ class Reward:
     city: int = 0
     greenery: int = 0
     ocean: int = 0
+    temperature: int = 0
     special: str = ""
 
 @dataclass
@@ -401,6 +402,18 @@ class Resources:
     floaters: int = 0
     asteroid: int = 0
     cards: int = 0
+    destroy_plants: int = 0
+    destroy_steel: int = 0
+    destroy_titanium: int = 0
+    destroy_animals: int = 0
+    destroy_microbes: int = 0
+    destroy_money: int = 0
+    destroy_titanium_p: int = 0
+    destroy_steel_p: int = 0
+    destroy_plants_p: int = 0
+    destroy_heat_p: int = 0
+    destroy_energy_p: int = 0
+    destroy_money_p: int = 0
 
 @dataclass
 class Tiles:
