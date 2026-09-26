@@ -1,0 +1,3810 @@
+[
+  {
+    "className": "AICentral",
+    "filePath": "AICentral.ts",
+    "cost": 21,
+    "cardType": "ACTIVE",
+    "name": "AI_CENTRAL",
+    "tags": [
+      "SCIENCE",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "AcquiredCompany",
+    "filePath": "AcquiredCompany.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "ACQUIRED_COMPANY",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "AdaptationTechnology",
+    "filePath": "AdaptationTechnology.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "ADAPTATION_TECHNOLOGY",
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "AdaptedLichen",
+    "filePath": "AdaptedLichen.ts",
+    "cost": 9,
+    "cardType": "AUTOMATED",
+    "name": "ADAPTED_LICHEN",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "AdvancedAlloys",
+    "filePath": "AdvancedAlloys.ts",
+    "cost": 9,
+    "cardType": "ACTIVE",
+    "name": "ADVANCED_ALLOYS",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "AdvancedEcosystems",
+    "filePath": "AdvancedEcosystems.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "ADVANCED_ECOSYSTEMS",
+    "tags": [
+      "PLANT",
+      "MICROBES",
+      "ANIMAL"
+    ],
+    "victoryPoints": 3
+  },
+  {
+    "className": "AerobrakedAmmoniaAsteroid",
+    "filePath": "AerobrakedAmmoniaAsteroid.ts",
+    "cost": 26,
+    "cardType": "EVENT",
+    "name": "AEROBRAKED_AMMONIA_ASTEROID",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "Algae",
+    "filePath": "Algae.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "ALGAE",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "AntiGravityTechnology",
+    "filePath": "AntiGravityTechnology.ts",
+    "cost": 14,
+    "cardType": "ACTIVE",
+    "name": "ANTI_GRAVITY_TECHNOLOGY",
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 3
+  },
+  {
+    "className": "Ants",
+    "filePath": "Ants.ts",
+    "cost": 9,
+    "cardType": "ACTIVE",
+    "name": "ANTS",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "AquiferPumping",
+    "filePath": "AquiferPumping.ts",
+    "cost": 18,
+    "cardType": "ACTIVE",
+    "name": "AQUIFER_PUMPING",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "ArchaeBacteria",
+    "filePath": "ArchaeBacteria.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "ARCHAEBACTERIA",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "ArcticAlgae",
+    "filePath": "ArcticAlgae.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "ARCTIC_ALGAE",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "ArtificialLake",
+    "filePath": "ArtificialLake.ts",
+    "cost": 15,
+    "cardType": "AUTOMATED",
+    "name": "ARTIFICIAL_LAKE",
+    "tags": [
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "ArtificialPhotosynthesis",
+    "filePath": "ArtificialPhotosynthesis.ts",
+    "cost": 12,
+    "cardType": "AUTOMATED",
+    "name": "ARTIFICIAL_PHOTOSYNTHESIS",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "Asteroid",
+    "filePath": "Asteroid.ts",
+    "cost": 14,
+    "cardType": "EVENT",
+    "name": "ASTEROID",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "AsteroidMining",
+    "filePath": "AsteroidMining.ts",
+    "cost": 30,
+    "cardType": "AUTOMATED",
+    "name": "ASTEROID_MINING",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "AsteroidMiningConsortium",
+    "filePath": "AsteroidMiningConsortium.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "ASTEROID_MINING_CONSORTIUM",
+    "tags": [
+      "JOVIAN"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "BeamFromAThoriumAsteroid",
+    "filePath": "BeamFromAThoriumAsteroid.ts",
+    "cost": 32,
+    "cardType": "AUTOMATED",
+    "name": "BEAM_FROM_A_THORIUM_ASTEROID",
+    "tags": [
+      "JOVIAN",
+      "SPACE",
+      "ENERGY"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "BigAsteroid",
+    "filePath": "BigAsteroid.ts",
+    "cost": 27,
+    "cardType": "EVENT",
+    "name": "BIG_ASTEROID",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "BiomassCombustors",
+    "filePath": "BiomassCombustors.ts",
+    "cost": 4,
+    "cardType": "AUTOMATED",
+    "name": "BIOMASS_COMBUSTORS",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Birds",
+    "filePath": "Birds.ts",
+    "cost": 10,
+    "cardType": "ACTIVE",
+    "name": "BIRDS",
+    "tags": [
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "BlackPolarDust",
+    "filePath": "BlackPolarDust.ts",
+    "cost": 15,
+    "cardType": "AUTOMATED",
+    "name": "BLACK_POLAR_DUST",
+    "tags": []
+  },
+  {
+    "className": "BreathingFilters",
+    "filePath": "BreathingFilters.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "BREATHING_FILTERS",
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "BribedCommitte",
+    "filePath": "BribedCommitte.ts",
+    "cost": 7,
+    "cardType": "EVENT",
+    "name": "BRIBED_COMMITTEE",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "BuildingIndustries",
+    "filePath": "BuildingIndustries.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "BUILDING_INDUSTRIES",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Bushes",
+    "filePath": "Bushes.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "BUSHES",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "BusinessContacts",
+    "filePath": "BusinessContacts.ts",
+    "cost": 7,
+    "cardType": "EVENT",
+    "name": "BUSINESS_CONTACTS",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "BusinessNetwork",
+    "filePath": "BusinessNetwork.ts",
+    "cost": 4,
+    "cardType": "ACTIVE",
+    "name": "BUSINESS_NETWORK",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "CEOsFavoriteProject",
+    "filePath": "CEOsFavoriteProject.ts",
+    "cost": 1,
+    "cardType": "EVENT",
+    "name": "CEOS_FAVORITE_PROJECT",
+    "tags": []
+  },
+  {
+    "className": "CallistoPenalMines",
+    "filePath": "CallistoPenalMines.ts",
+    "cost": 24,
+    "cardType": "AUTOMATED",
+    "name": "CALLISTO_PENAL_MINES",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "Capital",
+    "filePath": "Capital.ts",
+    "cost": 26,
+    "cardType": "AUTOMATED",
+    "name": "CAPITAL",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "CarbonateProcessing",
+    "filePath": "CarbonateProcessing.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "CARBONATE_PROCESSING",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "CaretakerContract",
+    "filePath": "CaretakerContract.ts",
+    "cost": 3,
+    "cardType": "ACTIVE",
+    "name": "CARETAKER_CONTRACT",
+    "tags": []
+  },
+  {
+    "className": "Cartel",
+    "filePath": "Cartel.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "CARTEL",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "CloudSeeding",
+    "filePath": "CloudSeeding.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "CLOUD_SEEDING",
+    "tags": []
+  },
+  {
+    "className": "ColonizerTrainingCamp",
+    "filePath": "ColonizerTrainingCamp.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "COLONIZER_TRAINING_CAMP",
+    "tags": [
+      "JOVIAN",
+      "STEEL"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "Comet",
+    "filePath": "Comet.ts",
+    "cost": 21,
+    "cardType": "EVENT",
+    "name": "COMET",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "CommercialDistrict",
+    "filePath": "CommercialDistrict.ts",
+    "cost": 16,
+    "cardType": "AUTOMATED",
+    "name": "COMMERCIAL_DISTRICT",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "ConvoyFromEuropa",
+    "filePath": "ConvoyFromEuropa.ts",
+    "cost": 15,
+    "cardType": "EVENT",
+    "name": "CONVOY_FROM_EUROPA",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "CorporateStronghold",
+    "filePath": "CorporateStronghold.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "CORPORATE_STRONGHOLD",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "CupolaCity",
+    "filePath": "CupolaCity.ts",
+    "cost": 16,
+    "cardType": "AUTOMATED",
+    "name": "CUPOLA_CITY",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Decomposers",
+    "filePath": "Decomposers.ts",
+    "cost": 5,
+    "cardType": "ACTIVE",
+    "name": "DECOMPOSERS",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "DeepWellHeating",
+    "filePath": "DeepWellHeating.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "DEEP_WELL_HEATING",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "DeimosDown",
+    "filePath": "DeimosDown.ts",
+    "cost": 31,
+    "cardType": "EVENT",
+    "name": "DEIMOS_DOWN",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "DesignedMicroOrganisms",
+    "filePath": "DesignedMicroOrganisms.ts",
+    "cost": 16,
+    "cardType": "AUTOMATED",
+    "name": "DESIGNED_MICRO_ORGANISMS",
+    "tags": [
+      "SCIENCE",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "DevelopmentCenter",
+    "filePath": "DevelopmentCenter.ts",
+    "cost": 11,
+    "cardType": "ACTIVE",
+    "name": "DEVELOPMENT_CENTER",
+    "tags": [
+      "SCIENCE",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "DomedCrater",
+    "filePath": "DomedCrater.ts",
+    "cost": 24,
+    "cardType": "AUTOMATED",
+    "name": "DOMED_CRATER",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "DustSeals",
+    "filePath": "DustSeals.ts",
+    "cost": 2,
+    "cardType": "AUTOMATED",
+    "name": "DUST_SEALS",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "EosChasmaNationalPark",
+    "filePath": "EOSChasmaNationalPark.ts",
+    "cost": 16,
+    "cardType": "AUTOMATED",
+    "name": "EOS_CHASMA_NATIONAL_PARK",
+    "tags": [
+      "PLANT",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "EarthCatapult",
+    "filePath": "EarthCatapult.ts",
+    "cost": 23,
+    "cardType": "ACTIVE",
+    "name": "EARTH_CATAPULT",
+    "tags": [
+      "EARTH"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "EarthOffice",
+    "filePath": "EarthOffice.ts",
+    "cost": 1,
+    "cardType": "ACTIVE",
+    "name": "EARTH_OFFICE",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "EcologicalZone",
+    "filePath": "EcologicalZone.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "ECOLOGICAL_ZONE",
+    "tags": [
+      "ANIMAL",
+      "PLANT"
+    ]
+  },
+  {
+    "className": "ElectroCatapult",
+    "filePath": "ElectroCatapult.ts",
+    "cost": 17,
+    "cardType": "ACTIVE",
+    "name": "ELECTRO_CATAPULT",
+    "tags": [
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "EnergySaving",
+    "filePath": "EnergySaving.ts",
+    "cost": 15,
+    "cardType": "AUTOMATED",
+    "name": "ENERGY_SAVING",
+    "tags": [
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "EnergyTapping",
+    "filePath": "EnergyTapping.ts",
+    "cost": 3,
+    "cardType": "AUTOMATED",
+    "name": "ENERGY_TAPPING",
+    "tags": [
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "EquatorialMagnetizer",
+    "filePath": "EquatorialMagnetizer.ts",
+    "cost": 11,
+    "cardType": "ACTIVE",
+    "name": "EQUATORIAL_MAGNETIZER",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "ExtremeColdFungus",
+    "filePath": "ExtremeColdFungus.ts",
+    "cost": 13,
+    "cardType": "ACTIVE",
+    "name": "EXTREME_COLD_FUNGUS",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "Farming",
+    "filePath": "Farming.ts",
+    "cost": 16,
+    "cardType": "AUTOMATED",
+    "name": "FARMING",
+    "tags": [
+      "PLANT"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "Fish",
+    "filePath": "Fish.ts",
+    "cost": 9,
+    "cardType": "ACTIVE",
+    "name": "FISH",
+    "tags": [
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "Flooding",
+    "filePath": "Flooding.ts",
+    "cost": 7,
+    "cardType": "EVENT",
+    "name": "FLOODING",
+    "tags": []
+  },
+  {
+    "className": "FoodFactory",
+    "filePath": "FoodFactory.ts",
+    "cost": 12,
+    "cardType": "AUTOMATED",
+    "name": "FOOD_FACTORY",
+    "tags": [
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "FuelFactory",
+    "filePath": "FuelFactory.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "FUEL_FACTORY",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "FueledGenerators",
+    "filePath": "FueledGenerators.ts",
+    "cost": 1,
+    "cardType": "AUTOMATED",
+    "name": "FUELED_GENERATORS",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "FusionPower",
+    "filePath": "FusionPower.ts",
+    "cost": 14,
+    "cardType": "AUTOMATED",
+    "name": "FUSION_POWER",
+    "tags": [
+      "SCIENCE",
+      "ENERGY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "GHGFactories",
+    "filePath": "GHGFactories.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "GHG_FACTORIES",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "GHGProducingBacteria",
+    "filePath": "GHGProducingBacteria.ts",
+    "cost": 8,
+    "cardType": "ACTIVE",
+    "name": "GHG_PRODUCING_BACTERIA",
+    "tags": [
+      "SCIENCE",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "GanymedeColony",
+    "filePath": "GanymedeColony.ts",
+    "cost": 20,
+    "cardType": "AUTOMATED",
+    "name": "GANYMEDE_COLONY",
+    "tags": [
+      "JOVIAN",
+      "SPACE",
+      "CITY"
+    ]
+  },
+  {
+    "className": "GeneRepair",
+    "filePath": "GeneRepair.ts",
+    "cost": 12,
+    "cardType": "AUTOMATED",
+    "name": "GENE_REPAIR",
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "GeothermalPower",
+    "filePath": "GeothermalPower.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "GEOTHERMAL_POWER",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "GiantIceAsteroid",
+    "filePath": "GiantIceAsteroid.ts",
+    "cost": 36,
+    "cardType": "EVENT",
+    "name": "GIANT_ICE_ASTEROID",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "GiantSpaceMirror",
+    "filePath": "GiantSpaceMirror.ts",
+    "cost": 17,
+    "cardType": "AUTOMATED",
+    "name": "GIANT_SPACE_MIRROR",
+    "tags": [
+      "ENERGY",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "Grass",
+    "filePath": "Grass.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "GRASS",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "GreatDam",
+    "filePath": "GreatDam.ts",
+    "cost": 12,
+    "cardType": "AUTOMATED",
+    "name": "GREAT_DAM",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "GreatEscarpmentConsortium",
+    "filePath": "GreatEscarpmentConsortium.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "GREAT_ESCARPMENT_CONSORTIUM",
+    "tags": []
+  },
+  {
+    "className": "Greenhouses",
+    "filePath": "Greenhouses.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "GREENHOUSES",
+    "tags": [
+      "PLANT",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Hackers",
+    "filePath": "Hackers.ts",
+    "cost": 3,
+    "cardType": "AUTOMATED",
+    "name": "HACKERS",
+    "tags": []
+  },
+  {
+    "className": "HeatTrappers",
+    "filePath": "HeatTrappers.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "HEAT_TRAPPERS",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Heather",
+    "filePath": "Heather.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "HEATHER",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "Herbivores",
+    "filePath": "Herbivores.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "HERBIVORES",
+    "tags": [
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "HiredRaiders",
+    "filePath": "HiredRaiders.ts",
+    "cost": 1,
+    "cardType": "EVENT",
+    "name": "HIRED_RAIDERS",
+    "tags": []
+  },
+  {
+    "className": "IceAsteroid",
+    "filePath": "IceAsteroid.ts",
+    "cost": 23,
+    "cardType": "EVENT",
+    "name": "ICE_ASTEROID",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "IceCapMelting",
+    "filePath": "IceCapMelting.ts",
+    "cost": 5,
+    "cardType": "EVENT",
+    "name": "ICE_CAP_MELTING",
+    "tags": []
+  },
+  {
+    "className": "ImmigrantCity",
+    "filePath": "ImmigrantCity.ts",
+    "cost": 13,
+    "cardType": "ACTIVE",
+    "name": "IMMIGRANT_CITY",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "ImmigrationShuttles",
+    "filePath": "ImmigrationShuttles.ts",
+    "cost": 31,
+    "cardType": "AUTOMATED",
+    "name": "IMMIGRATION_SHUTTLES",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "ImportOfAdvancedGHG",
+    "filePath": "ImportOfAdvancedGHG.ts",
+    "cost": 9,
+    "cardType": "EVENT",
+    "name": "IMPORT_OF_ADVANCED_GHG",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "ImportedGHG",
+    "filePath": "ImportedGHG.ts",
+    "cost": 7,
+    "cardType": "EVENT",
+    "name": "IMPORTED_GHG",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "ImportedHydrogen",
+    "filePath": "ImportedHydrogen.ts",
+    "cost": 16,
+    "cardType": "EVENT",
+    "name": "IMPORTED_HYDROGEN",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "ImportedNitrogen",
+    "filePath": "ImportedNitrogen.ts",
+    "cost": 23,
+    "cardType": "EVENT",
+    "name": "IMPORTED_NITROGEN",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "IndenturedWorkers",
+    "filePath": "IndenturedWorkers.ts",
+    "cost": 0,
+    "cardType": "EVENT",
+    "name": "INDENTURED_WORKERS",
+    "tags": []
+  },
+  {
+    "className": "IndustrialCenter",
+    "filePath": "IndustrialCenter.ts",
+    "cost": 4,
+    "cardType": "ACTIVE",
+    "name": "INDUSTRIAL_CENTER",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "IndustrialMicrobes",
+    "filePath": "IndustrialMicrobes.ts",
+    "cost": 12,
+    "cardType": "AUTOMATED",
+    "name": "INDUSTRIAL_MICROBES",
+    "tags": [
+      "MICROBES",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Insects",
+    "filePath": "Insects.ts",
+    "cost": 9,
+    "cardType": "AUTOMATED",
+    "name": "INSECTS",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "Insulation",
+    "filePath": "Insulation.ts",
+    "cost": 2,
+    "cardType": "AUTOMATED",
+    "name": "INSULATION",
+    "tags": []
+  },
+  {
+    "className": "InterstellarColonyShip",
+    "filePath": "InterstellarColonyShip.ts",
+    "cost": 24,
+    "cardType": "EVENT",
+    "name": "INTERSTELLAR_COLONY_SHIP",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ],
+    "victoryPoints": 4
+  },
+  {
+    "className": "InventionContest",
+    "filePath": "InventionContest.ts",
+    "cost": 2,
+    "cardType": "EVENT",
+    "name": "INVENTION_CONTEST",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "InventorsGuild",
+    "filePath": "InventorsGuild.ts",
+    "cost": 9,
+    "cardType": "ACTIVE",
+    "name": "INVENTORS_GUILD",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "InvestmentLoan",
+    "filePath": "InvestmentLoan.ts",
+    "cost": 3,
+    "cardType": "EVENT",
+    "name": "INVESTMENT_LOAN",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "IoMiningIndustries",
+    "filePath": "IoMiningIndustries.ts",
+    "cost": 41,
+    "cardType": "AUTOMATED",
+    "name": "IO_MINING_INDUSTRIES",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "Ironworks",
+    "filePath": "Ironworks.ts",
+    "cost": 11,
+    "cardType": "ACTIVE",
+    "name": "IRONWORKS",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "KelpFarming",
+    "filePath": "KelpFarming.ts",
+    "cost": 17,
+    "cardType": "AUTOMATED",
+    "name": "KELP_FARMING",
+    "tags": [
+      "PLANT"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "LagrangeObservatory",
+    "filePath": "LagrangeObservatory.ts",
+    "cost": 9,
+    "cardType": "AUTOMATED",
+    "name": "LAGRANGE_OBSERVATORY",
+    "tags": [
+      "SCIENCE",
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "LakeMarineris",
+    "filePath": "LakeMarineris.ts",
+    "cost": 18,
+    "cardType": "AUTOMATED",
+    "name": "LAKE_MARINERIS",
+    "tags": [],
+    "victoryPoints": 2
+  },
+  {
+    "className": "LandClaim",
+    "filePath": "LandClaim.ts",
+    "cost": 1,
+    "cardType": "EVENT",
+    "name": "LAND_CLAIM",
+    "tags": []
+  },
+  {
+    "className": "LargeConvoy",
+    "filePath": "LargeConvoy.ts",
+    "cost": 36,
+    "cardType": "EVENT",
+    "name": "LARGE_CONVOY",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "LavaFlows",
+    "filePath": "LavaFlows.ts",
+    "cost": 18,
+    "cardType": "EVENT",
+    "name": "LAVA_FLOWS",
+    "tags": []
+  },
+  {
+    "className": "Lichen",
+    "filePath": "Lichen.ts",
+    "cost": 7,
+    "cardType": "AUTOMATED",
+    "name": "LICHEN",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "LightningHarvest",
+    "filePath": "LightningHarvest.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "LIGHTNING_HARVEST",
+    "tags": [
+      "ENERGY"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Livestock",
+    "filePath": "Livestock.ts",
+    "cost": 13,
+    "cardType": "ACTIVE",
+    "name": "LIVESTOCK",
+    "tags": [
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "LocalHeatTrapping",
+    "filePath": "LocalHeatTrapping.ts",
+    "cost": 1,
+    "cardType": "EVENT",
+    "name": "LOCAL_HEAT_TRAPPING",
+    "tags": []
+  },
+  {
+    "className": "LunarBeam",
+    "filePath": "LunarBeam.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "LUNAR_BEAM",
+    "tags": [
+      "EARTH",
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "MagneticFieldDome",
+    "filePath": "MagneticFieldDome.ts",
+    "cost": 5,
+    "cardType": "AUTOMATED",
+    "name": "MAGNETIC_FIELD_DOME",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MagneticFieldGenerators",
+    "filePath": "MagneticFieldGenerators.ts",
+    "cost": 20,
+    "cardType": "AUTOMATED",
+    "name": "MAGNETIC_FIELD_GENERATORS",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Mangrove",
+    "filePath": "Mangrove.ts",
+    "cost": 12,
+    "cardType": "AUTOMATED",
+    "name": "MANGROVE",
+    "tags": [
+      "PLANT"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "MarsUniversity",
+    "filePath": "MarsUniversity.ts",
+    "cost": 8,
+    "cardType": "ACTIVE",
+    "name": "MARS_UNIVERSITY",
+    "tags": [
+      "SCIENCE",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "MartianRails",
+    "filePath": "MartianRails.ts",
+    "cost": 13,
+    "cardType": "ACTIVE",
+    "name": "MARTIAN_RAILS",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MassConverter",
+    "filePath": "MassConverter.ts",
+    "cost": 8,
+    "cardType": "ACTIVE",
+    "name": "MASS_CONVERTER",
+    "tags": [
+      "SCIENCE",
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "MediaArchives",
+    "filePath": "MediaArchives.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "MEDIA_ARCHIVES",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "MediaGroup",
+    "filePath": "MediaGroup.ts",
+    "cost": 6,
+    "cardType": "ACTIVE",
+    "name": "MEDIA_GROUP",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "MedicalLab",
+    "filePath": "MedicalLab.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "MEDICAL_LAB",
+    "tags": [
+      "SCIENCE",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "MethaneFromTitan",
+    "filePath": "MethaneFromTitan.ts",
+    "cost": 28,
+    "cardType": "AUTOMATED",
+    "name": "METHANE_FROM_TITAN",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "MicroMills",
+    "filePath": "MicroMills.ts",
+    "cost": 3,
+    "cardType": "AUTOMATED",
+    "name": "MICRO_MILLS",
+    "tags": []
+  },
+  {
+    "className": "Mine",
+    "filePath": "Mine.ts",
+    "cost": 4,
+    "cardType": "AUTOMATED",
+    "name": "MINE",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MineralDeposit",
+    "filePath": "MineralDeposit.ts",
+    "cost": 5,
+    "cardType": "EVENT",
+    "name": "MINERAL_DEPOSIT",
+    "tags": []
+  },
+  {
+    "className": "MiningArea",
+    "filePath": "MiningArea.ts",
+    "cost": 4,
+    "cardType": "AUTOMATED",
+    "name": "MINING_AREA",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MiningExpedition",
+    "filePath": "MiningExpedition.ts",
+    "cost": 12,
+    "cardType": "EVENT",
+    "name": "MINING_EXPEDITION",
+    "tags": []
+  },
+  {
+    "className": "MiningRights",
+    "filePath": "MiningRights.ts",
+    "cost": 9,
+    "cardType": "AUTOMATED",
+    "name": "MINING_RIGHTS",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MirandaResort",
+    "filePath": "MirandaResort.ts",
+    "cost": 12,
+    "cardType": "AUTOMATED",
+    "name": "MIRANDA_RESORT",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "MoholeArea",
+    "filePath": "MoholeArea.ts",
+    "cost": 20,
+    "cardType": "AUTOMATED",
+    "name": "MOHOLE_AREA",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Moss",
+    "filePath": "Moss.ts",
+    "cost": 4,
+    "cardType": "AUTOMATED",
+    "name": "MOSS",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "NaturalPreserve",
+    "filePath": "NaturalPreserve.ts",
+    "cost": 9,
+    "cardType": "AUTOMATED",
+    "name": "NATURAL_PRESERVE",
+    "tags": [
+      "SCIENCE",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "NitriteReducingBacteria",
+    "filePath": "NitriteReducingBacteria.ts",
+    "cost": 11,
+    "cardType": "ACTIVE",
+    "name": "NITRITE_REDUCING_BACTERIA",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "NitrogenRichAsteroid",
+    "filePath": "NitrogenRichAsteroid.ts",
+    "cost": 31,
+    "cardType": "EVENT",
+    "name": "NITROGEN_RICH_ASTEROID",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "NitrophilicMoss",
+    "filePath": "NitrophilicMoss.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "NITROPHILIC_MOSS",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "NoctisCity",
+    "filePath": "NoctisCity.ts",
+    "cost": 18,
+    "cardType": "AUTOMATED",
+    "name": "NOCTIS_CITY",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "NoctisFarming",
+    "filePath": "NoctisFarming.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "NOCTIS_FARMING",
+    "tags": [
+      "PLANT",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "NuclearPower",
+    "filePath": "NuclearPower.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "NUCLEAR_POWER",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "NuclearZone",
+    "filePath": "NuclearZone.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "NUCLEAR_ZONE",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "OlympusConference",
+    "filePath": "OlympusConference.ts",
+    "cost": 10,
+    "cardType": "ACTIVE",
+    "name": "OLYMPUS_CONFERENCE",
+    "tags": [
+      "SCIENCE",
+      "EARTH",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "OpenCity",
+    "filePath": "OpenCity.ts",
+    "cost": 23,
+    "cardType": "AUTOMATED",
+    "name": "OPEN_CITY",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "OptimalAerobraking",
+    "filePath": "OptimalAerobraking.ts",
+    "cost": 7,
+    "cardType": "ACTIVE",
+    "name": "OPTIMAL_AEROBRAKING",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "OreProcessor",
+    "filePath": "OreProcessor.ts",
+    "cost": 13,
+    "cardType": "ACTIVE",
+    "name": "ORE_PROCESSOR",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "PermafrostExtraction",
+    "filePath": "PermafrostExtraction.ts",
+    "cost": 8,
+    "cardType": "EVENT",
+    "name": "PERMAFROST_EXTRACTION",
+    "tags": []
+  },
+  {
+    "className": "PeroxidePower",
+    "filePath": "PeroxidePower.ts",
+    "cost": 7,
+    "cardType": "AUTOMATED",
+    "name": "PEROXIDE_POWER",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Pets",
+    "filePath": "Pets.ts",
+    "cost": 10,
+    "cardType": "ACTIVE",
+    "name": "PETS",
+    "tags": [
+      "EARTH",
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "PhobosSpaceHaven",
+    "filePath": "PhobosSpaceHaven.ts",
+    "cost": 25,
+    "cardType": "AUTOMATED",
+    "name": "PHOBOS_SPACE_HAVEN",
+    "tags": [
+      "SPACE",
+      "CITY"
+    ],
+    "victoryPoints": 3
+  },
+  {
+    "className": "PhysicsComplex",
+    "filePath": "PhysicsComplex.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "PHYSICS_COMPLEX",
+    "tags": [
+      "SCIENCE",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Plantation",
+    "filePath": "Plantation.ts",
+    "cost": 15,
+    "cardType": "AUTOMATED",
+    "name": "PLANTATION",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "PowerGrid",
+    "filePath": "PowerGrid.ts",
+    "cost": 18,
+    "cardType": "AUTOMATED",
+    "name": "POWER_GRID",
+    "tags": [
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "PowerInfrastructure",
+    "filePath": "PowerInfrastructure.ts",
+    "cost": 4,
+    "cardType": "ACTIVE",
+    "name": "POWER_INFRASTRUCTURE",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "PowerPlant",
+    "filePath": "PowerPlant.ts",
+    "cost": 4,
+    "cardType": "AUTOMATED",
+    "name": "POWER_PLANT",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "PowerSupplyConsortium",
+    "filePath": "PowerSupplyConsortium.ts",
+    "cost": 5,
+    "cardType": "AUTOMATED",
+    "name": "POWER_SUPPLY_CONSORTIUM",
+    "tags": [
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "Predators",
+    "filePath": "Predators.ts",
+    "cost": 14,
+    "cardType": "ACTIVE",
+    "name": "PREDATORS",
+    "tags": [
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "ProtectedHabitats",
+    "filePath": "ProtectedHabitats.ts",
+    "cost": 5,
+    "cardType": "ACTIVE",
+    "name": "PROTECTED_HABITATS",
+    "tags": []
+  },
+  {
+    "className": "ProtectedValley",
+    "filePath": "ProtectedValley.ts",
+    "cost": 23,
+    "cardType": "AUTOMATED",
+    "name": "PROTECTED_VALLEY",
+    "tags": [
+      "PLANT",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "QuantumExtractor",
+    "filePath": "QuantumExtractor.ts",
+    "cost": 13,
+    "cardType": "ACTIVE",
+    "name": "QUANTUM_EXTRACTOR",
+    "tags": [
+      "SCIENCE",
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "RadChemFactory",
+    "filePath": "RadChemFactory.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "RAD_CHEM_FACTORY",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "RadSuits",
+    "filePath": "RadSuits.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "RAD_SUITS",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "RegolithEaters",
+    "filePath": "RegolithEaters.ts",
+    "cost": 13,
+    "cardType": "ACTIVE",
+    "name": "REGOLITH_EATERS",
+    "tags": [
+      "SCIENCE",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "ReleaseOfInertGases",
+    "filePath": "ReleaseOfInertGases.ts",
+    "cost": 14,
+    "cardType": "EVENT",
+    "name": "RELEASE_OF_INERT_GASES",
+    "tags": []
+  },
+  {
+    "className": "Research",
+    "filePath": "Research.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "RESEARCH",
+    "tags": [
+      "SCIENCE",
+      "SCIENCE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "ResearchOutpost",
+    "filePath": "ResearchOutpost.ts",
+    "cost": 18,
+    "cardType": "ACTIVE",
+    "name": "RESEARCH_OUTPOST",
+    "tags": [
+      "SCIENCE",
+      "CITY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "RestrictedArea",
+    "filePath": "RestrictedArea.ts",
+    "cost": 11,
+    "cardType": "ACTIVE",
+    "name": "RESTRICTED_AREA",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "RoboticWorkforce",
+    "filePath": "RoboticWorkforce.ts",
+    "cost": 9,
+    "cardType": "AUTOMATED",
+    "name": "ROBOTIC_WORKFORCE",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "RoverConstruction",
+    "filePath": "RoverConstruction.ts",
+    "cost": 8,
+    "cardType": "ACTIVE",
+    "name": "ROVER_CONSTRUCTION",
+    "tags": [
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Sabotage",
+    "filePath": "Sabotage.ts",
+    "cost": 1,
+    "cardType": "EVENT",
+    "name": "SABOTAGE",
+    "tags": []
+  },
+  {
+    "className": "Satellites",
+    "filePath": "Satellites.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "SATELLITES",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SearchForLife",
+    "filePath": "SearchForLife.ts",
+    "cost": 3,
+    "cardType": "ACTIVE",
+    "name": "SEARCH_FOR_LIFE",
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 3
+  },
+  {
+    "className": "SecurityFleet",
+    "filePath": "SecurityFleet.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "SECURITY_FLEET",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "Shuttles",
+    "filePath": "Shuttles.ts",
+    "cost": 10,
+    "cardType": "ACTIVE",
+    "name": "SHUTTLES",
+    "tags": [
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "SmallAnimals",
+    "filePath": "SmallAnimals.ts",
+    "cost": 6,
+    "cardType": "ACTIVE",
+    "name": "SMALL_ANIMALS",
+    "tags": [
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "SoilFactory",
+    "filePath": "SoilFactory.ts",
+    "cost": 9,
+    "cardType": "AUTOMATED",
+    "name": "SOIL_FACTORY",
+    "tags": [
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "SolarPower",
+    "filePath": "SolarPower.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "SOLAR_POWER",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "SolarWindPower",
+    "filePath": "SolarWindPower.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "SOLAR_WIND_POWER",
+    "tags": [
+      "SCIENCE",
+      "SPACE",
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "Soletta",
+    "filePath": "Soletta.ts",
+    "cost": 35,
+    "cardType": "AUTOMATED",
+    "name": "SOLETTA",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SpaceElevator",
+    "filePath": "SpaceElevator.ts",
+    "cost": 27,
+    "cardType": "ACTIVE",
+    "name": "SPACE_ELEVATOR",
+    "tags": [
+      "SPACE",
+      "STEEL"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "SpaceMirrors",
+    "filePath": "SpaceMirrors.ts",
+    "cost": 3,
+    "cardType": "ACTIVE",
+    "name": "SPACE_MIRRORS",
+    "tags": [
+      "ENERGY",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SpaceStation",
+    "filePath": "SpaceStation.ts",
+    "cost": 10,
+    "cardType": "ACTIVE",
+    "name": "SPACE_STATION",
+    "tags": [
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "SpecialDesign",
+    "filePath": "SpecialDesign.ts",
+    "cost": 4,
+    "cardType": "EVENT",
+    "name": "SPECIAL_DESIGN",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "Sponsors",
+    "filePath": "Sponsors.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "SPONSORS",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "StandardTechnology",
+    "filePath": "StandardTechnology.ts",
+    "cost": 6,
+    "cardType": "ACTIVE",
+    "name": "STANDARD_TECHNOLOGY",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "Steelworks",
+    "filePath": "Steelworks.ts",
+    "cost": 15,
+    "cardType": "ACTIVE",
+    "name": "STEELWORKS",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "StripMine",
+    "filePath": "StripMine.ts",
+    "cost": 25,
+    "cardType": "AUTOMATED",
+    "name": "STRIP_MINE",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "SubterraneanReservoir",
+    "filePath": "SubterraneanReservoir.ts",
+    "cost": 11,
+    "cardType": "EVENT",
+    "name": "SUBTERRANEAN_RESERVOIR",
+    "tags": []
+  },
+  {
+    "className": "SymbioticFungus",
+    "filePath": "SymbioticFungus.ts",
+    "cost": 4,
+    "cardType": "ACTIVE",
+    "name": "SYMBIOTIC_FUNGUS",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "Tardigrades",
+    "filePath": "Tardigrades.ts",
+    "cost": 4,
+    "cardType": "ACTIVE",
+    "name": "TARDIGRADES",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "TechnologyDemonstration",
+    "filePath": "TechnologyDemonstration.ts",
+    "cost": 5,
+    "cardType": "EVENT",
+    "name": "TECHNOLOGY_DEMONSTRATION",
+    "tags": [
+      "SCIENCE",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "TectonicStressPower",
+    "filePath": "TectonicStressPower.ts",
+    "cost": 18,
+    "cardType": "AUTOMATED",
+    "name": "TECTONIC_STRESS_POWER",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "TerraformingGanymede",
+    "filePath": "TerraformingGanymede.ts",
+    "cost": 33,
+    "cardType": "AUTOMATED",
+    "name": "TERRAFORMING_GANYMEDE",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "TitaniumMine",
+    "filePath": "TitaniumMine.ts",
+    "cost": 7,
+    "cardType": "AUTOMATED",
+    "name": "TITANIUM_MINE",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "TollStation",
+    "filePath": "TollStation.ts",
+    "cost": 12,
+    "cardType": "AUTOMATED",
+    "name": "TOLL_STATION",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "TowingAComet",
+    "filePath": "TowingAComet.ts",
+    "cost": 23,
+    "cardType": "EVENT",
+    "name": "TOWING_A_COMET",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "TransNeptuneProbe",
+    "filePath": "TransNeptuneProbe.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "TRANS_NEPTUNE_PROBE",
+    "tags": [
+      "SCIENCE",
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Trees",
+    "filePath": "Trees.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "TREES",
+    "tags": [
+      "PLANT"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "TropicalResort",
+    "filePath": "TropicalResort.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "TROPICAL_RESORT",
+    "tags": [
+      "STEEL"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "TundraFarming",
+    "filePath": "TundraFarming.ts",
+    "cost": 16,
+    "cardType": "AUTOMATED",
+    "name": "TUNDRA_FARMING",
+    "tags": [
+      "PLANT"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "UndergroundCity",
+    "filePath": "UndergroundCity.ts",
+    "cost": 18,
+    "cardType": "AUTOMATED",
+    "name": "UNDERGROUND_CITY",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "UndergroundDetonations",
+    "filePath": "UndergroundDetonations.ts",
+    "cost": 6,
+    "cardType": "ACTIVE",
+    "name": "UNDERGROUND_DETONATIONS",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "UrbanizedArea",
+    "filePath": "UrbanizedArea.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "URBANIZED_AREA",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "VestaShipyard",
+    "filePath": "VestaShipyard.ts",
+    "cost": 15,
+    "cardType": "AUTOMATED",
+    "name": "VESTA_SHIPYARD",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "ViralEnhancers",
+    "filePath": "ViralEnhancers.ts",
+    "cost": 9,
+    "cardType": "ACTIVE",
+    "name": "VIRAL_ENHANCERS",
+    "tags": [
+      "SCIENCE",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "Virus",
+    "filePath": "Virus.ts",
+    "cost": 1,
+    "cardType": "EVENT",
+    "name": "VIRUS",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "WaterImportFromEuropa",
+    "filePath": "WaterImportFromEuropa.ts",
+    "cost": 25,
+    "cardType": "ACTIVE",
+    "name": "WATER_IMPORT_FROM_EUROPA",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "WaterSplittingPlant",
+    "filePath": "WaterSplittingPlant.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "WATER_SPLITTING_PLANT",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "WavePower",
+    "filePath": "WavePower.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "WAVE_POWER",
+    "tags": [
+      "ENERGY"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Windmills",
+    "filePath": "Windmills.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "WINDMILLS",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Worms",
+    "filePath": "Worms.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "WORMS",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "Zeppelins",
+    "filePath": "Zeppelins.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "ZEPPELINS",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "AirRaid",
+    "filePath": "AirRaid.ts",
+    "cost": 0,
+    "cardType": "EVENT",
+    "name": "AIR_RAID",
+    "tags": []
+  },
+  {
+    "className": "Airliners",
+    "filePath": "Airliners.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "AIRLINERS",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Aridor",
+    "filePath": "Aridor.ts",
+    "name": "ARIDOR",
+    "tags": []
+  },
+  {
+    "className": "Arklight",
+    "filePath": "Arklight.ts",
+    "name": "ARKLIGHT",
+    "tags": [
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "AtmoCollectors",
+    "filePath": "AtmoCollectors.ts",
+    "cost": 15,
+    "cardType": "ACTIVE",
+    "name": "ATMO_COLLECTORS",
+    "tags": []
+  },
+  {
+    "className": "CommunityServices",
+    "filePath": "CommunityServices.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "COMMUNITY_SERVICES",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Conscription",
+    "filePath": "Conscription.ts",
+    "cost": 5,
+    "cardType": "EVENT",
+    "name": "CONSCRIPTION",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "CoronaExtractor",
+    "filePath": "CoronaExtractor.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "CORONA_EXTRACTOR",
+    "tags": [
+      "SPACE",
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "CryoSleep",
+    "filePath": "CryoSleep.ts",
+    "cost": 10,
+    "cardType": "ACTIVE",
+    "name": "CRYO_SLEEP",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "EarthElevator",
+    "filePath": "EarthElevator.ts",
+    "cost": 43,
+    "cardType": "AUTOMATED",
+    "name": "EARTH_ELEVATOR",
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ],
+    "victoryPoints": 4
+  },
+  {
+    "className": "EcologyResearch",
+    "filePath": "EcologyResearch.ts",
+    "cost": 21,
+    "cardType": "AUTOMATED",
+    "name": "ECOLOGY_RESEARCH",
+    "tags": [
+      "SCIENCE",
+      "PLANT",
+      "ANIMAL",
+      "MICROBES"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "FloaterLeasing",
+    "filePath": "FloaterLeasing.ts",
+    "cost": 3,
+    "cardType": "AUTOMATED",
+    "name": "FLOATER_LEASING",
+    "tags": []
+  },
+  {
+    "className": "FloaterPrototypes",
+    "filePath": "FloaterPrototypes.ts",
+    "cost": 2,
+    "cardType": "EVENT",
+    "name": "FLOATER_PROTOTYPES",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "FloaterTechnology",
+    "filePath": "FloaterTechnology.ts",
+    "cost": 7,
+    "cardType": "ACTIVE",
+    "name": "FLOATER_TECHNOLOGY",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "GalileanWaystation",
+    "filePath": "GalileanWaystation.ts",
+    "cost": 15,
+    "cardType": "AUTOMATED",
+    "name": "GALILEAN_WAYSTATION",
+    "tags": [
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "HeavyTaxation",
+    "filePath": "HeavyTaxation.ts",
+    "cost": 3,
+    "cardType": "AUTOMATED",
+    "name": "HEAVY_TAXATION",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "IceMoonColony",
+    "filePath": "IceMoonColony.ts",
+    "cost": 23,
+    "cardType": "AUTOMATED",
+    "name": "ICE_MOON_COLONY",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "ImpactorSwarm",
+    "filePath": "ImpactorSwarm.ts",
+    "cost": 11,
+    "cardType": "EVENT",
+    "name": "IMPACTOR_SWARM",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "InterplanetaryColonyShip",
+    "filePath": "InterplanetaryColonyShip.ts",
+    "cost": 12,
+    "cardType": "EVENT",
+    "name": "INTERPLANETARY_COLONY_SHIP",
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ]
+  },
+  {
+    "className": "JovianLanterns",
+    "filePath": "JovianLanterns.ts",
+    "cost": 20,
+    "cardType": "ACTIVE",
+    "name": "JOVIAN_LANTERNS",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "JupiterFloatingStation",
+    "filePath": "JupiterFloatingStation.ts",
+    "cost": 9,
+    "cardType": "ACTIVE",
+    "name": "JUPITER_FLOATING_STATION",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "LunaGovernor",
+    "filePath": "LunaGovernor.ts",
+    "cost": 4,
+    "cardType": "AUTOMATED",
+    "name": "LUNA_GOVERNOR",
+    "tags": [
+      "EARTH",
+      "EARTH"
+    ]
+  },
+  {
+    "className": "LunarExports",
+    "filePath": "LunarExports.ts",
+    "cost": 19,
+    "cardType": "AUTOMATED",
+    "name": "LUNAR_EXPORTS",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "LunarMining",
+    "filePath": "LunarMining.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "LUNAR_MINING",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "MarketManipulation",
+    "filePath": "MarketManipulation.ts",
+    "cost": 1,
+    "cardType": "EVENT",
+    "name": "MARKET_MANIPULATION",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "MartianZoo",
+    "filePath": "MartianZoo.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "MARTIAN_ZOO",
+    "tags": [
+      "ANIMAL",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MiningColony",
+    "filePath": "MiningColony.ts",
+    "cost": 20,
+    "cardType": "AUTOMATED",
+    "name": "MINING_COLONY",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "MinorityRefuge",
+    "filePath": "MinorityRefuge.ts",
+    "cost": 5,
+    "cardType": "AUTOMATED",
+    "name": "MINORITY_REFUGE",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "NitrogenFromTitan",
+    "filePath": "NitrogenFromTitan.ts",
+    "cost": 25,
+    "cardType": "AUTOMATED",
+    "name": "NITROGEN_FROM_TITAN",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "PioneerSettlement",
+    "filePath": "PioneerSettlement.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "PIONEER_SETTLEMENT",
+    "tags": [
+      "SPACE"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "Polyphemos",
+    "filePath": "Polyphemos.ts",
+    "name": "POLYPHEMOS",
+    "tags": []
+  },
+  {
+    "className": "Poseidon",
+    "filePath": "Poseidon.ts",
+    "name": "POSEIDON",
+    "tags": []
+  },
+  {
+    "className": "ProductiveOutpost",
+    "filePath": "ProductiveOutpost.ts",
+    "cost": 0,
+    "cardType": "AUTOMATED",
+    "name": "PRODUCTIVE_OUTPOST",
+    "tags": []
+  },
+  {
+    "className": "QuantumCommunications",
+    "filePath": "QuantumCommunications.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "QUANTUM_COMMUNICATIONS",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "RedSpotObservatory",
+    "filePath": "RedSpotObservatory.ts",
+    "cost": 17,
+    "cardType": "ACTIVE",
+    "name": "RED_SPOT_OBSERVATORY",
+    "tags": [
+      "JOVIAN",
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "RefugeeCamps",
+    "filePath": "RefugeeCamps.ts",
+    "cost": 10,
+    "cardType": "ACTIVE",
+    "name": "REFUGEE_CAMP",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "ResearchColony",
+    "filePath": "ResearchColony.ts",
+    "cost": 20,
+    "cardType": "AUTOMATED",
+    "name": "RESEARCH_COLONY",
+    "tags": [
+      "SPACE",
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "RimFreighters",
+    "filePath": "RimFreighters.ts",
+    "cost": 4,
+    "cardType": "ACTIVE",
+    "name": "RIM_FREIGHTERS",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SkyDocks",
+    "filePath": "SkyDocks.ts",
+    "cost": 18,
+    "cardType": "ACTIVE",
+    "name": "SKY_DOCKS",
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "SolarProbe",
+    "filePath": "SolarProbe.ts",
+    "cost": 9,
+    "cardType": "EVENT",
+    "name": "SOLAR_PROBE",
+    "tags": [
+      "SPACE",
+      "SCIENCE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "SolarReflectors",
+    "filePath": "SolarReflectors.ts",
+    "cost": 23,
+    "cardType": "AUTOMATED",
+    "name": "SOLAR_REFLECTORS",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SpacePort",
+    "filePath": "SpacePort.ts",
+    "cost": 22,
+    "cardType": "AUTOMATED",
+    "name": "SPACE_PORT",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "SpacePortColony",
+    "filePath": "SpacePortColony.ts",
+    "cost": 27,
+    "cardType": "AUTOMATED",
+    "name": "SPACE_PORT_COLONY",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SpinoffDepartment",
+    "filePath": "SpinoffDepartment.ts",
+    "cost": 10,
+    "cardType": "ACTIVE",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "StormCraftIncorporated",
+    "filePath": "StormCraftIncorporated.ts",
+    "name": "STORMCRAFT_INCORPORATED",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "SubZeroSaltFish",
+    "filePath": "SubZeroSaltFish.ts",
+    "cost": 5,
+    "cardType": "ACTIVE",
+    "name": "SUBZERO_SALT_FISH",
+    "tags": [
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "TitanAirScrapping",
+    "filePath": "TitanAirScrapping.ts",
+    "cost": 21,
+    "cardType": "ACTIVE",
+    "name": "TITAN_AIRSCRAPPING",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "TitanFloatingLaunchPad",
+    "filePath": "TitanFloatingLaunchPad.ts",
+    "cost": 18,
+    "cardType": "ACTIVE",
+    "name": "TITAN_FLOATER_LAUNCHPAD",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "TitanShuttles",
+    "filePath": "TitanShuttles.ts",
+    "cost": 23,
+    "cardType": "ACTIVE",
+    "name": "TITAN_SHUTTLES",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "TradeEnvoys",
+    "filePath": "TradeEnvoys.ts",
+    "cost": 6,
+    "cardType": "ACTIVE",
+    "name": "TRADE_ENVOYS",
+    "tags": []
+  },
+  {
+    "className": "TradingColony",
+    "filePath": "TradingColony.ts",
+    "cost": 18,
+    "cardType": "ACTIVE",
+    "name": "TRADING_COLONY",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "UrbanDecomposers",
+    "filePath": "UrbanDecomposers.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "URBAN_DECOMPOSERS",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "WarpDrive",
+    "filePath": "WarpDrive.ts",
+    "cost": 14,
+    "cardType": "AUTOMATED",
+    "name": "WARP_DRIVE",
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "BeginnerCorporation",
+    "filePath": "BeginnerCorporation.ts",
+    "name": "BEGINNER_CORPORATION",
+    "tags": []
+  },
+  {
+    "className": "CrediCor",
+    "filePath": "CrediCor.ts",
+    "name": "CREDICOR",
+    "tags": []
+  },
+  {
+    "className": "EcoLine",
+    "filePath": "EcoLine.ts",
+    "name": "ECOLINE",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "Helion",
+    "filePath": "Helion.ts",
+    "name": "HELION",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "InterplanetaryCinematics",
+    "filePath": "InterplanetaryCinematics.ts",
+    "name": "INTERPLANETARY_CINEMATICS",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Inventrix",
+    "filePath": "Inventrix.ts",
+    "name": "INVENTRIX",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "MiningGuild",
+    "filePath": "MiningGuild.ts",
+    "name": "MINING_GUILD",
+    "tags": [
+      "STEEL",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "PhoboLog",
+    "filePath": "PhoboLog.ts",
+    "name": "PHOBOLOG",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SaturnSystems",
+    "filePath": "SaturnSystems.ts",
+    "name": "SATURN_SYSTEMS",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "Teractor",
+    "filePath": "Teractor.ts",
+    "name": "TERACTOR",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "TharsisRepublic",
+    "filePath": "TharsisRepublic.ts",
+    "name": "THARSIS_REPUBLIC",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Thorgate",
+    "filePath": "Thorgate.ts",
+    "name": "THORGATE",
+    "tags": [
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "UnitedNationsMarsInitiative",
+    "filePath": "UnitedNationsMarsInitiative.ts",
+    "name": "UNITED_NATIONS_MARS_INITIATIVE",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "AcquiredSpaceAgency",
+    "filePath": "AcquiredSpaceAgency.ts",
+    "name": "ACQUIRED_SPACE_AGENCY",
+    "tags": []
+  },
+  {
+    "className": "AlliedBanks",
+    "filePath": "AlliedBanks.ts",
+    "name": "ALLIED_BANKS",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "AquiferTurbines",
+    "filePath": "AquiferTurbines.ts",
+    "name": "AQUIFER_TURBINES",
+    "tags": [
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "Biofuels",
+    "filePath": "Biofuels.ts",
+    "name": "BIOFUELS",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "Biolab",
+    "filePath": "Biolab.ts",
+    "name": "BIOLAB",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "BiosphereSupport",
+    "filePath": "BiosphereSupport.ts",
+    "name": "BIOSPHERE_SUPPORT",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "BusinessEmpire",
+    "filePath": "BusinessEmpire.ts",
+    "name": "BUSINESS_EMPIRE",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "CheungShingMARS",
+    "filePath": "CheungShingMARS.ts",
+    "name": "CHEUNG_SHING_MARS",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "DomeFarming",
+    "filePath": "DomeFarming.ts",
+    "name": "DOME_FARMING",
+    "tags": [
+      "PLANT",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Donation",
+    "filePath": "Donation.ts",
+    "name": "DONATION",
+    "tags": []
+  },
+  {
+    "className": "EarlySettlement",
+    "filePath": "EarlySettlement.ts",
+    "name": "EARLY_SETTLEMENT",
+    "tags": [
+      "STEEL",
+      "CITY"
+    ]
+  },
+  {
+    "className": "EccentricSponsor",
+    "filePath": "EccentricSponsor.ts",
+    "name": "ECCENTRIC_SPONSOR",
+    "tags": []
+  },
+  {
+    "className": "EcologyExperts",
+    "filePath": "EcologyExperts.ts",
+    "name": "ECOLOGY_EXPERTS",
+    "tags": [
+      "PLANT",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "ExperimentalForest",
+    "filePath": "ExperimentalForest.ts",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "GalileanMining",
+    "filePath": "GalileanMining.ts",
+    "name": "GALILEAN_MINING",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "GreatAquifer",
+    "filePath": "GreatAquifer.ts",
+    "name": "GREAT_AQUIFER",
+    "tags": []
+  },
+  {
+    "className": "HousePrinting",
+    "filePath": "HousePrinting.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "HOUSE_PRINTING",
+    "tags": [
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "HugeAsteroid",
+    "filePath": "HugeAsteroid.ts",
+    "name": "HUGE_ASTEROID",
+    "tags": []
+  },
+  {
+    "className": "IoResearchOutpost",
+    "filePath": "IoResearchOutpost.ts",
+    "name": "IO_RESEARCH_OUTPOST",
+    "tags": [
+      "JOVIAN",
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "LavaTubeSettlement",
+    "filePath": "LavaTubeSettlement.ts",
+    "cost": 15,
+    "cardType": "AUTOMATED",
+    "name": "LAVA_TUBE_SETTLEMENT",
+    "tags": [
+      "STEEL",
+      "CITY"
+    ]
+  },
+  {
+    "className": "Loan",
+    "filePath": "Loan.ts",
+    "name": "LOAN",
+    "tags": []
+  },
+  {
+    "className": "MartianIndustries",
+    "filePath": "MartianIndustries.ts",
+    "name": "MARTIAN_INDUSTRIES",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MartianSurvey",
+    "filePath": "MartianSurvey.ts",
+    "cost": 9,
+    "cardType": "EVENT",
+    "name": "MARTIAN_SURVEY",
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "MetalRichAsteroid",
+    "filePath": "MetalRichAsteroid.ts",
+    "name": "METAL_RICH_ASTEROID",
+    "tags": []
+  },
+  {
+    "className": "MetalsCompany",
+    "filePath": "MetalsCompany.ts",
+    "name": "METALS_COMPANY",
+    "tags": []
+  },
+  {
+    "className": "MiningOperations",
+    "filePath": "MiningOperations.ts",
+    "name": "MINING_OPERATIONS",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Mohole",
+    "filePath": "Mohole.ts",
+    "name": "MOHOLE",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MoholeExcavation",
+    "filePath": "MoholeExcavation.ts",
+    "name": "MOHOLE_EXCAVATION",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "NitrogenDelivery",
+    "filePath": "NitrogenDelivery.ts",
+    "name": "NITROGEN_SHIPMENT",
+    "tags": []
+  },
+  {
+    "className": "OrbitalConstructionYard",
+    "filePath": "OrbitalConstructionYard.ts",
+    "name": "ORBITAL_CONSTRUCTION_YARD",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "PointLuna",
+    "filePath": "PointLuna.ts",
+    "name": "POINT_LUNA",
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ]
+  },
+  {
+    "className": "PolarIndustries",
+    "filePath": "PolarIndustries.ts",
+    "name": "POLAR_INDUSTRIES",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "PowerGeneration",
+    "filePath": "PowerGeneration.ts",
+    "name": "POWER_GENERATION",
+    "tags": [
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "Psychrophiles",
+    "filePath": "Psychrophiles.ts",
+    "cost": 2,
+    "cardType": "ACTIVE",
+    "name": "PSYCHROPHILES",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "ResearchCoordination",
+    "filePath": "ResearchCoordination.ts",
+    "cost": 4,
+    "cardType": "AUTOMATED",
+    "name": "RESEARCH_COORDINATION",
+    "tags": [
+      "WILDCARD"
+    ]
+  },
+  {
+    "className": "ResearchNetwork",
+    "filePath": "ResearchNetwork.ts",
+    "name": "RESEARCH_NETWORK",
+    "tags": [
+      "WILDCARD"
+    ]
+  },
+  {
+    "className": "RobinsonIndustries",
+    "filePath": "RobinsonIndustries.ts",
+    "name": "ROBINSON_INDUSTRIES",
+    "tags": []
+  },
+  {
+    "className": "SFMemorial",
+    "filePath": "SFMemorial.ts",
+    "cost": 7,
+    "cardType": "AUTOMATED",
+    "name": "SF_MEMORIAL",
+    "tags": [
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "SelfSufficientSettlement",
+    "filePath": "SelfSufficientSettlement.ts",
+    "name": "SELF_SUFFICIENT_SETTLEMENT",
+    "tags": [
+      "STEEL",
+      "CITY"
+    ]
+  },
+  {
+    "className": "SmeltingPlant",
+    "filePath": "SmeltingPlant.ts",
+    "name": "SMELTING_PLANT",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "SocietySupport",
+    "filePath": "SocietySupport.ts",
+    "name": "SOCIETY_SUPPORT",
+    "tags": []
+  },
+  {
+    "className": "SpaceHotels",
+    "filePath": "SpaceHotels.ts",
+    "cost": 12,
+    "cardType": "AUTOMATED",
+    "name": "SPACE_HOTELS",
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ]
+  },
+  {
+    "className": "Supplier",
+    "filePath": "Supplier.ts",
+    "name": "SUPPLIER",
+    "tags": [
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "SupplyDrop",
+    "filePath": "SupplyDrop.ts",
+    "name": "SUPPLY_DROP",
+    "tags": []
+  },
+  {
+    "className": "UNMIContractor",
+    "filePath": "UNMIContractor.ts",
+    "name": "UNMI_CONTRACTOR",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "ValleyTrust",
+    "filePath": "ValleyTrust.ts",
+    "name": "VALLEY_TRUST",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "Vitor",
+    "filePath": "Vitor.ts",
+    "name": "VITOR",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "ArcadianCommunities",
+    "filePath": "ArcadianCommunities.ts",
+    "name": "ARCADIAN_COMMUNITIES",
+    "tags": []
+  },
+  {
+    "className": "Factorum",
+    "filePath": "Factorum.ts",
+    "name": "FACTORUM",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MonsInsurance",
+    "filePath": "MonsInsurance.ts",
+    "name": "MONS_INSURANCE",
+    "tags": []
+  },
+  {
+    "className": "Philares",
+    "filePath": "Philares.ts",
+    "name": "PHILARES",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Recyclon",
+    "filePath": "Recyclon.ts",
+    "name": "RECYCLON",
+    "tags": [
+      "MICROBES",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Splice",
+    "filePath": "Splice.ts",
+    "name": "SPLICE",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "LakefrontResorts",
+    "filePath": "LakefrontResorts.ts",
+    "name": "LAKEFRONT_RESORTS",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Pristar",
+    "filePath": "Pristar.ts",
+    "name": "PRISTAR",
+    "tags": []
+  },
+  {
+    "className": "TerralabsResearch",
+    "filePath": "TerralabsResearch.ts",
+    "name": "TERRALABS_RESEARCH",
+    "tags": [
+      "SCIENCE",
+      "EARTH"
+    ]
+  },
+  {
+    "className": "UtopiaInvest",
+    "filePath": "UtopiaInvest.ts",
+    "name": "UTOPIA_INVEST",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "AerialMappers",
+    "filePath": "AerialMappers.ts",
+    "cost": 11,
+    "cardType": "ACTIVE",
+    "name": "AERIAL_MAPPERS",
+    "tags": [
+      "VENUS"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "AerosportTournament",
+    "filePath": "AerosportTournament.ts",
+    "cost": 7,
+    "cardType": "EVENT",
+    "name": "AEROSPORT_TOURNAMENT",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "AirScrappingExpedition",
+    "filePath": "AirScrappingExpedition.ts",
+    "cost": 13,
+    "cardType": "EVENT",
+    "name": "AIR_SCRAPPING_EXPEDITION",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "Aphrodite",
+    "filePath": "Aphrodite.ts",
+    "name": "APHRODITE",
+    "tags": [
+      "PLANT",
+      "VENUS"
+    ]
+  },
+  {
+    "className": "AtalantaPlanitiaLab",
+    "filePath": "AtalantaPlanitiaLab.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "ATALANTA_PLANITIA_LAB",
+    "tags": [
+      "VENUS",
+      "SCIENCE"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "Atmoscoop",
+    "filePath": "Atmoscoop.ts",
+    "cost": 22,
+    "cardType": "EVENT",
+    "name": "ATMOSCOOP",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Celestic",
+    "filePath": "Celestic.ts",
+    "name": "CELESTIC",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "CometForVenus",
+    "filePath": "CometForVenus.ts",
+    "cost": 11,
+    "cardType": "EVENT",
+    "name": "COMET_FOR_VENUS",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "CorroderSuits",
+    "filePath": "CorroderSuits.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "CORRODER_SUITS",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "DawnCity",
+    "filePath": "DawnCity.ts",
+    "cost": 15,
+    "cardType": "AUTOMATED",
+    "name": "DAWN_CITY",
+    "tags": [
+      "CITY",
+      "SPACE"
+    ],
+    "victoryPoints": 3
+  },
+  {
+    "className": "DeuteriumExport",
+    "filePath": "DeuteriumExport.ts",
+    "cost": 11,
+    "cardType": "ACTIVE",
+    "name": "DEUTERIUM_EXPORT",
+    "tags": [
+      "SPACE",
+      "VENUS",
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "Dirigibles",
+    "filePath": "Dirigibles.ts",
+    "cost": 11,
+    "cardType": "ACTIVE",
+    "name": "DIRIGIBLES",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "ExtractorBalloons",
+    "filePath": "ExtractorBalloons.ts",
+    "cost": 21,
+    "cardType": "ACTIVE",
+    "name": "EXTRACTOR_BALLOONS",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "Extremophiles",
+    "filePath": "Extremophiles.ts",
+    "cost": 3,
+    "cardType": "ACTIVE",
+    "name": "EXTREMOPHILES",
+    "tags": [
+      "VENUS",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "FloatingHabs",
+    "filePath": "FloatingHabs.ts",
+    "cost": 5,
+    "cardType": "ACTIVE",
+    "name": "FLOATING_HABS",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "ForcedPrecipitation",
+    "filePath": "ForcedPrecipitation.ts",
+    "cost": 8,
+    "cardType": "ACTIVE",
+    "name": "FORCED_PRECIPITATION",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "FreyjaBiodomes",
+    "filePath": "FreyjaBiodomes.ts",
+    "cost": 14,
+    "cardType": "AUTOMATED",
+    "name": "FREYJA_BIODOMES",
+    "tags": [
+      "PLANT",
+      "VENUS"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "GHGImportFromVenus",
+    "filePath": "GHGImportFromVenus.ts",
+    "cost": 23,
+    "cardType": "EVENT",
+    "name": "GHG_IMPORT_FROM_VENUS",
+    "tags": [
+      "SPACE",
+      "VENUS"
+    ]
+  },
+  {
+    "className": "GiantSolarShade",
+    "filePath": "GiantSolarShade.ts",
+    "cost": 27,
+    "cardType": "AUTOMATED",
+    "name": "GIANT_SOLAR_SHADE",
+    "tags": [
+      "SPACE",
+      "VENUS"
+    ]
+  },
+  {
+    "className": "Gyropolis",
+    "filePath": "Gyropolis.ts",
+    "cost": 20,
+    "cardType": "AUTOMATED",
+    "name": "GYROPOLIS",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "HydrogenToVenus",
+    "filePath": "HydrogenToVenus.ts",
+    "cost": 11,
+    "cardType": "EVENT",
+    "name": "HYDROGEN_TO_VENUS",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "IoSulphurResearch",
+    "filePath": "IoSulphurResearch.ts",
+    "cost": 17,
+    "cardType": "AUTOMATED",
+    "name": "IO_SULPHUR_RESEARCH",
+    "tags": [
+      "SCIENCE",
+      "JOVIAN"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "IshtarMining",
+    "filePath": "IshtarMining.ts",
+    "cost": 5,
+    "cardType": "AUTOMATED",
+    "name": "ISHTAR_MINING",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "JetStreamMicroscrappers",
+    "filePath": "JetStreamMicroscrappers.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "JET_STREAM_MICROSCRAPPERS",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "LocalShading",
+    "filePath": "LocalShading.ts",
+    "cost": 4,
+    "cardType": "ACTIVE",
+    "name": "LOCAL_SHADING",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "LunaMetropolis",
+    "filePath": "LunaMetropolis.ts",
+    "cost": 21,
+    "cardType": "AUTOMATED",
+    "name": "LUNA_METROPOLIS",
+    "tags": [
+      "CITY",
+      "SPACE",
+      "EARTH"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "LuxuryFoods",
+    "filePath": "LuxuryFoods.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "LUXURY_FOODS",
+    "tags": [],
+    "victoryPoints": 2
+  },
+  {
+    "className": "Manutech",
+    "filePath": "Manutech.ts",
+    "name": "MANUTECH",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MaxwellBase",
+    "filePath": "MaxwellBase.ts",
+    "cost": 18,
+    "cardType": "ACTIVE",
+    "name": "MAXWELL_BASE",
+    "tags": [
+      "CITY",
+      "VENUS"
+    ],
+    "victoryPoints": 3
+  },
+  {
+    "className": "MiningQuota",
+    "filePath": "MiningQuota.ts",
+    "cost": 5,
+    "cardType": "AUTOMATED",
+    "name": "MINING_QUOTA",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MorningStarInc",
+    "filePath": "MorningStarInc.ts",
+    "name": "MORNING_STAR_INC",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "NeutralizerFactory",
+    "filePath": "NeutralizerFactory.ts",
+    "cost": 7,
+    "cardType": "AUTOMATED",
+    "name": "NEUTRALIZER_FACTORY",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "Omnicourt",
+    "filePath": "Omnicourt.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "OMNICOURT",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "OrbitalReflectors",
+    "filePath": "OrbitalReflectors.ts",
+    "cost": 26,
+    "cardType": "AUTOMATED",
+    "name": "ORBITAL_REFLECTORS",
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "RotatorImpacts",
+    "filePath": "RotatorImpacts.ts",
+    "cost": 6,
+    "cardType": "ACTIVE",
+    "name": "ROTATOR_IMPACTS",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SisterPlanetSupport",
+    "filePath": "SisterPlanetSupport.ts",
+    "cost": 7,
+    "cardType": "AUTOMATED",
+    "name": "SISTER_PLANET_SUPPORT",
+    "tags": [
+      "VENUS",
+      "EARTH"
+    ]
+  },
+  {
+    "className": "Solarnet",
+    "filePath": "Solarnet.ts",
+    "cost": 7,
+    "cardType": "AUTOMATED",
+    "name": "SOLARNET",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "SpinInducingAsteroid",
+    "filePath": "SpinInducingAsteroid.ts",
+    "cost": 16,
+    "cardType": "EVENT",
+    "name": "SPIN_INDUCING_ASTEROID",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SponsoredAcademies",
+    "filePath": "SponsoredAcademies.ts",
+    "cost": 9,
+    "cardType": "AUTOMATED",
+    "name": "SPONSORED_ACADEMIES",
+    "tags": [
+      "EARTH",
+      "SCIENCE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Stratopolis",
+    "filePath": "Stratopolis.ts",
+    "cost": 22,
+    "cardType": "ACTIVE",
+    "name": "STRATOPOLIS",
+    "tags": [
+      "CITY",
+      "VENUS"
+    ]
+  },
+  {
+    "className": "StratosphericBirds",
+    "filePath": "StratosphericBirds.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "STRATOSPHERIC_BIRDS",
+    "tags": [
+      "VENUS",
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "SulphurEatingBacteria",
+    "filePath": "SulphurEatingBacteria.ts",
+    "cost": 6,
+    "cardType": "ACTIVE",
+    "name": "SULPHUR_EATING_BACTERIA",
+    "tags": [
+      "VENUS",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "SulphurExports",
+    "filePath": "SulphurExports.ts",
+    "cost": 21,
+    "cardType": "AUTOMATED",
+    "name": "SULPHUR_EXPORTS",
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "TerraformingContract",
+    "filePath": "TerraformingContract.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "TERRAFORMING_CONTRACT",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "Thermophiles",
+    "filePath": "Thermophiles.ts",
+    "cost": 9,
+    "cardType": "ACTIVE",
+    "name": "THERMOPHILES",
+    "tags": [
+      "VENUS",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "VenusGovernor",
+    "filePath": "VenusGovernor.ts",
+    "cost": 4,
+    "cardType": "AUTOMATED",
+    "name": "VENUS_GOVERNOR",
+    "tags": [
+      "VENUS",
+      "VENUS"
+    ]
+  },
+  {
+    "className": "VenusMagnetizer",
+    "filePath": "VenusMagnetizer.ts",
+    "cost": 7,
+    "cardType": "ACTIVE",
+    "name": "VENUS_MAGNETIZER",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "VenusSoils",
+    "filePath": "VenusSoils.ts",
+    "cost": 20,
+    "cardType": "AUTOMATED",
+    "name": "VENUS_SOILS",
+    "tags": [
+      "VENUS",
+      "PLANT"
+    ]
+  },
+  {
+    "className": "VenusWaystation",
+    "filePath": "VenusWaystation.ts",
+    "cost": 9,
+    "cardType": "ACTIVE",
+    "name": "VENUS_WAYSTATION",
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "VenusianAnimals",
+    "filePath": "VenusianAnimals.ts",
+    "cost": 15,
+    "cardType": "ACTIVE",
+    "name": "VENUSIAN_ANIMALS",
+    "tags": [
+      "VENUS",
+      "ANIMAL",
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "VenusianInsects",
+    "filePath": "VenusianInsects.ts",
+    "cost": 5,
+    "cardType": "ACTIVE",
+    "name": "VENUSIAN_INSECTS",
+    "tags": [
+      "VENUS",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "VenusianPlants",
+    "filePath": "VenusianPlants.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "VENUSIAN_PLANTS",
+    "tags": [
+      "VENUS",
+      "PLANT"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Viron",
+    "filePath": "Viron.ts",
+    "name": "VIRON",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "WaterToVenus",
+    "filePath": "WaterToVenus.ts",
+    "cost": 9,
+    "cardType": "EVENT",
+    "name": "WATER_TO_VENUS",
+    "tags": [
+      "SPACE"
+    ]
+  }
+]
