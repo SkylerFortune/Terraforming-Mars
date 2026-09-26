@@ -1,52 +1,54 @@
 import fs from 'fs';
 import path from 'path';
 
-// Recursively find all .ts files in a directory
-function getAllTsFiles(dirPath, fileList = []) {
-  const files = fs.readdirSync(dirPath);
+// Recursively find all .ts files and capture their subfolder (expansion)
+function getAllCardFiles(dirPath) {
+  const fileRecords = [];
 
-  files.forEach((file) => {
-    const fullPath = path.join(dirPath, file);
-    if (fs.statSync(fullPath).isDirectory()) {
-      getAllTsFiles(fullPath, fileList);
-    } else if (file.endsWith('.ts') && !file.endsWith('.d.ts')) {
-      fileList.push(fullPath);
-    }
-  });
+  function walk(currentDir) {
+    const files = fs.readdirSync(currentDir);
 
-  return fileList;
+    files.forEach((file) => {
+      const fullPath = path.join(currentDir, file);
+      const stat = fs.statSync(fullPath);
+
+      if (stat.isDirectory()) {
+        walk(fullPath);
+      } else if (file.endsWith('.ts') && !file.endsWith('.d.ts')) {
+        // Determine expansion from relative folder path
+        const relativeDir = path.relative(dirPath, currentDir);
+        // If the file is directly in the root cards folder, label it 'base'
+        const expansion = relativeDir ? relativeDir.split(path.sep)[0] : 'base';
+
+        fileRecords.push({ fullPath, expansion, fileName: file });
+      }
+    });
+  }
+
+  walk(dirPath);
+  return fileRecords;
 }
 
 // Extract card data from TypeScript source code using Regex
-function parseCardFile(code, fileName) {
-  // Extract Class Name
+function parseCardFile(code, fileName, expansion) {
   const classMatch = code.match(/export class (\w+)/);
   if (!classMatch) return null;
 
   const card = {
     className: classMatch[1],
+    expansion: expansion,
     filePath: fileName,
   };
 
-  // Extract cost: number = 9;
   const costMatch = code.match(/public cost:\s*number\s*=\s*(\d+);/);
-  if (costMatch) {
-    card.cost = Number(costMatch[1]);
-  }
+  if (costMatch) card.cost = Number(costMatch[1]);
 
-  // Extract cardType = CardType.EVENT;
   const typeMatch = code.match(/public cardType:\s*CardType\s*=\s*CardType\.(\w+);/);
-  if (typeMatch) {
-    card.cardType = typeMatch[1];
-  }
+  if (typeMatch) card.cardType = typeMatch[1];
 
-  // Extract name = CardName.WATER_TO_VENUS;
   const nameMatch = code.match(/public name:\s*CardName\s*=\s*CardName\.(\w+);/);
-  if (nameMatch) {
-    card.name = nameMatch[1];
-  }
+  if (nameMatch) card.name = nameMatch[1];
 
-  // Extract tags = [Tags.SPACE, Tags.SCIENCE];
   const tagsMatch = code.match(/public tags:\s*Array<Tags>\s*=\s*\[(.*?)\];/s);
   if (tagsMatch) {
     card.tags = tagsMatch[1]
@@ -57,40 +59,49 @@ function parseCardFile(code, fileName) {
     card.tags = [];
   }
 
-  // Extract return value from getVictoryPoints()
   const vpMatch = code.match(/getVictoryPoints\(\)\s*\{[\s\S]*?return\s*(\d+);/);
-  if (vpMatch) {
-    card.victoryPoints = Number(vpMatch[1]);
-  }
+  if (vpMatch) card.victoryPoints = Number(vpMatch[1]);
 
-  // Extract return value from getRequirementBonus()
   const bonusMatch = code.match(/getRequirementBonus\(\)\s*\{[\s\S]*?return\s*(\d+);/);
-  if (bonusMatch) {
-    card.requirementBonus = Number(bonusMatch[1]);
-  }
+  if (bonusMatch) card.requirementBonus = Number(bonusMatch[1]);
 
   return card;
 }
 
 // Execution
-const cardsDirectory = './ts/cards'; // Update to your cards path
-const filePaths = getAllTsFiles(cardsDirectory);
+const cardsDirectory = './ts/cards'; // Directory containing card subfolders
+const outputDirectory = './json_cards'; // Output directory for split JSON files
 
-console.log(`Found ${filePaths.length} card files. Parsing with pure JS...`);
+// Ensure output directory exists
+if (!fs.existsSync(outputDirectory)) {
+  fs.mkdirSync(outputDirectory, { recursive: true });
+}
 
-const allCards = [];
+const cardRecords = getAllCardFiles(cardsDirectory);
+console.log(`Found ${cardRecords.length} card files across subfolders. Parsing...`);
 
-filePaths.forEach((filePath) => {
+// Map to hold array of cards for each expansion
+const cardsByExpansion = {};
+
+cardRecords.forEach(({ fullPath, expansion, fileName }) => {
   try {
-    const code = fs.readFileSync(filePath, 'utf-8');
-    const cardData = parseCardFile(code, path.basename(filePath));
+    const code = fs.readFileSync(fullPath, 'utf-8');
+    const cardData = parseCardFile(code, fileName, expansion);
+
     if (cardData) {
-      allCards.push(cardData);
+      if (!cardsByExpansion[expansion]) {
+        cardsByExpansion[expansion] = [];
+      }
+      cardsByExpansion[expansion].push(cardData);
     }
   } catch (err) {
-    console.error(`Error reading ${filePath}:`, err);
+    console.error(`Error reading ${fullPath}:`, err);
   }
 });
 
-fs.writeFileSync('./assets/cards.json', JSON.stringify(allCards, null, 2));
-console.log(`Successfully converted ${allCards.length} cards to cards.json!`);
+// Save each expansion array into its own JSON file
+Object.entries(cardsByExpansion).forEach(([expansionName, cards]) => {
+  const outputPath = path.join(outputDirectory, `${expansionName}.json`);
+  fs.writeFileSync(outputPath, JSON.stringify(cards, null, 2));
+  console.log(`Saved ${cards.length} cards to ${outputPath}`);
+});

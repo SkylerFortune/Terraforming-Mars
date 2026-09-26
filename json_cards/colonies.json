@@ -1,0 +1,579 @@
+[
+  {
+    "className": "AirRaid",
+    "expansion": "colonies",
+    "filePath": "AirRaid.ts",
+    "cost": 0,
+    "cardType": "EVENT",
+    "name": "AIR_RAID",
+    "tags": []
+  },
+  {
+    "className": "Airliners",
+    "expansion": "colonies",
+    "filePath": "Airliners.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "AIRLINERS",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Aridor",
+    "expansion": "colonies",
+    "filePath": "Aridor.ts",
+    "name": "ARIDOR",
+    "tags": []
+  },
+  {
+    "className": "Arklight",
+    "expansion": "colonies",
+    "filePath": "Arklight.ts",
+    "name": "ARKLIGHT",
+    "tags": [
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "AtmoCollectors",
+    "expansion": "colonies",
+    "filePath": "AtmoCollectors.ts",
+    "cost": 15,
+    "cardType": "ACTIVE",
+    "name": "ATMO_COLLECTORS",
+    "tags": []
+  },
+  {
+    "className": "CommunityServices",
+    "expansion": "colonies",
+    "filePath": "CommunityServices.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "COMMUNITY_SERVICES",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Conscription",
+    "expansion": "colonies",
+    "filePath": "Conscription.ts",
+    "cost": 5,
+    "cardType": "EVENT",
+    "name": "CONSCRIPTION",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "CoronaExtractor",
+    "expansion": "colonies",
+    "filePath": "CoronaExtractor.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "CORONA_EXTRACTOR",
+    "tags": [
+      "SPACE",
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "CryoSleep",
+    "expansion": "colonies",
+    "filePath": "CryoSleep.ts",
+    "cost": 10,
+    "cardType": "ACTIVE",
+    "name": "CRYO_SLEEP",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "EarthElevator",
+    "expansion": "colonies",
+    "filePath": "EarthElevator.ts",
+    "cost": 43,
+    "cardType": "AUTOMATED",
+    "name": "EARTH_ELEVATOR",
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ],
+    "victoryPoints": 4
+  },
+  {
+    "className": "EcologyResearch",
+    "expansion": "colonies",
+    "filePath": "EcologyResearch.ts",
+    "cost": 21,
+    "cardType": "AUTOMATED",
+    "name": "ECOLOGY_RESEARCH",
+    "tags": [
+      "SCIENCE",
+      "PLANT",
+      "ANIMAL",
+      "MICROBES"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "FloaterLeasing",
+    "expansion": "colonies",
+    "filePath": "FloaterLeasing.ts",
+    "cost": 3,
+    "cardType": "AUTOMATED",
+    "name": "FLOATER_LEASING",
+    "tags": []
+  },
+  {
+    "className": "FloaterPrototypes",
+    "expansion": "colonies",
+    "filePath": "FloaterPrototypes.ts",
+    "cost": 2,
+    "cardType": "EVENT",
+    "name": "FLOATER_PROTOTYPES",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "FloaterTechnology",
+    "expansion": "colonies",
+    "filePath": "FloaterTechnology.ts",
+    "cost": 7,
+    "cardType": "ACTIVE",
+    "name": "FLOATER_TECHNOLOGY",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "GalileanWaystation",
+    "expansion": "colonies",
+    "filePath": "GalileanWaystation.ts",
+    "cost": 15,
+    "cardType": "AUTOMATED",
+    "name": "GALILEAN_WAYSTATION",
+    "tags": [
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "HeavyTaxation",
+    "expansion": "colonies",
+    "filePath": "HeavyTaxation.ts",
+    "cost": 3,
+    "cardType": "AUTOMATED",
+    "name": "HEAVY_TAXATION",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "IceMoonColony",
+    "expansion": "colonies",
+    "filePath": "IceMoonColony.ts",
+    "cost": 23,
+    "cardType": "AUTOMATED",
+    "name": "ICE_MOON_COLONY",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "ImpactorSwarm",
+    "expansion": "colonies",
+    "filePath": "ImpactorSwarm.ts",
+    "cost": 11,
+    "cardType": "EVENT",
+    "name": "IMPACTOR_SWARM",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "InterplanetaryColonyShip",
+    "expansion": "colonies",
+    "filePath": "InterplanetaryColonyShip.ts",
+    "cost": 12,
+    "cardType": "EVENT",
+    "name": "INTERPLANETARY_COLONY_SHIP",
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ]
+  },
+  {
+    "className": "JovianLanterns",
+    "expansion": "colonies",
+    "filePath": "JovianLanterns.ts",
+    "cost": 20,
+    "cardType": "ACTIVE",
+    "name": "JOVIAN_LANTERNS",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "JupiterFloatingStation",
+    "expansion": "colonies",
+    "filePath": "JupiterFloatingStation.ts",
+    "cost": 9,
+    "cardType": "ACTIVE",
+    "name": "JUPITER_FLOATING_STATION",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "LunaGovernor",
+    "expansion": "colonies",
+    "filePath": "LunaGovernor.ts",
+    "cost": 4,
+    "cardType": "AUTOMATED",
+    "name": "LUNA_GOVERNOR",
+    "tags": [
+      "EARTH",
+      "EARTH"
+    ]
+  },
+  {
+    "className": "LunarExports",
+    "expansion": "colonies",
+    "filePath": "LunarExports.ts",
+    "cost": 19,
+    "cardType": "AUTOMATED",
+    "name": "LUNAR_EXPORTS",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "LunarMining",
+    "expansion": "colonies",
+    "filePath": "LunarMining.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "LUNAR_MINING",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "MarketManipulation",
+    "expansion": "colonies",
+    "filePath": "MarketManipulation.ts",
+    "cost": 1,
+    "cardType": "EVENT",
+    "name": "MARKET_MANIPULATION",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "MartianZoo",
+    "expansion": "colonies",
+    "filePath": "MartianZoo.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "MARTIAN_ZOO",
+    "tags": [
+      "ANIMAL",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MiningColony",
+    "expansion": "colonies",
+    "filePath": "MiningColony.ts",
+    "cost": 20,
+    "cardType": "AUTOMATED",
+    "name": "MINING_COLONY",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "MinorityRefuge",
+    "expansion": "colonies",
+    "filePath": "MinorityRefuge.ts",
+    "cost": 5,
+    "cardType": "AUTOMATED",
+    "name": "MINORITY_REFUGE",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "NitrogenFromTitan",
+    "expansion": "colonies",
+    "filePath": "NitrogenFromTitan.ts",
+    "cost": 25,
+    "cardType": "AUTOMATED",
+    "name": "NITROGEN_FROM_TITAN",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "PioneerSettlement",
+    "expansion": "colonies",
+    "filePath": "PioneerSettlement.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "PIONEER_SETTLEMENT",
+    "tags": [
+      "SPACE"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "Polyphemos",
+    "expansion": "colonies",
+    "filePath": "Polyphemos.ts",
+    "name": "POLYPHEMOS",
+    "tags": []
+  },
+  {
+    "className": "Poseidon",
+    "expansion": "colonies",
+    "filePath": "Poseidon.ts",
+    "name": "POSEIDON",
+    "tags": []
+  },
+  {
+    "className": "ProductiveOutpost",
+    "expansion": "colonies",
+    "filePath": "ProductiveOutpost.ts",
+    "cost": 0,
+    "cardType": "AUTOMATED",
+    "name": "PRODUCTIVE_OUTPOST",
+    "tags": []
+  },
+  {
+    "className": "QuantumCommunications",
+    "expansion": "colonies",
+    "filePath": "QuantumCommunications.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "QUANTUM_COMMUNICATIONS",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "RedSpotObservatory",
+    "expansion": "colonies",
+    "filePath": "RedSpotObservatory.ts",
+    "cost": 17,
+    "cardType": "ACTIVE",
+    "name": "RED_SPOT_OBSERVATORY",
+    "tags": [
+      "JOVIAN",
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "RefugeeCamps",
+    "expansion": "colonies",
+    "filePath": "RefugeeCamps.ts",
+    "cost": 10,
+    "cardType": "ACTIVE",
+    "name": "REFUGEE_CAMP",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "ResearchColony",
+    "expansion": "colonies",
+    "filePath": "ResearchColony.ts",
+    "cost": 20,
+    "cardType": "AUTOMATED",
+    "name": "RESEARCH_COLONY",
+    "tags": [
+      "SPACE",
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "RimFreighters",
+    "expansion": "colonies",
+    "filePath": "RimFreighters.ts",
+    "cost": 4,
+    "cardType": "ACTIVE",
+    "name": "RIM_FREIGHTERS",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SkyDocks",
+    "expansion": "colonies",
+    "filePath": "SkyDocks.ts",
+    "cost": 18,
+    "cardType": "ACTIVE",
+    "name": "SKY_DOCKS",
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "SolarProbe",
+    "expansion": "colonies",
+    "filePath": "SolarProbe.ts",
+    "cost": 9,
+    "cardType": "EVENT",
+    "name": "SOLAR_PROBE",
+    "tags": [
+      "SPACE",
+      "SCIENCE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "SolarReflectors",
+    "expansion": "colonies",
+    "filePath": "SolarReflectors.ts",
+    "cost": 23,
+    "cardType": "AUTOMATED",
+    "name": "SOLAR_REFLECTORS",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SpacePort",
+    "expansion": "colonies",
+    "filePath": "SpacePort.ts",
+    "cost": 22,
+    "cardType": "AUTOMATED",
+    "name": "SPACE_PORT",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "SpacePortColony",
+    "expansion": "colonies",
+    "filePath": "SpacePortColony.ts",
+    "cost": 27,
+    "cardType": "AUTOMATED",
+    "name": "SPACE_PORT_COLONY",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SpinoffDepartment",
+    "expansion": "colonies",
+    "filePath": "SpinoffDepartment.ts",
+    "cost": 10,
+    "cardType": "ACTIVE",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "StormCraftIncorporated",
+    "expansion": "colonies",
+    "filePath": "StormCraftIncorporated.ts",
+    "name": "STORMCRAFT_INCORPORATED",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "SubZeroSaltFish",
+    "expansion": "colonies",
+    "filePath": "SubZeroSaltFish.ts",
+    "cost": 5,
+    "cardType": "ACTIVE",
+    "name": "SUBZERO_SALT_FISH",
+    "tags": [
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "TitanAirScrapping",
+    "expansion": "colonies",
+    "filePath": "TitanAirScrapping.ts",
+    "cost": 21,
+    "cardType": "ACTIVE",
+    "name": "TITAN_AIRSCRAPPING",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "TitanFloatingLaunchPad",
+    "expansion": "colonies",
+    "filePath": "TitanFloatingLaunchPad.ts",
+    "cost": 18,
+    "cardType": "ACTIVE",
+    "name": "TITAN_FLOATER_LAUNCHPAD",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "TitanShuttles",
+    "expansion": "colonies",
+    "filePath": "TitanShuttles.ts",
+    "cost": 23,
+    "cardType": "ACTIVE",
+    "name": "TITAN_SHUTTLES",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "TradeEnvoys",
+    "expansion": "colonies",
+    "filePath": "TradeEnvoys.ts",
+    "cost": 6,
+    "cardType": "ACTIVE",
+    "name": "TRADE_ENVOYS",
+    "tags": []
+  },
+  {
+    "className": "TradingColony",
+    "expansion": "colonies",
+    "filePath": "TradingColony.ts",
+    "cost": 18,
+    "cardType": "ACTIVE",
+    "name": "TRADING_COLONY",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "UrbanDecomposers",
+    "expansion": "colonies",
+    "filePath": "UrbanDecomposers.ts",
+    "cost": 6,
+    "cardType": "AUTOMATED",
+    "name": "URBAN_DECOMPOSERS",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "WarpDrive",
+    "expansion": "colonies",
+    "filePath": "WarpDrive.ts",
+    "cost": 14,
+    "cardType": "AUTOMATED",
+    "name": "WARP_DRIVE",
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 2
+  }
+]
