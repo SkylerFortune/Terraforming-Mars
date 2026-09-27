@@ -1,0 +1,425 @@
+[
+  {
+    "className": "AcquiredSpaceAgency",
+    "expansion": "prelude",
+    "filePath": "AcquiredSpaceAgency.ts",
+    "name": "ACQUIRED_SPACE_AGENCY",
+    "tags": []
+  },
+  {
+    "className": "AlliedBanks",
+    "expansion": "prelude",
+    "filePath": "AlliedBanks.ts",
+    "name": "ALLIED_BANKS",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "AquiferTurbines",
+    "expansion": "prelude",
+    "filePath": "AquiferTurbines.ts",
+    "name": "AQUIFER_TURBINES",
+    "tags": [
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "Biofuels",
+    "expansion": "prelude",
+    "filePath": "Biofuels.ts",
+    "name": "BIOFUELS",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "Biolab",
+    "expansion": "prelude",
+    "filePath": "Biolab.ts",
+    "name": "BIOLAB",
+    "tags": [
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "BiosphereSupport",
+    "expansion": "prelude",
+    "filePath": "BiosphereSupport.ts",
+    "name": "BIOSPHERE_SUPPORT",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "BusinessEmpire",
+    "expansion": "prelude",
+    "filePath": "BusinessEmpire.ts",
+    "name": "BUSINESS_EMPIRE",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "CheungShingMARS",
+    "expansion": "prelude",
+    "filePath": "CheungShingMARS.ts",
+    "name": "CHEUNG_SHING_MARS",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "DomeFarming",
+    "expansion": "prelude",
+    "filePath": "DomeFarming.ts",
+    "name": "DOME_FARMING",
+    "tags": [
+      "PLANT",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Donation",
+    "expansion": "prelude",
+    "filePath": "Donation.ts",
+    "name": "DONATION",
+    "tags": []
+  },
+  {
+    "className": "EarlySettlement",
+    "expansion": "prelude",
+    "filePath": "EarlySettlement.ts",
+    "name": "EARLY_SETTLEMENT",
+    "tags": [
+      "STEEL",
+      "CITY"
+    ]
+  },
+  {
+    "className": "EccentricSponsor",
+    "expansion": "prelude",
+    "filePath": "EccentricSponsor.ts",
+    "name": "ECCENTRIC_SPONSOR",
+    "tags": []
+  },
+  {
+    "className": "EcologyExperts",
+    "expansion": "prelude",
+    "filePath": "EcologyExperts.ts",
+    "name": "ECOLOGY_EXPERTS",
+    "tags": [
+      "PLANT",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "ExperimentalForest",
+    "expansion": "prelude",
+    "filePath": "ExperimentalForest.ts",
+    "tags": [
+      "PLANT"
+    ]
+  },
+  {
+    "className": "GalileanMining",
+    "expansion": "prelude",
+    "filePath": "GalileanMining.ts",
+    "name": "GALILEAN_MINING",
+    "tags": [
+      "JOVIAN"
+    ]
+  },
+  {
+    "className": "GreatAquifer",
+    "expansion": "prelude",
+    "filePath": "GreatAquifer.ts",
+    "name": "GREAT_AQUIFER",
+    "tags": []
+  },
+  {
+    "className": "HousePrinting",
+    "expansion": "prelude",
+    "filePath": "HousePrinting.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "HOUSE_PRINTING",
+    "tags": [
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "HugeAsteroid",
+    "expansion": "prelude",
+    "filePath": "HugeAsteroid.ts",
+    "name": "HUGE_ASTEROID",
+    "tags": []
+  },
+  {
+    "className": "IoResearchOutpost",
+    "expansion": "prelude",
+    "filePath": "IoResearchOutpost.ts",
+    "name": "IO_RESEARCH_OUTPOST",
+    "tags": [
+      "JOVIAN",
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "LavaTubeSettlement",
+    "expansion": "prelude",
+    "filePath": "LavaTubeSettlement.ts",
+    "cost": 15,
+    "cardType": "AUTOMATED",
+    "name": "LAVA_TUBE_SETTLEMENT",
+    "tags": [
+      "STEEL",
+      "CITY"
+    ]
+  },
+  {
+    "className": "Loan",
+    "expansion": "prelude",
+    "filePath": "Loan.ts",
+    "name": "LOAN",
+    "tags": []
+  },
+  {
+    "className": "MartianIndustries",
+    "expansion": "prelude",
+    "filePath": "MartianIndustries.ts",
+    "name": "MARTIAN_INDUSTRIES",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MartianSurvey",
+    "expansion": "prelude",
+    "filePath": "MartianSurvey.ts",
+    "cost": 9,
+    "cardType": "EVENT",
+    "name": "MARTIAN_SURVEY",
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "MetalRichAsteroid",
+    "expansion": "prelude",
+    "filePath": "MetalRichAsteroid.ts",
+    "name": "METAL_RICH_ASTEROID",
+    "tags": []
+  },
+  {
+    "className": "MetalsCompany",
+    "expansion": "prelude",
+    "filePath": "MetalsCompany.ts",
+    "name": "METALS_COMPANY",
+    "tags": []
+  },
+  {
+    "className": "MiningOperations",
+    "expansion": "prelude",
+    "filePath": "MiningOperations.ts",
+    "name": "MINING_OPERATIONS",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Mohole",
+    "expansion": "prelude",
+    "filePath": "Mohole.ts",
+    "name": "MOHOLE",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MoholeExcavation",
+    "expansion": "prelude",
+    "filePath": "MoholeExcavation.ts",
+    "name": "MOHOLE_EXCAVATION",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "NitrogenDelivery",
+    "expansion": "prelude",
+    "filePath": "NitrogenDelivery.ts",
+    "name": "NITROGEN_SHIPMENT",
+    "tags": []
+  },
+  {
+    "className": "OrbitalConstructionYard",
+    "expansion": "prelude",
+    "filePath": "OrbitalConstructionYard.ts",
+    "name": "ORBITAL_CONSTRUCTION_YARD",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "PointLuna",
+    "expansion": "prelude",
+    "filePath": "PointLuna.ts",
+    "name": "POINT_LUNA",
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ]
+  },
+  {
+    "className": "PolarIndustries",
+    "expansion": "prelude",
+    "filePath": "PolarIndustries.ts",
+    "name": "POLAR_INDUSTRIES",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "PowerGeneration",
+    "expansion": "prelude",
+    "filePath": "PowerGeneration.ts",
+    "name": "POWER_GENERATION",
+    "tags": [
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "Psychrophiles",
+    "expansion": "prelude",
+    "filePath": "Psychrophiles.ts",
+    "cost": 2,
+    "cardType": "ACTIVE",
+    "name": "PSYCHROPHILES",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "ResearchCoordination",
+    "expansion": "prelude",
+    "filePath": "ResearchCoordination.ts",
+    "cost": 4,
+    "cardType": "AUTOMATED",
+    "name": "RESEARCH_COORDINATION",
+    "tags": [
+      "WILDCARD"
+    ]
+  },
+  {
+    "className": "ResearchNetwork",
+    "expansion": "prelude",
+    "filePath": "ResearchNetwork.ts",
+    "name": "RESEARCH_NETWORK",
+    "tags": [
+      "WILDCARD"
+    ]
+  },
+  {
+    "className": "RobinsonIndustries",
+    "expansion": "prelude",
+    "filePath": "RobinsonIndustries.ts",
+    "name": "ROBINSON_INDUSTRIES",
+    "tags": []
+  },
+  {
+    "className": "SFMemorial",
+    "expansion": "prelude",
+    "filePath": "SFMemorial.ts",
+    "cost": 7,
+    "cardType": "AUTOMATED",
+    "name": "SF_MEMORIAL",
+    "tags": [
+      "STEEL"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "SelfSufficientSettlement",
+    "expansion": "prelude",
+    "filePath": "SelfSufficientSettlement.ts",
+    "name": "SELF_SUFFICIENT_SETTLEMENT",
+    "tags": [
+      "STEEL",
+      "CITY"
+    ]
+  },
+  {
+    "className": "SmeltingPlant",
+    "expansion": "prelude",
+    "filePath": "SmeltingPlant.ts",
+    "name": "SMELTING_PLANT",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "SocietySupport",
+    "expansion": "prelude",
+    "filePath": "SocietySupport.ts",
+    "name": "SOCIETY_SUPPORT",
+    "tags": []
+  },
+  {
+    "className": "SpaceHotels",
+    "expansion": "prelude",
+    "filePath": "SpaceHotels.ts",
+    "cost": 12,
+    "cardType": "AUTOMATED",
+    "name": "SPACE_HOTELS",
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ]
+  },
+  {
+    "className": "Supplier",
+    "expansion": "prelude",
+    "filePath": "Supplier.ts",
+    "name": "SUPPLIER",
+    "tags": [
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "SupplyDrop",
+    "expansion": "prelude",
+    "filePath": "SupplyDrop.ts",
+    "name": "SUPPLY_DROP",
+    "tags": []
+  },
+  {
+    "className": "UNMIContractor",
+    "expansion": "prelude",
+    "filePath": "UNMIContractor.ts",
+    "name": "UNMI_CONTRACTOR",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "ValleyTrust",
+    "expansion": "prelude",
+    "filePath": "ValleyTrust.ts",
+    "name": "VALLEY_TRUST",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "Vitor",
+    "expansion": "prelude",
+    "filePath": "Vitor.ts",
+    "name": "VITOR",
+    "tags": [
+      "EARTH"
+    ]
+  }
+]

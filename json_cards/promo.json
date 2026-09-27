@@ -1,0 +1,54 @@
+[
+  {
+    "className": "ArcadianCommunities",
+    "expansion": "promo",
+    "filePath": "ArcadianCommunities.ts",
+    "name": "ARCADIAN_COMMUNITIES",
+    "tags": []
+  },
+  {
+    "className": "Factorum",
+    "expansion": "promo",
+    "filePath": "Factorum.ts",
+    "name": "FACTORUM",
+    "tags": [
+      "ENERGY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MonsInsurance",
+    "expansion": "promo",
+    "filePath": "MonsInsurance.ts",
+    "name": "MONS_INSURANCE",
+    "tags": []
+  },
+  {
+    "className": "Philares",
+    "expansion": "promo",
+    "filePath": "Philares.ts",
+    "name": "PHILARES",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Recyclon",
+    "expansion": "promo",
+    "filePath": "Recyclon.ts",
+    "name": "RECYCLON",
+    "tags": [
+      "MICROBES",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "Splice",
+    "expansion": "promo",
+    "filePath": "Splice.ts",
+    "name": "SPLICE",
+    "tags": [
+      "MICROBES"
+    ]
+  }
+]

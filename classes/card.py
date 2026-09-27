@@ -2,8 +2,9 @@ from collections.abc import Callable
 from dataclasses import dataclass
 
 from classes.board import Board
-from classes.requirement import Requirement
-from game_manager import Resources, Reward
+from classes.helper.requirement import Requirement
+from classes.helper.resources import Resources
+from classes.helper.reward import Reward
 
 @dataclass
 class Card:

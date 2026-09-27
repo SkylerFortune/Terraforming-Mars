@@ -1,0 +1,624 @@
+[
+  {
+    "className": "AerialMappers",
+    "expansion": "venusNext",
+    "filePath": "AerialMappers.ts",
+    "cost": 11,
+    "cardType": "ACTIVE",
+    "name": "AERIAL_MAPPERS",
+    "tags": [
+      "VENUS"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "AerosportTournament",
+    "expansion": "venusNext",
+    "filePath": "AerosportTournament.ts",
+    "cost": 7,
+    "cardType": "EVENT",
+    "name": "AEROSPORT_TOURNAMENT",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "AirScrappingExpedition",
+    "expansion": "venusNext",
+    "filePath": "AirScrappingExpedition.ts",
+    "cost": 13,
+    "cardType": "EVENT",
+    "name": "AIR_SCRAPPING_EXPEDITION",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "Aphrodite",
+    "expansion": "venusNext",
+    "filePath": "Aphrodite.ts",
+    "name": "APHRODITE",
+    "tags": [
+      "PLANT",
+      "VENUS"
+    ]
+  },
+  {
+    "className": "AtalantaPlanitiaLab",
+    "expansion": "venusNext",
+    "filePath": "AtalantaPlanitiaLab.ts",
+    "cost": 10,
+    "cardType": "AUTOMATED",
+    "name": "ATALANTA_PLANITIA_LAB",
+    "tags": [
+      "VENUS",
+      "SCIENCE"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "Atmoscoop",
+    "expansion": "venusNext",
+    "filePath": "Atmoscoop.ts",
+    "cost": 22,
+    "cardType": "EVENT",
+    "name": "ATMOSCOOP",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Celestic",
+    "expansion": "venusNext",
+    "filePath": "Celestic.ts",
+    "name": "CELESTIC",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "CometForVenus",
+    "expansion": "venusNext",
+    "filePath": "CometForVenus.ts",
+    "cost": 11,
+    "cardType": "EVENT",
+    "name": "COMET_FOR_VENUS",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "CorroderSuits",
+    "expansion": "venusNext",
+    "filePath": "CorroderSuits.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "CORRODER_SUITS",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "DawnCity",
+    "expansion": "venusNext",
+    "filePath": "DawnCity.ts",
+    "cost": 15,
+    "cardType": "AUTOMATED",
+    "name": "DAWN_CITY",
+    "tags": [
+      "CITY",
+      "SPACE"
+    ],
+    "victoryPoints": 3
+  },
+  {
+    "className": "DeuteriumExport",
+    "expansion": "venusNext",
+    "filePath": "DeuteriumExport.ts",
+    "cost": 11,
+    "cardType": "ACTIVE",
+    "name": "DEUTERIUM_EXPORT",
+    "tags": [
+      "SPACE",
+      "VENUS",
+      "ENERGY"
+    ]
+  },
+  {
+    "className": "Dirigibles",
+    "expansion": "venusNext",
+    "filePath": "Dirigibles.ts",
+    "cost": 11,
+    "cardType": "ACTIVE",
+    "name": "DIRIGIBLES",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "ExtractorBalloons",
+    "expansion": "venusNext",
+    "filePath": "ExtractorBalloons.ts",
+    "cost": 21,
+    "cardType": "ACTIVE",
+    "name": "EXTRACTOR_BALLOONS",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "Extremophiles",
+    "expansion": "venusNext",
+    "filePath": "Extremophiles.ts",
+    "cost": 3,
+    "cardType": "ACTIVE",
+    "name": "EXTREMOPHILES",
+    "tags": [
+      "VENUS",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "FloatingHabs",
+    "expansion": "venusNext",
+    "filePath": "FloatingHabs.ts",
+    "cost": 5,
+    "cardType": "ACTIVE",
+    "name": "FLOATING_HABS",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "ForcedPrecipitation",
+    "expansion": "venusNext",
+    "filePath": "ForcedPrecipitation.ts",
+    "cost": 8,
+    "cardType": "ACTIVE",
+    "name": "FORCED_PRECIPITATION",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "FreyjaBiodomes",
+    "expansion": "venusNext",
+    "filePath": "FreyjaBiodomes.ts",
+    "cost": 14,
+    "cardType": "AUTOMATED",
+    "name": "FREYJA_BIODOMES",
+    "tags": [
+      "PLANT",
+      "VENUS"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "GHGImportFromVenus",
+    "expansion": "venusNext",
+    "filePath": "GHGImportFromVenus.ts",
+    "cost": 23,
+    "cardType": "EVENT",
+    "name": "GHG_IMPORT_FROM_VENUS",
+    "tags": [
+      "SPACE",
+      "VENUS"
+    ]
+  },
+  {
+    "className": "GiantSolarShade",
+    "expansion": "venusNext",
+    "filePath": "GiantSolarShade.ts",
+    "cost": 27,
+    "cardType": "AUTOMATED",
+    "name": "GIANT_SOLAR_SHADE",
+    "tags": [
+      "SPACE",
+      "VENUS"
+    ]
+  },
+  {
+    "className": "Gyropolis",
+    "expansion": "venusNext",
+    "filePath": "Gyropolis.ts",
+    "cost": 20,
+    "cardType": "AUTOMATED",
+    "name": "GYROPOLIS",
+    "tags": [
+      "CITY",
+      "STEEL"
+    ]
+  },
+  {
+    "className": "HydrogenToVenus",
+    "expansion": "venusNext",
+    "filePath": "HydrogenToVenus.ts",
+    "cost": 11,
+    "cardType": "EVENT",
+    "name": "HYDROGEN_TO_VENUS",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "IoSulphurResearch",
+    "expansion": "venusNext",
+    "filePath": "IoSulphurResearch.ts",
+    "cost": 17,
+    "cardType": "AUTOMATED",
+    "name": "IO_SULPHUR_RESEARCH",
+    "tags": [
+      "SCIENCE",
+      "JOVIAN"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "IshtarMining",
+    "expansion": "venusNext",
+    "filePath": "IshtarMining.ts",
+    "cost": 5,
+    "cardType": "AUTOMATED",
+    "name": "ISHTAR_MINING",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "JetStreamMicroscrappers",
+    "expansion": "venusNext",
+    "filePath": "JetStreamMicroscrappers.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "JET_STREAM_MICROSCRAPPERS",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "LocalShading",
+    "expansion": "venusNext",
+    "filePath": "LocalShading.ts",
+    "cost": 4,
+    "cardType": "ACTIVE",
+    "name": "LOCAL_SHADING",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "LunaMetropolis",
+    "expansion": "venusNext",
+    "filePath": "LunaMetropolis.ts",
+    "cost": 21,
+    "cardType": "AUTOMATED",
+    "name": "LUNA_METROPOLIS",
+    "tags": [
+      "CITY",
+      "SPACE",
+      "EARTH"
+    ],
+    "victoryPoints": 2
+  },
+  {
+    "className": "LuxuryFoods",
+    "expansion": "venusNext",
+    "filePath": "LuxuryFoods.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "LUXURY_FOODS",
+    "tags": [],
+    "victoryPoints": 2
+  },
+  {
+    "className": "Manutech",
+    "expansion": "venusNext",
+    "filePath": "Manutech.ts",
+    "name": "MANUTECH",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MaxwellBase",
+    "expansion": "venusNext",
+    "filePath": "MaxwellBase.ts",
+    "cost": 18,
+    "cardType": "ACTIVE",
+    "name": "MAXWELL_BASE",
+    "tags": [
+      "CITY",
+      "VENUS"
+    ],
+    "victoryPoints": 3
+  },
+  {
+    "className": "MiningQuota",
+    "expansion": "venusNext",
+    "filePath": "MiningQuota.ts",
+    "cost": 5,
+    "cardType": "AUTOMATED",
+    "name": "MINING_QUOTA",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "MorningStarInc",
+    "expansion": "venusNext",
+    "filePath": "MorningStarInc.ts",
+    "name": "MORNING_STAR_INC",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "NeutralizerFactory",
+    "expansion": "venusNext",
+    "filePath": "NeutralizerFactory.ts",
+    "cost": 7,
+    "cardType": "AUTOMATED",
+    "name": "NEUTRALIZER_FACTORY",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "Omnicourt",
+    "expansion": "venusNext",
+    "filePath": "Omnicourt.ts",
+    "cost": 11,
+    "cardType": "AUTOMATED",
+    "name": "OMNICOURT",
+    "tags": [
+      "STEEL"
+    ]
+  },
+  {
+    "className": "OrbitalReflectors",
+    "expansion": "venusNext",
+    "filePath": "OrbitalReflectors.ts",
+    "cost": 26,
+    "cardType": "AUTOMATED",
+    "name": "ORBITAL_REFLECTORS",
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "RotatorImpacts",
+    "expansion": "venusNext",
+    "filePath": "RotatorImpacts.ts",
+    "cost": 6,
+    "cardType": "ACTIVE",
+    "name": "ROTATOR_IMPACTS",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SisterPlanetSupport",
+    "expansion": "venusNext",
+    "filePath": "SisterPlanetSupport.ts",
+    "cost": 7,
+    "cardType": "AUTOMATED",
+    "name": "SISTER_PLANET_SUPPORT",
+    "tags": [
+      "VENUS",
+      "EARTH"
+    ]
+  },
+  {
+    "className": "Solarnet",
+    "expansion": "venusNext",
+    "filePath": "Solarnet.ts",
+    "cost": 7,
+    "cardType": "AUTOMATED",
+    "name": "SOLARNET",
+    "tags": [],
+    "victoryPoints": 1
+  },
+  {
+    "className": "SpinInducingAsteroid",
+    "expansion": "venusNext",
+    "filePath": "SpinInducingAsteroid.ts",
+    "cost": 16,
+    "cardType": "EVENT",
+    "name": "SPIN_INDUCING_ASTEROID",
+    "tags": [
+      "SPACE"
+    ]
+  },
+  {
+    "className": "SponsoredAcademies",
+    "expansion": "venusNext",
+    "filePath": "SponsoredAcademies.ts",
+    "cost": 9,
+    "cardType": "AUTOMATED",
+    "name": "SPONSORED_ACADEMIES",
+    "tags": [
+      "EARTH",
+      "SCIENCE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Stratopolis",
+    "expansion": "venusNext",
+    "filePath": "Stratopolis.ts",
+    "cost": 22,
+    "cardType": "ACTIVE",
+    "name": "STRATOPOLIS",
+    "tags": [
+      "CITY",
+      "VENUS"
+    ]
+  },
+  {
+    "className": "StratosphericBirds",
+    "expansion": "venusNext",
+    "filePath": "StratosphericBirds.ts",
+    "cost": 12,
+    "cardType": "ACTIVE",
+    "name": "STRATOSPHERIC_BIRDS",
+    "tags": [
+      "VENUS",
+      "ANIMAL"
+    ]
+  },
+  {
+    "className": "SulphurEatingBacteria",
+    "expansion": "venusNext",
+    "filePath": "SulphurEatingBacteria.ts",
+    "cost": 6,
+    "cardType": "ACTIVE",
+    "name": "SULPHUR_EATING_BACTERIA",
+    "tags": [
+      "VENUS",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "SulphurExports",
+    "expansion": "venusNext",
+    "filePath": "SulphurExports.ts",
+    "cost": 21,
+    "cardType": "AUTOMATED",
+    "name": "SULPHUR_EXPORTS",
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ]
+  },
+  {
+    "className": "TerraformingContract",
+    "expansion": "venusNext",
+    "filePath": "TerraformingContract.ts",
+    "cost": 8,
+    "cardType": "AUTOMATED",
+    "name": "TERRAFORMING_CONTRACT",
+    "tags": [
+      "EARTH"
+    ]
+  },
+  {
+    "className": "Thermophiles",
+    "expansion": "venusNext",
+    "filePath": "Thermophiles.ts",
+    "cost": 9,
+    "cardType": "ACTIVE",
+    "name": "THERMOPHILES",
+    "tags": [
+      "VENUS",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "VenusGovernor",
+    "expansion": "venusNext",
+    "filePath": "VenusGovernor.ts",
+    "cost": 4,
+    "cardType": "AUTOMATED",
+    "name": "VENUS_GOVERNOR",
+    "tags": [
+      "VENUS",
+      "VENUS"
+    ]
+  },
+  {
+    "className": "VenusMagnetizer",
+    "expansion": "venusNext",
+    "filePath": "VenusMagnetizer.ts",
+    "cost": 7,
+    "cardType": "ACTIVE",
+    "name": "VENUS_MAGNETIZER",
+    "tags": [
+      "VENUS"
+    ]
+  },
+  {
+    "className": "VenusSoils",
+    "expansion": "venusNext",
+    "filePath": "VenusSoils.ts",
+    "cost": 20,
+    "cardType": "AUTOMATED",
+    "name": "VENUS_SOILS",
+    "tags": [
+      "VENUS",
+      "PLANT"
+    ]
+  },
+  {
+    "className": "VenusWaystation",
+    "expansion": "venusNext",
+    "filePath": "VenusWaystation.ts",
+    "cost": 9,
+    "cardType": "ACTIVE",
+    "name": "VENUS_WAYSTATION",
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "VenusianAnimals",
+    "expansion": "venusNext",
+    "filePath": "VenusianAnimals.ts",
+    "cost": 15,
+    "cardType": "ACTIVE",
+    "name": "VENUSIAN_ANIMALS",
+    "tags": [
+      "VENUS",
+      "ANIMAL",
+      "SCIENCE"
+    ]
+  },
+  {
+    "className": "VenusianInsects",
+    "expansion": "venusNext",
+    "filePath": "VenusianInsects.ts",
+    "cost": 5,
+    "cardType": "ACTIVE",
+    "name": "VENUSIAN_INSECTS",
+    "tags": [
+      "VENUS",
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "VenusianPlants",
+    "expansion": "venusNext",
+    "filePath": "VenusianPlants.ts",
+    "cost": 13,
+    "cardType": "AUTOMATED",
+    "name": "VENUSIAN_PLANTS",
+    "tags": [
+      "VENUS",
+      "PLANT"
+    ],
+    "victoryPoints": 1
+  },
+  {
+    "className": "Viron",
+    "expansion": "venusNext",
+    "filePath": "Viron.ts",
+    "name": "VIRON",
+    "tags": [
+      "MICROBES"
+    ]
+  },
+  {
+    "className": "WaterToVenus",
+    "expansion": "venusNext",
+    "filePath": "WaterToVenus.ts",
+    "cost": 9,
+    "cardType": "EVENT",
+    "name": "WATER_TO_VENUS",
+    "tags": [
+      "SPACE"
+    ]
+  }
+]

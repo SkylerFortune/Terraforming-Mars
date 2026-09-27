@@ -1,8 +1,10 @@
 from game_manager import GameState
 
 class Requirement:
-    def __init__(self, func) -> None:
-        self.func = func
+    def __init__(self, t: str, req: int, min_max: bool) -> None:
+        self.type = t
+        self.req = req
+        self.min_max = min_max
 
     def evaluate(self, game_state: 'GameState'):
         self.func(game_state)
