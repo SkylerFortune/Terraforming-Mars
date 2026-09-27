@@ -1,16 +1,16 @@
 [
   {
-    "className": "AICentral",
-    "expansion": "base",
-    "filePath": "AICentral.ts",
-    "cost": 21,
-    "cardType": "ACTIVE",
-    "name": "AI_CENTRAL",
-    "tags": [
+    "className": "AICentral", // unused, classname from github repo
+    "expansion": "base", // expansion name
+    "filePath": "AICentral.ts", // file path in ./ts folder
+    "cost": 21, // cost of the card
+    "cardType": "ACTIVE", // active (blue + corporations + some preludes w/ effects), automated(green + some preludes),  event(red)
+    "name": "AI_CENTRAL", // name of card
+    "tags": [ //tags on card
       "SCIENCE",
       "STEEL"
     ],
-    "victoryPoints": 1
+    "victoryPoints": 1 // number of victory points
   },
   {
     "className": "AcquiredCompany",
