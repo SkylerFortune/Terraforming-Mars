@@ -5,7 +5,10 @@ from classes.board import Board
 from classes.card import Card
 from classes.planet import Planet
 from classes.tile import Tile
-from game_manager import GameState, Resources, Production, Reward
+from classes.helper.game_state import GameState
+from classes.helper.resources import Resources
+from classes.helper.production import Production
+from classes.helper.reward import Reward
 from numpy import tile
 
 
@@ -63,10 +66,8 @@ class Player:
             self.resources.energy += reward.resources.energy
 
         if board:
-            if reward.tile:
-                location = self.place_tile(board, reward.tile)
-                tile = board.place_tile(self, reward.tile, location)
-                self.add_tile(tile)
+            #TODO: reward tile logic
+            pass
 
     def increase_terraform_rating(self, amount: int) -> None:
         self.terraform_rating += amount

@@ -1,6 +1,7 @@
 from classes.card import Card
-from classes.requirement import Requirement
-from game_manager import Production, Resources, Reward
+from classes.helper.production import Production
+from classes.helper.requirement import Requirement
+from classes.helper.reward import Reward
 
 
 class CardManager:

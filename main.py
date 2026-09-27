@@ -1,5 +1,6 @@
 """
 TODO:
+    - MAKE GAMESTATE LOGIC IMMUTABLE
     - Add resolve corps/preludes to game loop
     - Add isolated cities on board
     - Implement card playing logic
@@ -8,3 +9,54 @@ TODO:
         -Requirements
     - Graph traversal for board, similar to catan
 """
+
+import random
+
+from game_manager import GameManager
+
+ocean_locations = []
+volcano_locations = []
+expansions = []
+settings = {}
+
+test_manager = GameManager(ocean_locations=ocean_locations, volcano_locations=volcano_locations, expansions=expansions, settings=settings)
+
+#TODO: update all logic
+def setup_phase(self):
+    #decide first person
+    game_state.first_player = random.choice(game_state.players)
+    game_state.current_player = game_state.first_player
+    #deal cards, corps, and preludes
+    for player in game_state.players:
+        give_cards(player, 10)
+        player.gain_cards(game_state.draw_corps(2))
+        player.gain_cards(game_state.draw_preludes(2))
+    #TODO: players decide which cards to keep
+    game_loop()
+
+def game_loop(self):
+    for player in game_state.players:
+        if player.corp:
+            player.play_card(player.corp, game_state.board)
+        if player.preludes:
+            for prelude in player.preludes:
+                player.play_card(prelude, game_state.board)
+    #do turns
+    while not is_game_over():
+        resolve_current_player_turn()
+        game_state.current_player = game_state.next_player()
+        if game_state.generation_over:
+            production()
+            game_state.generation_over = False
+
+    endgame()
+
+def endgame(self):
+    #place greenery tiles
+    pass
+    #count points
+    for player in game_state.players:
+        print(f"{player.id}: {calculate_points(player)}")
+
+
+#TODO: build main game loop
