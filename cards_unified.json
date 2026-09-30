@@ -1603,7 +1603,22 @@
         "image": "https://cards.hadronikle.com/corporations/Base - Beginner Corporation.png",
         "thumbnail": "https://cards.hadronikle.com/thumbs/corporations/Base - Beginner Corporation.png"
       }
-    }
+    },
+    "effects": [],
+    "actions": [],
+    "on_play": {
+        "reward": [
+          {
+            "resource": "money",
+            "amount": 42
+          },
+          {
+            "resource": "cards",
+            "amount": 10
+          }
+        ]
+    },
+      "requirements": []
   },
   {
     "id": "credicor",
