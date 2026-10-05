@@ -1,6 +1,7 @@
 """
 TODO:
     - MAKE GAMESTATE LOGIC IMMUTABLE
+    - card input: united_nations_mars_initiative
     - Add resolve corps/preludes to game loop
     - Add isolated cities on board
     - Implement card playing logic

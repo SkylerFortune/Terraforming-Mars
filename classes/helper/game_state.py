@@ -74,14 +74,17 @@ class GameState:
     def _init_corps(self) -> list[Card]:
         return []
 
+    #TODO: implement
     def _init_planets(self) -> list[Planet]:
         if  "colonies" not in self.expansions:
             return []
 
         return []
 
+    #TODO: implement
     def _init_awards(self) -> list[str]:
         return []
 
+    #TODO: implement
     def _init_milestones(self) -> list[str]:
         return []

@@ -13,6 +13,7 @@ from classes.helper.production import Production
 from classes.helper.requirement import Requirement
 from classes.helper.reward import Reward
 from classes.helper.resources import Resources
+from classes.helper.action import Action
 from classes.helper.constants import Constants
 
 
@@ -44,7 +45,6 @@ class GameManager:
         player.gain_cards(cards)
 
     def find_europa_reward(self) -> Reward:
-        points_func = lambda: self.points(points)
         # Find the reward for Europa based on the current game state
         europa = next((p for p in self.game_state.planets if p.name == "Europa"), None)
         if europa:
@@ -348,7 +348,7 @@ class GameManager:
             from itertools import combinations
             for i in range(1, len(current_player.cards) + 1):
                 for card_combo in combinations(current_player.cards, i):
-                    actions.append(Action("sell_patents", current_player.id, {"card_ids": [c.id for c in card_combo]}))
+                    actions.append(Action("sell_patents", current_player.id, {"card_names": [c.name for c in card_combo]}))
         
         # Buy power plant
         if self.can_buy_power_plant(game_state, current_player):
@@ -420,21 +420,4 @@ class GameManager:
                     track_values=getattr(self, f"{planet_name.lower()}_track_values"),
                     resource=getattr(self, f"{planet_name.lower()}_resource"))
             )
-        return random.sample(planets, len(self.game_state.players) + self.additional_planets)
-
-@dataclass
-class Action:
-    """Represents a game action that can be taken by a player."""
-    action_type: str  # "raise_oxygen", "raise_temp", "play_card", "place_colony", etc.
-    player_id: int
-    params: dict  # Contains action-specific parameters
-    
-    def __hash__(self):
-        return hash((self.action_type, self.player_id, tuple(sorted(self.params.items()))))
-    
-    def __eq__(self, other):
-        if not isinstance(other, Action):
-            return False
-        return (self.action_type == other.action_type and 
-                self.player_id == other.player_id and 
-                self.params == other.params)
+        return random.sample(planets, len(self.game_state.players) + Constants.ADDITIONAL_PLANETS)
