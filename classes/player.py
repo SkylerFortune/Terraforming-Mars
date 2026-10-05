@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 import random
 
+from agents.base_agent import BaseAgent
 from classes.board import Board
 from classes.card import Card
 from classes.planet import Planet
@@ -13,15 +14,16 @@ from numpy import tile
 
 
 class Player:
-    def __init__(self, id: int) -> None:
+    def __init__(self, id: int, interface: BaseAgent) -> None:
         self.id = id
+        self.interface = interface
         self.corp: Card | None = None
         self.possible_corps: list[Card] = []
         self.preludes: list[Card] | None = None
         self.possible_preludes: list[Card] = []
         self.cards_to_buy: list[Card] = []
         self.passed = False
-        self.tiles = TileCollection()
+        self.tiles = PlayerTileCollection()
         self.production = Production()
         self.resources = Resources()
         self.colonies: list[Planet] = []
@@ -118,7 +120,7 @@ class Player:
 
 
 @dataclass
-class TileCollection:
+class PlayerTileCollection:
     cities: list[Tile] = []
     forests: list[Tile] = []
     special: list[Tile] = []
