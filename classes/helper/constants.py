@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import Any
 
+from classes.helper.card_reward import CardReward
 from classes.helper.production import Production
 from classes.helper.reward import Reward
 
@@ -12,8 +13,20 @@ class Constants:
         self.STARTING_CARDS = 10
         self.GIVEN_CARDS = 4
         self.MAX_TEMP = 8
+        self.TEMP_REWARDS = {
+            -24: Reward(production=Production(heat=1)),
+            -20: Reward(production=Production(heat=1)),
+            0: Reward(ocean=1)
+        }
         self.MAX_OX = 14
+        self.OX_REWARDS = {
+            8: Reward(temperature=1)
+        }
         self.MAX_VENUS = 30
+        self.VENUS_REWARDS = {
+            8: Reward(cards=CardReward(card_type="any", count=1)),
+            16: Reward(terraform_rating=1)
+        }
         self.NUM_OCEANS = 9
         self.TRADE_COST_MONEY = 9
         self.TRADE_COST_TITANIUM = 3

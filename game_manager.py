@@ -39,8 +39,31 @@ class GameManager:
 
     def resolve_action(self, action: Action):
         #TODO: Implement action resolution logic
+        current_player = self.game_state.current_player
+
         if action.action_type == "raise_temp":
-            self.game_stat
+            self.raise_temp(self.game_state, current_player, action.params.get("amount", 1))
+        
+        elif action.action_type == "raise_oxygen":
+            self.raise_oxygen(self.game_state, current_player, action.params.get("amount", 1))
+        
+        elif action.action_type == "raise_venus":
+            self.raise_venus(self.game_state, current_player, action.params.get("amount", 1))
+        
+        elif action.action_type == "place_tile":
+            tile_type = action.params.get("tile_type", "default")
+            location = current_player.place_tile(self.game_state.board, tile_type)
+            self.place_tile(current_player, tile_type, location)
+        
+        elif action.action_type == "play_card":
+            card = action.params.get("card", None)
+            if card:
+                current_player.play_card(card, self.game_state.board)
+
+        elif action.action_type == "standard_action":
+            standard_action = action.params.get("standard_action", None)
+            if standard_action:
+                self.resolve_standard_action(self.game_state, current_player, standard_action)
 
     ## --- GAME FUNCTIONS
     def give_cards(self, player: Player, num_cards: int) -> None:
@@ -86,9 +109,11 @@ class GameManager:
             return True
         return False
 
-    def raise_temp(self, game_state: GameState) -> GameState:
+    def raise_temp(self, game_state: GameState, player: Player, amount: int) -> GameState:
         new_state = copy.deepcopy(game_state)
-        new_state.board.temp += 1
+        new_state.board.temp += amount
+        player.increase_terraform_rating(amount)
+        player.receive_reward(self.game_state.get_temp_reward(new_state.board.temp))
         return new_state
 
     def can_raise_oxygen(self, game_state: GameState) -> bool:
@@ -96,10 +121,12 @@ class GameManager:
             return True
         return False
 
-    def raise_oxygen(self, game_state: GameState, player: Player) -> GameState:
+    def raise_oxygen(self, game_state: GameState, player: Player, amount: int) -> GameState:
         if self.can_raise_oxygen(game_state):
             new_state = copy.deepcopy(game_state)
-            new_state.board.oxygen += 1
+            new_state.board.oxygen += amount
+            player.increase_terraform_rating(amount)
+            player.receive_reward(self.game_state.get_oxygen_reward(new_state.board.oxygen))
             return new_state
         return game_state
 
@@ -108,10 +135,12 @@ class GameManager:
             return True
         return False
 
-    def raise_venus(self, game_state: GameState) -> GameState:
+    def raise_venus(self, game_state: GameState, player: Player, amount: int) -> GameState:
         if self.can_raise_venus(game_state):
             new_state = copy.deepcopy(game_state)
-            new_state.board.venus += 1
+            new_state.board.venus += amount
+            player.increase_terraform_rating(amount)
+            player.receive_reward(self.game_state.get_venus_reward(new_state.board.venus))
             return new_state
         return game_state
 
@@ -200,6 +229,11 @@ class GameManager:
             new_state = copy.deepcopy(game_state)
             new_state.players[game_state.players.index(player)].awards.append(award_name)
             return new_state
+        return game_state
+
+    #TODO: add standard actions
+    def resolve_standard_action(self, game_state: GameState, player: Player, standard_action: str) -> GameState:
+        
         return game_state
 
     def can_sell_patents(self, game_state: GameState, player: Player) -> bool:

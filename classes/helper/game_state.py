@@ -68,6 +68,14 @@ class GameState:
     def get_other_players(self, player: 'Player') -> list['Player']:
         return [p for p in self.players if p != player]
 
+    def get_temp_reward(self, temp: int) -> Reward:
+        return self.constants.TEMP_REWARDS.get(temp, Reward())
+
+    def get_oxygen_reward(self, oxygen: int) -> Reward:
+        return self.constants.OX_REWARDS.get(oxygen, Reward())
+
+    def get_venus_reward(self, venus: int) -> Reward:
+        return self.constants.VENUS_REWARDS.get(venus, Reward())
     ## --- INIT --- ##
 
     def generate_awards(self) -> list[str]:
