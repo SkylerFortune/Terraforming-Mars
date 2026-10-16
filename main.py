@@ -13,8 +13,8 @@ TODO:
 
 import random
 
-from agents.random_agent import RandomAgent
-from classes.player import Player
+from src.agents.random_agent import RandomAgent
+from src.engine.classes.player import Player
 from game_manager import GameManager
 
 ocean_locations = []

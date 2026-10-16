@@ -3,18 +3,18 @@ from dataclasses import dataclass
 import random
 from typing import Any
 
-from classes.board import Board
-from classes.card import Card
-from classes.planet import Planet
-from classes.player import Player
-from classes.tile import Tile
-from classes.helper.game_state import GameState
-from classes.helper.production import Production
-from classes.helper.requirement import Requirement
-from classes.helper.reward import Reward
-from classes.helper.resources import Resources
-from classes.helper.action import Action
-from classes.helper.constants import Constants
+from src.engine.classes.board import Board
+from src.engine.classes.card import Card
+from src.engine.classes.planet import Planet
+from src.engine.classes.player import Player
+from src.engine.classes.tile import Tile
+from src.engine.classes.helper.game_state import GameState
+from src.engine.classes.helper.production import Production
+from src.engine.classes.helper.requirement import Requirement
+from src.engine.classes.helper.reward import Reward
+from src.engine.classes.helper.resources import Resources
+from src.engine.classes.helper.action import Action
+from src.engine.classes.helper.constants import Constants
 
 
 class GameManager:
