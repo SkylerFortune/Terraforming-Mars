@@ -1,0 +1,7612 @@
+[
+  {
+    "id": "BIOFERTILIZER_FACILITY",
+    "name": "Biofertilizer Facility",
+    "class": "BiofertilizerFacility",
+    "module": "ares",
+    "type": "automated",
+    "tags": [
+      "MICROBE",
+      "BUILDING"
+    ],
+    "cost": 12,
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "addResourcesToAnyCard": {
+        "count": 2,
+        "type": "MICROBE"
+      },
+      "tile": {
+        "type": "BIOFERTILIZER_FACILITY",
+        "on": "land",
+        "adjacencyBonus": {
+          "bonus": [
+            "PLANT",
+            "MICROBE"
+          ]
+        }
+      }
+    },
+    "requirements": {
+      "tag": "SCIENCE"
+    },
+    "description": "Requires 1 science tag. Increase your plant production 1 step. Add up to 2 microbes to ANY card. Place this tile which grants an ADJACENCY BONUS of 1 plant and 1 microbe.",
+    "cardNumber": "A02"
+  },
+  {
+    "id": "CAPITAL_ARES",
+    "name": "Capital Ares",
+    "class": "CapitalAres",
+    "module": "ares",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 26,
+    "behavior": {
+      "production": {
+        "energy": -2,
+        "megacredits": 5
+      },
+      "tile": {
+        "type": "CAPITAL",
+        "on": "city",
+        "title": "Select space for special city tile",
+        "adjacencyBonus": {
+          "bonus": [
+            "MEGACREDITS",
+            "MEGACREDITS"
+          ]
+        }
+      }
+    },
+    "requirements": {
+      "oceans": 4
+    },
+    "victoryPoints": {
+      "oceans": {},
+      "nextToThis": {}
+    },
+    "cardNumber": "A05",
+    "description": "Requires 4 ocean tiles. Place tile with ADJACENCY BONUS of 2 M€. Energy prod -2 and M€ prod +5."
+  },
+  {
+    "id": "COMMERCIAL_DISTRICT_ARES",
+    "name": "Commercial District Ares",
+    "class": "CommercialDistrictAres",
+    "module": "ares",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 16,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 4
+      },
+      "tile": {
+        "type": "COMMERCIAL_DISTRICT",
+        "on": "land",
+        "adjacencyBonus": {
+          "bonus": [
+            "MEGACREDITS",
+            "MEGACREDITS"
+          ]
+        }
+      }
+    },
+    "victoryPoints": {
+      "cities": {},
+      "nextToThis": {}
+    },
+    "cardNumber": "A06",
+    "description": "Place this tile which grants an ADJACENCY BONUS of 2 M€. Decrease your energy production 1 step and increase your M€ production 4 steps."
+  },
+  {
+    "id": "MINING_AREA_ARES",
+    "name": "Mining Area Ares",
+    "class": "MiningAreaAres",
+    "module": "ares",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 4,
+    "cardNumber": "A14",
+    "description": "Place one of these tiles on an area with a steel or titanium placement bonus, ADJACENT TO ANOTHER OF YOUR TILES. This tile provides an ADJACENCY BONUS of the same resource as the area. Increase your production of that resource 1 step."
+  },
+  {
+    "id": "MINING_RIGHTS_ARES",
+    "name": "Mining Rights Ares",
+    "class": "MiningRightsAres",
+    "module": "ares",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 9,
+    "cardNumber": "A15",
+    "description": "Place one of these tiles on an area with a steel or titanium placement bonus. This tile provides an ADJACENCY BONUS of the same resource as the area. Increase your production of that resource 1 step."
+  },
+  {
+    "id": "MOHOLE_AREA_ARES",
+    "name": "Mohole Area Ares",
+    "class": "MoholeAreaAres",
+    "module": "ares",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 20,
+    "behavior": {
+      "production": {
+        "heat": 4
+      },
+      "tile": {
+        "type": "MOHOLE_AREA",
+        "on": "ocean",
+        "adjacencyBonus": {
+          "bonus": [
+            "HEAT",
+            "HEAT"
+          ]
+        }
+      }
+    },
+    "cardNumber": "A16",
+    "description": "Increase your heat production 4 steps. Place this tile ON AN AREA RESERVED FOR OCEAN. The tile grants an ADJACENCY BONUS of 2 heat."
+  },
+  {
+    "id": "SOLAR_FARM",
+    "name": "Solar Farm",
+    "class": "SolarFarm",
+    "module": "ares",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 12,
+    "cardNumber": "A17",
+    "description": "Place this tile which grants an ADJACENCY BONUS of 2 energy. Increase your energy production 1 step for each plant resource on the area where you place the tile."
+  },
+  {
+    "id": "NATURAL_PRESERVE_ARES",
+    "name": "Natural Preserve Ares",
+    "class": "NaturalPreserveAres",
+    "module": "ares",
+    "type": "automated",
+    "tags": [
+      "SCIENCE",
+      "BUILDING"
+    ],
+    "cost": 9,
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      },
+      "tile": {
+        "type": "NATURAL_PRESERVE",
+        "on": "isolated",
+        "adjacencyBonus": {
+          "bonus": [
+            "MEGACREDITS"
+          ]
+        }
+      }
+    },
+    "adjacencyBonus": {
+      "bonus": [
+        "MEGACREDITS"
+      ]
+    },
+    "requirements": {
+      "oxygen": 4,
+      "max": true
+    },
+    "victoryPoints": 1,
+    "cardNumber": "A18",
+    "description": "Oxygen must be 4% or less. Place this tile NEXT TO NO OTHER TILE. The tile grants an ADJACENCY BONUS of of 1 M€. Increase your M€ production 1 step."
+  },
+  {
+    "id": "NUCLEAR_ZONE_ARES",
+    "name": "Nuclear Zone Ares",
+    "class": "NuclearZoneAres",
+    "module": "ares",
+    "type": "automated",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 11,
+    "behavior": {
+      "global": {
+        "temperature": 2
+      },
+      "tile": {
+        "type": "NUCLEAR_ZONE",
+        "on": "land",
+        "adjacencyBonus": {
+          "bonus": [],
+          "cost": 2
+        }
+      }
+    },
+    "victoryPoints": -2,
+    "cardNumber": "A19",
+    "description": "Raise the temperature two steps. Place this tile. Players must pay an additional 2M€ when they place a tile with their player marker on it ADJACENT to the Nuclear Zone."
+  },
+  {
+    "id": "OCEAN_CITY",
+    "name": "Ocean City",
+    "class": "OceanCity",
+    "module": "ares",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 18,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 3
+      },
+      "tile": {
+        "type": "OCEAN_CITY",
+        "on": "upgradeable-ocean"
+      }
+    },
+    "requirements": {
+      "oceans": 6
+    },
+    "cardNumber": "A20",
+    "description": "Requires 6 ocean tiles. Decrease your energy production 1 step and increase your M€ production 3 steps. Place this tile on top of an existing ocean tile, IGNORING NORMAL PLACEMENT RESTRICTIONS FOR CITIES. The tile counts as a city as well as an ocean."
+  },
+  {
+    "id": "OCEAN_FARM",
+    "name": "Ocean Farm",
+    "class": "OceanFarm",
+    "module": "ares",
+    "type": "automated",
+    "tags": [
+      "PLANT",
+      "BUILDING"
+    ],
+    "cost": 15,
+    "behavior": {
+      "production": {
+        "plants": 1,
+        "heat": 1
+      },
+      "tile": {
+        "type": "OCEAN_FARM",
+        "on": "upgradeable-ocean",
+        "adjacencyBonus": {
+          "bonus": [
+            "PLANT"
+          ]
+        }
+      }
+    },
+    "requirements": {
+      "oceans": 4
+    },
+    "cardNumber": "A21",
+    "description": "Requires 4 ocean tiles. Increase your heat production 1 step and increase your plant production 1 step. Place this tile on top of an existing ocean tile. The tile grants an ADJACENCY BONUS of 1 plant."
+  },
+  {
+    "id": "GREAT_DAM_ARES",
+    "name": "Great Dam Ares",
+    "class": "GreatDamAres",
+    "module": "ares",
+    "type": "automated",
+    "cost": 15,
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "adjacencyBonus": {
+      "bonus": [
+        "ENERGY",
+        "ENERGY"
+      ]
+    },
+    "behavior": {
+      "production": {
+        "energy": 2
+      }
+    },
+    "requirements": {
+      "oceans": 4
+    },
+    "victoryPoints": 1,
+    "cardNumber": "A25",
+    "description": "Requires 4 ocean tiles. Increase your energy production 2 steps. Place this tile ADJACENT TO an ocean tile. The tile grants an ADJACENCY BONUS of 2 Energy."
+  },
+  {
+    "id": "MAGNETIC_FIELD_GENERATORS_ARES",
+    "name": "Magnetic Field Generators Ares",
+    "class": "MagneticFieldGeneratorsAres",
+    "module": "ares",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 22,
+    "behavior": {
+      "production": {
+        "energy": -4,
+        "plants": 2
+      },
+      "tr": 3,
+      "tile": {
+        "type": "MAGNETIC_FIELD_GENERATORS",
+        "on": "land",
+        "adjacencyBonus": {
+          "bonus": [
+            "PLANT",
+            "MICROBE"
+          ]
+        }
+      }
+    },
+    "cardNumber": "Axx",
+    "description": "Decrease your energy production 4 steps and increase your plant production 2 steps. Raise your TR 3 steps. Place this tile, which provides an ADJACENCY BONUS of 1 plant and 1 microbe."
+  },
+  {
+    "id": "COLONIZER_TRAINING_CAMP",
+    "name": "Colonizer Training Camp",
+    "class": "ColonizerTrainingCamp",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "JOVIAN",
+      "BUILDING"
+    ],
+    "cost": 8,
+    "victoryPoints": 2,
+    "requirements": {
+      "oxygen": 5,
+      "max": true
+    },
+    "description": "Oxygen must be 5% or less.",
+    "cardNumber": "001"
+  },
+  {
+    "id": "ASTEROID_MINING_CONSORTIUM",
+    "name": "Asteroid Mining Consortium",
+    "class": "AsteroidMiningConsortium",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "JOVIAN"
+    ],
+    "cost": 13,
+    "victoryPoints": 1,
+    "requirements": {
+      "production": "TITANIUM",
+      "count": 1
+    },
+    "description": "Requires that you have titanium production. Decrease any titanium production 1 step and increase your own 1 step.",
+    "cardNumber": "002"
+  },
+  {
+    "id": "DEEP_WELL_HEATING",
+    "name": "Deep Well Heating",
+    "class": "DeepWellHeating",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 13,
+    "behavior": {
+      "production": {
+        "energy": 1
+      },
+      "global": {
+        "temperature": 1
+      }
+    },
+    "cardNumber": "003",
+    "description": "Increase your energy production 1 step. Increase temperature 1 step."
+  },
+  {
+    "id": "CLOUD_SEEDING",
+    "name": "Cloud Seeding",
+    "class": "CloudSeeding",
+    "module": "base",
+    "type": "automated",
+    "cost": 11,
+    "behavior": {
+      "production": {
+        "megacredits": -1,
+        "plants": 2
+      },
+      "decreaseAnyProduction": {
+        "type": "HEAT",
+        "count": 1
+      }
+    },
+    "requirements": {
+      "oceans": 3
+    },
+    "cardNumber": "004",
+    "description": "Requires 3 ocean tiles. Decrease your M€ production 1 step and any heat production 1 step. Increase your plant production 2 steps."
+  },
+  {
+    "id": "CAPITAL",
+    "name": "Capital",
+    "class": "Capital",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 26,
+    "behavior": {
+      "production": {
+        "energy": -2,
+        "megacredits": 5
+      },
+      "tile": {
+        "type": "CAPITAL",
+        "on": "city",
+        "title": "Select space for special city tile",
+        "adjacencyBonus": null
+      }
+    },
+    "requirements": {
+      "oceans": 4
+    },
+    "victoryPoints": {
+      "oceans": {},
+      "nextToThis": {}
+    },
+    "cardNumber": "008",
+    "description": "Requires 4 ocean tiles. Place this tile. Decrease your energy production 2 steps and increase your M€ production 5 steps."
+  },
+  {
+    "id": "DOMED_CRATER",
+    "name": "Domed Crater",
+    "class": "DomedCrater",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 24,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 3
+      },
+      "stock": {
+        "plants": 3
+      },
+      "city": {}
+    },
+    "requirements": {
+      "oxygen": 7,
+      "max": true
+    },
+    "cardNumber": "016",
+    "description": "Oxygen must be 7% or less. Gain 3 plants. Place a city tile. Decrease your energy production 1 step and increase your M€ production 3 steps."
+  },
+  {
+    "id": "NOCTIS_CITY",
+    "name": "Noctis City",
+    "class": "NoctisCity",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 18,
+    "behavior": {
+      "production": {
+        "megacredits": 3
+      }
+    },
+    "cardNumber": "017",
+    "description": "Decrease your energy production 1 step and increase your M€ production 3 steps. Place a city tile ON THE RESERVED AREA, disregarding normal placement restrictions."
+  },
+  {
+    "id": "METHANE_FROM_TITAN",
+    "name": "Methane From Titan",
+    "class": "MethaneFromTitan",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "cost": 28,
+    "victoryPoints": 2,
+    "behavior": {
+      "production": {
+        "heat": 2,
+        "plants": 2
+      }
+    },
+    "requirements": {
+      "oxygen": 2
+    },
+    "description": "Requires 2% oxygen. Increase your heat production 2 steps and your plant production 2 steps.",
+    "cardNumber": "018"
+  },
+  {
+    "id": "PHOBOS_SPACE_HAVEN",
+    "name": "Phobos Space Haven",
+    "class": "PhobosSpaceHaven",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SPACE",
+      "CITY"
+    ],
+    "cost": 25,
+    "victoryPoints": 3,
+    "behavior": {
+      "production": {
+        "titanium": 1
+      },
+      "city": {
+        "space": "PHOBOS_SPACE_HAVEN"
+      }
+    },
+    "cardNumber": "021",
+    "description": "Increase your titanium production 1 step and place a city tile ON THE RESERVED AREA."
+  },
+  {
+    "id": "BLACK_POLAR_DUST",
+    "name": "Black Polar Dust",
+    "class": "BlackPolarDust",
+    "module": "base",
+    "type": "automated",
+    "cost": 15,
+    "behavior": {
+      "ocean": {},
+      "production": {
+        "megacredits": -2,
+        "heat": 3
+      }
+    },
+    "cardNumber": "022",
+    "description": "Place an ocean tile. Decrease your M€ production 2 steps and increase your heat production 3 steps."
+  },
+  {
+    "id": "EOS_CHASMA_NATIONAL_PARK",
+    "name": "Eos Chasma National Park",
+    "class": "EosChasmaNationalPark",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT",
+      "BUILDING"
+    ],
+    "cost": 16,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      },
+      "stock": {
+        "plants": 3
+      },
+      "addResourcesToAnyCard": {
+        "count": 1,
+        "type": "ANIMAL"
+      }
+    },
+    "requirements": {
+      "temperature": -12
+    },
+    "cardNumber": "026",
+    "description": "Requires -12 C or warmer. Add 1 animal TO ANY ANIMAL CARD. Gain 3 plants. Increase your M€ production 2 steps."
+  },
+  {
+    "id": "CUPOLA_CITY",
+    "name": "Cupola City",
+    "class": "CupolaCity",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 16,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 3
+      },
+      "city": {}
+    },
+    "requirements": {
+      "oxygen": 9,
+      "max": true
+    },
+    "cardNumber": "029",
+    "description": "Oxygen must be 9% or less. Place a city tile. Decrease your energy production 1 step and increase your M€ production 3 steps."
+  },
+  {
+    "id": "LUNAR_BEAM",
+    "name": "Lunar Beam",
+    "class": "LunarBeam",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "EARTH",
+      "POWER"
+    ],
+    "cost": 13,
+    "behavior": {
+      "production": {
+        "megacredits": -2,
+        "heat": 2,
+        "energy": 2
+      }
+    },
+    "cardNumber": "030",
+    "description": "Decrease your M€ production 2 steps and increase your heat production and energy production 2 steps each."
+  },
+  {
+    "id": "UNDERGROUND_CITY",
+    "name": "Underground City",
+    "class": "UndergroundCity",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 18,
+    "behavior": {
+      "production": {
+        "energy": -2,
+        "steel": 2
+      },
+      "city": {}
+    },
+    "cardNumber": "032",
+    "description": "Place a city tile. Decrease your energy production 2 steps and increase your steel production 2 steps."
+  },
+  {
+    "id": "ASTEROID_MINING",
+    "name": "Asteroid Mining",
+    "class": "AsteroidMining",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "cost": 30,
+    "victoryPoints": 2,
+    "behavior": {
+      "production": {
+        "titanium": 2
+      }
+    },
+    "description": "Increase your titanium production 2 steps.",
+    "cardNumber": "040"
+  },
+  {
+    "id": "FOOD_FACTORY",
+    "name": "Food Factory",
+    "class": "FoodFactory",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 12,
+    "behavior": {
+      "production": {
+        "megacredits": 4,
+        "plants": -1
+      }
+    },
+    "victoryPoints": 1,
+    "cardNumber": "041",
+    "description": "Decrease your plant production 1 step and increase your M€ production 4 steps."
+  },
+  {
+    "id": "ARCHAEBACTERIA",
+    "name": "Archaebacteria",
+    "class": "ArchaeBacteria",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "MICROBE"
+    ],
+    "cost": 6,
+    "behavior": {
+      "production": {
+        "plants": 1
+      }
+    },
+    "requirements": {
+      "temperature": -18,
+      "max": true
+    },
+    "description": "It must be -18 C or colder. Increase your plant production 1 step.",
+    "cardNumber": "042"
+  },
+  {
+    "id": "CARBONATE_PROCESSING",
+    "name": "Carbonate Processing",
+    "class": "CarbonateProcessing",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 6,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "heat": 3
+      }
+    },
+    "cardNumber": "043",
+    "description": "Decrease your energy production 1 step and increase your heat production 3 steps."
+  },
+  {
+    "id": "NATURAL_PRESERVE",
+    "name": "Natural Preserve",
+    "class": "NaturalPreserve",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SCIENCE",
+      "BUILDING"
+    ],
+    "cost": 9,
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      },
+      "tile": {
+        "type": "NATURAL_PRESERVE",
+        "on": "isolated",
+        "adjacencyBonus": null
+      }
+    },
+    "adjacencyBonus": null,
+    "requirements": {
+      "oxygen": 4,
+      "max": true
+    },
+    "victoryPoints": 1,
+    "cardNumber": "044",
+    "description": "Oxygen must be 4% or less. Place this tile NEXT TO NO OTHER TILE. Increase your M€ production 1 step."
+  },
+  {
+    "id": "NUCLEAR_POWER",
+    "name": "Nuclear Power",
+    "class": "NuclearPower",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 10,
+    "behavior": {
+      "production": {
+        "energy": 3,
+        "megacredits": -2
+      }
+    },
+    "cardNumber": "045",
+    "description": "Decrease your M€ production 2 steps and increase your energy production 3 steps."
+  },
+  {
+    "id": "LIGHTNING_HARVEST",
+    "name": "Lightning Harvest",
+    "class": "LightningHarvest",
+    "module": "base",
+    "type": "automated",
+    "cost": 8,
+    "tags": [
+      "POWER"
+    ],
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "energy": 1,
+        "megacredits": 1
+      }
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 3
+    },
+    "cardNumber": "046",
+    "description": "Requires 3 science tags. Increase your energy production and your M€ production one step each."
+  },
+  {
+    "id": "ALGAE",
+    "name": "Algae",
+    "class": "Algae",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 10,
+    "behavior": {
+      "production": {
+        "plants": 2
+      },
+      "stock": {
+        "plants": 1
+      }
+    },
+    "requirements": {
+      "oceans": 5
+    },
+    "description": "Requires 5 ocean tiles. Gain 1 plant and increase your plant production 2 steps.",
+    "cardNumber": "047"
+  },
+  {
+    "id": "ADAPTED_LICHEN",
+    "name": "Adapted Lichen",
+    "class": "AdaptedLichen",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 9,
+    "behavior": {
+      "production": {
+        "plants": 1
+      }
+    },
+    "description": "Increase your plant production 1 step.",
+    "cardNumber": "048"
+  },
+  {
+    "id": "MIRANDA_RESORT",
+    "name": "Miranda Resort",
+    "class": "MirandaResort",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "cost": 12,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "tag": "EARTH"
+        }
+      }
+    },
+    "cardNumber": "051",
+    "description": "Increase your M€ production 1 step for each Earth tag you have."
+  },
+  {
+    "id": "LAKE_MARINERIS",
+    "name": "Lake Marineris",
+    "class": "LakeMarineris",
+    "module": "base",
+    "type": "automated",
+    "cost": 18,
+    "requirements": {
+      "temperature": 0
+    },
+    "victoryPoints": 2,
+    "behavior": {
+      "ocean": {
+        "count": 2
+      }
+    },
+    "cardNumber": "053",
+    "description": "Requires 0° C or warmer. Place 2 ocean tiles."
+  },
+  {
+    "id": "KELP_FARMING",
+    "name": "Kelp Farming",
+    "class": "KelpFarming",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 17,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": 2,
+        "plants": 3
+      },
+      "stock": {
+        "plants": 2
+      }
+    },
+    "requirements": {
+      "oceans": 6
+    },
+    "cardNumber": "055",
+    "description": "Requires 6 ocean tiles. Increase your M€ production 2 steps and your plant production 3 steps. Gain 2 plants."
+  },
+  {
+    "id": "MINE",
+    "name": "Mine",
+    "class": "Mine",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 4,
+    "behavior": {
+      "production": {
+        "steel": 1
+      }
+    },
+    "description": "Increase your steel production 1 step.",
+    "cardNumber": "056"
+  },
+  {
+    "id": "VESTA_SHIPYARD",
+    "name": "Vesta Shipyard",
+    "class": "VestaShipyard",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "cost": 15,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "titanium": 1
+      }
+    },
+    "cardNumber": "057",
+    "description": "Increase your titanium production 1 step."
+  },
+  {
+    "id": "BEAM_FROM_A_THORIUM_ASTEROID",
+    "name": "Beam From A Thorium Asteroid",
+    "class": "BeamFromAThoriumAsteroid",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "JOVIAN",
+      "SPACE",
+      "POWER"
+    ],
+    "cost": 32,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "heat": 3,
+        "energy": 3
+      }
+    },
+    "requirements": {
+      "tag": "JOVIAN"
+    },
+    "cardNumber": "058",
+    "description": "Requires a Jovian tag. Increase your heat production and energy production 3 steps each."
+  },
+  {
+    "id": "MANGROVE",
+    "name": "Mangrove",
+    "class": "Mangrove",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 12,
+    "victoryPoints": 1,
+    "behavior": {
+      "greenery": {
+        "on": "ocean"
+      }
+    },
+    "requirements": {
+      "temperature": 4
+    },
+    "cardNumber": "059",
+    "description": "Requires +4 C or warmer. Place a greenery tile ON AN AREA RESERVED FOR OCEAN and raise oxygen 1 step. Disregard normal placement restrictions for this."
+  },
+  {
+    "id": "TREES",
+    "name": "Trees",
+    "class": "Trees",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 13,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "plants": 3
+      },
+      "stock": {
+        "plants": 1
+      }
+    },
+    "requirements": {
+      "temperature": -4
+    },
+    "cardNumber": "060",
+    "description": "Requires -4 C or warmer. Increase your plant production 3 steps. Gain 1 plant."
+  },
+  {
+    "id": "GREAT_ESCARPMENT_CONSORTIUM",
+    "name": "Great Escarpment Consortium",
+    "class": "GreatEscarpmentConsortium",
+    "module": "base",
+    "type": "automated",
+    "cost": 6,
+    "requirements": {
+      "production": "STEEL",
+      "count": 1
+    },
+    "cardNumber": "061",
+    "description": "Requires that you have steel production. Decrease any steel production 1 step and increase your own 1 step."
+  },
+  {
+    "id": "MINING_AREA",
+    "name": "Mining Area",
+    "class": "MiningArea",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 4,
+    "cardNumber": "064",
+    "description": "Place this tile on an area with a steel or titanium placement bonus, adjacent to another of your tiles. Increase your production of that resource 1 step."
+  },
+  {
+    "id": "BUILDING_INDUSTRIES",
+    "name": "Building Industries",
+    "class": "BuildingIndustries",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 6,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "steel": 2
+      }
+    },
+    "cardNumber": "065",
+    "description": "Decrease your energy production 1 step and increase your steel production 2 steps."
+  },
+  {
+    "id": "MINING_RIGHTS",
+    "name": "Mining Rights",
+    "class": "MiningRights",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 9,
+    "cardNumber": "067",
+    "description": "Place this tile on an area with a steel or titanium placement bonus. Increase that production 1 step."
+  },
+  {
+    "id": "SPONSORS",
+    "name": "Sponsors",
+    "class": "Sponsors",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 6,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      }
+    },
+    "cardNumber": "068",
+    "description": "Increase your M€ production 2 steps."
+  },
+  {
+    "id": "SOLAR_WIND_POWER",
+    "name": "Solar Wind Power",
+    "class": "SolarWindPower",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SCIENCE",
+      "SPACE",
+      "POWER"
+    ],
+    "cost": 11,
+    "behavior": {
+      "production": {
+        "energy": 1
+      },
+      "stock": {
+        "titanium": 2
+      }
+    },
+    "cardNumber": "077",
+    "description": "Increase your energy production 1 step and gain 2 titanium."
+  },
+  {
+    "id": "GANYMEDE_COLONY",
+    "name": "Ganymede Colony",
+    "class": "GanymedeColony",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "JOVIAN",
+      "SPACE",
+      "CITY"
+    ],
+    "cost": 20,
+    "victoryPoints": {
+      "tag": "JOVIAN"
+    },
+    "behavior": {
+      "city": {
+        "space": "GANYMEDE_COLONY"
+      }
+    },
+    "description": "Place a city tile ON THE RESERVED AREA.",
+    "cardNumber": "081"
+  },
+  {
+    "id": "CALLISTO_PENAL_MINES",
+    "name": "Callisto Penal Mines",
+    "class": "CallistoPenalMines",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "cost": 24,
+    "victoryPoints": 2,
+    "behavior": {
+      "production": {
+        "megacredits": 3
+      }
+    },
+    "description": "Increase your M€ production 3 steps.",
+    "cardNumber": "082"
+  },
+  {
+    "id": "GIANT_SPACE_MIRROR",
+    "name": "Giant Space Mirror",
+    "class": "GiantSpaceMirror",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "SPACE"
+    ],
+    "cost": 17,
+    "behavior": {
+      "production": {
+        "energy": 3
+      }
+    },
+    "cardNumber": "083",
+    "description": "Increase your energy production 3 steps."
+  },
+  {
+    "id": "TRANS_NEPTUNE_PROBE",
+    "name": "Trans Neptune Probe",
+    "class": "TransNeptuneProbe",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SCIENCE",
+      "SPACE"
+    ],
+    "cost": 6,
+    "victoryPoints": 1,
+    "cardNumber": "084"
+  },
+  {
+    "id": "COMMERCIAL_DISTRICT",
+    "name": "Commercial District",
+    "class": "CommercialDistrict",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 16,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 4
+      },
+      "tile": {
+        "type": "COMMERCIAL_DISTRICT",
+        "on": "land",
+        "adjacencyBonus": null
+      }
+    },
+    "victoryPoints": {
+      "cities": {},
+      "nextToThis": {}
+    },
+    "cardNumber": "085",
+    "description": "Place this tile. Decrease your energy production 1 step and increase your M€ production 4 steps."
+  },
+  {
+    "id": "ROBOTIC_WORKFORCE",
+    "name": "Robotic Workforce",
+    "class": "RoboticWorkforce",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 9,
+    "cardNumber": "086",
+    "description": "Duplicate only the production box of one of your building cards.",
+    "helpText": "HELP_TEXT"
+  },
+  {
+    "id": "GRASS",
+    "name": "Grass",
+    "class": "Grass",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 11,
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "stock": {
+        "plants": 3
+      }
+    },
+    "requirements": {
+      "temperature": -16
+    },
+    "cardNumber": "087",
+    "description": "Requires -16° C or warmer. Increase your plant production 1 step. Gain 3 plants."
+  },
+  {
+    "id": "PEROXIDE_POWER",
+    "name": "Peroxide Power",
+    "class": "PeroxidePower",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 7,
+    "behavior": {
+      "production": {
+        "energy": 2,
+        "megacredits": -1
+      }
+    },
+    "cardNumber": "089",
+    "description": "Decrease your M€ production 1 step and increase your energy production 2 steps."
+  },
+  {
+    "id": "RESEARCH",
+    "name": "Research",
+    "class": "Research",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SCIENCE",
+      "SCIENCE"
+    ],
+    "cost": 11,
+    "victoryPoints": 1,
+    "behavior": {
+      "drawCard": 2
+    },
+    "cardNumber": "090",
+    "description": "Counts as playing 2 science cards. Draw 2 cards."
+  },
+  {
+    "id": "GENE_REPAIR",
+    "name": "Gene Repair",
+    "class": "GeneRepair",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 12,
+    "victoryPoints": 2,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      }
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 3
+    },
+    "cardNumber": "091",
+    "description": "Requires 3 science tags. Increase your M€ production 2 steps."
+  },
+  {
+    "id": "IO_MINING_INDUSTRIES",
+    "name": "Io Mining Industries",
+    "class": "IoMiningIndustries",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "cost": 41,
+    "victoryPoints": {
+      "tag": "JOVIAN"
+    },
+    "behavior": {
+      "production": {
+        "titanium": 2,
+        "megacredits": 2
+      }
+    },
+    "cardNumber": "092",
+    "description": "Increase your titanium production 2 steps and your M€ production 2 steps."
+  },
+  {
+    "id": "BUSHES",
+    "name": "Bushes",
+    "class": "Bushes",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 10,
+    "behavior": {
+      "production": {
+        "plants": 2
+      },
+      "stock": {
+        "plants": 2
+      }
+    },
+    "requirements": {
+      "temperature": -10
+    },
+    "cardNumber": "093",
+    "description": "Requires -10 C or warmer. Increase your plant production 2 steps. Gain 2 plants."
+  },
+  {
+    "id": "GREENHOUSES",
+    "name": "Greenhouses",
+    "class": "Greenhouses",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT",
+      "BUILDING"
+    ],
+    "cost": 6,
+    "behavior": {
+      "stock": {
+        "plants": {
+          "cities": {}
+        }
+      }
+    },
+    "cardNumber": "096",
+    "description": "Gain 1 plant for each city tile in play."
+  },
+  {
+    "id": "NUCLEAR_ZONE",
+    "name": "Nuclear Zone",
+    "class": "NuclearZone",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 10,
+    "behavior": {
+      "global": {
+        "temperature": 2
+      },
+      "tile": {
+        "type": "NUCLEAR_ZONE",
+        "on": "land",
+        "adjacencyBonus": null
+      }
+    },
+    "victoryPoints": -2,
+    "cardNumber": "097",
+    "description": "Place this tile and raise temperature 2 steps."
+  },
+  {
+    "id": "TROPICAL_RESORT",
+    "name": "Tropical Resort",
+    "class": "TropicalResort",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 13,
+    "behavior": {
+      "production": {
+        "megacredits": 3,
+        "heat": -2
+      }
+    },
+    "victoryPoints": 2,
+    "cardNumber": "098",
+    "description": "Reduce your heat production 2 steps and increase your M€ production 3 steps."
+  },
+  {
+    "id": "TOLL_STATION",
+    "name": "Toll Station",
+    "class": "TollStation",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 12,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "tag": "SPACE",
+          "others": true
+        }
+      }
+    },
+    "cardNumber": "099",
+    "description": "Increase your M€ production 1 step for each space tag your OPPONENTS have."
+  },
+  {
+    "id": "FUELED_GENERATORS",
+    "name": "Fueled Generators",
+    "class": "FueledGenerators",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 1,
+    "behavior": {
+      "production": {
+        "energy": 1,
+        "megacredits": -1
+      }
+    },
+    "cardNumber": "100",
+    "description": "Decrease your M€ production 1 step and increase your energy production 1 steps."
+  },
+  {
+    "id": "POWER_GRID",
+    "name": "Power Grid",
+    "class": "PowerGrid",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER"
+    ],
+    "cost": 18,
+    "behavior": {
+      "production": {
+        "energy": {
+          "tag": "POWER"
+        }
+      }
+    },
+    "cardNumber": "102",
+    "description": "Increase your energy production step for each power tag you have, including this."
+  },
+  {
+    "id": "ACQUIRED_COMPANY",
+    "name": "Acquired Company",
+    "class": "AcquiredCompany",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 10,
+    "behavior": {
+      "production": {
+        "megacredits": 3
+      }
+    },
+    "description": "Increase your M€ production 3 steps.",
+    "cardNumber": "106"
+  },
+  {
+    "id": "MEDIA_ARCHIVES",
+    "name": "Media Archives",
+    "class": "MediaArchives",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 8,
+    "behavior": {
+      "stock": {
+        "megacredits": {
+          "eventsPlayed": true,
+          "all": true
+        }
+      }
+    },
+    "cardNumber": "107",
+    "description": "Gain 1 M€ for each event EVER PLAYED by all players."
+  },
+  {
+    "id": "OPEN_CITY",
+    "name": "Open City",
+    "class": "OpenCity",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 23,
+    "requirements": {
+      "oxygen": 12
+    },
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 4
+      },
+      "stock": {
+        "plants": 2
+      },
+      "city": {}
+    },
+    "cardNumber": "108",
+    "description": "Requires 12% oxygen. Gain 2 plants. Place a city tile. Decrease your energy production 1 step and increase your M€ production 4 steps."
+  },
+  {
+    "id": "SOLAR_POWER",
+    "name": "Solar Power",
+    "class": "SolarPower",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 11,
+    "behavior": {
+      "production": {
+        "energy": 1
+      }
+    },
+    "victoryPoints": 1,
+    "cardNumber": "113",
+    "description": "Increase your energy production 1 step."
+  },
+  {
+    "id": "BREATHING_FILTERS",
+    "name": "Breathing Filters",
+    "class": "BreathingFilters",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 11,
+    "victoryPoints": 2,
+    "requirements": {
+      "oxygen": 7
+    },
+    "description": "Requires 7% oxygen.",
+    "cardNumber": "114"
+  },
+  {
+    "id": "ARTIFICIAL_PHOTOSYNTHESIS",
+    "name": "Artificial Photosynthesis",
+    "class": "ArtificialPhotosynthesis",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 12,
+    "behavior": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "production": {
+              "energy": 2
+            },
+            "title": "Increase your energy production 2 steps"
+          },
+          {
+            "production": {
+              "plants": 1
+            },
+            "title": "Increase your plant production 1 step"
+          }
+        ]
+      }
+    },
+    "description": "Increase your plant production 1 step or your energy production 2 steps.",
+    "cardNumber": "115"
+  },
+  {
+    "id": "ARTIFICIAL_LAKE",
+    "name": "Artificial Lake",
+    "class": "ArtificialLake",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 15,
+    "victoryPoints": 1,
+    "behavior": {
+      "ocean": {
+        "on": "land"
+      }
+    },
+    "requirements": {
+      "temperature": -6
+    },
+    "description": "Requires -6 C or warmer. Place 1 ocean tile ON AN AREA NOT RESERVED FOR OCEAN.",
+    "cardNumber": "116"
+  },
+  {
+    "id": "GEOTHERMAL_POWER",
+    "name": "Geothermal Power",
+    "class": "GeothermalPower",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 11,
+    "behavior": {
+      "production": {
+        "energy": 2
+      }
+    },
+    "cardNumber": "117",
+    "description": "Increase your energy production 2 steps."
+  },
+  {
+    "id": "FARMING",
+    "name": "Farming",
+    "class": "Farming",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 16,
+    "victoryPoints": 2,
+    "behavior": {
+      "production": {
+        "megacredits": 2,
+        "plants": 2
+      },
+      "stock": {
+        "plants": 2
+      }
+    },
+    "requirements": {
+      "temperature": 4
+    },
+    "cardNumber": "118",
+    "description": "Requires +4° C or warmer. Increase your M€ production 2 steps and your plant production 2 steps. Gain 2 plants."
+  },
+  {
+    "id": "DUST_SEALS",
+    "name": "Dust Seals",
+    "class": "DustSeals",
+    "module": "base",
+    "type": "automated",
+    "cost": 2,
+    "victoryPoints": 1,
+    "requirements": {
+      "oceans": 3,
+      "max": true
+    },
+    "description": "Requires 3 or less ocean tiles.",
+    "cardNumber": "119"
+  },
+  {
+    "id": "URBANIZED_AREA",
+    "name": "Urbanized Area",
+    "class": "UrbanizedArea",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 10,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      }
+    },
+    "cardNumber": "120",
+    "description": "Decrease your energy production 1 step and increase your M€ production 2 steps. Place a city tile ADJACENT TO AT LEAST 2 OTHER CITY TILES."
+  },
+  {
+    "id": "MOSS",
+    "name": "Moss",
+    "class": "Moss",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 4,
+    "behavior": {
+      "production": {
+        "plants": 1
+      }
+    },
+    "requirements": {
+      "oceans": 3
+    },
+    "cardNumber": "122",
+    "description": "Requires 3 ocean tiles and that you lose 1 plant. Increase your plant production 1 step."
+  },
+  {
+    "id": "GHG_FACTORIES",
+    "name": "Ghg Factories",
+    "class": "GHGFactories",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 11,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "heat": 4
+      }
+    },
+    "cardNumber": "126",
+    "description": "Decrease your energy production 1 step and increase your heat production 4 steps."
+  },
+  {
+    "id": "ZEPPELINS",
+    "name": "Zeppelins",
+    "class": "Zeppelins",
+    "module": "base",
+    "type": "automated",
+    "cost": 13,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "cities": {
+            "where": "onmars"
+          }
+        }
+      }
+    },
+    "requirements": {
+      "oxygen": 5
+    },
+    "cardNumber": "129",
+    "description": "Requires 5% oxygen. Increase your M€ production 1 step for each city tile ON MARS."
+  },
+  {
+    "id": "WORMS",
+    "name": "Worms",
+    "class": "Worms",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "MICROBE"
+    ],
+    "cost": 8,
+    "behavior": {
+      "production": {
+        "plants": {
+          "tag": "MICROBE",
+          "per": 2
+        }
+      }
+    },
+    "requirements": {
+      "oxygen": 4
+    },
+    "cardNumber": "130",
+    "description": "Requires 4% oxygen. Increase your plant production 1 step for every 2 microbe tags you have, including this."
+  },
+  {
+    "id": "FUSION_POWER",
+    "name": "Fusion Power",
+    "class": "FusionPower",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SCIENCE",
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 14,
+    "behavior": {
+      "production": {
+        "energy": 3
+      }
+    },
+    "requirements": {
+      "tag": "POWER",
+      "count": 2
+    },
+    "cardNumber": "132",
+    "description": "Requires 2 power tags. Increase your energy production 3 steps."
+  },
+  {
+    "id": "ADVANCED_ECOSYSTEMS",
+    "name": "Advanced Ecosystems",
+    "class": "AdvancedEcosystems",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT",
+      "MICROBE",
+      "ANIMAL"
+    ],
+    "cost": 11,
+    "victoryPoints": 3,
+    "requirements": [
+      {
+        "tag": "PLANT"
+      },
+      {
+        "tag": "ANIMAL"
+      },
+      {
+        "tag": "MICROBE"
+      }
+    ],
+    "description": "Requires a plant tag, a microbe tag, and an animal tag.",
+    "cardNumber": "135"
+  },
+  {
+    "id": "GREAT_DAM",
+    "name": "Great Dam",
+    "class": "GreatDam",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 12,
+    "behavior": {
+      "production": {
+        "energy": 2
+      }
+    },
+    "victoryPoints": 1,
+    "requirements": {
+      "oceans": 4
+    },
+    "cardNumber": "136",
+    "description": "Requires 4 ocean tiles. Increase your energy production 2 steps."
+  },
+  {
+    "id": "CARTEL",
+    "name": "Cartel",
+    "class": "Cartel",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 8,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "tag": "EARTH"
+        }
+      }
+    },
+    "cardNumber": "137",
+    "description": "Increase your M€ production 1 step for each Earth tag you have, including this."
+  },
+  {
+    "id": "STRIP_MINE",
+    "name": "Strip Mine",
+    "class": "StripMine",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 25,
+    "behavior": {
+      "production": {
+        "energy": -2,
+        "steel": 2,
+        "titanium": 1
+      },
+      "global": {
+        "oxygen": 2
+      }
+    },
+    "cardNumber": "138",
+    "description": "Decrease your energy production 2 steps. Increase your steel production 2 steps and your titanium production 1 step. Raise oxygen 2 steps."
+  },
+  {
+    "id": "WAVE_POWER",
+    "name": "Wave Power",
+    "class": "WavePower",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER"
+    ],
+    "cost": 8,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "energy": 1
+      }
+    },
+    "requirements": {
+      "oceans": 3
+    },
+    "cardNumber": "139",
+    "description": "Requires 3 ocean tiles. Increase your energy production 1 step."
+  },
+  {
+    "id": "POWER_PLANT",
+    "name": "Power Plant",
+    "class": "PowerPlant",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 4,
+    "behavior": {
+      "production": {
+        "energy": 1
+      }
+    },
+    "cardNumber": "141",
+    "description": "Increase your energy production 1 step."
+  },
+  {
+    "id": "MOHOLE_AREA",
+    "name": "Mohole Area",
+    "class": "MoholeArea",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 20,
+    "behavior": {
+      "production": {
+        "heat": 4
+      },
+      "tile": {
+        "type": "MOHOLE_AREA",
+        "on": "ocean",
+        "adjacencyBonus": null
+      }
+    },
+    "cardNumber": "142",
+    "description": "Increase your heat production 4 steps. Place this tile ON AN AREA RESERVED FOR OCEAN."
+  },
+  {
+    "id": "TITANIUM_MINE",
+    "name": "Titanium Mine",
+    "class": "TitaniumMine",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 7,
+    "behavior": {
+      "production": {
+        "titanium": 1
+      }
+    },
+    "cardNumber": "144",
+    "description": "Increase your titanium production 1 step."
+  },
+  {
+    "id": "TECTONIC_STRESS_POWER",
+    "name": "Tectonic Stress Power",
+    "class": "TectonicStressPower",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 18,
+    "behavior": {
+      "production": {
+        "energy": 3
+      }
+    },
+    "victoryPoints": 1,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "cardNumber": "145",
+    "description": "Requires 2 science tags. Increase your energy production 3 steps."
+  },
+  {
+    "id": "NITROPHILIC_MOSS",
+    "name": "Nitrophilic Moss",
+    "class": "NitrophilicMoss",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 8,
+    "behavior": {
+      "production": {
+        "plants": 2
+      }
+    },
+    "requirements": {
+      "oceans": 3
+    },
+    "cardNumber": "146",
+    "description": "Requires 3 ocean tiles and that you lose 2 plants. Increase your plant production 2 steps."
+  },
+  {
+    "id": "INSECTS",
+    "name": "Insects",
+    "class": "Insects",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "MICROBE"
+    ],
+    "cost": 9,
+    "behavior": {
+      "production": {
+        "plants": {
+          "tag": "PLANT"
+        }
+      }
+    },
+    "requirements": {
+      "oxygen": 6
+    },
+    "cardNumber": "148",
+    "description": "Requires 6% oxygen. Increase your plant production 1 step for each plant tag you have."
+  },
+  {
+    "id": "INSULATION",
+    "name": "Insulation",
+    "class": "Insulation",
+    "module": "base",
+    "type": "automated",
+    "cost": 2,
+    "cardNumber": "152",
+    "description": "Decrease your heat production any number of steps and increase your M€ production the same number of steps."
+  },
+  {
+    "id": "DESIGNED_MICROORGANISMS",
+    "name": "Designed Microorganisms",
+    "class": "DesignedMicroOrganisms",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SCIENCE",
+      "MICROBE"
+    ],
+    "cost": 16,
+    "behavior": {
+      "production": {
+        "plants": 2
+      }
+    },
+    "requirements": {
+      "temperature": -14,
+      "max": true
+    },
+    "cardNumber": "155",
+    "description": "It must be -14 C or colder. Increase your plant production 2 steps."
+  },
+  {
+    "id": "INDUSTRIAL_MICROBES",
+    "name": "Industrial Microbes",
+    "class": "IndustrialMicrobes",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "MICROBE",
+      "BUILDING"
+    ],
+    "cost": 12,
+    "behavior": {
+      "production": {
+        "energy": 1,
+        "steel": 1
+      }
+    },
+    "cardNumber": "158",
+    "description": "Increase your energy production and your steel production 1 step each."
+  },
+  {
+    "id": "LICHEN",
+    "name": "Lichen",
+    "class": "Lichen",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 7,
+    "behavior": {
+      "production": {
+        "plants": 1
+      }
+    },
+    "requirements": {
+      "temperature": -24
+    },
+    "cardNumber": "159",
+    "description": "Requires -24 C or warmer. Increase your plant production 1 step."
+  },
+  {
+    "id": "POWER_SUPPLY_CONSORTIUM",
+    "name": "Power Supply Consortium",
+    "class": "PowerSupplyConsortium",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER"
+    ],
+    "cost": 5,
+    "requirements": {
+      "tag": "POWER",
+      "count": 2
+    },
+    "cardNumber": "160",
+    "description": "Requires 2 power tags. Decrease any energy production 1 step and increase your own 1 step."
+  },
+  {
+    "id": "MICRO_MILLS",
+    "name": "Micro Mills",
+    "class": "MicroMills",
+    "module": "base",
+    "type": "automated",
+    "cost": 3,
+    "behavior": {
+      "production": {
+        "heat": 1
+      }
+    },
+    "cardNumber": "164",
+    "description": "Increase your heat production 1 step."
+  },
+  {
+    "id": "MAGNETIC_FIELD_GENERATORS",
+    "name": "Magnetic Field Generators",
+    "class": "MagneticFieldGenerators",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 20,
+    "behavior": {
+      "production": {
+        "energy": -4,
+        "plants": 2
+      },
+      "tr": 3
+    },
+    "cardNumber": "165",
+    "description": "Decrease your energy production 4 steps and increase your plant production 2 steps. Raise your TR 3 steps."
+  },
+  {
+    "id": "WINDMILLS",
+    "name": "Windmills",
+    "class": "Windmills",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 6,
+    "behavior": {
+      "production": {
+        "energy": 1
+      }
+    },
+    "victoryPoints": 1,
+    "requirements": {
+      "oxygen": 7
+    },
+    "cardNumber": "168",
+    "description": "Requires 7% oxygen. Increase your energy production 1 step."
+  },
+  {
+    "id": "TUNDRA_FARMING",
+    "name": "Tundra Farming",
+    "class": "TundraFarming",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 16,
+    "victoryPoints": 2,
+    "behavior": {
+      "production": {
+        "plants": 1,
+        "megacredits": 2
+      },
+      "stock": {
+        "plants": 1
+      }
+    },
+    "requirements": {
+      "temperature": -6
+    },
+    "cardNumber": "169",
+    "description": "Requires -6° C or warmer. Increase your plant production 1 step and your M€ production 2 steps. Gain 1 plant."
+  },
+  {
+    "id": "MAGNETIC_FIELD_DOME",
+    "name": "Magnetic Field Dome",
+    "class": "MagneticFieldDome",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 5,
+    "behavior": {
+      "production": {
+        "energy": -2,
+        "plants": 1
+      },
+      "tr": 1
+    },
+    "cardNumber": "171",
+    "description": "Decrease your energy production 2 steps and increase your plant production 1 step. Raise your TR 1 step."
+  },
+  {
+    "id": "PROTECTED_VALLEY",
+    "name": "Protected Valley",
+    "class": "ProtectedValley",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT",
+      "BUILDING"
+    ],
+    "cost": 23,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      },
+      "greenery": {
+        "on": "ocean"
+      }
+    },
+    "cardNumber": "174",
+    "description": "Increase your M€ production 2 steps. Place a greenery tile ON AN AREA RESERVED FOR OCEAN, disregarding normal placement restrictions, and increase oxygen 1 step."
+  },
+  {
+    "id": "SATELLITES",
+    "name": "Satellites",
+    "class": "Satellites",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 10,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "tag": "SPACE"
+        }
+      }
+    },
+    "cardNumber": "175",
+    "description": "Increase your M€ production 1 step for each space tag you have, including this one."
+  },
+  {
+    "id": "NOCTIS_FARMING",
+    "name": "Noctis Farming",
+    "class": "NoctisFarming",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT",
+      "BUILDING"
+    ],
+    "cost": 10,
+    "requirements": {
+      "temperature": -20
+    },
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      },
+      "stock": {
+        "plants": 2
+      }
+    },
+    "cardNumber": "176",
+    "description": "Requires -20 C or warmer. Increase your M€ production 1 step and gain 2 plants."
+  },
+  {
+    "id": "HEAT_TRAPPERS",
+    "name": "Heat Trappers",
+    "class": "HeatTrappers",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 6,
+    "victoryPoints": -1,
+    "behavior": {
+      "decreaseAnyProduction": {
+        "type": "HEAT",
+        "count": 2
+      },
+      "production": {
+        "energy": 1
+      }
+    },
+    "cardNumber": "178",
+    "description": "Decrease any heat production 2 steps and increase your energy production 1 step."
+  },
+  {
+    "id": "SOIL_FACTORY",
+    "name": "Soil Factory",
+    "class": "SoilFactory",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 9,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "plants": 1
+      }
+    },
+    "victoryPoints": 1,
+    "cardNumber": "179",
+    "description": "Decrease your energy production 1 step and increase your plant production 1 step."
+  },
+  {
+    "id": "FUEL_FACTORY",
+    "name": "Fuel Factory",
+    "class": "FuelFactory",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 6,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 1,
+        "titanium": 1
+      }
+    },
+    "cardNumber": "180",
+    "description": "Decrease your energy production 1 step and increase your titanium and your M€ production 1 step each."
+  },
+  {
+    "id": "CORPORATE_STRONGHOLD",
+    "name": "Corporate Stronghold",
+    "class": "CorporateStronghold",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 11,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 3
+      },
+      "city": {}
+    },
+    "victoryPoints": -2,
+    "cardNumber": "182",
+    "description": "Decrease your energy production 1 step and increase your M€ production 3 steps. Place a city tile."
+  },
+  {
+    "id": "BIOMASS_COMBUSTORS",
+    "name": "Biomass Combustors",
+    "class": "BiomassCombustors",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 4,
+    "victoryPoints": -1,
+    "behavior": {
+      "decreaseAnyProduction": {
+        "type": "PLANTS",
+        "count": 1
+      },
+      "production": {
+        "energy": 2
+      }
+    },
+    "requirements": {
+      "oxygen": 6
+    },
+    "description": "Requires 6% oxygen. Decrease any plant production 1 step and increase your energy production 2 steps.",
+    "cardNumber": "183"
+  },
+  {
+    "id": "RAD_SUITS",
+    "name": "Rad Suits",
+    "class": "RadSuits",
+    "module": "base",
+    "type": "automated",
+    "cost": 6,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      }
+    },
+    "requirements": {
+      "cities": 2,
+      "all": true
+    },
+    "cardNumber": "186",
+    "description": "Requires two cities in play. Increase your M€ production 1 step."
+  },
+  {
+    "id": "ENERGY_SAVING",
+    "name": "Energy Saving",
+    "class": "EnergySaving",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER"
+    ],
+    "cost": 15,
+    "behavior": {
+      "production": {
+        "energy": {
+          "cities": {}
+        }
+      }
+    },
+    "cardNumber": "189",
+    "description": "Increase your energy production 1 step for each city tile in play."
+  },
+  {
+    "id": "PLANTATION",
+    "name": "Plantation",
+    "class": "Plantation",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 15,
+    "behavior": {
+      "greenery": {}
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "cardNumber": "193",
+    "description": "Requires 2 science tags. Place a greenery tile and raise oxygen 1 step."
+  },
+  {
+    "id": "LAGRANGE_OBSERVATORY",
+    "name": "Lagrange Observatory",
+    "class": "LagrangeObservatory",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SCIENCE",
+      "SPACE"
+    ],
+    "cost": 9,
+    "victoryPoints": 1,
+    "behavior": {
+      "drawCard": 1
+    },
+    "cardNumber": "196",
+    "description": "Draw 1 card."
+  },
+  {
+    "id": "TERRAFORMING_GANYMEDE",
+    "name": "Terraforming Ganymede",
+    "class": "TerraformingGanymede",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "cost": 33,
+    "victoryPoints": 2,
+    "cardNumber": "197",
+    "description": "Raise your TR 1 step for each Jovian tag you have, including this."
+  },
+  {
+    "id": "IMMIGRATION_SHUTTLES",
+    "name": "Immigration Shuttles",
+    "class": "ImmigrationShuttles",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ],
+    "cost": 31,
+    "victoryPoints": {
+      "cities": {},
+      "all": true,
+      "per": 3
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 5
+      }
+    },
+    "cardNumber": "198",
+    "description": "Increase your M€ production 5 steps."
+  },
+  {
+    "id": "ENERGY_TAPPING",
+    "name": "Energy Tapping",
+    "class": "EnergyTapping",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "POWER"
+    ],
+    "cost": 3,
+    "victoryPoints": -1,
+    "cardNumber": "201",
+    "description": "Decrease any energy production 1 step and increase your own 1 step."
+  },
+  {
+    "id": "SOLETTA",
+    "name": "Soletta",
+    "class": "Soletta",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 35,
+    "behavior": {
+      "production": {
+        "heat": 7
+      }
+    },
+    "cardNumber": "203",
+    "description": "Increase your heat production 7 steps."
+  },
+  {
+    "id": "RAD_CHEM_FACTORY",
+    "name": "Rad Chem Factory",
+    "class": "RadChemFactory",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 8,
+    "behavior": {
+      "production": {
+        "energy": -1
+      },
+      "tr": 2
+    },
+    "cardNumber": "205",
+    "description": "Decrease your energy production 1 step. Raise your TR 2 steps."
+  },
+  {
+    "id": "MEDICAL_LAB",
+    "name": "Medical Lab",
+    "class": "MedicalLab",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "SCIENCE",
+      "BUILDING"
+    ],
+    "cost": 13,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "tag": "BUILDING",
+          "per": 2
+        }
+      }
+    },
+    "cardNumber": "207",
+    "description": "Increase your M€ production 1 step for every 2 building tags you have, including this."
+  },
+  {
+    "id": "HEATHER",
+    "name": "Heather",
+    "class": "Heather",
+    "module": "base",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 6,
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "stock": {
+        "plants": 1
+      }
+    },
+    "requirements": {
+      "temperature": -14
+    },
+    "cardNumber": "88",
+    "description": "Requires -14 C° or warmer. Increase your plant production 1 step. Gain 1 plant."
+  },
+  {
+    "id": "AIRLINERS",
+    "name": "Airliners",
+    "class": "Airliners",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 11,
+    "requirements": {
+      "floaters": 3
+    },
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      },
+      "addResourcesToAnyCard": {
+        "count": 2,
+        "type": "FLOATER"
+      }
+    },
+    "cardNumber": "C01",
+    "description": "Requires that you have 3 floaters. Increase your M€ production 2 steps. Add 2 floaters to ANY card."
+  },
+  {
+    "id": "COMMUNITY_SERVICES",
+    "name": "Community Services",
+    "class": "CommunityServices",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 13,
+    "victoryPoints": 1,
+    "cardNumber": "C04",
+    "description": "Increase your M€ production 1 step per CARD WITH NO TAGS, including this."
+  },
+  {
+    "id": "CORONA_EXTRACTOR",
+    "name": "Corona Extractor",
+    "class": "CoronaExtractor",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 10,
+    "tags": [
+      "SPACE",
+      "POWER"
+    ],
+    "behavior": {
+      "production": {
+        "energy": 4
+      }
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 4
+    },
+    "cardNumber": "C06",
+    "description": "Requires 4 science tags. Increase your energy production 4 steps."
+  },
+  {
+    "id": "EARTH_ELEVATOR",
+    "name": "Earth Elevator",
+    "class": "EarthElevator",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 43,
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ],
+    "victoryPoints": 4,
+    "behavior": {
+      "production": {
+        "titanium": 3
+      }
+    },
+    "description": "Increase your titanium production 3 steps.",
+    "cardNumber": "C08"
+  },
+  {
+    "id": "ECOLOGY_RESEARCH",
+    "name": "Ecology Research",
+    "class": "EcologyResearch",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 21,
+    "tags": [
+      "SCIENCE",
+      "PLANT",
+      "ANIMAL",
+      "MICROBE"
+    ],
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "plants": {
+          "colonies": {
+            "colonies": {}
+          }
+        }
+      }
+    },
+    "description": "Increase your plant production 1 step for each colony you own. Add 1 animal to ANOTHER card and 2 microbes to ANOTHER card.",
+    "cardNumber": "C09"
+  },
+  {
+    "id": "FLOATER_LEASING",
+    "name": "Floater Leasing",
+    "class": "FloaterLeasing",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 3,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "floaters": {},
+          "per": 3
+        }
+      }
+    },
+    "cardNumber": "C10",
+    "description": "Increase your M€ production 1 step PER 3 floaters you have."
+  },
+  {
+    "id": "GALILEAN_WAYSTATION",
+    "name": "Galilean Waystation",
+    "class": "GalileanWaystation",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 15,
+    "tags": [
+      "SPACE"
+    ],
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "tag": "JOVIAN",
+          "all": true
+        }
+      }
+    },
+    "description": "Increase your M€ production 1 step for every Jovian tag in play.",
+    "cardNumber": "C13"
+  },
+  {
+    "id": "HEAVY_TAXATION",
+    "name": "Heavy Taxation",
+    "class": "HeavyTaxation",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 3,
+    "tags": [
+      "EARTH"
+    ],
+    "victoryPoints": -1,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      },
+      "stock": {
+        "megacredits": 4
+      }
+    },
+    "requirements": {
+      "tag": "EARTH",
+      "count": 2
+    },
+    "cardNumber": "C14",
+    "description": "Requires 2 Earth tags. Increase your M€ production 2 steps, and gain 4 M€."
+  },
+  {
+    "id": "ICE_MOON_COLONY",
+    "name": "Ice Moon Colony",
+    "class": "IceMoonColony",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 23,
+    "tags": [
+      "SPACE"
+    ],
+    "behavior": {
+      "colonies": {
+        "buildColony": {}
+      },
+      "ocean": {}
+    },
+    "cardNumber": "C15",
+    "description": "Place 1 colony and 1 ocean tile."
+  },
+  {
+    "id": "LUNA_GOVERNOR",
+    "name": "Luna Governor",
+    "class": "LunaGovernor",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 4,
+    "tags": [
+      "EARTH",
+      "EARTH"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      }
+    },
+    "requirements": {
+      "tag": "EARTH",
+      "count": 3
+    },
+    "cardNumber": "C20",
+    "description": "Requires 3 Earth tags. Increase your M€ production 2 steps."
+  },
+  {
+    "id": "LUNAR_EXPORTS",
+    "name": "Lunar Exports",
+    "class": "LunarExports",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 19,
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ],
+    "behavior": {
+      "or": {
+        "behaviors": [
+          {
+            "title": "Increase your M€ production 5 steps",
+            "production": {
+              "megacredits": 5
+            }
+          },
+          {
+            "title": "Increase your plant production 2 steps",
+            "production": {
+              "plants": 2
+            }
+          }
+        ]
+      }
+    },
+    "cardNumber": "C21",
+    "description": "Increase your plant production 2 steps, or your M€ production 5 steps."
+  },
+  {
+    "id": "LUNAR_MINING",
+    "name": "Lunar Mining",
+    "class": "LunarMining",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 11,
+    "tags": [
+      "EARTH"
+    ],
+    "behavior": {
+      "production": {
+        "titanium": {
+          "tag": "EARTH",
+          "per": 2
+        }
+      }
+    },
+    "cardNumber": "C22",
+    "description": "Increase your titanium production 1 step for every 2 Earth tags you have in play, including this."
+  },
+  {
+    "id": "MINING_COLONY",
+    "name": "Mining Colony",
+    "class": "MiningColony",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 20,
+    "tags": [
+      "SPACE"
+    ],
+    "behavior": {
+      "production": {
+        "titanium": 1
+      },
+      "colonies": {
+        "buildColony": {}
+      }
+    },
+    "cardNumber": "C25",
+    "description": "Increase your titanium production 1 step. Place a colony."
+  },
+  {
+    "id": "MINORITY_REFUGE",
+    "name": "Minority Refuge",
+    "class": "MinorityRefuge",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 5,
+    "tags": [
+      "SPACE"
+    ],
+    "cardNumber": "C26",
+    "description": "Decrease your M€ production 2 steps. Place a colony."
+  },
+  {
+    "id": "MOLECULAR_PRINTING",
+    "name": "Molecular Printing",
+    "class": "MolecularPrinting",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 11,
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 1,
+    "behavior": {
+      "stock": {
+        "megacredits": {
+          "cities": {},
+          "colonies": {
+            "colonies": {}
+          },
+          "all": true
+        }
+      }
+    },
+    "cardNumber": "C27",
+    "description": "Gain 1 M€ for each city tile in play. Gain 1 M€ for each colony in play."
+  },
+  {
+    "id": "NITROGEN_FROM_TITAN",
+    "name": "Nitrogen From Titan",
+    "class": "NitrogenFromTitan",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 25,
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "victoryPoints": 1,
+    "behavior": {
+      "tr": 2,
+      "addResourcesToAnyCard": {
+        "type": "FLOATER",
+        "count": 2,
+        "tag": "JOVIAN"
+      }
+    },
+    "cardNumber": "C28",
+    "description": "Raise your TR 2 steps. Add 2 floaters to a JOVIAN CARD."
+  },
+  {
+    "id": "PIONEER_SETTLEMENT",
+    "name": "Pioneer Settlement",
+    "class": "PioneerSettlement",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 13,
+    "tags": [
+      "SPACE"
+    ],
+    "requirements": {
+      "colonies": 1,
+      "max": true
+    },
+    "victoryPoints": 2,
+    "cardNumber": "C29",
+    "description": "Requires that you have no more than 1 colony. Decrease your M€ production 2 steps. Place a colony."
+  },
+  {
+    "id": "PRODUCTIVE_OUTPOST",
+    "name": "Productive Outpost",
+    "class": "ProductiveOutpost",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 0,
+    "cardNumber": "C30"
+  },
+  {
+    "id": "QUANTUM_COMMUNICATIONS",
+    "name": "Quantum Communications",
+    "class": "QuantumCommunications",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 8,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 4
+    },
+    "victoryPoints": 1,
+    "cardNumber": "C31",
+    "description": "Requires 4 science tags. Increase your M€ production 1 step for each colony in play."
+  },
+  {
+    "id": "RESEARCH_COLONY",
+    "name": "Research Colony",
+    "class": "ResearchColony",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 20,
+    "tags": [
+      "SPACE",
+      "SCIENCE"
+    ],
+    "behavior": {
+      "drawCard": 2,
+      "colonies": {
+        "buildColony": {
+          "allowDuplicates": true
+        }
+      }
+    },
+    "cardNumber": "C34",
+    "description": "Place a colony. MAY BE PLACED WHERE YOU ALREADY HAVE A COLONY. Draw 2 cards."
+  },
+  {
+    "id": "SOLAR_REFLECTORS",
+    "name": "Solar Reflectors",
+    "class": "SolarReflectors",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 23,
+    "tags": [
+      "SPACE"
+    ],
+    "behavior": {
+      "production": {
+        "heat": 5
+      }
+    },
+    "cardNumber": "C38",
+    "description": "Increase your heat production 5 steps."
+  },
+  {
+    "id": "SPACE_PORT",
+    "name": "Space Port",
+    "class": "SpacePort",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 22,
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 4
+      },
+      "colonies": {
+        "addTradeFleet": 1
+      },
+      "city": {}
+    },
+    "requirements": {
+      "colonies": 1
+    },
+    "cardNumber": "C39",
+    "description": "Requires 1 colony. Decrease your energy production 1 step and increase your M€ production 4 steps. Place a city tile. Gain 1 Trade Fleet."
+  },
+  {
+    "id": "SPACE_PORT_COLONY",
+    "name": "Space Port Colony",
+    "class": "SpacePortColony",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 27,
+    "tags": [
+      "SPACE"
+    ],
+    "requirements": {
+      "colonies": 1
+    },
+    "victoryPoints": {
+      "colonies": {
+        "colonies": {}
+      },
+      "all": true,
+      "per": 2
+    },
+    "behavior": {
+      "colonies": {
+        "buildColony": {
+          "allowDuplicates": true
+        },
+        "addTradeFleet": 1
+      }
+    },
+    "cardNumber": "C40",
+    "description": "Requires a colony. Place a colony. MAY BE PLACED ON A COLONY TILE WHERE YOU ALREADY HAVE A COLONY. Gain 1 Trade Fleet."
+  },
+  {
+    "id": "URBAN_DECOMPOSERS",
+    "name": "Urban Decomposers",
+    "class": "UrbanDecomposers",
+    "module": "colonies",
+    "type": "automated",
+    "cost": 6,
+    "tags": [
+      "MICROBE"
+    ],
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "addResourcesToAnyCard": {
+        "count": 2,
+        "type": "MICROBE"
+      }
+    },
+    "requirements": [
+      {
+        "colonies": 1
+      },
+      {
+        "cities": 1
+      }
+    ],
+    "cardNumber": "C48",
+    "description": "Requires that you have 1 city tile and 1 colony in play. Increase your plant production 1 step, and add 2 microbes to ANOTHER card."
+  },
+  {
+    "id": "MARE_NECTARIS_MINE",
+    "name": "Mare Nectaris Mine",
+    "class": "MareNectarisMine",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON",
+      "BUILDING"
+    ],
+    "cost": 14,
+    "behavior": {
+      "production": {
+        "steel": 1
+      },
+      "moon": {
+        "mineTile": {
+          "space": "MARE_NECTARIS"
+        }
+      }
+    },
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "description": "Spend 1 titanium. Increase your steel production 1 step. Place a mine ON THE RESERVED AREA and raise the mining rate 1 step.",
+    "cardNumber": "M01"
+  },
+  {
+    "id": "MARE_NUBIUM_MINE",
+    "name": "Mare Nubium Mine",
+    "class": "MareNubiumMine",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON",
+      "BUILDING"
+    ],
+    "cost": 17,
+    "behavior": {
+      "production": {
+        "titanium": 1
+      },
+      "moon": {
+        "mineTile": {
+          "space": "MARE_NUBIUM"
+        }
+      }
+    },
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "description": "Spend 1 titanium. Increase your titanium production 1 step. Place a mine ON THE RESERVED AREA and raise the mining rate 1 step.",
+    "cardNumber": "M02"
+  },
+  {
+    "id": "MARE_IMBRIUM_MINE",
+    "name": "Mare Imbrium Mine",
+    "class": "MareImbriumMine",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON",
+      "BUILDING"
+    ],
+    "cost": 19,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "behavior": {
+      "production": {
+        "steel": 1,
+        "titanium": 1
+      },
+      "moon": {
+        "mineTile": {
+          "space": "MARE_IMBRIUM"
+        }
+      }
+    },
+    "description": "Spend 1 titanium. Increase your steel production 1 step and your titanium production 1 step. Place a mine ON THE RESERVED AREA and raise the mining rate 1 step.",
+    "cardNumber": "M03"
+  },
+  {
+    "id": "MARE_SERENITATIS_MINE",
+    "name": "Mare Serenitatis Mine",
+    "class": "MareSerenitatisMine",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON",
+      "BUILDING"
+    ],
+    "cost": 21,
+    "behavior": {
+      "production": {
+        "steel": 1,
+        "titanium": 1
+      }
+    },
+    "reserveUnits": {
+      "steel": 1,
+      "titanium": 2
+    },
+    "tr": {
+      "moonMining": 1,
+      "moonLogistic": 1
+    },
+    "tilesBuilt": [
+      "MOON_MINE",
+      "MOON_ROAD"
+    ],
+    "description": "Spend 2 titanium and 1 steel. Increase your steel and titanium production 1 step. Place a mine ON THE RESERVED AREA and a road tile adjacent to it. Raise the mining rate 1 step and the logistic rate 1 step.",
+    "cardNumber": "M04"
+  },
+  {
+    "id": "HABITAT_14",
+    "name": "Habitat 14",
+    "class": "Habitat14",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "MOON"
+    ],
+    "cost": 5,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": -1
+      },
+      "moon": {
+        "habitatTile": {}
+      }
+    },
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "description": "Decrease your energy production 1 step and your M€ production 1 step. Spend 1 titanium. Place a habitat tile on The Moon and raise the habitat rate 1 step.",
+    "cardNumber": "M05"
+  },
+  {
+    "id": "GEODESIC_TENTS",
+    "name": "Geodesic Tents",
+    "class": "GeodesicTents",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "PLANT",
+      "CITY",
+      "MOON"
+    ],
+    "cost": 13,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "plants": 1
+      },
+      "moon": {
+        "habitatTile": {}
+      }
+    },
+    "description": "Decrease your energy production 1 step and increase your plant production 1 step. Spend 1 titanium. Place a habitat tile on The Moon and raise the habitat rate 1 step.",
+    "cardNumber": "M06"
+  },
+  {
+    "id": "SPHERE_HABITATS",
+    "name": "Sphere Habitats",
+    "class": "SphereHabitats",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "MOON"
+    ],
+    "cost": 14,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "behavior": {
+      "moon": {
+        "habitatTile": {}
+      }
+    },
+    "description": "Spend 1 titanium. Place a habitat tile on The Moon and raise the habitat rate 1 step.",
+    "cardNumber": "M07"
+  },
+  {
+    "id": "THE_WOMB",
+    "name": "The Womb",
+    "class": "TheWomb",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "MOON"
+    ],
+    "cost": 16,
+    "behavior": {
+      "production": {
+        "energy": -2,
+        "megacredits": 4
+      },
+      "moon": {
+        "habitatTile": {}
+      }
+    },
+    "reserveUnits": {
+      "titanium": 2
+    },
+    "description": "Decrease your energy production 2 steps and increase your M€ production 4 steps. Spend 2 titanium. Place a habitat tile on The Moon and raise the habitat rate 1 step.",
+    "cardNumber": "M08"
+  },
+  {
+    "id": "TYCHO_ROAD_NETWORK",
+    "name": "Tycho Road Network",
+    "class": "TychoRoadNetwork",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 15,
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      },
+      "moon": {
+        "roadTile": {}
+      }
+    },
+    "reserveUnits": {
+      "steel": 1
+    },
+    "description": "Spend 1 steel. Increase your M€ production 1 step. Place a road tile on The Moon and raise the logistic rate 1 step.",
+    "cardNumber": "M09"
+  },
+  {
+    "id": "ARISTARCHUS_ROAD_NETWORK",
+    "name": "Aristarchus Road Network",
+    "class": "AristarchusRoadNetwork",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 15,
+    "reserveUnits": {
+      "steel": 2
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      },
+      "moon": {
+        "roadTile": {}
+      }
+    },
+    "description": "Spend 2 steel. Increase your M€ production 2 steps. Place a road tile on The Moon and raise the logistic rate 1 step.",
+    "cardNumber": "M10"
+  },
+  {
+    "id": "SINUS_IRIDUM_ROAD_NETWORK",
+    "name": "Sinus Iridum Road Network",
+    "class": "SinusIridumRoadNetwork",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 15,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 3
+      },
+      "moon": {
+        "roadTile": {}
+      }
+    },
+    "reserveUnits": {
+      "steel": 1
+    },
+    "description": "Decrease your energy production 1 step and increase your M€ production 3 steps. Spend 1 steel. Place a road tile on The Moon and raise the logistic rate 1 step.",
+    "cardNumber": "M11"
+  },
+  {
+    "id": "MOMENTUM_VIRIUM_HABITAT",
+    "name": "Momentum Virium Habitat",
+    "class": "MomentumViriumHabitat",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "SPACE"
+    ],
+    "cost": 23,
+    "behavior": {
+      "production": {
+        "heat": 2,
+        "megacredits": 3
+      },
+      "moon": {
+        "habitatTile": {
+          "space": "MOMENTUM_VIRIUM"
+        }
+      }
+    },
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "description": "Spend 1 titanium. Increase your heat production 2 steps and your M€ production 3 steps. Place a habitat tile ON THE RESERVED AREA and raise the habitat rate 1 step.",
+    "cardNumber": "M12"
+  },
+  {
+    "id": "LUNA_MINING_HUB",
+    "name": "Luna Mining Hub",
+    "class": "LunaMiningHub",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 23,
+    "reserveUnits": {
+      "steel": 1,
+      "titanium": 1
+    },
+    "behavior": {
+      "production": {
+        "steel": 1,
+        "titanium": 1
+      },
+      "moon": {
+        "tile": {
+          "type": "LUNA_MINING_HUB"
+        },
+        "miningRate": 1
+      }
+    },
+    "victoryPoints": {
+      "moon": {
+        "mine": {}
+      },
+      "nextToThis": {},
+      "each": 2
+    },
+    "requirements": {
+      "miningRate": 5
+    },
+    "cardNumber": "M14"
+  },
+  {
+    "id": "LUNA_TRAIN_STATION",
+    "name": "Luna Train Station",
+    "class": "LunaTrainStation",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 24,
+    "reserveUnits": {
+      "steel": 2
+    },
+    "victoryPoints": {
+      "moon": {
+        "road": {}
+      },
+      "nextToThis": {},
+      "each": 2
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 4
+      },
+      "moon": {
+        "tile": {
+          "type": "LUNA_TRAIN_STATION"
+        },
+        "logisticRate": 1
+      }
+    },
+    "requirements": {
+      "logisticRate": 5
+    },
+    "description": "Requires a logistic rate of 5 or higher. Spend 2 steel. Increase your M€ production 4 steps. Place this tile on The Moon and raise the logistic rate 1 step. 2 VP FOR EACH ROAD TILE ADJACENT TO THIS TILE.",
+    "cardNumber": "M15"
+  },
+  {
+    "id": "COLONIST_SHUTTLES",
+    "name": "Colonist Shuttles",
+    "class": "ColonistShuttles",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 12,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "behavior": {
+      "moon": {
+        "habitatRate": 1
+      },
+      "stock": {
+        "megacredits": {
+          "moon": {
+            "habitat": {}
+          },
+          "each": 2
+        }
+      }
+    },
+    "description": "Spend 1 titanium. Raise the habitat rate 1 step. Gain 2M€ for each habitat tile on The Moon.",
+    "cardNumber": "M16"
+  },
+  {
+    "id": "DEEP_LUNAR_MINING",
+    "name": "Deep Lunar Mining",
+    "class": "DeepLunarMining",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 18,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "behavior": {
+      "production": {
+        "titanium": 2
+      },
+      "moon": {
+        "miningRate": 1
+      }
+    },
+    "description": "Spend 1 titanium. Increase your titanium production 2 steps. Raise the mining rate 1 step.",
+    "cardNumber": "M18"
+  },
+  {
+    "id": "LUNA_PROJECT_OFFICE",
+    "name": "Luna Project Office",
+    "class": "LunaProjectOffice",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 4,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "description": "Requires 2 science tags.",
+    "cardNumber": "M20"
+  },
+  {
+    "id": "LUNA_RESORT",
+    "name": "Luna Resort",
+    "class": "LunaResort",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 11,
+    "reserveUnits": {
+      "titanium": 2
+    },
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 3
+      },
+      "moon": {
+        "habitatRate": 1
+      }
+    },
+    "requirements": {
+      "habitatTiles": 2,
+      "all": true
+    },
+    "description": "Requires 2 habitats on The Moon. Spend 2 titanium. Decrease your energy production 1 step and increase your M€ production 3 steps. Raise the habitat rate 1 step.",
+    "cardNumber": "M21"
+  },
+  {
+    "id": "MINING_ROBOTS_MANUF_CENTER",
+    "name": "Mining Robots Manuf Center",
+    "class": "MiningRobotsManufCenter",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "SCIENCE",
+      "BUILDING"
+    ],
+    "cost": 12,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "behavior": {
+      "moon": {
+        "miningRate": 2
+      }
+    },
+    "description": "Spend 1 titanium. Raise the mining rate 2 steps.",
+    "cardNumber": "M23"
+  },
+  {
+    "id": "IRON_EXTRACTION_CENTER",
+    "name": "Iron Extraction Center",
+    "class": "IronExtractionCenter",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 10,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "behavior": {
+      "production": {
+        "steel": {
+          "moon": {
+            "miningRate": {}
+          },
+          "per": 2
+        }
+      }
+    },
+    "description": "Spend 1 titanium. Increase your steel production 1 step for every 2 raised steps of mining rate.",
+    "cardNumber": "M25"
+  },
+  {
+    "id": "TITANIUM_EXTRACTION_CENTER",
+    "name": "Titanium Extraction Center",
+    "class": "TitaniumExtractionCenter",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 14,
+    "reserveUnits": {
+      "titanium": 2
+    },
+    "behavior": {
+      "production": {
+        "titanium": {
+          "moon": {
+            "miningRate": {}
+          },
+          "per": 2
+        }
+      }
+    },
+    "description": "Spend 2 titanium. Increase your titanium production 1 step for every 2 raised steps of mining rate.",
+    "cardNumber": "M26"
+  },
+  {
+    "id": "ARCHIMEDES_HYDROPONICS_STATION",
+    "name": "Archimedes Hydroponics Station",
+    "class": "ArchimedesHydroponicsStation",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 12,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": -1,
+        "plants": 2
+      }
+    },
+    "description": "Decrease your energy production 1 step and your M€ production 1 step. Increase your plant production 2 steps.",
+    "cardNumber": "M27"
+  },
+  {
+    "id": "LUNA_STAGING_STATION",
+    "name": "Luna Staging Station",
+    "class": "LunaStagingStation",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON",
+      "BUILDING"
+    ],
+    "cost": 12,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "behavior": {
+      "moon": {
+        "logisticRate": 2
+      }
+    },
+    "requirements": {
+      "logisticRate": 2
+    },
+    "description": "Requires the logistic rate to be 2 or higher. Spend 1 titanium. Raise the logistic rate 2 steps.",
+    "cardNumber": "M30"
+  },
+  {
+    "id": "NEW_COLONY_PLANNING_INITIAITIVES",
+    "name": "New Colony Planning Initiaitives",
+    "class": "NewColonyPlanningInitiatives",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 6,
+    "behavior": {
+      "moon": {
+        "habitatRate": 1
+      }
+    },
+    "requirements": {
+      "habitatRate": 2
+    },
+    "description": "Requires the habitat rate to be 2 or higher. Raise the habitat rate 1 step.",
+    "cardNumber": "M31"
+  },
+  {
+    "id": "AI_CONTROLLED_MINE_NETWORK",
+    "name": "Ai Controlled Mine Network",
+    "class": "AIControlledMineNetwork",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 6,
+    "behavior": {
+      "moon": {
+        "logisticRate": 1
+      }
+    },
+    "requirements": {
+      "logisticRate": 2
+    },
+    "description": "Requires the logistic rate to be 2 or higher. Raise the logistic rate 1 step",
+    "cardNumber": "M32"
+  },
+  {
+    "id": "LUNAR_TRADE_FLEET",
+    "name": "Lunar Trade Fleet",
+    "class": "LunarTradeFleet",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON",
+      "SPACE"
+    ],
+    "cost": 8,
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      },
+      "moon": {
+        "logisticRate": 1
+      }
+    },
+    "requirements": {
+      "production": "TITANIUM",
+      "count": 2
+    },
+    "description": "Requires that you have 2 titanium production. Increase your M€ production 1 step. Raise the logistic rate 1 step.",
+    "cardNumber": "M35"
+  },
+  {
+    "id": "HEAVY_DUTY_ROVERS",
+    "name": "Heavy Duty Rovers",
+    "class": "HeavyDutyRovers",
+    "module": "moon",
+    "type": "automated",
+    "cost": 12,
+    "behavior": {
+      "moon": {
+        "logisticRate": 1
+      }
+    },
+    "description": "Gain 4 M€ for each mining tile adjacent to a road tile. Raise the logistic rate 1 step.",
+    "cardNumber": "M39"
+  },
+  {
+    "id": "MICROSINGULARITY_PLANT",
+    "name": "Microsingularity Plant",
+    "class": "MicrosingularityPlant",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "POWER"
+    ],
+    "cost": 10,
+    "requirements": {
+      "habitatTiles": 2,
+      "all": true
+    },
+    "behavior": {
+      "production": {
+        "energy": 2
+      }
+    },
+    "description": "Requires 2 habitats on The Moon. Increase your energy production 2 steps.",
+    "cardNumber": "M40"
+  },
+  {
+    "id": "HELIOSTAT_MIRROR_ARRAY",
+    "name": "Heliostat Mirror Array",
+    "class": "HeliostatMirrorArray",
+    "module": "moon",
+    "type": "automated",
+    "cost": 10,
+    "tags": [
+      "POWER"
+    ],
+    "behavior": {
+      "production": {
+        "energy": 2
+      },
+      "stock": {
+        "heat": 1
+      }
+    },
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "description": "Spend 1 titanium. Gain 1 heat. Increase your energy production 2 steps.",
+    "cardNumber": "M41"
+  },
+  {
+    "id": "HYPERSENSITIVE_SILICON_CHIP_FACTORY",
+    "name": "Hypersensitive Silicon Chip Factory",
+    "class": "HypersensitiveSiliconChipFactory",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 11,
+    "behavior": {
+      "production": {
+        "megacredits": 4
+      }
+    },
+    "requirements": {
+      "miningTiles": 2,
+      "all": true
+    },
+    "reserveUnits": {
+      "titanium": 2
+    },
+    "description": "Requires 2 mining tiles on The Moon. Spend 2 titanium. Increase your M€ production 4 steps.",
+    "cardNumber": "M43"
+  },
+  {
+    "id": "COPERNICUS_SOLAR_ARRAYS",
+    "name": "Copernicus Solar Arrays",
+    "class": "CopernicusSolarArrays",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "SPACE"
+    ],
+    "cost": 8,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "behavior": {
+      "production": {
+        "energy": 1
+      },
+      "stock": {
+        "heat": 2
+      }
+    },
+    "description": "Spend 1 titanium. Gain 2 heat. Increase your energy production 1 step.",
+    "cardNumber": "M44"
+  },
+  {
+    "id": "WATER_TREATMENT_COMPLEX",
+    "name": "Water Treatment Complex",
+    "class": "WaterTreatmentComplex",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 12,
+    "requirements": {
+      "habitatTiles": 1,
+      "all": true
+    },
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "behavior": {
+      "moon": {
+        "habitatRate": 2
+      }
+    },
+    "description": "Requires 1 habitat tile on The Moon. Spend 1 titanium. Raise the habitat rate 2 steps.",
+    "cardNumber": "M46"
+  },
+  {
+    "id": "ALGAE_BIOREACTORS",
+    "name": "Algae Bioreactors",
+    "class": "AlgaeBioreactors",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 9,
+    "behavior": {
+      "production": {
+        "plants": -1
+      },
+      "global": {
+        "oxygen": 1
+      },
+      "moon": {
+        "habitatRate": 1
+      }
+    },
+    "description": "Decrease your plant production 1 step. Raise the habitat rate 1 step and oxygen 1%.",
+    "cardNumber": "M47"
+  },
+  {
+    "id": "HE3_FUSION_PLANT",
+    "name": "He3 Fusion Plant",
+    "class": "HE3FusionPlant",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "POWER",
+      "MOON"
+    ],
+    "cost": 12,
+    "behavior": {
+      "production": {
+        "energy": {
+          "moon": {
+            "mine": {}
+          }
+        }
+      }
+    },
+    "requirements": {
+      "miningRate": 2
+    },
+    "description": "Requires the mining rate of 2 or higher. Increase your energy production 1 step for each mining tile on The Moon.",
+    "cardNumber": "M48"
+  },
+  {
+    "id": "HE3_LOBBYISTS",
+    "name": "He3 Lobbyists",
+    "class": "HE3Lobbyists",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 7,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "tag": "MOON"
+        }
+      }
+    },
+    "description": "Increase your M€ production 1 step for each Moon tag you have (including this).",
+    "cardNumber": "M50"
+  },
+  {
+    "id": "OFF_WORLD_CITY_LIVING",
+    "name": "Off World City Living",
+    "class": "OffWorldCityLiving",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "SPACE"
+    ],
+    "cost": 35,
+    "victoryPoints": {
+      "cities": {},
+      "all": true,
+      "per": 3
+    },
+    "behavior": {
+      "moon": {
+        "habitatRate": 1
+      },
+      "production": {
+        "megacredits": {
+          "cities": {
+            "where": "offmars"
+          }
+        }
+      }
+    },
+    "description": "Increase your M€ production 1 step per city tile NOT ON MARS. Increase habitat rate 1 step.",
+    "cardNumber": "M53"
+  },
+  {
+    "id": "DARKSIDE_MINING_SYNDICATE",
+    "name": "Darkside Mining Syndicate",
+    "class": "DarksideMiningSyndicate",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON",
+      "SPACE"
+    ],
+    "cost": 18,
+    "tr": {
+      "moonMining": 1
+    },
+    "description": "Increase your titanium production 2 steps, or 1 step if the mining rate is at least 2. And then raise the mining rate 1 step.",
+    "cardNumber": "M66"
+  },
+  {
+    "id": "STAGING_STATION_BEHEMOTH",
+    "name": "Staging Station Behemoth",
+    "class": "StagingStationBehemoth",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 24,
+    "behavior": {
+      "moon": {
+        "logisticRate": 1
+      },
+      "colonies": {
+        "addTradeFleet": 2
+      }
+    },
+    "description": "Gain 2 Trade Fleets. Raise the logistic rate 1 step.",
+    "cardNumber": "M68"
+  },
+  {
+    "id": "LUNA_SENATE",
+    "name": "Luna Senate",
+    "class": "LunaSenate",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON",
+      "MOON"
+    ],
+    "cost": 32,
+    "victoryPoints": {
+      "tag": "MOON"
+    },
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "tag": "MOON",
+          "others": true
+        }
+      }
+    },
+    "requirements": {
+      "tag": "MOON",
+      "count": 3
+    },
+    "description": "Requires that you have 3 Moon tags. Increase your M€ production 1 step per Moon tag your OPPONENTS have.",
+    "cardNumber": "M70"
+  },
+  {
+    "id": "SMALL_DUTY_ROVERS",
+    "name": "Small Duty Rovers",
+    "class": "SmallDutyRovers",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON",
+      "SPACE"
+    ],
+    "cost": 9,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "behavior": {
+      "moon": {
+        "logisticRate": 1
+      }
+    },
+    "description": "Spend 1 titanium. Raise the logistic rate 1 step. Gain 1 M€ per habitat tile, mine tile and road tile on The Moon.",
+    "cardNumber": "M73"
+  },
+  {
+    "id": "LUNAR_INDUSTRY_COMPLEX",
+    "name": "Lunar Industry Complex",
+    "class": "LunarIndustryComplex",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 28,
+    "behavior": {
+      "production": {
+        "steel": 1,
+        "titanium": 1,
+        "energy": 2,
+        "heat": 1
+      },
+      "moon": {
+        "mineTile": {}
+      }
+    },
+    "reserveUnits": {
+      "titanium": 2
+    },
+    "description": "Spend 2 titanium. Place a mine tile on The Moon and raise the mining rate 1 step. Increase your steel, titanium, and heat production 1 step each. Increase your energy production 2 steps.",
+    "cardNumber": "M74"
+  },
+  {
+    "id": "MARTIAN_EMBASSY",
+    "name": "Martian Embassy",
+    "class": "MartianEmbassy",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON",
+      "MARS"
+    ],
+    "cost": 11,
+    "cardNumber": "M76",
+    "description": "Raise the Mars Planetary Track 1 step for every 3 Moon tags you have, including this."
+  },
+  {
+    "id": "ROVER_DRIVERS_UNION",
+    "name": "Rover Drivers Union",
+    "class": "RoverDriversUnion",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 16,
+    "requirements": {
+      "logisticRate": 2
+    },
+    "behavior": {
+      "moon": {
+        "logisticRate": 1
+      }
+    },
+    "description": "Requires 2 logistic rate. Raise the logistic rate 1 step. Increase your M€ production 1 step per logistic rate.",
+    "cardNumber": "M78"
+  },
+  {
+    "id": "LTF_HEADQUARTERS",
+    "name": "Ltf Headquarters",
+    "class": "LTFHeadquarters",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 31,
+    "behavior": {
+      "moon": {
+        "habitatRate": 1
+      },
+      "colonies": {
+        "buildColony": {},
+        "addTradeFleet": 1
+      }
+    },
+    "description": "Raise the habitat rate 1 step. Place a colony. Gain 1 Trade Fleet.",
+    "cardNumber": "M79"
+  },
+  {
+    "id": "UNDERMOON_DRUG_LORDS_NETWORK",
+    "name": "Undermoon Drug Lords Network",
+    "class": "UndermoonDrugLordsNetwork",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 2,
+    "victoryPoints": -1,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "moon": {
+            "habitatRate": {}
+          },
+          "per": 2
+        }
+      }
+    },
+    "description": "Increase your M€ production 1 step per 2 steps of habitat rate.",
+    "cardNumber": "M81"
+  },
+  {
+    "id": "GRAND_LUNA_ACADEMY",
+    "name": "Grand Luna Academy",
+    "class": "GrandLunaAcademy",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 13,
+    "behavior": {
+      "drawCard": {
+        "count": {
+          "tag": "MOON",
+          "per": 2
+        }
+      }
+    },
+    "description": "Draw 1 card per 2 Moon tags you have, including this.",
+    "cardNumber": "M83"
+  },
+  {
+    "id": "LUNA_ECUMENOPOLIS",
+    "name": "Luna Ecumenopolis",
+    "class": "LunaEcumenopolis",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "CITY",
+      "MOON"
+    ],
+    "cost": 35,
+    "reserveUnits": {
+      "titanium": 2
+    },
+    "tilesBuilt": [
+      "MOON_HABITAT",
+      "MOON_HABITAT"
+    ],
+    "cardNumber": "M84",
+    "description": "Spend 2 titanium. Place 2 habitat tiles adjacent to at least 2 other habitat tiles and raise habitat rate 2 steps. Increase your TR 1 step for each 2 steps of the habitat rate.",
+    "helpText": "HELP_TEXT"
+  },
+  {
+    "id": "ORBITAL_POWER_GRID",
+    "name": "Orbital Power Grid",
+    "class": "OrbitalPowerGrid",
+    "module": "moon",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "SPACE"
+    ],
+    "cost": 19,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "energy": {
+          "cities": {
+            "where": "offmars"
+          }
+        }
+      }
+    },
+    "description": "Increase your energy production 1 step per city tile NOT ON MARS.",
+    "cardNumber": "M85"
+  },
+  {
+    "id": "SPECIALIZED_SETTLEMENT",
+    "name": "Specialized Settlement",
+    "class": "SpecializedSettlement",
+    "module": "pathfinders",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING",
+      "MARS"
+    ],
+    "cost": 20,
+    "cardNumber": "PF57",
+    "description": "Decrease your energy production 1 step and increase your M€ production 3 steps. Place a city tile on Mars. Increase your production by 1 of a resource on the map gained by placement bonus."
+  },
+  {
+    "id": "RED_CITY",
+    "name": "Red City",
+    "class": "RedCity",
+    "module": "pathfinders",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 21,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 2
+      }
+    },
+    "requirements": {
+      "party": "REDS"
+    },
+    "victoryPoints": "special",
+    "cardNumber": "PFT2",
+    "description": "Requires that Reds are ruling or that you have 2 delegates there. -1 energy prod, +2 M€ prod. Place the special tile on Mars ADJACENT TO NO GREENERY. NO GREENERY MAY BE PLACED NEXT TO THIS TILE. 1 VP for every empty space (or hazard) next to this tile."
+  },
+  {
+    "id": "WETLANDS",
+    "name": "Wetlands",
+    "class": "Wetlands",
+    "module": "pathfinders",
+    "type": "automated",
+    "tags": [
+      "PLANT",
+      "MARS"
+    ],
+    "cost": 20,
+    "tr": {
+      "oxygen": 1,
+      "tr": 1
+    },
+    "requirements": {
+      "oceans": 2
+    },
+    "reserveUnits": {
+      "plants": 4
+    },
+    "victoryPoints": 1,
+    "cardNumber": "Pf03"
+  },
+  {
+    "id": "RARE_EARTH_ELEMENTS",
+    "name": "Rare Earth Elements",
+    "class": "RareEarthElements",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 5,
+    "tags": [
+      "EARTH",
+      "MARS"
+    ],
+    "cardNumber": "Pf06",
+    "description": "Increase your M€ production by 1 for every special tile you own on Mars."
+  },
+  {
+    "id": "ORBITAL_LABORATORIES",
+    "name": "Orbital Laboratories",
+    "class": "OrbitalLaboratories",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 18,
+    "tags": [
+      "SCIENCE",
+      "PLANT",
+      "SPACE"
+    ],
+    "behavior": {
+      "production": {
+        "plants": 2
+      },
+      "stock": {
+        "plants": 1
+      }
+    },
+    "cardNumber": "Pf07",
+    "description": "Increase your plant production 2 steps. Gain 1 plant."
+  },
+  {
+    "id": "MARTIAN_MONUMENTS",
+    "name": "Martian Monuments",
+    "class": "MartianMonuments",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 10,
+    "tags": [
+      "MARS",
+      "BUILDING"
+    ],
+    "requirements": {
+      "cities": 1,
+      "text": "ON MARS"
+    },
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "tag": "MARS"
+        }
+      }
+    },
+    "cardNumber": "Pf09",
+    "description": "Requires that you own a city ON MARS. Raise your M€ production 1 step for every Mars tag you own (including this.)"
+  },
+  {
+    "id": "MARTIAN_NATURE_WONDERS",
+    "name": "Martian Nature Wonders",
+    "class": "MartianNatureWonders",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 13,
+    "tags": [
+      "MARS"
+    ],
+    "victoryPoints": 2,
+    "behavior": {
+      "addResourcesToAnyCard": {
+        "type": "DATA",
+        "count": 2
+      }
+    },
+    "cardNumber": "Pf10",
+    "description": "Place a neutral player cube on a non-reserved space. No tile can be placed on that space this game. Gather any bonus on that space, but no bonuses from adjacent spaces. Add 2 data to ANY card."
+  },
+  {
+    "id": "MUSEUM_OF_EARLY_COLONISATION",
+    "name": "Museum Of Early Colonisation",
+    "class": "MuseumofEarlyColonisation",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 20,
+    "tags": [
+      "BUILDING",
+      "MARS"
+    ],
+    "requirements": [
+      {
+        "oceans": 1
+      },
+      {
+        "cities": 1,
+        "all": true
+      },
+      {
+        "greeneries": 1,
+        "all": true
+      }
+    ],
+    "behavior": {
+      "tr": 1
+    },
+    "cardNumber": "Pf11",
+    "description": "Requires 1 ocean, 1 city and one greenery on Mars. Decrease your energy production 1 step. Raise your steel, titanium, and plant production 1 step. Gain 1 TR."
+  },
+  {
+    "id": "CERES_SPACEPORT",
+    "name": "Ceres Spaceport",
+    "class": "CeresSpaceport",
+    "module": "pathfinders",
+    "type": "automated",
+    "tags": [
+      "JOVIAN",
+      "JOVIAN",
+      "CITY",
+      "SPACE"
+    ],
+    "cost": 36,
+    "victoryPoints": 1,
+    "behavior": {
+      "drawCard": 1,
+      "ocean": {},
+      "city": {
+        "space": "CERES_SPACEPORT"
+      },
+      "production": {
+        "megacredits": 2,
+        "titanium": {
+          "tag": "JOVIAN",
+          "per": 2
+        }
+      }
+    },
+    "cardNumber": "Pf14",
+    "description": "Increase your M€ production 2 steps, and titanium production 1 step for every 2 Jovian tags (including these.) Draw a card. Place an ocean tile. Place a city tile ON THE RESERVED AREA."
+  },
+  {
+    "id": "LUNAR_EMBASSY",
+    "name": "Lunar Embassy",
+    "class": "LunarEmbassy",
+    "module": "pathfinders",
+    "type": "automated",
+    "tags": [
+      "EARTH",
+      "MARS",
+      "CITY",
+      "SPACE"
+    ],
+    "cost": 28,
+    "victoryPoints": 2,
+    "behavior": {
+      "drawCard": 1,
+      "city": {
+        "space": "LUNAR_EMBASSY"
+      },
+      "production": {
+        "megacredits": 3,
+        "plants": {
+          "tag": "EARTH",
+          "per": 2
+        }
+      }
+    },
+    "cardNumber": "Pf16",
+    "description": "Increase your M€ production 3 steps, and plant production 1 step for every 2 Earth tags (including this.) Draw a card. Place a city tile ON THE RESERVED AREA."
+  },
+  {
+    "id": "EARLY_EXPEDITION",
+    "name": "Early Expedition",
+    "class": "EarlyExpedition",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 15,
+    "tags": [
+      "SCIENCE",
+      "SPACE",
+      "CITY"
+    ],
+    "requirements": {
+      "temperature": -18,
+      "max": true
+    },
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 3
+      },
+      "addResourcesToAnyCard": {
+        "type": "DATA",
+        "count": 1
+      },
+      "city": {
+        "on": "isolated"
+      }
+    },
+    "cardNumber": "Pf18",
+    "description": "Temperature must be -18 C or lower. Decrease your energy production 1 step and Raise your M€ production 3 steps. Add 1 data to ANY card. Place a city tile on Mars NEXT TO NO OTHER TILE."
+  },
+  {
+    "id": "HYDROGEN_PROCESSING_PLANT",
+    "name": "Hydrogen Processing Plant",
+    "class": "HydrogenProcessingPlant",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 9,
+    "tags": [
+      "BUILDING",
+      "POWER"
+    ],
+    "requirements": {
+      "oxygen": 3
+    },
+    "victoryPoints": -1,
+    "behavior": {
+      "global": {
+        "oxygen": -1
+      },
+      "production": {
+        "energy": {
+          "oceans": {},
+          "per": 2
+        }
+      }
+    },
+    "cardNumber": "Pf19",
+    "description": "Oxygen level must be 3% or higher. Decrease oxygen level 1%. Raise your energy production 1 step for every two ocean tiles on Mars.",
+    "helpText": "HELP_TEXT"
+  },
+  {
+    "id": "LUXURY_ESTATE",
+    "name": "Luxury Estate",
+    "class": "LuxuryEstate",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 12,
+    "tags": [
+      "EARTH",
+      "MARS",
+      "BUILDING"
+    ],
+    "requirements": {
+      "oxygen": 7
+    },
+    "behavior": {
+      "stock": {
+        "titanium": {
+          "cities": {},
+          "greeneries": {},
+          "all": false
+        }
+      }
+    },
+    "cardNumber": "Pf21",
+    "description": "Oxygen must be 7% or greater. Gain 1 titanium for each city tile and greenery tile you own."
+  },
+  {
+    "id": "DESIGNED_ORGANISMS",
+    "name": "Designed Organisms",
+    "class": "DesignedOrganisms",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 13,
+    "tags": [
+      "SCIENCE",
+      "PLANT",
+      "MARS"
+    ],
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 5
+    },
+    "behavior": {
+      "production": {
+        "plants": 2
+      },
+      "stock": {
+        "plants": 3
+      },
+      "addResourcesToAnyCard": [
+        {
+          "count": 3,
+          "type": "MICROBE"
+        },
+        {
+          "count": 1,
+          "type": "ANIMAL"
+        }
+      ]
+    },
+    "cardNumber": "Pf23",
+    "description": "Requires 5 science tags. Increase your plant production 2 steps. Gain 3 plants. Add 3 microbes to ANY card. Add 1 animal to ANY card."
+  },
+  {
+    "id": "SECRET_LABS",
+    "name": "Secret Labs",
+    "class": "SecretLabs",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 21,
+    "tags": [
+      "JOVIAN",
+      "BUILDING",
+      "SPACE"
+    ],
+    "requirements": [
+      {
+        "tag": "SCIENCE"
+      },
+      {
+        "tag": "JOVIAN"
+      }
+    ],
+    "victoryPoints": 1,
+    "cardNumber": "Pf26",
+    "description": "Requires 1 science tag and 1 Jovian tag. Place an ocean tile. Add 2 microbes to ANY card. OR Raise temperature 1 step. Gain 3 plants. OR Raise oxygen level 1 step. Add 2 floaters to ANY card."
+  },
+  {
+    "id": "CYANOBACTERIA",
+    "name": "Cyanobacteria",
+    "class": "Cyanobacteria",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 12,
+    "tags": [
+      "MICROBE",
+      "MARS"
+    ],
+    "behavior": {
+      "global": {
+        "oxygen": 1
+      }
+    },
+    "cardNumber": "Pf27",
+    "description": "Raise the oxygen level 1%. For every ocean tile, add a microbe to ANY card."
+  },
+  {
+    "id": "NEW_VENICE",
+    "name": "New Venice",
+    "class": "NewVenice",
+    "module": "pathfinders",
+    "type": "automated",
+    "tags": [
+      "MARS",
+      "POWER",
+      "BUILDING",
+      "CITY"
+    ],
+    "cost": 21,
+    "behavior": {
+      "production": {
+        "energy": 1,
+        "megacredits": 2
+      },
+      "tile": {
+        "type": "OCEAN_CITY",
+        "on": "upgradeable-ocean"
+      }
+    },
+    "reserveUnits": {
+      "plants": 2
+    },
+    "requirements": {
+      "oceans": 3
+    },
+    "cardNumber": "Pf3",
+    "description": "Requires 3 ocean tiles. Lose 2 plants. Increase your energy production 1 step and your M€ production 2 steps. Place this tile on top of an existing ocean tile, IGNORING NORMAL PLACEMENT RESTRICTIONS FOR CITIES. The tile counts as a city as well as an ocean."
+  },
+  {
+    "id": "SMALL_OPEN_PIT_MINE",
+    "name": "Small Open Pit Mine",
+    "class": "SmallOpenPitMine",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 10,
+    "tags": [
+      "BUILDING"
+    ],
+    "cardNumber": "Pf31",
+    "description": "Increase your steel production 2 steps OR increase your titanium production 1 step."
+  },
+  {
+    "id": "FLAT_MARS_THEORY",
+    "name": "Flat Mars Theory",
+    "class": "FlatMarsTheory",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 8,
+    "tags": [
+      "EARTH"
+    ],
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 1,
+      "max": true
+    },
+    "cardNumber": "Pf39",
+    "description": "Requires maximum 1 science tag. Increase your M€ production 1 step for every generation played so far."
+  },
+  {
+    "id": "ASTEROID_RESOURCES",
+    "name": "Asteroid Resources",
+    "class": "AsteroidResources",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 17,
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "reserveUnits": {
+      "energy": 3
+    },
+    "victoryPoints": 1,
+    "behavior": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Increase your steel and titanium production 1 step.",
+            "spend": {
+              "energy": 3
+            },
+            "production": {
+              "steel": 1,
+              "titanium": 1
+            }
+          },
+          {
+            "title": "Place an ocean, and gain 2 steel and one titanium.",
+            "spend": {
+              "energy": 3
+            },
+            "ocean": {},
+            "stock": {
+              "steel": 2,
+              "titanium": 1
+            }
+          }
+        ]
+      }
+    },
+    "cardNumber": "Pf40",
+    "description": "Spend 3 energy. Either increase your steel and titanium production one step, OR place an ocean, and gain 2 steel and one titanium."
+  },
+  {
+    "id": "KICKSTARTER",
+    "name": "Kickstarter",
+    "class": "Kickstarter",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 12,
+    "cardNumber": "Pf41",
+    "description": "Choose a planet tag. This card counts as having 1 of that tag. Raise the corresponding planetary track 3 steps in total."
+  },
+  {
+    "id": "INTERPLANETARY_TRANSPORT",
+    "name": "Interplanetary Transport",
+    "class": "InterplanetaryTransport",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 15,
+    "tags": [
+      "EARTH",
+      "JOVIAN",
+      "SPACE"
+    ],
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "cities": {
+            "where": "offmars"
+          }
+        }
+      }
+    },
+    "cardNumber": "Pf43",
+    "description": "Increase your M€ production 1 step for every offworld city tile."
+  },
+  {
+    "id": "MARTIAN_DUST_PROCESSING_PLANT",
+    "name": "Martian Dust Processing Plant",
+    "class": "MartianDustProcessingPlant",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 15,
+    "tags": [
+      "MARS",
+      "BUILDING"
+    ],
+    "behavior": {
+      "tr": 1
+    },
+    "cardNumber": "Pf44",
+    "description": "Decrease your energy production 1 step, and raise your steel production 2 steps. Gain 1 TR."
+  },
+  {
+    "id": "RICH_DEPOSITS",
+    "name": "Rich Deposits",
+    "class": "RichDeposits",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 12,
+    "behavior": {
+      "production": {
+        "steel": 3
+      }
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "cardNumber": "Pf52",
+    "description": "Requires 2 science tags. Increase your steel production 3 steps."
+  },
+  {
+    "id": "OUMUAMUA_TYPE_OBJECT_SURVEY",
+    "name": "Oumuamua Type Object Survey",
+    "class": "OumuamuaTypeObjectSurvey",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 20,
+    "tags": [
+      "SPACE",
+      "SCIENCE"
+    ],
+    "requirements": [
+      {
+        "tag": "SPACE"
+      },
+      {
+        "tag": "SCIENCE"
+      }
+    ],
+    "cardNumber": "Pf53",
+    "description": "Requires 1 space tag and 1 science tag. Add 2 data to ANY card."
+  },
+  {
+    "id": "ADVANCED_POWER_GRID",
+    "name": "Advanced Power Grid",
+    "class": "AdvancedPowerGrid",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 18,
+    "tags": [
+      "POWER",
+      "BUILDING",
+      "MARS"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "tag": "POWER"
+        },
+        "energy": 2
+      }
+    },
+    "cardNumber": "Pf56",
+    "description": "Increase your energy production 2 steps. Increase your M€ production 1 step per power tag you have, including this."
+  },
+  {
+    "id": "HUYGENS_OBSERVATORY",
+    "name": "Huygens Observatory",
+    "class": "HuygensObservatory",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 27,
+    "tags": [
+      "SCIENCE",
+      "SPACE"
+    ],
+    "victoryPoints": 1,
+    "behavior": {
+      "tr": 1
+    },
+    "cardNumber": "Pf61",
+    "description": "Place a colony. MAY BE PLACED ON A COLONY TILE WHERE YOU ALREADY HAVE A COLONY. Trade for free. You may use a Trade Fleet that is already on a colony tile, but you may not trade with the tile that fleet came from. Gain 1 TR."
+  },
+  {
+    "id": "CASSINI_STATION",
+    "name": "Cassini Station",
+    "class": "CassiniStation",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 23,
+    "tags": [
+      "POWER",
+      "SCIENCE",
+      "SPACE"
+    ],
+    "behavior": {
+      "production": {
+        "energy": {
+          "colonies": {
+            "colonies": {}
+          },
+          "all": true
+        }
+      }
+    },
+    "cardNumber": "Pf62",
+    "description": "Increase your energy production 1 step for every colony in play. Add 2 floaters to ANY card OR add 3 data to ANY card."
+  },
+  {
+    "id": "LOBBY_HALLS",
+    "name": "Lobby Halls",
+    "class": "LobbyHalls",
+    "module": "pathfinders",
+    "type": "automated",
+    "cost": 11,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      },
+      "turmoil": {
+        "sendDelegates": {
+          "count": 1
+        }
+      }
+    },
+    "cardNumber": "PfT1",
+    "description": "Increase your M€ production 2 steps. Place 1 delegate in any party. Choose a planet tag. This card counts as having 1 of that tag. Raise the corresponding planetary track 1 step."
+  },
+  {
+    "id": "HOUSE_PRINTING",
+    "name": "House Printing",
+    "class": "HousePrinting",
+    "module": "prelude",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 10,
+    "behavior": {
+      "production": {
+        "steel": 1
+      }
+    },
+    "victoryPoints": 1,
+    "cardNumber": "P36",
+    "description": "Increase your steel production 1 step."
+  },
+  {
+    "id": "LAVA_TUBE_SETTLEMENT",
+    "name": "Lava Tube Settlement",
+    "class": "LavaTubeSettlement",
+    "module": "prelude",
+    "type": "automated",
+    "tags": [
+      "BUILDING",
+      "CITY"
+    ],
+    "cost": 15,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 2
+      }
+    },
+    "cardNumber": "P37",
+    "description": "Decrease your energy production 1 step and increase your M€ production 2 steps. Place a city tile on a VOLCANIC AREA regardless of adjacent cities."
+  },
+  {
+    "id": "RESEARCH_COORDINATION",
+    "name": "Research Coordination",
+    "class": "ResearchCoordination",
+    "module": "prelude",
+    "type": "automated",
+    "tags": [
+      "WILD"
+    ],
+    "cost": 4,
+    "cardNumber": "P40",
+    "description": "After being played, when you perform an action, the wild tag counts as any tag of your choice."
+  },
+  {
+    "id": "SF_MEMORIAL",
+    "name": "Sf Memorial",
+    "class": "SFMemorial",
+    "module": "prelude",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 7,
+    "victoryPoints": 1,
+    "behavior": {
+      "drawCard": 1
+    },
+    "cardNumber": "P41",
+    "description": "Draw 1 card."
+  },
+  {
+    "id": "SPACE_HOTELS",
+    "name": "Space Hotels",
+    "class": "SpaceHotels",
+    "module": "prelude",
+    "type": "automated",
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ],
+    "cost": 12,
+    "behavior": {
+      "production": {
+        "megacredits": 4
+      }
+    },
+    "requirements": {
+      "tag": "EARTH",
+      "count": 2
+    },
+    "cardNumber": "P42",
+    "description": "Requires 2 Earth tags. Increase M€ production 4 steps."
+  },
+  {
+    "id": "FRONTIER_TOWN",
+    "name": "Frontier Town",
+    "class": "FrontierTown",
+    "module": "prelude2",
+    "type": "automated",
+    "cost": 11,
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "requirements": {
+      "party": "MARS"
+    },
+    "cardNumber": "P74",
+    "description": "Requires that Mars First is ruling or that you have 2 delegates there. Decrease your energy production one step. Place a city tile. GAIN THE PRINTED PLACEMENT BONUS 2 ADDITIONAL TIMES."
+  },
+  {
+    "id": "MICROGRAVITY_NUTRITION",
+    "name": "Microgravity Nutrition",
+    "class": "MicrogravityNutrition",
+    "module": "prelude2",
+    "type": "automated",
+    "cost": 11,
+    "tags": [
+      "MICROBE",
+      "PLANT"
+    ],
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "colonies": {}
+        }
+      }
+    },
+    "description": "Increase your M€ production 1 step for each colony you have.",
+    "cardNumber": "P79"
+  },
+  {
+    "id": "SPONSORING_NATION",
+    "name": "Sponsoring Nation",
+    "class": "SponsoringNation",
+    "module": "prelude2",
+    "type": "automated",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 21,
+    "behavior": {
+      "tr": 3,
+      "turmoil": {
+        "sendDelegates": {
+          "count": 2
+        }
+      }
+    },
+    "requirements": {
+      "tag": "EARTH",
+      "count": 4
+    },
+    "cardNumber": "P83",
+    "description": "Requires 4 Earth tags. Gain 3 TR. Place 2 delegates."
+  },
+  {
+    "id": "SUMMIT_LOGISTICS",
+    "name": "Summit Logistics",
+    "class": "SummitLogistics",
+    "module": "prelude2",
+    "type": "automated",
+    "tags": [
+      "BUILDING",
+      "SPACE"
+    ],
+    "cost": 10,
+    "requirements": {
+      "party": "SCIENTISTS"
+    },
+    "behavior": {
+      "stock": {
+        "megacredits": {
+          "tag": [
+            "JOVIAN",
+            "EARTH",
+            "VENUS",
+            "MARS"
+          ],
+          "colonies": {
+            "colonies": {}
+          }
+        }
+      },
+      "drawCard": 2
+    },
+    "cardNumber": "P85"
+  },
+  {
+    "id": "VENUS_ALLIES",
+    "name": "Venus Allies",
+    "class": "VenusAllies",
+    "module": "prelude2",
+    "type": "automated",
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ],
+    "cost": 30,
+    "victoryPoints": 2,
+    "behavior": {
+      "global": {
+        "venus": 2
+      },
+      "stock": {
+        "megacredits": {
+          "colonies": {
+            "colonies": {}
+          },
+          "each": 4
+        }
+      }
+    },
+    "cardNumber": "P87",
+    "description": "Raise Venus 2 steps. Gain 4 M€ per colony you have."
+  },
+  {
+    "id": "WG_PROJECT",
+    "name": "Wg Project",
+    "class": "WGProject",
+    "module": "prelude2",
+    "type": "automated",
+    "cost": 9,
+    "tags": [
+      "EARTH"
+    ],
+    "requirements": {
+      "chairman": true
+    },
+    "description": "Requires that you are Chairman. DRAW 3 PRELUDE CARDS AND PLAY 1 OF THEM, Discard the other 2.",
+    "cardNumber": "P91"
+  },
+  {
+    "id": "SNOW_ALGAE",
+    "name": "Snow Algae",
+    "class": "SnowAlgae",
+    "module": "promo",
+    "type": "automated",
+    "cost": 12,
+    "tags": [
+      "PLANT"
+    ],
+    "behavior": {
+      "production": {
+        "plants": 1,
+        "heat": 1
+      }
+    },
+    "requirements": {
+      "oceans": 2
+    },
+    "cardNumber": "211",
+    "description": "Requires 2 oceans. Increase your plant production and your heat production 1 step each."
+  },
+  {
+    "id": "NEW_HOLLAND",
+    "name": "New Holland",
+    "class": "NewHolland",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 20,
+    "behavior": {
+      "production": {
+        "megacredits": 3
+      },
+      "tile": {
+        "type": "NEW_HOLLAND",
+        "on": "upgradeable-ocean-new-holland"
+      }
+    },
+    "requirements": {
+      "cities": 4,
+      "all": true
+    },
+    "cardNumber": "X-2",
+    "description": "Requires 4 city tiles ON MARS. Increase your M€ production 3 steps. Place a city tile on top of an already placed ocean tile, FOLLOWING NORMAL CITY PLACEMENT RESTRICTIONS. The tile counts as a city and an ocean."
+  },
+  {
+    "id": "DUSK_LASER_MINING",
+    "name": "Dusk Laser Mining",
+    "class": "DuskLaserMining",
+    "module": "promo",
+    "type": "automated",
+    "cost": 8,
+    "tags": [
+      "SPACE"
+    ],
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "titanium": 1
+      },
+      "stock": {
+        "titanium": 4
+      }
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "cardNumber": "X01",
+    "description": "Requires 2 science tags. Decrease your energy production 1 step, and increase your titanium production 1 step. Gain 4 titanium."
+  },
+  {
+    "id": "INTERPLANETARY_TRADE",
+    "name": "Interplanetary Trade",
+    "class": "InterplanetaryTrade",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 27,
+    "victoryPoints": 1,
+    "cardNumber": "X05",
+    "description": "Increase your M€ production 1 step per different tag you have in play, including this."
+  },
+  {
+    "id": "STANFORD_TORUS",
+    "name": "Stanford Torus",
+    "class": "StanfordTorus",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "SPACE",
+      "CITY"
+    ],
+    "cost": 12,
+    "victoryPoints": 2,
+    "behavior": {
+      "city": {
+        "space": "STANFORD_TORUS"
+      }
+    },
+    "cardNumber": "X12",
+    "description": "Place a city tile IN SPACE, outside and separate from the planet."
+  },
+  {
+    "id": "FIELD_CAPPED_CITY",
+    "name": "Field Capped City",
+    "class": "FieldCappedCity",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING",
+      "POWER"
+    ],
+    "cost": 29,
+    "behavior": {
+      "production": {
+        "energy": 1,
+        "megacredits": 2
+      },
+      "stock": {
+        "plants": 3
+      },
+      "city": {}
+    },
+    "cardNumber": "X21",
+    "description": "Increase your M€ production 2 steps, increase your energy production 1 step, gain 3 plants, and place a city tile."
+  },
+  {
+    "id": "JOVIAN_EMBASSY",
+    "name": "Jovian Embassy",
+    "class": "JovianEmbassy",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "JOVIAN",
+      "BUILDING"
+    ],
+    "cost": 14,
+    "victoryPoints": 1,
+    "behavior": {
+      "tr": 1
+    },
+    "cardNumber": "X23",
+    "description": "Raise your TR 1 step."
+  },
+  {
+    "id": "MAGNETIC_SHIELD",
+    "name": "Magnetic Shield",
+    "class": "MagneticShield",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 24,
+    "behavior": {
+      "tr": 4
+    },
+    "requirements": {
+      "tag": "POWER",
+      "count": 3
+    },
+    "cardNumber": "X24",
+    "description": "Requires 3 power tags. Raise your TR 4 steps."
+  },
+  {
+    "id": "POTATOES",
+    "name": "Potatoes",
+    "class": "Potatoes",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 2,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      }
+    },
+    "cardNumber": "X28",
+    "description": "Lose 2 plants. Increase your M€ production 2 steps."
+  },
+  {
+    "id": "GREAT_DAM_PROMO",
+    "name": "Great Dam Promo",
+    "class": "GreatDamPromo",
+    "module": "promo",
+    "type": "automated",
+    "cost": 15,
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "adjacencyBonus": null,
+    "behavior": {
+      "production": {
+        "energy": 2
+      }
+    },
+    "requirements": {
+      "oceans": 4
+    },
+    "victoryPoints": 1,
+    "cardNumber": "X32",
+    "description": "Requires 4 ocean tiles. Increase your energy production 2 steps. Place this tile ADJACENT TO an ocean tile."
+  },
+  {
+    "id": "MAGNETIC_FIELD_GENERATORS_PROMO",
+    "name": "Magnetic Field Generators Promo",
+    "class": "MagneticFieldGeneratorsPromo",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 22,
+    "behavior": {
+      "production": {
+        "energy": -4,
+        "plants": 2
+      },
+      "tr": 3,
+      "tile": {
+        "type": "MAGNETIC_FIELD_GENERATORS",
+        "on": "land",
+        "adjacencyBonus": null
+      }
+    },
+    "cardNumber": "X33",
+    "description": "Decrease your energy production 4 steps and increase your plant production 2 steps. Raise your TR 3 steps. Place this tile."
+  },
+  {
+    "id": "BACTOVIRAL_RESEARCH",
+    "name": "Bactoviral Research",
+    "class": "BactoviralResearch",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "MICROBE",
+      "SCIENCE"
+    ],
+    "cost": 10,
+    "behavior": {
+      "drawCard": 1,
+      "addResourcesToAnyCard": {
+        "count": {
+          "tag": "SCIENCE"
+        },
+        "type": "MICROBE"
+      }
+    },
+    "cardNumber": "X35",
+    "description": "Draw 1 card. Choose 1 of your played cards and add 1 microbe to it for each science tag you have, including this."
+  },
+  {
+    "id": "OUTDOOR_SPORTS",
+    "name": "Outdoor Sports",
+    "class": "OutdoorSports",
+    "module": "promo",
+    "type": "automated",
+    "cost": 8,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      }
+    },
+    "requirements": [
+      {
+        "cities": 1,
+        "all": true,
+        "nextTo": true
+      },
+      {
+        "oceans": 1
+      }
+    ],
+    "cardNumber": "X38",
+    "description": "Requires any city adjacent to an ocean. Increase your M€ production 2 steps."
+  },
+  {
+    "id": "PSYCHE",
+    "name": "Psyche",
+    "class": "Psyche",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 31,
+    "victoryPoints": 2,
+    "behavior": {
+      "production": {
+        "titanium": 2
+      },
+      "stock": {
+        "titanium": 3
+      }
+    },
+    "cardNumber": "X44",
+    "description": "Increase titanium production 2 steps. Gain 3 titanium."
+  },
+  {
+    "id": "ROBOT_POLLINATORS",
+    "name": "Robot Pollinators",
+    "class": "RobotPollinators",
+    "module": "promo",
+    "type": "automated",
+    "cost": 9,
+    "requirements": {
+      "oxygen": 4
+    },
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "stock": {
+        "plants": {
+          "tag": "PLANT"
+        }
+      }
+    },
+    "cardNumber": "X45",
+    "description": "Requires 4% oxygen. Increase your plant production 1 step. Gain 1 plant for every plant tag you have."
+  },
+  {
+    "id": "AQUEDUCT_SYSTEMS",
+    "name": "Aqueduct Systems",
+    "class": "AqueductSystems",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 9,
+    "victoryPoints": 1,
+    "behavior": {
+      "drawCard": {
+        "count": 3,
+        "tag": "BUILDING"
+      }
+    },
+    "requirements": [
+      {
+        "cities": 1,
+        "nextTo": true
+      },
+      {
+        "oceans": 1
+      }
+    ],
+    "cardNumber": "X50",
+    "description": "Requires you have a city next to an ocean. Draw 3 cards with a building tag."
+  },
+  {
+    "id": "ASTRA_MECHANICA",
+    "name": "Astra Mechanica",
+    "class": "AstraMechanica",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 7,
+    "cardNumber": "X51",
+    "description": "RETURN UP TO 2 OF YOUR PLAYED EVENT CARDS TO YOUR HAND. THEY MAY NOT BE CARDS THAT PLACE SPECIAL TILES.",
+    "helpText": "HELP_TEXT"
+  },
+  {
+    "id": "CYBERIA_SYSTEMS",
+    "name": "Cyberia Systems",
+    "class": "CyberiaSystems",
+    "module": "promo",
+    "type": "automated",
+    "cost": 16,
+    "behavior": {
+      "production": {
+        "steel": 1
+      }
+    },
+    "cardNumber": "X53",
+    "description": "Increase your steel production 1 step. Copy the PRODUCTION BOXES of 2 of your cards with building tags.",
+    "helpText": "HELP_TEXT"
+  },
+  {
+    "id": "HERMETIC_ORDER_OF_MARS",
+    "name": "Hermetic Order Of Mars",
+    "class": "HermeticOrderOfMars",
+    "module": "promo",
+    "type": "automated",
+    "cost": 10,
+    "requirements": {
+      "oxygen": 4,
+      "max": true
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      }
+    },
+    "cardNumber": "X56",
+    "description": "Oxygen must be 4% or lower. Increase your M€ production 2 steps. Gain 1 M€ per empty area adjacent to your tiles."
+  },
+  {
+    "id": "KAGUYA_TECH",
+    "name": "Kaguya Tech",
+    "class": "KaguyaTech",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "PLANT"
+    ],
+    "cost": 10,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      },
+      "drawCard": 1
+    },
+    "cardNumber": "X58"
+  },
+  {
+    "id": "SUPERMARKETS",
+    "name": "Supermarkets",
+    "class": "Supermarkets",
+    "module": "promo",
+    "type": "automated",
+    "cost": 9,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      }
+    },
+    "requirements": {
+      "cities": 2,
+      "all": true
+    },
+    "cardNumber": "X68",
+    "description": "Requires two cities in play. Increase your M€ production 2 steps."
+  },
+  {
+    "id": "PUBLIC_BATHS",
+    "name": "Public Baths",
+    "class": "PublicBaths",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 6,
+    "victoryPoints": 1,
+    "behavior": {
+      "stock": {
+        "megacredits": 6
+      }
+    },
+    "requirements": {
+      "oceans": 6
+    },
+    "cardNumber": "X70",
+    "description": "Requires 6 oceans. Gain 6 M€."
+  },
+  {
+    "id": "CITY_PARKS",
+    "name": "City Parks",
+    "class": "CityParks",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 7,
+    "victoryPoints": 2,
+    "requirements": {
+      "cities": 3
+    },
+    "behavior": {
+      "stock": {
+        "plants": 2
+      }
+    },
+    "cardNumber": "X71",
+    "description": "Requires that you have 3 cities. Gain 2 plants."
+  },
+  {
+    "id": "CASINOS",
+    "name": "Casinos",
+    "class": "Casinos",
+    "module": "promo",
+    "type": "automated",
+    "cost": 5,
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 4
+      }
+    },
+    "requirements": {
+      "cities": 1
+    },
+    "cardNumber": "X72",
+    "description": "Requires that you have a city. Decrease your energy production 1 step and increase your M€ production 4 steps."
+  },
+  {
+    "id": "STATIC_HARVESTING",
+    "name": "Static Harvesting",
+    "class": "StaticHarvesting",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "POWER"
+    ],
+    "cost": 5,
+    "behavior": {
+      "production": {
+        "energy": 1
+      },
+      "stock": {
+        "megacredits": {
+          "tag": "BUILDING"
+        }
+      }
+    },
+    "requirements": {
+      "oceans": 3,
+      "max": true
+    },
+    "cardNumber": "X74",
+    "description": "Requires 3 or fewer ocean tiles. Increase your energy production 1 step. Gain 1 M€ per building tag you have."
+  },
+  {
+    "id": "STERLING_VENTS",
+    "name": "Sterling Vents",
+    "class": "SterlingVents",
+    "module": "promo",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 5,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "heat": -2,
+        "energy": 2
+      }
+    },
+    "description": "Decrease heat production 2 steps. Increase energy production 2 steps.",
+    "cardNumber": "X79"
+  },
+  {
+    "id": "CLOUD_CITY",
+    "name": "Cloud City",
+    "class": "CloudCity",
+    "module": "starwars",
+    "type": "automated",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 5,
+    "requirements": {
+      "venus": 6
+    },
+    "behavior": {
+      "global": {
+        "venus": 1
+      },
+      "addResourcesToAnyCard": {
+        "count": 2,
+        "type": "FLOATER"
+      }
+    },
+    "cardNumber": "SW05",
+    "description": "Requires Venus 6%. Raise Venus 1 step. Add 2 floaters to any card."
+  },
+  {
+    "id": "FOREST_MOON",
+    "name": "Forest Moon",
+    "class": "ForestMoon",
+    "module": "starwars",
+    "type": "automated",
+    "tags": [
+      "PLANT",
+      "ANIMAL"
+    ],
+    "cost": 15,
+    "requirements": {
+      "greeneries": 4,
+      "all": true
+    },
+    "victoryPoints": 1,
+    "behavior": {
+      "decreaseAnyProduction": {
+        "count": 2,
+        "type": "ENERGY"
+      },
+      "addResourcesToAnyCard": {
+        "count": 1,
+        "type": "ANIMAL"
+      }
+    },
+    "cardNumber": "SW06",
+    "description": "Requires any 4 greeneries on Mars. Decrease any energy production 2 steps. Add an animal to any card."
+  },
+  {
+    "id": "TAKONDA_CASTLE",
+    "name": "Takonda Castle",
+    "class": "TakondaCastle",
+    "module": "starwars",
+    "type": "automated",
+    "tags": [
+      "POWER",
+      "PLANT"
+    ],
+    "cost": 2,
+    "behavior": {
+      "stock": {
+        "megacredits": {
+          "tag": [
+            "MICROBE",
+            "ANIMAL"
+          ]
+        }
+      }
+    },
+    "cardNumber": "SW07",
+    "description": "Gain 1 M€ for each of your microbe tags and animal tags."
+  },
+  {
+    "id": "TOOL_WITH_THE_FIRST_ORDER",
+    "name": "Tool With The First Order",
+    "class": "ToolWithTheFirstOrder",
+    "module": "starwars",
+    "type": "automated",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 5,
+    "behavior": {
+      "tr": 1
+    },
+    "cardNumber": "SW08",
+    "description": "Take another action this turn. Gain 1 TR."
+  },
+  {
+    "id": "REY_SKYWALKER",
+    "name": "Rey Skywalker",
+    "class": "ReySkywalker",
+    "module": "starwars",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 8,
+    "victoryPoints": -2,
+    "behavior": {
+      "production": {
+        "megacredits": 4
+      }
+    },
+    "cardNumber": "SW09",
+    "description": "Raise your M€ production 4 steps. Place a bronze cube on an empty unreserved space on Mars. No tile or token may be placed on that space for the rest of the game."
+  },
+  {
+    "id": "AERIAL_LENSES",
+    "name": "Aerial Lenses",
+    "class": "AerialLenses",
+    "module": "turmoil",
+    "type": "automated",
+    "cost": 2,
+    "victoryPoints": -1,
+    "behavior": {
+      "production": {
+        "heat": 2
+      },
+      "removeAnyPlants": 2
+    },
+    "requirements": {
+      "party": "KELVINISTS"
+    },
+    "description": "Requires that Kelvinists are ruling or that you have 2 delegates there. Remove up to 2 plants from any player. Increase your heat production 2 steps.",
+    "cardNumber": "T01"
+  },
+  {
+    "id": "CULTURAL_METROPOLIS",
+    "name": "Cultural Metropolis",
+    "class": "CulturalMetropolis",
+    "module": "turmoil",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 20,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 3
+      },
+      "city": {}
+    },
+    "requirements": {
+      "party": "UNITY"
+    },
+    "cardNumber": "T03",
+    "description": "Requires that Unity is ruling or that you have 2 delegates there. Decrease your energy production 1 step and increase your M€ production 3 steps. Place a city tile. Place 2 delegates in 1 party."
+  },
+  {
+    "id": "PARLIAMENT_HALL",
+    "name": "Parliament Hall",
+    "class": "ParliamentHall",
+    "module": "turmoil",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 8,
+    "requirements": {
+      "party": "MARS"
+    },
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "tag": "BUILDING",
+          "per": 3
+        }
+      }
+    },
+    "cardNumber": "T08",
+    "description": "Requires that Mars First are ruling or that you have 2 delegates there. Increase your M€ production 1 step for every 3 building tags you have, including this."
+  },
+  {
+    "id": "PR_OFFICE",
+    "name": "Pr Office",
+    "class": "PROffice",
+    "module": "turmoil",
+    "type": "automated",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 7,
+    "behavior": {
+      "tr": 1,
+      "stock": {
+        "megacredits": {
+          "tag": "EARTH"
+        }
+      }
+    },
+    "requirements": {
+      "party": "UNITY"
+    },
+    "cardNumber": "T09",
+    "description": "Requires that Unity are ruling or that you have 2 delegates there. Gain 1 TR. Gain 1 M€ for each Earth tag you have, including this."
+  },
+  {
+    "id": "SPONSORED_MOHOLE",
+    "name": "Sponsored Mohole",
+    "class": "SponsoredMohole",
+    "module": "turmoil",
+    "type": "automated",
+    "cost": 5,
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "heat": 2
+      }
+    },
+    "requirements": {
+      "party": "KELVINISTS"
+    },
+    "cardNumber": "T13",
+    "description": "Requires that Kelvinists are ruling or that you have 2 delegates there. Increase your heat production 2 steps."
+  },
+  {
+    "id": "SUPPORTED_RESEARCH",
+    "name": "Supported Research",
+    "class": "SupportedResearch",
+    "module": "turmoil",
+    "type": "automated",
+    "cost": 3,
+    "tags": [
+      "SCIENCE"
+    ],
+    "behavior": {
+      "drawCard": 2
+    },
+    "requirements": {
+      "party": "SCIENTISTS"
+    },
+    "cardNumber": "T14",
+    "description": "Requires that Scientists are ruling or that you have 2 delegates there. Draw 2 cards."
+  },
+  {
+    "id": "WILDLIFE_DOME",
+    "name": "Wildlife Dome",
+    "class": "WildlifeDome",
+    "module": "turmoil",
+    "type": "automated",
+    "cost": 15,
+    "tags": [
+      "ANIMAL",
+      "PLANT",
+      "BUILDING"
+    ],
+    "requirements": {
+      "party": "GREENS"
+    },
+    "behavior": {
+      "greenery": {}
+    },
+    "cardNumber": "T15",
+    "description": "Requires that Greens are ruling or that you have 2 delegates there. Place a greenery tile and raise oxygen 1 step."
+  },
+  {
+    "id": "DIASPORA_MOVEMENT",
+    "name": "Diaspora Movement",
+    "class": "DiasporaMovement",
+    "module": "turmoil",
+    "type": "automated",
+    "tags": [
+      "JOVIAN"
+    ],
+    "cost": 7,
+    "requirements": {
+      "party": "REDS"
+    },
+    "victoryPoints": 1,
+    "behavior": {
+      "stock": {
+        "megacredits": {
+          "tag": "JOVIAN",
+          "all": true
+        }
+      }
+    },
+    "cardNumber": "TO4",
+    "description": "Requires that Reds are ruling or that you have 2 delegates there. Gain 1M€ for each Jovian tag in play, including this."
+  },
+  {
+    "id": "GEOSCAN_SATELLITE",
+    "name": "Geoscan Satellite",
+    "class": "GeoscanSatellite",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 8,
+    "tags": [
+      "SCIENCE",
+      "SPACE"
+    ],
+    "cardNumber": "U002",
+    "description": "Pick a space on the board. Identify the underground resource in that space and in all adjacent spaces. Claim one of them."
+  },
+  {
+    "id": "UNDERGROUND_RAILWAY",
+    "name": "Underground Railway",
+    "class": "UndergroundRailway",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 18,
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "energy": -1
+      },
+      "tr": {
+        "underworld": {
+          "undergroundTokens": {}
+        },
+        "per": 4
+      }
+    },
+    "cardNumber": "U004",
+    "description": "Decrease your energy production 1 step. Gain 1 TR for every 4 underground tokens you have."
+  },
+  {
+    "id": "GAIA_CITY",
+    "name": "Gaia City",
+    "class": "GaiaCity",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 20,
+    "tags": [
+      "PLANT",
+      "BUILDING",
+      "CITY"
+    ],
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "plants": 2
+      }
+    },
+    "cardNumber": "U005",
+    "description": "Reduce your energy production one step and increase your plant production 2 steps. Place a city on a NON-RESERVED SPACE WITH YOUR EXCAVATION MARKER, ignoring other placement restrictions"
+  },
+  {
+    "id": "OLD_WORLD_MAFIA",
+    "name": "Old World Mafia",
+    "class": "OldWorldMafia",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 11,
+    "tags": [
+      "EARTH",
+      "CRIME"
+    ],
+    "behavior": {
+      "underworld": {
+        "corruption": {
+          "tag": "EARTH",
+          "per": 2
+        }
+      }
+    },
+    "cardNumber": "U007",
+    "description": "Gain 1 corruption for every 2 Earth tags you have, including this."
+  },
+  {
+    "id": "NIGHTCLUBS",
+    "name": "Nightclubs",
+    "class": "Nightclubs",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 10,
+    "tags": [
+      "BUILDING",
+      "CRIME"
+    ],
+    "requirements": {
+      "cities": 1
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      },
+      "underworld": {
+        "corruption": 1
+      }
+    },
+    "cardNumber": "U008",
+    "description": "Requires that you own a city in play. Gain 1 corruption and increase your M€ production 2 steps."
+  },
+  {
+    "id": "OFF_WORLD_TAX_HAVEN",
+    "name": "Off World Tax Haven",
+    "class": "OffWorldTaxHaven",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 8,
+    "tags": [
+      "SPACE",
+      "CRIME"
+    ],
+    "victoryPoints": -1,
+    "requirements": {
+      "corruption": 2
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 5
+      }
+    },
+    "cardNumber": "U010",
+    "description": "Requires 2 corruption. Increase your M€ production 5 steps."
+  },
+  {
+    "id": "SUBTERRANEAN_SEA",
+    "name": "Subterranean Sea",
+    "class": "SubterraneanSea",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 10,
+    "tags": [
+      "BUILDING"
+    ],
+    "tr": {
+      "oceans": 1
+    },
+    "cardNumber": "U015",
+    "description": "Place an ocean tile ON AN AREA NOT RESERVED FOR OCEAN where you have an excavation marker."
+  },
+  {
+    "id": "FOREST_TUNNELS",
+    "name": "Forest Tunnels",
+    "class": "ForestTunnels",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 7,
+    "behavior": {
+      "stock": {
+        "plants": {
+          "underworld": {
+            "undergroundTokens": {}
+          }
+        }
+      }
+    },
+    "cardNumber": "U016",
+    "description": "Gain 1 plant for each underground token you own."
+  },
+  {
+    "id": "MAN_MADE_VOLCANO",
+    "name": "Man Made Volcano",
+    "class": "ManMadeVolcano",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "POWER"
+    ],
+    "cost": 26,
+    "tilesBuilt": [
+      "MAN_MADE_VOLCANO"
+    ],
+    "behavior": {
+      "production": {
+        "energy": 2,
+        "heat": 4
+      }
+    },
+    "cardNumber": "U017"
+  },
+  {
+    "id": "TUNNELING_SUBCONTRACTOR",
+    "name": "Tunneling Subcontractor",
+    "class": "TunnelingSubcontractor",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "CRIME"
+    ],
+    "cost": 9,
+    "behavior": {
+      "underworld": {
+        "corruption": 1,
+        "excavate": 1
+      }
+    },
+    "cardNumber": "U018",
+    "description": "Gain 1 corruption. Excavate an underground resource."
+  },
+  {
+    "id": "UNDERGROUND_AMUSEMENT_PARK",
+    "name": "Underground Amusement Park",
+    "class": "UndergroundAmusementPark",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 5,
+    "victoryPoints": 1,
+    "requirements": {
+      "undergroundTokens": 1
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      }
+    },
+    "cardNumber": "U019",
+    "description": "Requires you have 1 underground token. Increase your M€ production 1 step."
+  },
+  {
+    "id": "CASINO",
+    "name": "Casino",
+    "class": "Casino",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "BUILDING",
+      "CRIME"
+    ],
+    "cost": 15,
+    "requirements": {
+      "cities": 2
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 4
+      },
+      "underworld": {
+        "corruption": 1
+      }
+    },
+    "cardNumber": "U020",
+    "description": "Requires that you own 2 city tiles. Gain 1 corruption. Increase your M€ production 4 steps."
+  },
+  {
+    "id": "IMPORTED_HEAVY_MACHINERY",
+    "name": "Imported Heavy Machinery",
+    "class": "ImportedHeavyMachinery",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ],
+    "cost": 9,
+    "behavior": {
+      "underworld": {
+        "excavate": 2
+      }
+    },
+    "cardNumber": "U021",
+    "description": "Excavate 2 underground resources."
+  },
+  {
+    "id": "MICROPROBING_TECHNOLOGY",
+    "name": "Microprobing Technology",
+    "class": "MicroprobingTechnology",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 8,
+    "requirements": {
+      "tag": "SCIENCE"
+    },
+    "behavior": {
+      "stock": {
+        "plants": 3
+      },
+      "underworld": {
+        "identify": {
+          "count": 2,
+          "claim": 1
+        }
+      }
+    },
+    "cardNumber": "U022",
+    "description": "Requires 1 science tag. Gain 3 plants. Identify 2 underground resources. Claim 1 of them."
+  },
+  {
+    "id": "GEOTHERMAL_NETWORK",
+    "name": "Geothermal Network",
+    "class": "GeothermalNetwork",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 14,
+    "requirements": {
+      "undergroundTokens": 3
+    },
+    "behavior": {
+      "production": {
+        "heat": 3
+      }
+    },
+    "victoryPoints": 1,
+    "cardNumber": "U024",
+    "description": "Requires 3 underground tokens. Increase your heat production 3 steps."
+  },
+  {
+    "id": "CAVE_CITY",
+    "name": "Cave City",
+    "class": "CaveCity",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 16,
+    "tags": [
+      "BUILDING",
+      "CITY"
+    ],
+    "behavior": {
+      "production": {
+        "steel": 1
+      }
+    },
+    "cardNumber": "U027",
+    "description": "Increase your steel production 1 step. Place a city in a NON-RESERVED SPACE WITH YOUR EXCAVATION MARKER, ignoring other placement restrictions"
+  },
+  {
+    "id": "UNDERGROUND_SMUGGLING_RING",
+    "name": "Underground Smuggling Ring",
+    "class": "UndergroundSmugglingRing",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "CRIME"
+    ],
+    "cost": 7,
+    "requirements": {
+      "undergroundTokens": 1
+    },
+    "behavior": {
+      "underworld": {
+        "corruption": 1
+      },
+      "standardResource": 2
+    },
+    "cardNumber": "U028",
+    "description": "Requires you have 1 underground token. Gain 1 corruption and 2 of the same standard resource."
+  },
+  {
+    "id": "DEEPMINING",
+    "name": "Deepmining",
+    "class": "Deepmining",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 11,
+    "tags": [
+      "BUILDING"
+    ],
+    "cardNumber": "U029",
+    "description": "Excavate an underground resource that depicts steel or titanium ANYWHERE ON THE BOARD. Increase your production of that resource 1 step."
+  },
+  {
+    "id": "BEHEMOTH_EXCAVATOR",
+    "name": "Behemoth Excavator",
+    "class": "BehemothExcavator",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 13,
+    "behavior": {
+      "underworld": {
+        "excavate": 3
+      }
+    },
+    "cardNumber": "U030",
+    "description": "Excavate 3 underground resources."
+  },
+  {
+    "id": "LOBBYING_NETWORK",
+    "name": "Lobbying Network",
+    "class": "LobbyingNetwork",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 5,
+    "behavior": {
+      "underworld": {
+        "corruption": 1
+      }
+    },
+    "cardNumber": "U031",
+    "description": "Gain 1 corruption."
+  },
+  {
+    "id": "ORBITAL_LASER_DRILL",
+    "name": "Orbital Laser Drill",
+    "class": "OrbitalLaserDrill",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "SCIENCE",
+      "SPACE"
+    ],
+    "cost": 15,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "victoryPoints": 1,
+    "behavior": {
+      "underworld": {
+        "excavate": {
+          "count": 2,
+          "ignorePlacementRestrictions": true
+        }
+      }
+    },
+    "cardNumber": "U033",
+    "description": "Requires 2 science tags. Excavate 2 underground resources, IGNORING PLACEMENT RESTRICTIONS."
+  },
+  {
+    "id": "LANDFILL",
+    "name": "Landfill",
+    "class": "Landfill",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 2,
+    "victoryPoints": -2,
+    "cardNumber": "U036",
+    "description": "Increase your M€ production 1 step for each different TYPE of production you have at least 1 step of."
+  },
+  {
+    "id": "ROBOT_MOLES",
+    "name": "Robot Moles",
+    "class": "RobotMoles",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 8,
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "stock": {
+        "steel": 2
+      },
+      "underworld": {
+        "identify": {
+          "count": 4,
+          "claim": 1
+        }
+      }
+    },
+    "cardNumber": "U045",
+    "description": "Gain 2 steel. Identify 4 underground resources. Claim 1 of them."
+  },
+  {
+    "id": "HYPERSPACE_DRIVE_PROTOTYPE",
+    "name": "Hyperspace Drive Prototype",
+    "class": "HyperspaceDrivePrototype",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 11,
+    "tags": [
+      "SCIENCE",
+      "SPACE"
+    ],
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 3
+    },
+    "cardNumber": "U052",
+    "description": "Requires that 3 science tags. Put a fighter resource on a card you own, or gain 1 titanium if you have no suitable card. Put a science resource on a card you own, or gain 1 TR if you have no suitable card."
+  },
+  {
+    "id": "STAR_VEGAS",
+    "name": "Star Vegas",
+    "class": "StarVegas",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 32,
+    "tags": [
+      "CRIME",
+      "SPACE",
+      "CITY"
+    ],
+    "requirements": {
+      "cities": 3,
+      "all": true
+    },
+    "behavior": {
+      "underworld": {
+        "corruption": 2
+      }
+    },
+    "cardNumber": "U053",
+    "description": "Requires any 3 cities in play. Place a city on a space reserved for a different space city. Gain 2 corruption. Increase your M€ production one step for each city in play."
+  },
+  {
+    "id": "PRIVATE_RESORTS",
+    "name": "Private Resorts",
+    "class": "PrivateResorts",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 9,
+    "tags": [
+      "BUILDING"
+    ],
+    "requirements": {
+      "oceans": 3
+    },
+    "behavior": {
+      "production": {
+        "heat": -1,
+        "megacredits": 3
+      },
+      "underworld": {
+        "corruption": 1
+      }
+    },
+    "cardNumber": "U054",
+    "description": "Requires 3 oceans. Reduce your heat production 1 step. Increase your M€ production 3 steps. Gain 1 corruption."
+  },
+  {
+    "id": "NEUTRINOGRAPH",
+    "name": "Neutrinograph",
+    "class": "Neutrinograph",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 14,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 5
+    },
+    "victoryPoints": 2,
+    "behavior": {
+      "underworld": {
+        "identify": {
+          "count": 7,
+          "claim": 3
+        }
+      }
+    },
+    "cardNumber": "U057",
+    "description": "Requires 5 science tags. Identify 7 underground resources. Claim 3 of them."
+  },
+  {
+    "id": "SOIL_EXPORT",
+    "name": "Soil Export",
+    "class": "SoilExport",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 3,
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ],
+    "victoryPoints": -1,
+    "behavior": {
+      "addResourcesToAnyCard": {
+        "type": "FLOATER",
+        "count": 3
+      },
+      "underworld": {
+        "excavate": 1
+      }
+    },
+    "cardNumber": "U058"
+  },
+  {
+    "id": "ARTESIAN_AQUIFER",
+    "name": "Artesian Aquifer",
+    "class": "ArtesianAquifer",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 16,
+    "tr": {
+      "oceans": 1
+    },
+    "cardNumber": "U059",
+    "description": "Excavate 1 underground resource on ANY SPACE RESERVED FOR AN OCEAN. Then, place an ocean tile there, if possible."
+  },
+  {
+    "id": "UNDERGROUND_RESEARCH_CENTER",
+    "name": "Underground Research Center",
+    "class": "UndergroundResearchCenter",
+    "module": "underworld",
+    "type": "automated",
+    "tags": [
+      "WILD",
+      "BUILDING"
+    ],
+    "cost": 12,
+    "requirements": {
+      "undergroundTokens": 4
+    },
+    "behavior": {
+      "underworld": {
+        "excavate": {
+          "count": 1
+        }
+      }
+    },
+    "cardNumber": "U062",
+    "description": "Requires you have 4 underground tokens. Excavate an underground resource. Choose a tag that is not the wild tag or clone tag. Draw a card with that tag."
+  },
+  {
+    "id": "INFRASTRUCTURE_OVERLOAD",
+    "name": "Infrastructure Overload",
+    "class": "InfrastructureOverload",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 7,
+    "tags": [
+      "POWER",
+      "CRIME"
+    ],
+    "victoryPoints": -1,
+    "behavior": {
+      "underworld": {
+        "corruption": 1
+      },
+      "decreaseAnyProduction": {
+        "count": 2,
+        "type": "ENERGY"
+      }
+    },
+    "cardNumber": "U068",
+    "description": "Gain 1 corruption. Reduce any energy production 2 steps."
+  },
+  {
+    "id": "UNDERGROUND_HABITAT",
+    "name": "Underground Habitat",
+    "class": "UndergroundHabitat",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 12,
+    "tags": [
+      "BUILDING",
+      "PLANT",
+      "ANIMAL"
+    ],
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "addResourcesToAnyCard": {
+        "count": 1,
+        "type": "ANIMAL",
+        "autoSelect": true
+      },
+      "underworld": {
+        "excavate": 1
+      }
+    },
+    "cardNumber": "U071",
+    "description": "Excavate an underground resource. Increase your plant production 1 step. Add 1 animal on another card."
+  },
+  {
+    "id": "NANOFOUNDRY",
+    "name": "Nanofoundry",
+    "class": "Nanofoundry",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 18,
+    "tags": [
+      "POWER",
+      "SCIENCE"
+    ],
+    "victoryPoints": 2,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "behavior": {
+      "production": {
+        "energy": -5
+      },
+      "drawCard": {
+        "count": {
+          "tag": "POWER"
+        }
+      }
+    },
+    "cardNumber": "U074",
+    "description": "Requires 2 science tags. Reduce your energy production 5 steps. Draw 1 card for every power tag you have, including this."
+  },
+  {
+    "id": "PUBLIC_SPACELINE",
+    "name": "Public Spaceline",
+    "class": "PublicSpaceline",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 18,
+    "tags": [
+      "EARTH",
+      "EARTH",
+      "JOVIAN",
+      "JOVIAN",
+      "VENUS",
+      "VENUS",
+      "MARS",
+      "MARS"
+    ],
+    "requirements": {
+      "tag": "SPACE",
+      "count": 5
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      }
+    },
+    "cardNumber": "U077",
+    "description": "Requires 5 space tags. This card has 2 Earth tags, 2 Jovian tags, 2 Venus tags, and 2 Mars tags."
+  },
+  {
+    "id": "CUT_THROAT_BUDGETING",
+    "name": "Cut Throat Budgeting",
+    "class": "CutThroatBudgeting",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 2,
+    "tags": [
+      "CRIME"
+    ],
+    "victoryPoints": -1,
+    "requirements": {
+      "corruption": 1
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 1,
+        "steel": 1,
+        "energy": 1
+      }
+    },
+    "cardNumber": "U080",
+    "description": "Requires 1 corruption. Increase your M€, steel, and energy production 1 step each."
+  },
+  {
+    "id": "GUERILLA_ECOLOGISTS",
+    "name": "Guerilla Ecologists",
+    "class": "GuerillaEcologists",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 9,
+    "tags": [
+      "PLANT"
+    ],
+    "requirements": {
+      "corruption": 1
+    },
+    "cardNumber": "U089",
+    "description": "Requires 1 corruption. Spend 4 plants to place a greenery tile IGNORING ADJACENCY RESTRICTIONS."
+  },
+  {
+    "id": "RACKETEERING",
+    "name": "Racketeering",
+    "class": "Racketeering",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 5,
+    "tags": [
+      "CRIME"
+    ],
+    "victoryPoints": -1,
+    "requirements": {
+      "corruption": 1
+    },
+    "cardNumber": "U092",
+    "description": "Requires 1 corruption. Increase your M€ production one step for each crime tag you have INCLUDING EVENTS and this card."
+  },
+  {
+    "id": "GAS_TRUST",
+    "name": "Gas Trust",
+    "class": "GasTrust",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 12,
+    "tags": [
+      "CRIME"
+    ],
+    "behavior": {
+      "underworld": {
+        "corruption": 1
+      }
+    },
+    "cardNumber": "U093",
+    "description": "Gain 1 corruption. Gain 3 heat for each crime tag you have INCLUDING EVENTS and this card."
+  },
+  {
+    "id": "BIOBATTERIES",
+    "name": "Biobatteries",
+    "class": "Biobatteries",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 7,
+    "tags": [
+      "POWER",
+      "MICROBE"
+    ],
+    "behavior": {
+      "production": {
+        "energy": 1
+      }
+    },
+    "cardNumber": "U096",
+    "description": "Increase your energy production 1 step. Gain 1 energy for every microbe tag you have (including this.) For every power tag you have (including this) put 1 microbe on another card."
+  },
+  {
+    "id": "ACIDIZING",
+    "name": "Acidizing",
+    "class": "Acidizing",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 10,
+    "tags": [
+      "VENUS",
+      "BUILDING"
+    ],
+    "behavior": {
+      "global": {
+        "venus": 1
+      },
+      "underworld": {
+        "excavate": 1
+      }
+    },
+    "cardNumber": "U098",
+    "description": "Raise Venus 1 step. Excavate an underground resource."
+  },
+  {
+    "id": "HACKERS_UNDERWORLD",
+    "name": "Hackers Underworld",
+    "class": "Hackers",
+    "module": "underworld",
+    "type": "automated",
+    "cost": 3,
+    "tags": [
+      "CRIME"
+    ],
+    "requirements": {
+      "corruption": 2
+    },
+    "victoryPoints": -1,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "underworld": {
+            "corruption": {}
+          }
+        }
+      }
+    },
+    "cardNumber": "UX01",
+    "description": "Requires 2 corruption. Decrease any M€ production 2 steps. Increase your M€ production 1 step for every unit of corruption you have."
+  },
+  {
+    "id": "ATALANTA_PLANITIA_LAB",
+    "name": "Atalanta Planitia Lab",
+    "class": "AtalantaPlanitiaLab",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "VENUS",
+      "SCIENCE"
+    ],
+    "cost": 10,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 3
+    },
+    "victoryPoints": 2,
+    "behavior": {
+      "drawCard": 2
+    },
+    "cardNumber": "216",
+    "description": "Requires 3 science tags. Draw 2 cards."
+  },
+  {
+    "id": "ATMOSCOOP",
+    "name": "Atmoscoop",
+    "class": "Atmoscoop",
+    "module": "venusNext",
+    "type": "automated",
+    "cost": 22,
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 3
+    },
+    "victoryPoints": 1,
+    "behavior": {
+      "addResourcesToAnyCard": {
+        "count": 2,
+        "type": "FLOATER"
+      }
+    },
+    "cardNumber": "217",
+    "description": "Requires 3 science tags. Either raise the temperature 2 steps, or raise Venus 2 steps. Add 2 floaters to ANY card."
+  },
+  {
+    "id": "CORRODER_SUITS",
+    "name": "Corroder Suits",
+    "class": "CorroderSuits",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 8,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      },
+      "addResourcesToAnyCard": {
+        "count": 1,
+        "tag": "VENUS"
+      }
+    },
+    "cardNumber": "219",
+    "description": "Increase your M€ production 2 steps. Add 1 resource to ANY Venus CARD."
+  },
+  {
+    "id": "DAWN_CITY",
+    "name": "Dawn City",
+    "class": "DawnCity",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "SPACE"
+    ],
+    "cost": 15,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 4
+    },
+    "victoryPoints": 3,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "titanium": 1
+      },
+      "city": {
+        "space": "DAWN_CITY"
+      }
+    },
+    "cardNumber": "220",
+    "description": "Requires 4 science tags. Decrease your energy production 1 step. Increase your titanium production 1 step. Place a city tile on the RESERVED AREA."
+  },
+  {
+    "id": "FREYJA_BIODOMES",
+    "name": "Freyja Biodomes",
+    "class": "FreyjaBiodomes",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "PLANT",
+      "VENUS"
+    ],
+    "cost": 14,
+    "requirements": {
+      "venus": 10
+    },
+    "victoryPoints": 2,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 2
+      }
+    },
+    "cardNumber": "227",
+    "description": "Requires 10% on the Venus track. Add 2 microbes or 2 animals to another Venus card. Production: energy -1, M€ +2."
+  },
+  {
+    "id": "GIANT_SOLAR_SHADE",
+    "name": "Giant Solar Shade",
+    "class": "GiantSolarShade",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "SPACE",
+      "VENUS"
+    ],
+    "cost": 27,
+    "behavior": {
+      "global": {
+        "venus": 3
+      }
+    },
+    "cardNumber": "229",
+    "description": "Raise Venus 3 steps."
+  },
+  {
+    "id": "GYROPOLIS",
+    "name": "Gyropolis",
+    "class": "Gyropolis",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 20,
+    "behavior": {
+      "city": {},
+      "production": {
+        "energy": -2,
+        "megacredits": {
+          "tag": [
+            "VENUS",
+            "EARTH"
+          ]
+        }
+      }
+    },
+    "cardNumber": "230",
+    "description": "Decrease your energy production 2 steps. Increase your M€ production 1 step for each Venus and Earth tag you have. Place a city tile."
+  },
+  {
+    "id": "IO_SULPHUR_RESEARCH",
+    "name": "Io Sulphur Research",
+    "class": "IoSulphurResearch",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "SCIENCE",
+      "JOVIAN"
+    ],
+    "cost": 17,
+    "victoryPoints": 2,
+    "cardNumber": "232",
+    "description": "Draw 1 card, or draw 3 if you have at least 3 Venus tags."
+  },
+  {
+    "id": "ISHTAR_MINING",
+    "name": "Ishtar Mining",
+    "class": "IshtarMining",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 5,
+    "behavior": {
+      "production": {
+        "titanium": 1
+      }
+    },
+    "requirements": {
+      "venus": 8
+    },
+    "cardNumber": "233",
+    "description": "Requires Venus 8%. Increase your titanium production 1 step."
+  },
+  {
+    "id": "LUNA_METROPOLIS",
+    "name": "Luna Metropolis",
+    "class": "LunaMetropolis",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "CITY",
+      "SPACE",
+      "EARTH"
+    ],
+    "cost": 21,
+    "victoryPoints": 2,
+    "behavior": {
+      "production": {
+        "megacredits": {
+          "tag": "EARTH"
+        }
+      },
+      "city": {
+        "space": "LUNA_METROPOLIS"
+      }
+    },
+    "cardNumber": "236",
+    "description": "Increase your M€ production 1 step for each Earth tag you have, including this. Place a city tile on the RESERVED AREA."
+  },
+  {
+    "id": "LUXURY_FOODS",
+    "name": "Luxury Foods",
+    "class": "LuxuryFoods",
+    "module": "venusNext",
+    "type": "automated",
+    "cost": 8,
+    "victoryPoints": 2,
+    "requirements": [
+      {
+        "tag": "VENUS"
+      },
+      {
+        "tag": "EARTH"
+      },
+      {
+        "tag": "JOVIAN"
+      }
+    ],
+    "description": "Requires that you have a Venus tag, an Earth tag and a Jovian tag.",
+    "cardNumber": "237"
+  },
+  {
+    "id": "MINING_QUOTA",
+    "name": "Mining Quota",
+    "class": "MiningQuota",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 5,
+    "behavior": {
+      "production": {
+        "steel": 2
+      }
+    },
+    "requirements": [
+      {
+        "tag": "VENUS"
+      },
+      {
+        "tag": "EARTH"
+      },
+      {
+        "tag": "JOVIAN"
+      }
+    ],
+    "cardNumber": "239",
+    "description": "Requires Venus, Earth and Jovian tags. Increase your steel production 2 steps."
+  },
+  {
+    "id": "NEUTRALIZER_FACTORY",
+    "name": "Neutralizer Factory",
+    "class": "NeutralizerFactory",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 7,
+    "behavior": {
+      "global": {
+        "venus": 1
+      }
+    },
+    "requirements": {
+      "venus": 10
+    },
+    "cardNumber": "240",
+    "description": "Requires Venus 10%. Increase the Venus track 1 step."
+  },
+  {
+    "id": "OMNICOURT",
+    "name": "Omnicourt",
+    "class": "Omnicourt",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 11,
+    "behavior": {
+      "tr": 2
+    },
+    "requirements": [
+      {
+        "tag": "VENUS"
+      },
+      {
+        "tag": "EARTH"
+      },
+      {
+        "tag": "JOVIAN"
+      }
+    ],
+    "cardNumber": "241",
+    "description": "Requires Venus, Earth and Jovian tags. Increase your TR 2 steps."
+  },
+  {
+    "id": "ORBITAL_REFLECTORS",
+    "name": "Orbital Reflectors",
+    "class": "OrbitalReflectors",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ],
+    "cost": 26,
+    "behavior": {
+      "production": {
+        "heat": 2
+      },
+      "global": {
+        "venus": 2
+      }
+    },
+    "cardNumber": "242",
+    "description": "Raise Venus 2 steps. Increase your heat production 2 steps."
+  },
+  {
+    "id": "SISTER_PLANET_SUPPORT",
+    "name": "Sister Planet Support",
+    "class": "SisterPlanetSupport",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "VENUS",
+      "EARTH"
+    ],
+    "cost": 7,
+    "behavior": {
+      "production": {
+        "megacredits": 3
+      }
+    },
+    "requirements": [
+      {
+        "tag": "VENUS"
+      },
+      {
+        "tag": "EARTH"
+      }
+    ],
+    "cardNumber": "244",
+    "description": "Requires Venus and Earth tags. Increase your M€ production 3 steps."
+  },
+  {
+    "id": "SOLARNET",
+    "name": "Solarnet",
+    "class": "Solarnet",
+    "module": "venusNext",
+    "type": "automated",
+    "cost": 7,
+    "requirements": [
+      {
+        "tag": "VENUS"
+      },
+      {
+        "tag": "EARTH"
+      },
+      {
+        "tag": "JOVIAN"
+      }
+    ],
+    "victoryPoints": 1,
+    "behavior": {
+      "drawCard": 2
+    },
+    "cardNumber": "245",
+    "description": "Requires Venus, Earth and Jovian tags. Draw 2 cards."
+  },
+  {
+    "id": "SPONSORED_ACADEMIES",
+    "name": "Sponsored Academies",
+    "class": "SponsoredAcademies",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "EARTH",
+      "SCIENCE"
+    ],
+    "cost": 9,
+    "victoryPoints": 1,
+    "cardNumber": "247",
+    "description": "Discard 1 card from your hand and THEN draw 3 cards. All OPPONENTS draw 1 card."
+  },
+  {
+    "id": "SULPHUR_EXPORTS",
+    "name": "Sulphur Exports",
+    "class": "SulphurExports",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ],
+    "cost": 21,
+    "behavior": {
+      "global": {
+        "venus": 1
+      },
+      "production": {
+        "megacredits": {
+          "tag": "VENUS"
+        }
+      }
+    },
+    "cardNumber": "250",
+    "description": "Increase Venus 1 step. Increase your M€ production 1 step for each Venus tag you have, including this."
+  },
+  {
+    "id": "TERRAFORMING_CONTRACT",
+    "name": "Terraforming Contract",
+    "class": "TerraformingContract",
+    "module": "venusNext",
+    "type": "automated",
+    "cost": 8,
+    "tags": [
+      "EARTH"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": 4
+      }
+    },
+    "requirements": {
+      "tr": 25
+    },
+    "cardNumber": "252",
+    "description": "Requires that you have at least 25 TR. Increase your M€ production 4 steps."
+  },
+  {
+    "id": "VENUS_GOVERNOR",
+    "name": "Venus Governor",
+    "class": "VenusGovernor",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "VENUS",
+      "VENUS"
+    ],
+    "cost": 4,
+    "requirements": {
+      "tag": "VENUS",
+      "count": 2
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      }
+    },
+    "cardNumber": "255",
+    "description": "Requires 2 Venus tags. Increase your M€ production 2 steps."
+  },
+  {
+    "id": "VENUS_SOILS",
+    "name": "Venus Soils",
+    "class": "VenusSoils",
+    "module": "venusNext",
+    "type": "automated",
+    "tags": [
+      "VENUS",
+      "PLANT"
+    ],
+    "cost": 20,
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "global": {
+        "venus": 1
+      },
+      "addResourcesToAnyCard": {
+        "count": 2,
+        "type": "MICROBE"
+      }
+    },
+    "cardNumber": "257",
+    "description": "Raise Venus 1 step. Increase your plant production 1 step. Add 2 microbes to ANOTHER card"
+  },
+  {
+    "id": "VENUSIAN_PLANTS",
+    "name": "Venusian Plants",
+    "class": "VenusianPlants",
+    "module": "venusNext",
+    "type": "automated",
+    "cost": 13,
+    "tags": [
+      "VENUS",
+      "PLANT"
+    ],
+    "requirements": {
+      "venus": 16
+    },
+    "victoryPoints": 1,
+    "behavior": {
+      "global": {
+        "venus": 1
+      }
+    },
+    "cardNumber": "261",
+    "description": "Requires Venus 16%. Raise Venus 1 step. Add 1 microbe or 1 animal to ANOTHER VENUS CARD"
+  }
+]

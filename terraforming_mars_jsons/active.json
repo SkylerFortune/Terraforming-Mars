@@ -1,0 +1,5567 @@
+[
+  {
+    "id": "BIOENGINEERING_ENCLOSURE",
+    "name": "Bioengineering Enclosure",
+    "class": "BioengineeringEnclosure",
+    "module": "ares",
+    "type": "active",
+    "tags": [
+      "ANIMAL"
+    ],
+    "cost": 7,
+    "resourceType": "ANIMAL",
+    "protectedResources": true,
+    "behavior": {
+      "addResources": 2
+    },
+    "action": {
+      "spend": {
+        "resourcesHere": 1
+      },
+      "addResourcesToAnyCard": {
+        "count": 1,
+        "type": "ANIMAL",
+        "excludeThis": true,
+        "mustHaveCard": true
+      }
+    },
+    "requirements": {
+      "tag": "SCIENCE"
+    },
+    "description": "Requires 1 science tag to play. Add 2 animals to this card. OTHERS MAY NOT REMOVE ANIMALS FROM THIS CARD.",
+    "cardNumber": "A01"
+  },
+  {
+    "id": "ECOLOGICAL_SURVEY",
+    "name": "Ecological Survey",
+    "class": "EcologicalSurvey",
+    "module": "ares",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 9,
+    "requirements": {
+      "greeneries": 3,
+      "all": true
+    },
+    "description": "Requires 3 greeneries on Mars.",
+    "cardNumber": "A07"
+  },
+  {
+    "id": "ECOLOGICAL_ZONE_ARES",
+    "name": "Ecological Zone Ares",
+    "class": "EcologicalZoneAres",
+    "module": "ares",
+    "type": "active",
+    "tags": [
+      "ANIMAL",
+      "PLANT"
+    ],
+    "cost": 11,
+    "resourceType": "ANIMAL",
+    "adjacencyBonus": {
+      "bonus": [
+        "ANIMAL"
+      ]
+    },
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "requirements": {
+      "greeneries": 1
+    },
+    "description": "Requires that YOU have a greenery tile. Place this tile adjacent to ANY greenery.",
+    "cardNumber": "A08"
+  },
+  {
+    "id": "GEOLOGICAL_SURVEY",
+    "name": "Geological Survey",
+    "class": "GeologicalSurvey",
+    "module": "ares",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 8,
+    "requirements": {
+      "greeneries": 5,
+      "all": true,
+      "max": true
+    },
+    "cardNumber": "A09",
+    "description": "Requires 5 or fewer greeneries on Mars."
+  },
+  {
+    "id": "INDUSTRIAL_CENTER_ARES",
+    "name": "Industrial Center Ares",
+    "class": "IndustrialCenterAres",
+    "module": "ares",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 4,
+    "adjacencyBonus": {
+      "bonus": [
+        "STEEL"
+      ]
+    },
+    "action": {
+      "spend": {
+        "megacredits": 7
+      },
+      "production": {
+        "steel": 1
+      }
+    },
+    "cardNumber": "A10",
+    "description": "Place this tile adjacent to a city tile. This tile grants an ADJACENCY BONUS of 1 steel."
+  },
+  {
+    "id": "MARKETING_EXPERTS",
+    "name": "Marketing Experts",
+    "class": "MarketingExperts",
+    "module": "ares",
+    "type": "active",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 5,
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      }
+    },
+    "cardNumber": "A12",
+    "description": "Increase your M€ production 1 step."
+  },
+  {
+    "id": "OCEAN_SANCTUARY",
+    "name": "Ocean Sanctuary",
+    "class": "OceanSanctuary",
+    "module": "ares",
+    "type": "active",
+    "tags": [
+      "ANIMAL"
+    ],
+    "cost": 9,
+    "resourceType": "ANIMAL",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "requirements": {
+      "oceans": 5
+    },
+    "behavior": {
+      "addResources": 1,
+      "tile": {
+        "type": "OCEAN_SANCTUARY",
+        "on": "upgradeable-ocean",
+        "adjacencyBonus": {
+          "bonus": [
+            "ANIMAL"
+          ]
+        }
+      }
+    },
+    "cardNumber": "A22",
+    "description": "Requires 5 ocean tiles. Place this tile on top of an existing ocean tile. The tile grants an ADJACENCY BONUS of 1 animal. Add 1 animal to this card."
+  },
+  {
+    "id": "RESTRICTED_AREA_ARES",
+    "name": "Restricted Area Ares",
+    "class": "RestrictedAreaAres",
+    "module": "ares",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 11,
+    "behavior": {
+      "tile": {
+        "type": "RESTRICTED_AREA",
+        "on": "land",
+        "adjacencyBonus": {
+          "bonus": [
+            "DRAW_CARD"
+          ]
+        }
+      }
+    },
+    "action": {
+      "spend": {
+        "megacredits": 2
+      },
+      "drawCard": 1
+    },
+    "cardNumber": "A24",
+    "description": "Place this tile which grants an ADJACENCY BONUS of 1 card."
+  },
+  {
+    "id": "SEARCH_FOR_LIFE",
+    "name": "Search For Life",
+    "class": "SearchForLife",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 3,
+    "resourceType": "SCIENCE",
+    "victoryPoints": "special",
+    "requirements": {
+      "oxygen": 6,
+      "max": true
+    },
+    "cardNumber": "005",
+    "description": "Oxygen must be 6% or less."
+  },
+  {
+    "id": "INVENTORS_GUILD",
+    "name": "Inventors Guild",
+    "class": "InventorsGuild",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 9,
+    "action": {
+      "drawCard": {
+        "count": 1,
+        "pay": true
+      }
+    },
+    "cardNumber": "006"
+  },
+  {
+    "id": "MARTIAN_RAILS",
+    "name": "Martian Rails",
+    "class": "MartianRails",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 13,
+    "action": {
+      "spend": {
+        "energy": 1
+      },
+      "stock": {
+        "megacredits": {
+          "cities": {
+            "where": "onmars"
+          }
+        }
+      }
+    },
+    "cardNumber": "007"
+  },
+  {
+    "id": "WATER_IMPORT_FROM_EUROPA",
+    "name": "Water Import From Europa",
+    "class": "WaterImportFromEuropa",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "cost": 25,
+    "victoryPoints": {
+      "tag": "JOVIAN"
+    },
+    "action": {
+      "spend": {
+        "megacredits": 12,
+        "canUseTitanium": true
+      },
+      "ocean": {}
+    },
+    "cardNumber": "012"
+  },
+  {
+    "id": "SPACE_ELEVATOR",
+    "name": "Space Elevator",
+    "class": "SpaceElevator",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SPACE",
+      "BUILDING"
+    ],
+    "cost": 27,
+    "behavior": {
+      "production": {
+        "titanium": 1
+      }
+    },
+    "action": {
+      "spend": {
+        "steel": 1
+      },
+      "stock": {
+        "megacredits": 5
+      }
+    },
+    "victoryPoints": 2,
+    "cardNumber": "013",
+    "description": "Increase your titanium production 1 step."
+  },
+  {
+    "id": "DEVELOPMENT_CENTER",
+    "name": "Development Center",
+    "class": "DevelopmentCenter",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "BUILDING"
+    ],
+    "cost": 11,
+    "action": {
+      "spend": {
+        "energy": 1
+      },
+      "drawCard": 1
+    },
+    "cardNumber": "014"
+  },
+  {
+    "id": "EQUATORIAL_MAGNETIZER",
+    "name": "Equatorial Magnetizer",
+    "class": "EquatorialMagnetizer",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 11,
+    "action": {
+      "production": {
+        "energy": -1
+      },
+      "tr": 1
+    },
+    "cardNumber": "015"
+  },
+  {
+    "id": "RESEARCH_OUTPOST",
+    "name": "Research Outpost",
+    "class": "ResearchOutpost",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 18,
+    "behavior": {
+      "city": {
+        "on": "isolated"
+      }
+    },
+    "cardDiscount": {
+      "amount": 1
+    },
+    "cardNumber": "020",
+    "description": "Place a city tile NEXT TO NO OTHER TILE."
+  },
+  {
+    "id": "ARCTIC_ALGAE",
+    "name": "Arctic Algae",
+    "class": "ArcticAlgae",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "PLANT"
+    ],
+    "cost": 12,
+    "behavior": {
+      "stock": {
+        "plants": 1
+      }
+    },
+    "requirements": {
+      "temperature": -12,
+      "max": true
+    },
+    "description": "It must be -12 C or colder to play. Gain 1 plant.",
+    "cardNumber": "023"
+  },
+  {
+    "id": "PREDATORS",
+    "name": "Predators",
+    "class": "Predators",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "ANIMAL"
+    ],
+    "cost": 14,
+    "resourceType": "ANIMAL",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "requirements": {
+      "oxygen": 11
+    },
+    "action": {
+      "removeResourcesFromAnyCard": {
+        "type": "ANIMAL",
+        "source": "all"
+      },
+      "addResources": 1
+    },
+    "cardNumber": "024",
+    "description": "Requires 11% oxygen."
+  },
+  {
+    "id": "SPACE_STATION",
+    "name": "Space Station",
+    "class": "SpaceStation",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 10,
+    "victoryPoints": 1,
+    "cardDiscount": {
+      "tag": "SPACE",
+      "amount": 2
+    },
+    "cardNumber": "025"
+  },
+  {
+    "id": "SECURITY_FLEET",
+    "name": "Security Fleet",
+    "class": "SecurityFleet",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 12,
+    "resourceType": "FIGHTER",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "action": {
+      "spend": {
+        "titanium": 1
+      },
+      "addResources": 1
+    },
+    "cardNumber": "028"
+  },
+  {
+    "id": "OPTIMAL_AEROBRAKING",
+    "name": "Optimal Aerobraking",
+    "class": "OptimalAerobraking",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 7,
+    "cardNumber": "031"
+  },
+  {
+    "id": "REGOLITH_EATERS",
+    "name": "Regolith Eaters",
+    "class": "RegolithEaters",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "MICROBE"
+    ],
+    "cost": 13,
+    "resourceType": "MICROBE",
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Remove 2 microbes to raise oxygen level 1 step",
+            "spend": {
+              "resourcesHere": 2
+            },
+            "global": {
+              "oxygen": 1
+            }
+          },
+          {
+            "title": "Add 1 microbe to this card",
+            "addResources": 1
+          }
+        ]
+      }
+    },
+    "cardNumber": "033"
+  },
+  {
+    "id": "GHG_PRODUCING_BACTERIA",
+    "name": "Ghg Producing Bacteria",
+    "class": "GHGProducingBacteria",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "MICROBE"
+    ],
+    "cost": 8,
+    "resourceType": "MICROBE",
+    "requirements": {
+      "oxygen": 4
+    },
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "spend": {
+              "resourcesHere": 2
+            },
+            "global": {
+              "temperature": 1
+            },
+            "title": "Remove 2 microbes to raise temperature 1 step"
+          },
+          {
+            "addResources": 1,
+            "title": "Add 1 microbe to this card"
+          }
+        ]
+      }
+    },
+    "description": "Requires 4% oxygen.",
+    "cardNumber": "034"
+  },
+  {
+    "id": "ANTS",
+    "name": "Ants",
+    "class": "Ants",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "MICROBE"
+    ],
+    "cost": 9,
+    "resourceType": "MICROBE",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "requirements": {
+      "oxygen": 4
+    },
+    "action": {
+      "removeResourcesFromAnyCard": {
+        "type": "MICROBE",
+        "source": "all"
+      },
+      "addResources": 1
+    },
+    "cardNumber": "035",
+    "description": "Requires 4% oxygen."
+  },
+  {
+    "id": "ROVER_CONSTRUCTION",
+    "name": "Rover Construction",
+    "class": "RoverConstruction",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 8,
+    "victoryPoints": 1,
+    "cardNumber": "038"
+  },
+  {
+    "id": "TARDIGRADES",
+    "name": "Tardigrades",
+    "class": "Tardigrades",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "MICROBE"
+    ],
+    "cost": 4,
+    "resourceType": "MICROBE",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 4
+    },
+    "action": {
+      "addResources": 1
+    },
+    "cardNumber": "049"
+  },
+  {
+    "id": "FISH",
+    "name": "Fish",
+    "class": "Fish",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "ANIMAL"
+    ],
+    "cost": 9,
+    "behavior": {
+      "decreaseAnyProduction": {
+        "type": "PLANTS",
+        "count": 1
+      }
+    },
+    "action": {
+      "addResources": 1
+    },
+    "resourceType": "ANIMAL",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "requirements": {
+      "temperature": 2
+    },
+    "cardNumber": "052",
+    "description": "Requires +2 C° or warmer. Decrease any plant production 1 step."
+  },
+  {
+    "id": "SMALL_ANIMALS",
+    "name": "Small Animals",
+    "class": "SmallAnimals",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "ANIMAL"
+    ],
+    "cost": 6,
+    "resourceType": "ANIMAL",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "requirements": {
+      "oxygen": 6
+    },
+    "behavior": {
+      "decreaseAnyProduction": {
+        "type": "PLANTS",
+        "count": 1
+      }
+    },
+    "action": {
+      "addResources": 1
+    },
+    "cardNumber": "054",
+    "description": "Requires 6% oxygen. Decrease any plant production 1 step."
+  },
+  {
+    "id": "ELECTRO_CATAPULT",
+    "name": "Electro Catapult",
+    "class": "ElectroCatapult",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 17,
+    "behavior": {
+      "production": {
+        "energy": -1
+      }
+    },
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Spend 1 plant to gain 7 M€.",
+            "spend": {
+              "plants": 1
+            },
+            "stock": {
+              "megacredits": 7
+            }
+          },
+          {
+            "title": "Spend 1 steel to gain 7 M€.",
+            "spend": {
+              "steel": 1
+            },
+            "stock": {
+              "megacredits": 7
+            }
+          }
+        ]
+      }
+    },
+    "victoryPoints": 1,
+    "requirements": {
+      "oxygen": 8,
+      "max": true
+    },
+    "cardNumber": "069"
+  },
+  {
+    "id": "EARTH_CATAPULT",
+    "name": "Earth Catapult",
+    "class": "EarthCatapult",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 23,
+    "victoryPoints": 2,
+    "cardDiscount": {
+      "amount": 2
+    },
+    "cardNumber": "070"
+  },
+  {
+    "id": "ADVANCED_ALLOYS",
+    "name": "Advanced Alloys",
+    "class": "AdvancedAlloys",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 9,
+    "behavior": {
+      "steelValue": 1,
+      "titaniumValue": 1
+    },
+    "cardNumber": "071"
+  },
+  {
+    "id": "BIRDS",
+    "name": "Birds",
+    "class": "Birds",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "ANIMAL"
+    ],
+    "cost": 10,
+    "resourceType": "ANIMAL",
+    "requirements": {
+      "oxygen": 13
+    },
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "behavior": {
+      "decreaseAnyProduction": {
+        "type": "PLANTS",
+        "count": 2
+      }
+    },
+    "action": {
+      "addResources": 1
+    },
+    "cardNumber": "072"
+  },
+  {
+    "id": "MARS_UNIVERSITY",
+    "name": "Mars University",
+    "class": "MarsUniversity",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "BUILDING"
+    ],
+    "cost": 8,
+    "victoryPoints": 1,
+    "cardNumber": "073"
+  },
+  {
+    "id": "VIRAL_ENHANCERS",
+    "name": "Viral Enhancers",
+    "class": "ViralEnhancers",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "MICROBE"
+    ],
+    "cost": 9,
+    "cardNumber": "074"
+  },
+  {
+    "id": "SPACE_MIRRORS",
+    "name": "Space Mirrors",
+    "class": "SpaceMirrors",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "POWER",
+      "SPACE"
+    ],
+    "cost": 3,
+    "action": {
+      "spend": {
+        "megacredits": 7
+      },
+      "production": {
+        "energy": 1
+      }
+    },
+    "cardNumber": "076"
+  },
+  {
+    "id": "QUANTUM_EXTRACTOR",
+    "name": "Quantum Extractor",
+    "class": "QuantumExtractor",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "POWER"
+    ],
+    "cost": 13,
+    "behavior": {
+      "production": {
+        "energy": 4
+      }
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 4
+    },
+    "cardDiscount": {
+      "tag": "SPACE",
+      "amount": 2
+    },
+    "cardNumber": "079",
+    "description": "Requires 4 science tags. Increase your energy production 4 steps."
+  },
+  {
+    "id": "MASS_CONVERTER",
+    "name": "Mass Converter",
+    "class": "MassConverter",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "POWER"
+    ],
+    "cost": 8,
+    "behavior": {
+      "production": {
+        "energy": 6
+      }
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 5
+    },
+    "cardDiscount": {
+      "tag": "SPACE",
+      "amount": 2,
+      "per": "card"
+    },
+    "cardNumber": "094",
+    "description": "Requires 5 science tags. Increase your energy production 6 steps."
+  },
+  {
+    "id": "PHYSICS_COMPLEX",
+    "name": "Physics Complex",
+    "class": "PhysicsComplex",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "BUILDING"
+    ],
+    "cost": 12,
+    "resourceType": "SCIENCE",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "each": 2
+    },
+    "action": {
+      "spend": {
+        "energy": 6
+      },
+      "addResources": 1
+    },
+    "cardNumber": "095"
+  },
+  {
+    "id": "IRONWORKS",
+    "name": "Ironworks",
+    "class": "Ironworks",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 11,
+    "action": {
+      "spend": {
+        "energy": 4
+      },
+      "stock": {
+        "steel": 1
+      },
+      "global": {
+        "oxygen": 1
+      }
+    },
+    "cardNumber": "101"
+  },
+  {
+    "id": "STEELWORKS",
+    "name": "Steelworks",
+    "class": "Steelworks",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 15,
+    "action": {
+      "spend": {
+        "energy": 4
+      },
+      "stock": {
+        "steel": 2
+      },
+      "global": {
+        "oxygen": 1
+      }
+    },
+    "cardNumber": "103"
+  },
+  {
+    "id": "ORE_PROCESSOR",
+    "name": "Ore Processor",
+    "class": "OreProcessor",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 13,
+    "action": {
+      "spend": {
+        "energy": 4
+      },
+      "stock": {
+        "titanium": 1
+      },
+      "global": {
+        "oxygen": 1
+      }
+    },
+    "cardNumber": "104"
+  },
+  {
+    "id": "EARTH_OFFICE",
+    "name": "Earth Office",
+    "class": "EarthOffice",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 1,
+    "cardDiscount": {
+      "tag": "EARTH",
+      "amount": 3
+    },
+    "cardNumber": "105"
+  },
+  {
+    "id": "MEDIA_GROUP",
+    "name": "Media Group",
+    "class": "MediaGroup",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 6,
+    "cardNumber": "109"
+  },
+  {
+    "id": "BUSINESS_NETWORK",
+    "name": "Business Network",
+    "class": "BusinessNetwork",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 4,
+    "behavior": {
+      "production": {
+        "megacredits": -1
+      }
+    },
+    "action": {
+      "drawCard": {
+        "count": 1,
+        "pay": true
+      }
+    },
+    "cardNumber": "110",
+    "description": "Decrease your M€ production 1 step."
+  },
+  {
+    "id": "INDUSTRIAL_CENTER",
+    "name": "Industrial Center",
+    "class": "IndustrialCenter",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 4,
+    "adjacencyBonus": null,
+    "action": {
+      "spend": {
+        "megacredits": 7
+      },
+      "production": {
+        "steel": 1
+      }
+    },
+    "cardNumber": "123",
+    "description": "Place this tile adjacent to a city tile."
+  },
+  {
+    "id": "ECOLOGICAL_ZONE",
+    "name": "Ecological Zone",
+    "class": "EcologicalZone",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "ANIMAL",
+      "PLANT"
+    ],
+    "cost": 12,
+    "resourceType": "ANIMAL",
+    "adjacencyBonus": null,
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "requirements": {
+      "greeneries": 1
+    },
+    "cardNumber": "128"
+  },
+  {
+    "id": "DECOMPOSERS",
+    "name": "Decomposers",
+    "class": "Decomposers",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "MICROBE"
+    ],
+    "cost": 5,
+    "resourceType": "MICROBE",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 3
+    },
+    "requirements": {
+      "oxygen": 3
+    },
+    "cardNumber": "131",
+    "description": "Requires 3% oxygen."
+  },
+  {
+    "id": "SYMBIOTIC_FUNGUS",
+    "name": "Symbiotic Fungus",
+    "class": "SymbioticFungus",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "MICROBE"
+    ],
+    "cost": 4,
+    "action": {
+      "addResourcesToAnyCard": {
+        "type": "MICROBE",
+        "count": 1,
+        "autoSelect": true
+      }
+    },
+    "requirements": {
+      "temperature": -14
+    },
+    "cardNumber": "133",
+    "description": "Requires -14 C° or warmer."
+  },
+  {
+    "id": "EXTREME_COLD_FUNGUS",
+    "name": "Extreme Cold Fungus",
+    "class": "ExtremeColdFungus",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "MICROBE"
+    ],
+    "cost": 13,
+    "requirements": {
+      "temperature": -10,
+      "max": true
+    },
+    "cardNumber": "134",
+    "description": "It must be -10 C or colder."
+  },
+  {
+    "id": "HERBIVORES",
+    "name": "Herbivores",
+    "class": "Herbivores",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "ANIMAL"
+    ],
+    "cost": 12,
+    "resourceType": "ANIMAL",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "requirements": {
+      "oxygen": 8
+    },
+    "behavior": {
+      "decreaseAnyProduction": {
+        "type": "PLANTS",
+        "count": 1
+      },
+      "addResources": 1
+    },
+    "cardNumber": "147",
+    "description": "Requires 8% oxygen. +1 animal to this card. -1 any plant production"
+  },
+  {
+    "id": "ANTI_GRAVITY_TECHNOLOGY",
+    "name": "Anti Gravity Technology",
+    "class": "AntiGravityTechnology",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 14,
+    "victoryPoints": 3,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 7
+    },
+    "cardDiscount": {
+      "amount": 2
+    },
+    "description": "Requires 7 science tags.",
+    "cardNumber": "150"
+  },
+  {
+    "id": "ADAPTATION_TECHNOLOGY",
+    "name": "Adaptation Technology",
+    "class": "AdaptationTechnology",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 12,
+    "victoryPoints": 1,
+    "globalParameterRequirementBonus": {
+      "steps": 2
+    },
+    "cardNumber": "153"
+  },
+  {
+    "id": "CARETAKER_CONTRACT",
+    "name": "Caretaker Contract",
+    "class": "CaretakerContract",
+    "module": "base",
+    "type": "active",
+    "cost": 3,
+    "requirements": {
+      "temperature": 0
+    },
+    "action": {
+      "spend": {
+        "heat": 8
+      },
+      "tr": 1
+    },
+    "cardNumber": "154",
+    "description": "Requires 0° C or warmer."
+  },
+  {
+    "id": "NITRITE_REDUCING_BACTERIA",
+    "name": "Nitrite Reducing Bacteria",
+    "class": "NitriteReducingBacteria",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "MICROBE"
+    ],
+    "cost": 11,
+    "resourceType": "MICROBE",
+    "behavior": {
+      "addResources": 3
+    },
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "spend": {
+              "resourcesHere": 3
+            },
+            "tr": 1,
+            "title": "Remove 3 microbes to increase your terraform rating 1 step"
+          },
+          {
+            "addResources": 1,
+            "title": "Add 1 microbe to this card"
+          }
+        ]
+      }
+    },
+    "cardNumber": "157",
+    "description": "Add 3 microbes to this card."
+  },
+  {
+    "id": "SHUTTLES",
+    "name": "Shuttles",
+    "class": "Shuttles",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 10,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 2
+      }
+    },
+    "requirements": {
+      "oxygen": 5
+    },
+    "cardDiscount": {
+      "tag": "SPACE",
+      "amount": 2
+    },
+    "cardNumber": "166",
+    "description": "Requires 5% oxygen. Decrease your energy production 1 step and increase your M€ production 2 steps."
+  },
+  {
+    "id": "PETS",
+    "name": "Pets",
+    "class": "Pets",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "EARTH",
+      "ANIMAL"
+    ],
+    "cost": 10,
+    "resourceType": "ANIMAL",
+    "protectedResources": true,
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "behavior": {
+      "addResources": 1
+    },
+    "cardNumber": "172",
+    "description": "Add 1 animal to this card."
+  },
+  {
+    "id": "PROTECTED_HABITATS",
+    "name": "Protected Habitats",
+    "class": "ProtectedHabitats",
+    "module": "base",
+    "type": "active",
+    "cost": 5,
+    "cardNumber": "173"
+  },
+  {
+    "id": "WATER_SPLITTING_PLANT",
+    "name": "Water Splitting Plant",
+    "class": "WaterSplittingPlant",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 12,
+    "action": {
+      "spend": {
+        "energy": 3
+      },
+      "global": {
+        "oxygen": 1
+      }
+    },
+    "requirements": {
+      "oceans": 2
+    },
+    "cardNumber": "177",
+    "description": "Requires 2 ocean tiles."
+  },
+  {
+    "id": "LIVESTOCK",
+    "name": "Livestock",
+    "class": "Livestock",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "ANIMAL"
+    ],
+    "cost": 13,
+    "resourceType": "ANIMAL",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "requirements": {
+      "oxygen": 9
+    },
+    "behavior": {
+      "production": {
+        "plants": -1,
+        "megacredits": 2
+      }
+    },
+    "action": {
+      "addResources": 1
+    },
+    "cardNumber": "184",
+    "description": "Requires 9% oxygen. Decrease your plant production 1 step and increase your M€ production 2 steps."
+  },
+  {
+    "id": "OLYMPUS_CONFERENCE",
+    "name": "Olympus Conference",
+    "class": "OlympusConference",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "EARTH",
+      "BUILDING"
+    ],
+    "cost": 10,
+    "resourceType": "SCIENCE",
+    "victoryPoints": 1,
+    "cardNumber": "185",
+    "description": "When you play a science tag, including this, either add a science resource to this card, or remove a science resource from this card to draw a card."
+  },
+  {
+    "id": "AQUIFER_PUMPING",
+    "name": "Aquifer Pumping",
+    "class": "AquiferPumping",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 18,
+    "action": {
+      "spend": {
+        "megacredits": 8,
+        "canUseSteel": true
+      },
+      "ocean": {}
+    },
+    "cardNumber": "187"
+  },
+  {
+    "id": "POWER_INFRASTRUCTURE",
+    "name": "Power Infrastructure",
+    "class": "PowerInfrastructure",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 4,
+    "cardNumber": "194"
+  },
+  {
+    "id": "RESTRICTED_AREA",
+    "name": "Restricted Area",
+    "class": "RestrictedArea",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 11,
+    "behavior": {
+      "tile": {
+        "type": "RESTRICTED_AREA",
+        "on": "land",
+        "adjacencyBonus": null
+      }
+    },
+    "action": {
+      "spend": {
+        "megacredits": 2
+      },
+      "drawCard": 1
+    },
+    "cardNumber": "199",
+    "description": "Place this tile."
+  },
+  {
+    "id": "IMMIGRANT_CITY",
+    "name": "Immigrant City",
+    "class": "ImmigrantCity",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 13,
+    "cardNumber": "200",
+    "description": "Decrease your energy production 1 step and decrease your M€ production 2 steps. Place a city tile."
+  },
+  {
+    "id": "UNDERGROUND_DETONATIONS",
+    "name": "Underground Detonations",
+    "class": "UndergroundDetonations",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 6,
+    "action": {
+      "spend": {
+        "megacredits": 10
+      },
+      "production": {
+        "heat": 2
+      }
+    },
+    "cardNumber": "202"
+  },
+  {
+    "id": "AI_CENTRAL",
+    "name": "Ai Central",
+    "class": "AICentral",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "BUILDING"
+    ],
+    "cost": 21,
+    "behavior": {
+      "production": {
+        "energy": -1
+      }
+    },
+    "action": {
+      "drawCard": {
+        "count": 2
+      }
+    },
+    "victoryPoints": 1,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 3
+    },
+    "cardNumber": "208"
+  },
+  {
+    "id": "ATMO_COLLECTORS",
+    "name": "Atmo Collectors",
+    "class": "AtmoCollectors",
+    "module": "colonies",
+    "type": "active",
+    "cost": 15,
+    "resourceType": "FLOATER",
+    "behavior": {
+      "addResourcesToAnyCard": {
+        "type": "FLOATER",
+        "count": 2
+      }
+    },
+    "action": {
+      "or": {
+        "behaviors": [
+          {
+            "title": "Remove 1 floater to gain 2 titanium",
+            "spend": {
+              "resourcesHere": 1
+            },
+            "stock": {
+              "titanium": 2
+            }
+          },
+          {
+            "title": "Remove 1 floater to gain 3 energy",
+            "spend": {
+              "resourcesHere": 1
+            },
+            "stock": {
+              "energy": 3
+            }
+          },
+          {
+            "title": "Remove 1 floater to gain 4 heat",
+            "spend": {
+              "resourcesHere": 1
+            },
+            "stock": {
+              "heat": 4
+            }
+          },
+          {
+            "title": "Add 1 floater to this card",
+            "addResources": 1
+          }
+        ],
+        "autoSelect": true
+      }
+    },
+    "description": "Add 2 floaters to ANY card.",
+    "cardNumber": "C03"
+  },
+  {
+    "id": "CRYO_SLEEP",
+    "name": "Cryo Sleep",
+    "class": "CryoSleep",
+    "module": "colonies",
+    "type": "active",
+    "cost": 10,
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 1,
+    "behavior": {
+      "colonies": {
+        "tradeDiscount": 1
+      }
+    },
+    "cardNumber": "C07"
+  },
+  {
+    "id": "FLOATER_TECHNOLOGY",
+    "name": "Floater Technology",
+    "class": "FloaterTechnology",
+    "module": "colonies",
+    "type": "active",
+    "cost": 7,
+    "tags": [
+      "SCIENCE"
+    ],
+    "action": {
+      "addResourcesToAnyCard": {
+        "type": "FLOATER",
+        "count": "1 /* , mustHaveCard: true */"
+      }
+    },
+    "cardNumber": "C12"
+  },
+  {
+    "id": "JOVIAN_LANTERNS",
+    "name": "Jovian Lanterns",
+    "class": "JovianLanterns",
+    "module": "colonies",
+    "type": "active",
+    "cost": 20,
+    "tags": [
+      "JOVIAN"
+    ],
+    "resourceType": "FLOATER",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "requirements": {
+      "tag": "JOVIAN"
+    },
+    "behavior": {
+      "tr": 1,
+      "addResourcesToAnyCard": {
+        "type": "FLOATER",
+        "count": 2
+      }
+    },
+    "action": {
+      "spend": {
+        "titanium": 1
+      },
+      "addResources": 2
+    },
+    "cardNumber": "C18",
+    "description": "Requires 1 Jovian tag. Increase your TR 1 step. Add 2 floaters to ANY card."
+  },
+  {
+    "id": "JUPITER_FLOATING_STATION",
+    "name": "Jupiter Floating Station",
+    "class": "JupiterFloatingStation",
+    "module": "colonies",
+    "type": "active",
+    "cost": 9,
+    "tags": [
+      "JOVIAN"
+    ],
+    "resourceType": "FLOATER",
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 3
+    },
+    "victoryPoints": 1,
+    "cardNumber": "C19",
+    "description": "Requires 3 science tags."
+  },
+  {
+    "id": "MARTIAN_ZOO",
+    "name": "Martian Zoo",
+    "class": "MartianZoo",
+    "module": "colonies",
+    "type": "active",
+    "cost": 12,
+    "tags": [
+      "ANIMAL",
+      "BUILDING"
+    ],
+    "resourceType": "ANIMAL",
+    "requirements": {
+      "cities": 2,
+      "all": true
+    },
+    "victoryPoints": 1,
+    "cardNumber": "C24",
+    "description": "Requires 2 city tiles in play."
+  },
+  {
+    "id": "RED_SPOT_OBSERVATORY",
+    "name": "Red Spot Observatory",
+    "class": "RedSpotObservatory",
+    "module": "colonies",
+    "type": "active",
+    "cost": 17,
+    "tags": [
+      "JOVIAN",
+      "SCIENCE"
+    ],
+    "resourceType": "FLOATER",
+    "victoryPoints": 2,
+    "behavior": {
+      "drawCard": 2
+    },
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "spend": {
+              "resourcesHere": 1
+            },
+            "drawCard": 1,
+            "title": "Remove 1 floater here to draw a card"
+          },
+          {
+            "addResources": 1,
+            "title": "Add 1 floater to this card"
+          }
+        ]
+      }
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 3
+    },
+    "cardNumber": "C32",
+    "description": "Requires 3 science tags. Draw 2 cards."
+  },
+  {
+    "id": "REFUGEE_CAMPS",
+    "name": "Refugee Camps",
+    "class": "RefugeeCamps",
+    "module": "colonies",
+    "type": "active",
+    "cost": 10,
+    "tags": [
+      "EARTH"
+    ],
+    "resourceType": "CAMP",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "action": {
+      "production": {
+        "megacredits": -1
+      },
+      "addResources": 1
+    },
+    "cardNumber": "C33"
+  },
+  {
+    "id": "RIM_FREIGHTERS",
+    "name": "Rim Freighters",
+    "class": "RimFreighters",
+    "module": "colonies",
+    "type": "active",
+    "cost": 4,
+    "tags": [
+      "SPACE"
+    ],
+    "behavior": {
+      "colonies": {
+        "tradeDiscount": 1
+      }
+    },
+    "cardNumber": "C35"
+  },
+  {
+    "id": "SKY_DOCKS",
+    "name": "Sky Docks",
+    "class": "SkyDocks",
+    "module": "colonies",
+    "type": "active",
+    "cost": 18,
+    "tags": [
+      "SPACE",
+      "EARTH"
+    ],
+    "victoryPoints": 2,
+    "behavior": {
+      "colonies": {
+        "addTradeFleet": 1
+      }
+    },
+    "requirements": {
+      "tag": "EARTH",
+      "count": 2
+    },
+    "cardDiscount": {
+      "amount": 1
+    },
+    "cardNumber": "C36",
+    "description": "Requires 2 Earth tags. Gain 1 Trade Fleet."
+  },
+  {
+    "id": "SPINOFF_DEPARTMENT",
+    "name": "Spinoff Department",
+    "class": "SpinoffDepartment",
+    "module": "colonies",
+    "type": "active",
+    "cost": 10,
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      }
+    },
+    "cardNumber": "C41",
+    "description": "Increase your M€ production 2 steps."
+  },
+  {
+    "id": "SUBZERO_SALT_FISH",
+    "name": "Subzero Salt Fish",
+    "class": "SubZeroSaltFish",
+    "module": "colonies",
+    "type": "active",
+    "cost": 5,
+    "tags": [
+      "ANIMAL"
+    ],
+    "resourceType": "ANIMAL",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "requirements": {
+      "temperature": -6
+    },
+    "behavior": {
+      "decreaseAnyProduction": {
+        "type": "PLANTS",
+        "count": 1
+      }
+    },
+    "action": {
+      "addResources": 1
+    },
+    "cardNumber": "C42",
+    "description": "Requires -6 C. Decrease any plant production 1 step."
+  },
+  {
+    "id": "TITAN_AIRSCRAPPING",
+    "name": "Titan Airscrapping",
+    "class": "TitanAirScrapping",
+    "module": "colonies",
+    "type": "active",
+    "cost": 21,
+    "tags": [
+      "JOVIAN"
+    ],
+    "resourceType": "FLOATER",
+    "victoryPoints": 2,
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "spend": {
+              "resourcesHere": 2
+            },
+            "tr": 1,
+            "title": "Remove 2 floaters here to increase your TR 1 step"
+          },
+          {
+            "spend": {
+              "titanium": 1
+            },
+            "addResources": 2,
+            "title": "Spend 1 titanium to add 2 floaters here"
+          }
+        ]
+      }
+    },
+    "cardNumber": "C43"
+  },
+  {
+    "id": "TITAN_FLOATING_LAUNCHPAD",
+    "name": "Titan Floating Launchpad",
+    "class": "TitanFloatingLaunchPad",
+    "module": "colonies",
+    "type": "active",
+    "cost": 18,
+    "tags": [
+      "JOVIAN"
+    ],
+    "resourceType": "FLOATER",
+    "victoryPoints": 1,
+    "behavior": {
+      "addResourcesToAnyCard": {
+        "type": "FLOATER",
+        "count": 2,
+        "tag": "JOVIAN"
+      }
+    },
+    "cardNumber": "C44",
+    "description": "Add two floaters to ANY JOVIAN CARD."
+  },
+  {
+    "id": "TITAN_SHUTTLES",
+    "name": "Titan Shuttles",
+    "class": "TitanShuttles",
+    "module": "colonies",
+    "type": "active",
+    "cost": 23,
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "resourceType": "FLOATER",
+    "victoryPoints": 1,
+    "cardNumber": "C45"
+  },
+  {
+    "id": "TRADE_ENVOYS",
+    "name": "Trade Envoys",
+    "class": "TradeEnvoys",
+    "module": "colonies",
+    "type": "active",
+    "cost": 6,
+    "behavior": {
+      "colonies": {
+        "tradeOffset": 1
+      }
+    },
+    "cardNumber": "C46"
+  },
+  {
+    "id": "TRADING_COLONY",
+    "name": "Trading Colony",
+    "class": "TradingColony",
+    "module": "colonies",
+    "type": "active",
+    "cost": 18,
+    "tags": [
+      "SPACE"
+    ],
+    "behavior": {
+      "colonies": {
+        "buildColony": {},
+        "tradeOffset": 1
+      }
+    },
+    "cardNumber": "C47",
+    "description": "Place a colony."
+  },
+  {
+    "id": "WARP_DRIVE",
+    "name": "Warp Drive",
+    "class": "WarpDrive",
+    "module": "colonies",
+    "type": "active",
+    "cost": 14,
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 2,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 5
+    },
+    "cardDiscount": {
+      "tag": "SPACE",
+      "amount": 4
+    },
+    "cardNumber": "C49",
+    "description": "Requires 5 science tags."
+  },
+  {
+    "id": "LUNA_TRADE_STATION",
+    "name": "Luna Trade Station",
+    "class": "LunaTradeStation",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MOON",
+      "MOON",
+      "SPACE"
+    ],
+    "cost": 10,
+    "reserveUnits": {
+      "titanium": 2
+    },
+    "action": {
+      "stock": {
+        "megacredits": {
+          "moon": {
+            "habitat": {}
+          },
+          "each": 2
+        }
+      }
+    },
+    "behavior": {
+      "moon": {
+        "tile": {
+          "type": "LUNA_TRADE_STATION",
+          "space": "LUNA_TRADE_STATION"
+        }
+      }
+    },
+    "description": "Spend 2 titanium. Place this tile ON THE RESERVED AREA.",
+    "cardNumber": "M13"
+  },
+  {
+    "id": "LUNAR_DUST_PROCESSING_PLANT",
+    "name": "Lunar Dust Processing Plant",
+    "class": "LunarDustProcessingPlant",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 6,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "behavior": {
+      "moon": {
+        "logisticRate": 1
+      }
+    },
+    "description": "Spend 1 titanium. Raise the logistic rate 1 step.",
+    "cardNumber": "M17"
+  },
+  {
+    "id": "ANCIENT_SHIPYARDS",
+    "name": "Ancient Shipyards",
+    "class": "AncientShipyards",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MOON",
+      "SPACE"
+    ],
+    "cost": 6,
+    "resourceType": "RESOURCE_CUBE",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "each": -1
+    },
+    "reserveUnits": {
+      "titanium": 3
+    },
+    "cardNumber": "M19"
+  },
+  {
+    "id": "LUNAR_OBSERVATION_POST",
+    "name": "Lunar Observation Post",
+    "class": "LunarObservationPost",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "SCIENCE"
+    ],
+    "cost": 7,
+    "resourceType": "DATA",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 3
+    },
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "action": {
+      "addResourcesToAnyCard": {
+        "type": "DATA",
+        "count": 1
+      }
+    },
+    "description": "Spend 1 titanium. 1 VP for every 3 data resources here.",
+    "cardNumber": "M22"
+  },
+  {
+    "id": "PRIDE_OF_THE_EARTH_ARKSHIP",
+    "name": "Pride Of The Earth Arkship",
+    "class": "PrideoftheEarthArkship",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "SCIENCE",
+      "SPACE"
+    ],
+    "cost": 22,
+    "resourceType": "SCIENCE",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "requirements": [
+      {
+        "tag": "SCIENCE"
+      },
+      {
+        "tag": "SPACE",
+        "count": 2
+      }
+    ],
+    "reserveUnits": {
+      "titanium": 2
+    },
+    "action": {
+      "addResources": {
+        "tag": "SCIENCE",
+        "per": 5
+      }
+    },
+    "description": "Requires 1 science and 2 space tags. Spend 2 titanium. 1 VP per science resource here.",
+    "cardNumber": "M24"
+  },
+  {
+    "id": "STEEL_MARKET_MONOPOLISTS",
+    "name": "Steel Market Monopolists",
+    "class": "SteelMarketMonopolists",
+    "module": "moon",
+    "type": "active",
+    "cost": 15,
+    "requirements": {
+      "miningRate": 3
+    },
+    "description": "Requires the mining rate to be 3 or higher.",
+    "cardNumber": "M28"
+  },
+  {
+    "id": "TITANIUM_MARKET_MONOPOLISTS",
+    "name": "Titanium Market Monopolists",
+    "class": "TitaniumMarketMonopolists",
+    "module": "moon",
+    "type": "active",
+    "cost": 21,
+    "requirements": {
+      "miningRate": 3
+    },
+    "description": "Requires the mining rate to be 3 or higher.",
+    "cardNumber": "M29"
+  },
+  {
+    "id": "SUBTERRANEAN_HABITATS",
+    "name": "Subterranean Habitats",
+    "class": "SubterraneanHabitats",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 12,
+    "reserveUnits": {
+      "steel": 2
+    },
+    "behavior": {
+      "moon": {
+        "habitatRate": 1
+      }
+    },
+    "description": "Spend 2 steel. Raise the habitat rate 1 step.",
+    "cardNumber": "M36"
+  },
+  {
+    "id": "IMPROVED_MOON_CONCRETE",
+    "name": "Improved Moon Concrete",
+    "class": "ImprovedMoonConcrete",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 12,
+    "reserveUnits": {
+      "steel": 2
+    },
+    "behavior": {
+      "moon": {
+        "miningRate": 1
+      }
+    },
+    "description": "Spend 2 steel. Raise the mining rate 1 step.",
+    "cardNumber": "M37"
+  },
+  {
+    "id": "MOONCRATE_BLOCK_FACTORY",
+    "name": "Mooncrate Block Factory",
+    "class": "MooncrateBlockFactory",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 8,
+    "requirements": {
+      "miningTiles": 1,
+      "all": true
+    },
+    "description": "Requires 1 mine on The Moon.",
+    "cardNumber": "M38"
+  },
+  {
+    "id": "LUNAR_SECURITY_STATIONS",
+    "name": "Lunar Security Stations",
+    "class": "LunarSecurityStations",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 9,
+    "requirements": {
+      "roadTiles": 3,
+      "all": true
+    },
+    "behavior": {
+      "moon": {
+        "logisticRate": 1
+      }
+    },
+    "description": "Requires 3 road tiles on The Moon. Raise the logistic rate 1 step.",
+    "cardNumber": "M42"
+  },
+  {
+    "id": "DARKSIDE_INCUBATION_PLANT",
+    "name": "Darkside Incubation Plant",
+    "class": "DarksideIncubationPlant",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MICROBE",
+      "MOON"
+    ],
+    "cost": 11,
+    "resourceType": "MICROBE",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Spend 2 microbes to raise the habitat rate 1 step.",
+            "spend": {
+              "resourcesHere": 2
+            },
+            "moon": {
+              "habitatRate": 1
+            }
+          },
+          {
+            "title": "Add 1 microbe to this card",
+            "addResources": 1
+          }
+        ]
+      }
+    },
+    "description": "Spend 1 titanium. 1 VP for every 2 microbes here.",
+    "cardNumber": "M45"
+  },
+  {
+    "id": "HE3_REFINERY",
+    "name": "He3 Refinery",
+    "class": "HE3Refinery",
+    "module": "moon",
+    "type": "active",
+    "cost": 8,
+    "tags": [
+      "MOON"
+    ],
+    "action": {
+      "stock": {
+        "megacredits": {
+          "moon": {
+            "miningRate": {}
+          }
+        }
+      }
+    },
+    "cardNumber": "M49"
+  },
+  {
+    "id": "LUNA_ARCHIVES",
+    "name": "Luna Archives",
+    "class": "LunaArchives",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "MOON"
+    ],
+    "cost": 13,
+    "resourceType": "SCIENCE",
+    "action": {
+      "addResources": {
+        "tag": "MOON"
+      }
+    },
+    "cardNumber": "M69"
+  },
+  {
+    "id": "LUNA_POLITICAL_INSTITUTE",
+    "name": "Luna Political Institute",
+    "class": "LunaPoliticalInstitute",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MOON",
+      "EARTH"
+    ],
+    "cost": 6,
+    "requirements": {
+      "tag": "MOON",
+      "count": 2
+    },
+    "action": {
+      "turmoil": {
+        "sendDelegates": {
+          "count": 1
+        }
+      }
+    },
+    "description": "Requires that you have 2 Moon tags.",
+    "cardNumber": "M71"
+  },
+  {
+    "id": "COPERNICUS_TOWER",
+    "name": "Copernicus Tower",
+    "class": "CopernicusTower",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "MOON"
+    ],
+    "cost": 36,
+    "resourceType": "SCIENCE",
+    "requirements": {
+      "production": "TITANIUM",
+      "count": 2
+    },
+    "victoryPoints": {
+      "tag": "MOON"
+    },
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "spend": {
+              "resourcesHere": 1
+            },
+            "tr": 1,
+            "title": "Remove 1 science resource to increase TR 1 step"
+          },
+          {
+            "addResources": 1,
+            "title": "Add 1 science resource to this card"
+          }
+        ]
+      }
+    },
+    "cardNumber": "M72"
+  },
+  {
+    "id": "DARKSIDE_OBSERVATORY",
+    "name": "Darkside Observatory",
+    "class": "DarksideObservatory",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 12,
+    "cardNumber": "M75"
+  },
+  {
+    "id": "EARTH_EMBASSY",
+    "name": "Earth Embassy",
+    "class": "EarthEmbassy",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MOON",
+      "EARTH"
+    ],
+    "cost": 16,
+    "cardNumber": "M77"
+  },
+  {
+    "id": "DARKSIDE_SMUGGLERS_UNION",
+    "name": "Darkside Smugglers Union",
+    "class": "DarksideSmugglersUnion",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 17,
+    "behavior": {
+      "moon": {
+        "logisticRate": 1
+      }
+    },
+    "description": "raise the logistic rate 1 step.",
+    "cardNumber": "M80"
+  },
+  {
+    "id": "LTF_PRIVILEGES",
+    "name": "Ltf Privileges",
+    "class": "LTFPrivileges",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 21,
+    "cardNumber": "M82"
+  },
+  {
+    "id": "PROCESSOR_FACTORY",
+    "name": "Processor Factory",
+    "class": "ProcessorFactory",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MOON",
+      "BUILDING"
+    ],
+    "cost": 8,
+    "action": {
+      "spend": {
+        "steel": 1
+      },
+      "addResourcesToAnyCard": {
+        "type": "DATA",
+        "count": 2
+      }
+    },
+    "resourceType": "DATA",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 3
+    },
+    "cardNumber": "M86"
+  },
+  {
+    "id": "LUNAR_STEEL",
+    "name": "Lunar Steel",
+    "class": "LunarSteel",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MOON"
+    ],
+    "cost": 5,
+    "behavior": {
+      "steelValue": 1
+    },
+    "cardNumber": "M87"
+  },
+  {
+    "id": "RUST_EATING_BACTERIA",
+    "name": "Rust Eating Bacteria",
+    "class": "RustEatingBacteria",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MICROBE"
+    ],
+    "cost": 7,
+    "resourceType": "MICROBE",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 3
+    },
+    "action": {
+      "spend": {
+        "steel": 1
+      },
+      "addResources": 2
+    },
+    "cardNumber": "M88"
+  },
+  {
+    "id": "SOLAR_PANEL_FOUNDRY",
+    "name": "Solar Panel Foundry",
+    "class": "SolarPanelFoundry",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "POWER",
+      "MOON",
+      "BUILDING"
+    ],
+    "cost": 11,
+    "action": {
+      "spend": {
+        "steel": 2
+      },
+      "production": {
+        "energy": 1
+      }
+    },
+    "cardNumber": "M89"
+  },
+  {
+    "id": "MOON_TETHER",
+    "name": "Moon Tether",
+    "class": "MoonTether",
+    "module": "moon",
+    "type": "active",
+    "tags": [
+      "MOON",
+      "SPACE"
+    ],
+    "cost": 18,
+    "victoryPoints": 1,
+    "requirements": {
+      "tag": "SPACE",
+      "count": 6
+    },
+    "cardDiscount": {
+      "amount": 2
+    },
+    "cardNumber": "M90",
+    "description": "Requires 6 space tags."
+  },
+  {
+    "id": "BREEDING_FARMS",
+    "name": "Breeding Farms",
+    "class": "BreedingFarms",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 16,
+    "tags": [
+      "SCIENCE",
+      "ANIMAL",
+      "BUILDING"
+    ],
+    "behavior": {
+      "global": {
+        "temperature": 1
+      }
+    },
+    "action": {
+      "spend": {
+        "plants": 1
+      },
+      "addResourcesToAnyCard": {
+        "count": 1,
+        "type": "ANIMAL",
+        "mustHaveCard": true
+      }
+    },
+    "requirements": [
+      {
+        "tag": "SCIENCE"
+      },
+      {
+        "tag": "ANIMAL"
+      }
+    ],
+    "cardNumber": "Pf01",
+    "description": "Requires 1 science tag and 1 animal tag. Raise the temperature 1 step."
+  },
+  {
+    "id": "PREFABRICATION_OF_HUMAN_HABITATS",
+    "name": "Prefabrication Of Human Habitats",
+    "class": "PrefabricationofHumanHabitats",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 8,
+    "tags": [
+      "BUILDING",
+      "CITY"
+    ],
+    "requirements": {
+      "production": "STEEL",
+      "count": 1
+    },
+    "cardDiscount": {
+      "tag": "CITY",
+      "amount": 2
+    },
+    "cardNumber": "Pf02",
+    "description": "Requires that you have steel production."
+  },
+  {
+    "id": "AGRO_DRONES",
+    "name": "Agro Drones",
+    "class": "AgroDrones",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 14,
+    "tags": [
+      "PLANT",
+      "MARS"
+    ],
+    "requirements": {
+      "temperature": -18
+    },
+    "cardNumber": "Pf04",
+    "description": "Requires -18° C or warmer."
+  },
+  {
+    "id": "TERRAFORMING_CONTROL_STATION",
+    "name": "Terraforming Control Station",
+    "class": "TerraformingControlStation",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 18,
+    "tags": [
+      "VENUS",
+      "MARS",
+      "SPACE"
+    ],
+    "behavior": {
+      "tr": 2
+    },
+    "cardDiscount": [
+      {
+        "tag": "VENUS",
+        "amount": 2
+      },
+      {
+        "tag": "MARS",
+        "amount": 2
+      }
+    ],
+    "cardNumber": "Pf12",
+    "description": "Raise your TR 2 steps."
+  },
+  {
+    "id": "DYSON_SCREENS",
+    "name": "Dyson Screens",
+    "class": "DysonScreens",
+    "module": "pathfinders",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "VENUS",
+      "POWER",
+      "SPACE"
+    ],
+    "cost": 28,
+    "victoryPoints": 1,
+    "behavior": {
+      "production": {
+        "energy": 2,
+        "heat": 2
+      },
+      "drawCard": 1,
+      "global": {
+        "temperature": 1
+      },
+      "city": {
+        "space": "DYSON_SCREENS"
+      }
+    },
+    "action": {
+      "spend": {
+        "titanium": 2
+      },
+      "production": {
+        "energy": 1,
+        "heat": 1
+      }
+    },
+    "cardNumber": "Pf15",
+    "description": "Raise the temperature 1 step. Draw a card. Place a city tile ON THE RESERVED AREA. Raise your energy and heat production 2 steps."
+  },
+  {
+    "id": "GEOLOGICAL_EXPEDITION",
+    "name": "Geological Expedition",
+    "class": "GeologicalExpedition",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 18,
+    "tags": [
+      "MARS",
+      "SCIENCE"
+    ],
+    "victoryPoints": 2,
+    "cardNumber": "Pf17"
+  },
+  {
+    "id": "PRIVATE_SECURITY",
+    "name": "Private Security",
+    "class": "PrivateSecurity",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 8,
+    "tags": [
+      "EARTH"
+    ],
+    "cardNumber": "Pf25"
+  },
+  {
+    "id": "COMMUNICATION_CENTER",
+    "name": "Communication Center",
+    "class": "CommunicationCenter",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 8,
+    "tags": [
+      "SCIENCE",
+      "MARS",
+      "BUILDING"
+    ],
+    "resourceType": "DATA",
+    "behavior": {
+      "addResources": 2
+    },
+    "cardNumber": "Pf28",
+    "description": "Decrease your energy production 1 step. Place 2 data on this card."
+  },
+  {
+    "id": "MARTIAN_REPOSITORY",
+    "name": "Martian Repository",
+    "class": "MartianRepository",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 12,
+    "tags": [
+      "MARS",
+      "MARS",
+      "BUILDING"
+    ],
+    "resourceType": "DATA",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 3
+    },
+    "cardNumber": "Pf29",
+    "description": "Decrease your energy production 1 step. 1 VP for every 3 data here."
+  },
+  {
+    "id": "SPACE_RELAY",
+    "name": "Space Relay",
+    "class": "SpaceRelay",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 13,
+    "tags": [
+      "SPACE",
+      "JOVIAN"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      }
+    },
+    "cardNumber": "Pf33",
+    "description": "Increase your M€ production 1 step."
+  },
+  {
+    "id": "MARTIAN_CULTURE",
+    "name": "Martian Culture",
+    "class": "MartianCulture",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 11,
+    "tags": [
+      "MARS",
+      "MARS"
+    ],
+    "resourceType": "DATA",
+    "requirements": {
+      "tag": "MARS",
+      "count": 2,
+      "all": true
+    },
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "action": {
+      "addResourcesToAnyCard": {
+        "type": "DATA",
+        "count": 1
+      }
+    },
+    "cardNumber": "Pf35",
+    "description": "Requires ANY 2 Mars tags in play.  1 VP for every 2 data here."
+  },
+  {
+    "id": "OZONE_GENERATORS",
+    "name": "Ozone Generators",
+    "class": "OzoneGenerators",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 14,
+    "tags": [
+      "MARS",
+      "SPACE"
+    ],
+    "requirements": {
+      "oxygen": 6
+    },
+    "action": {
+      "spend": {
+        "energy": 3
+      },
+      "tr": 1
+    },
+    "cardNumber": "Pf36",
+    "description": "Requires 6% Oxygen."
+  },
+  {
+    "id": "ECONOMIC_ESPIONAGE",
+    "name": "Economic Espionage",
+    "class": "EconomicEspionage",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 8,
+    "tags": [
+      "EARTH"
+    ],
+    "resourceType": "DATA",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 3
+    },
+    "action": {
+      "spend": {
+        "megacredits": 2
+      },
+      "addResourcesToAnyCard": {
+        "count": 1,
+        "type": "DATA"
+      }
+    },
+    "cardNumber": "Pf38"
+  },
+  {
+    "id": "CULTIVATION_OF_VENUS",
+    "name": "Cultivation Of Venus",
+    "class": "CultivationOfVenus",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 18,
+    "tags": [
+      "PLANT",
+      "VENUS"
+    ],
+    "victoryPoints": {
+      "tag": "VENUS",
+      "per": 2
+    },
+    "action": {
+      "spend": {
+        "plants": 3
+      },
+      "global": {
+        "venus": 1
+      }
+    },
+    "cardNumber": "Pf45"
+  },
+  {
+    "id": "THINK_TANK",
+    "name": "Think Tank",
+    "class": "ThinkTank",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 12,
+    "tags": [
+      "MARS",
+      "VENUS",
+      "SCIENCE"
+    ],
+    "resourceType": "DATA",
+    "action": {
+      "spend": {
+        "megacredits": 2
+      },
+      "addResourcesToAnyCard": {
+        "count": 1,
+        "type": "DATA"
+      }
+    },
+    "cardNumber": "Pf49"
+  },
+  {
+    "id": "BOTANICAL_EXPERIENCE",
+    "name": "Botanical Experience",
+    "class": "BotanicalExperience",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 14,
+    "tags": [
+      "PLANT",
+      "MARS",
+      "SCIENCE"
+    ],
+    "requirements": {
+      "greeneries": 1,
+      "all": true
+    },
+    "resourceType": "DATA",
+    "cardNumber": "Pf50",
+    "description": "Requires one greenery tile on Mars.",
+    "helpText": "HELP_TEXT"
+  },
+  {
+    "id": "CRYPTOCURRENCY",
+    "name": "Cryptocurrency",
+    "class": "Cryptocurrency",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 6,
+    "tags": [
+      "POWER"
+    ],
+    "resourceType": "DATA",
+    "cardNumber": "Pf51"
+  },
+  {
+    "id": "SOLARPEDIA",
+    "name": "Solarpedia",
+    "class": "Solarpedia",
+    "module": "pathfinders",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 12,
+    "requirements": [
+      {
+        "tag": "VENUS"
+      },
+      {
+        "tag": "EARTH"
+      },
+      {
+        "tag": "MARS"
+      },
+      {
+        "tag": "JOVIAN"
+      }
+    ],
+    "resourceType": "DATA",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 6
+    },
+    "behavior": {
+      "addResourcesToAnyCard": {
+        "type": "DATA",
+        "count": 2
+      }
+    },
+    "action": {
+      "addResourcesToAnyCard": {
+        "type": "DATA",
+        "count": 2
+      }
+    },
+    "cardNumber": "Pf54",
+    "description": "Requires 1 Venus, Earth, Mars, and Jovian Tag. Add 2 data to ANY card. 1 VP for every 6 data resources here."
+  },
+  {
+    "id": "ANTHOZOA",
+    "name": "Anthozoa",
+    "class": "Anthozoa",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 9,
+    "tags": [
+      "PLANT",
+      "ANIMAL",
+      "MARS"
+    ],
+    "requirements": {
+      "oceans": 3
+    },
+    "resourceType": "ANIMAL",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "action": {
+      "spend": {
+        "plants": 1
+      },
+      "addResources": 1
+    },
+    "cardNumber": "Pf55",
+    "description": "Requires 3 oceans on Mars."
+  },
+  {
+    "id": "FLOATER_URBANISM",
+    "name": "Floater Urbanism",
+    "class": "FloaterUrbanism",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 7,
+    "tags": [
+      "VENUS"
+    ],
+    "resourceType": "VENUSIAN_HABITAT",
+    "requirements": {
+      "tag": "VENUS",
+      "count": 4
+    },
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "action": {
+      "removeResourcesFromAnyCard": {
+        "type": "FLOATER",
+        "source": "self"
+      },
+      "addResources": 1
+    },
+    "cardNumber": "Pf59",
+    "description": "Requires 4 Venus tags."
+  },
+  {
+    "id": "NOBEL_LABS",
+    "name": "Nobel Labs",
+    "class": "NobelLabs",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 8,
+    "tags": [
+      "SCIENCE"
+    ],
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 4
+    },
+    "cardNumber": "Pf60",
+    "description": "Requires 4 science tags."
+  },
+  {
+    "id": "MICROBIOLOGY_PATENTS",
+    "name": "Microbiology Patents",
+    "class": "MicrobiologyPatents",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 6,
+    "tags": [
+      "MARS",
+      "MICROBE"
+    ],
+    "cardNumber": "Pf63"
+  },
+  {
+    "id": "VENERA_BASE",
+    "name": "Venera Base",
+    "class": "VeneraBase",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 21,
+    "tags": [
+      "VENUS",
+      "VENUS",
+      "CITY"
+    ],
+    "requirements": {
+      "party": "UNITY"
+    },
+    "victoryPoints": {
+      "tag": "VENUS",
+      "per": 2
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 3
+      },
+      "city": {
+        "space": "VENERA_BASE"
+      }
+    },
+    "action": {
+      "addResourcesToAnyCard": {
+        "type": "FLOATER",
+        "tag": "VENUS",
+        "count": 1,
+        "mustHaveCard": true
+      }
+    },
+    "cardNumber": "Pf67",
+    "description": "Requires Unity is ruling or that you have 2 delegates there. Raise your M€ production 3 steps and place a city tile ON THE RESERVED AREA."
+  },
+  {
+    "id": "TERRAFORMING_ROBOTS",
+    "name": "Terraforming Robots",
+    "class": "TerraformingRobots",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 10,
+    "tags": [
+      "SCIENCE"
+    ],
+    "resourceType": "SPECIALIZED_ROBOT",
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 4
+    },
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "cardNumber": "PfT12",
+    "description": "Requires 4 science tags."
+  },
+  {
+    "id": "POLLINATORS",
+    "name": "Pollinators",
+    "class": "Pollinators",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 19,
+    "tags": [
+      "PLANT",
+      "ANIMAL"
+    ],
+    "resourceType": "ANIMAL",
+    "requirements": {
+      "tag": "PLANT",
+      "count": 3
+    },
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "behavior": {
+      "production": {
+        "plants": 1,
+        "megacredits": 2
+      }
+    },
+    "action": {
+      "addResources": 1
+    },
+    "cardNumber": "PfT9",
+    "description": "Requires 3 plant tags. Raise your plant production 1 step and your M€ production 2 steps."
+  },
+  {
+    "id": "HIGH_TEMP_SUPERCONDUCTORS",
+    "name": "High Temp Superconductors",
+    "class": "HighTempSuperconductors",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 10,
+    "tags": [
+      "POWER",
+      "SCIENCE"
+    ],
+    "requirements": {
+      "party": "KELVINISTS"
+    },
+    "cardDiscount": {
+      "tag": "POWER",
+      "amount": 3
+    },
+    "behavior": {
+      "production": {
+        "energy": 2
+      }
+    },
+    "cardNumber": "PfTMP",
+    "description": "Requires Kelvinists are ruling or you have 2 delegates there. Increase your energy production 2 steps."
+  },
+  {
+    "id": "SOIL_DETOXIFICATION",
+    "name": "Soil Detoxification",
+    "class": "SoilDetoxification",
+    "module": "pathfinders",
+    "type": "active",
+    "cost": 10,
+    "tags": [
+      "PLANT",
+      "SCIENCE"
+    ],
+    "requirements": {
+      "party": "GREENS"
+    },
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "greeneryDiscount": 1
+    },
+    "cardNumber": "PfTmp",
+    "description": "Requires that Greens are ruling or you have 2 delegates there. Increase your plant production 1 step"
+  },
+  {
+    "id": "PSYCHROPHILES",
+    "name": "Psychrophiles",
+    "class": "Psychrophiles",
+    "module": "prelude",
+    "type": "active",
+    "tags": [
+      "MICROBE"
+    ],
+    "cost": 2,
+    "resourceType": "MICROBE",
+    "action": {
+      "addResources": 1
+    },
+    "requirements": {
+      "temperature": -20,
+      "max": true
+    },
+    "cardNumber": "P39",
+    "description": "Temperature must be -20 C or lower."
+  },
+  {
+    "id": "CERES_TECH_MARKET",
+    "name": "Ceres Tech Market",
+    "class": "CeresTechMarket",
+    "module": "prelude2",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "SPACE"
+    ],
+    "cost": 12,
+    "victoryPoints": 1,
+    "behavior": {
+      "stock": {
+        "megacredits": {
+          "colonies": {
+            "colonies": {}
+          },
+          "each": 2
+        }
+      }
+    },
+    "cardNumber": "P68"
+  },
+  {
+    "id": "CLOUD_TOURISM",
+    "name": "Cloud Tourism",
+    "class": "CloudTourism",
+    "module": "prelude2",
+    "type": "active",
+    "tags": [
+      "JOVIAN",
+      "VENUS"
+    ],
+    "cost": 11,
+    "victoryPoints": {
+      "resourcesHere": 1,
+      "per": 3
+    },
+    "resourceType": "FLOATER",
+    "action": {
+      "addResources": 1
+    },
+    "cardNumber": "P69",
+    "description": "Increase your M€ production 1 step for each pair of Earth and Venus tags you own. 1 VP for every 3rd floater on this card."
+  },
+  {
+    "id": "COLONIAL_REPRESENTATION",
+    "name": "Colonial Representation",
+    "class": "ColonialRepresentation",
+    "module": "prelude2",
+    "type": "active",
+    "cost": 10,
+    "behavior": {
+      "turmoil": {
+        "influenceBonus": 1
+      },
+      "stock": {
+        "megacredits": {
+          "colonies": {
+            "colonies": {}
+          },
+          "each": 3
+        }
+      }
+    },
+    "cardNumber": "P71",
+    "description": "Gain 3 M€ per colony you have."
+  },
+  {
+    "id": "FLOATING_REFINERY",
+    "name": "Floating Refinery",
+    "class": "FloatingRefinery",
+    "module": "prelude2",
+    "type": "active",
+    "cost": 7,
+    "tags": [
+      "VENUS"
+    ],
+    "resourceType": "FLOATER",
+    "behavior": {
+      "addResources": {
+        "tag": "VENUS"
+      }
+    },
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Remove 2 floaters from ANY CARD to gain 1 titanium and 2 M€",
+            "removeResourcesFromAnyCard": {
+              "type": "FLOATER",
+              "count": 2
+            },
+            "stock": {
+              "titanium": 1,
+              "megacredits": 2
+            }
+          },
+          {
+            "title": "Add 1 floater to this card",
+            "addResources": 1
+          }
+        ]
+      }
+    },
+    "cardNumber": "P73",
+    "description": "Add 1 floater here for each Venus tag you have."
+  },
+  {
+    "id": "L1_TRADE_TERMINAL",
+    "name": "L1 Trade Terminal",
+    "class": "L1TradeTerminal",
+    "module": "prelude2",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 25,
+    "victoryPoints": 2,
+    "behavior": {
+      "colonies": {
+        "tradeOffset": 2
+      }
+    },
+    "cardNumber": "P78"
+  },
+  {
+    "id": "VENUS_ORBITAL_SURVEY",
+    "name": "Venus Orbital Survey",
+    "class": "VenusOrbitalSurvey",
+    "module": "prelude2",
+    "type": "active",
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ],
+    "cost": 18,
+    "cardNumber": "P88"
+  },
+  {
+    "id": "VENUS_SHUTTLES",
+    "name": "Venus Shuttles",
+    "class": "VenusShuttles",
+    "module": "prelude2",
+    "type": "active",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 9,
+    "behavior": {
+      "addResourcesToAnyCard": {
+        "count": 2,
+        "tag": "VENUS",
+        "type": "FLOATER",
+        "autoSelect": true
+      }
+    },
+    "cardNumber": "P89",
+    "description": "Add 2 floaters to ANY VENUS CARD."
+  },
+  {
+    "id": "VENUS_TRADE_HUB",
+    "name": "Venus Trade Hub",
+    "class": "VenusTradeHub",
+    "module": "prelude2",
+    "type": "active",
+    "cost": 12,
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ],
+    "victoryPoints": 1,
+    "requirements": [
+      {
+        "tag": "VENUS",
+        "count": 2
+      }
+    ],
+    "cardNumber": "P90",
+    "description": "Requires 2 Venus tags."
+  },
+  {
+    "id": "WEATHER_BALLOONS",
+    "name": "Weather Balloons",
+    "class": "WeatherBalloons",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 11,
+    "resourceType": "FLOATER",
+    "behavior": {
+      "drawCard": 1
+    },
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Spend 1 floater here to gain 1 M€ per city on Mars",
+            "spend": {
+              "resourcesHere": 1
+            },
+            "stock": {
+              "megacredits": {
+                "cities": {
+                  "where": "onmars"
+                }
+              }
+            }
+          },
+          {
+            "title": "Add 1 floater here",
+            "addResources": 1
+          }
+        ]
+      }
+    },
+    "cardNumber": "033",
+    "description": "Draw 1 card."
+  },
+  {
+    "id": "SELF_REPLICATING_ROBOTS",
+    "name": "Self Replicating Robots",
+    "class": "SelfReplicatingRobots",
+    "module": "promo",
+    "type": "active",
+    "cost": 7,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "cardNumber": "210",
+    "description": "Requires 2 science tags."
+  },
+  {
+    "id": "PENGUINS",
+    "name": "Penguins",
+    "class": "Penguins",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "ANIMAL"
+    ],
+    "cost": 7,
+    "resourceType": "ANIMAL",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "action": {
+      "addResources": 1
+    },
+    "requirements": {
+      "oceans": 8
+    },
+    "cardNumber": "212",
+    "description": "Requires 8 oceans."
+  },
+  {
+    "id": "FLOYD_CONTINUUM",
+    "name": "Floyd Continuum",
+    "class": "FloydContinuum",
+    "module": "promo",
+    "type": "active",
+    "cost": 4,
+    "tags": [
+      "SCIENCE"
+    ],
+    "cardNumber": "X-1",
+    "helpText": "HELP_TEXT"
+  },
+  {
+    "id": "ENERGY_MARKET",
+    "name": "Energy Market",
+    "class": "EnergyMarket",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "POWER"
+    ],
+    "cost": 3,
+    "cardNumber": "X03"
+  },
+  {
+    "id": "HI_TECH_LAB",
+    "name": "Hi Tech Lab",
+    "class": "HiTechLab",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "BUILDING"
+    ],
+    "cost": 17,
+    "victoryPoints": 1,
+    "cardNumber": "X04"
+  },
+  {
+    "id": "MERCURIAN_ALLOYS",
+    "name": "Mercurian Alloys",
+    "class": "MercurianAlloys",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 3,
+    "behavior": {
+      "titaniumValue": 1
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "cardNumber": "X07",
+    "description": "Requires 2 science tags."
+  },
+  {
+    "id": "ORBITAL_CLEANUP",
+    "name": "Orbital Cleanup",
+    "class": "OrbitalCleanup",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ],
+    "cost": 14,
+    "victoryPoints": 2,
+    "behavior": {
+      "production": {
+        "megacredits": -2
+      }
+    },
+    "action": {
+      "stock": {
+        "megacredits": {
+          "tag": "SCIENCE"
+        }
+      }
+    },
+    "cardNumber": "X08",
+    "description": "Decrease your M€ production 2 steps."
+  },
+  {
+    "id": "REGO_PLASTICS",
+    "name": "Rego Plastics",
+    "class": "RegoPlastics",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 10,
+    "victoryPoints": 1,
+    "behavior": {
+      "steelValue": 1
+    },
+    "cardNumber": "X10"
+  },
+  {
+    "id": "SATURN_SURFING",
+    "name": "Saturn Surfing",
+    "class": "SaturnSurfing",
+    "module": "promo",
+    "type": "active",
+    "cost": 13,
+    "tags": [
+      "JOVIAN",
+      "EARTH"
+    ],
+    "resourceType": "FLOATER",
+    "victoryPoints": 1,
+    "behavior": {
+      "addResources": {
+        "tag": "EARTH"
+      }
+    },
+    "cardNumber": "X11",
+    "description": "Add 1 floater here for every Earth tag you have, including this."
+  },
+  {
+    "id": "ADVERTISING",
+    "name": "Advertising",
+    "class": "Advertising",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "EARTH"
+    ],
+    "cost": 4,
+    "cardNumber": "X13"
+  },
+  {
+    "id": "ASTEROID_DEFLECTION_SYSTEM",
+    "name": "Asteroid Deflection System",
+    "class": "AsteroidDeflectionSystem",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "SPACE",
+      "EARTH",
+      "BUILDING"
+    ],
+    "cost": 13,
+    "resourceType": "ASTEROID",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "behavior": {
+      "production": {
+        "energy": -1
+      }
+    },
+    "cardNumber": "X14",
+    "description": "Decrease your energy production 1 step. 1 VP per asteroid on this card."
+  },
+  {
+    "id": "ASTEROID_HOLLOWING",
+    "name": "Asteroid Hollowing",
+    "class": "AsteroidHollowing",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 16,
+    "resourceType": "ASTEROID",
+    "action": {
+      "spend": {
+        "titanium": 1
+      },
+      "production": {
+        "megacredits": 1
+      },
+      "addResources": 1
+    },
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "cardNumber": "X15"
+  },
+  {
+    "id": "COMET_AIMING",
+    "name": "Comet Aiming",
+    "class": "CometAiming",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 17,
+    "resourceType": "ASTEROID",
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "spend": {
+              "resourcesHere": 1
+            },
+            "ocean": {},
+            "title": "Remove 1 asteroid here to place an ocean"
+          },
+          {
+            "spend": {
+              "titanium": 1
+            },
+            "addResourcesToAnyCard": {
+              "type": "ASTEROID",
+              "count": 1,
+              "mustHaveCard": true
+            },
+            "title": "Spend 1 titanium to add 1 asteroid to any card"
+          }
+        ]
+      }
+    },
+    "cardNumber": "X16"
+  },
+  {
+    "id": "CUTTING_EDGE_TECHNOLOGY",
+    "name": "Cutting Edge Technology",
+    "class": "CuttingEdgeTechnology",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 12,
+    "victoryPoints": 1,
+    "cardNumber": "X18"
+  },
+  {
+    "id": "DIRECTED_IMPACTORS",
+    "name": "Directed Impactors",
+    "class": "DirectedImpactors",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 8,
+    "resourceType": "ASTEROID",
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Remove 1 asteroid to raise temperature 1 step",
+            "spend": {
+              "resourcesHere": 1
+            },
+            "global": {
+              "temperature": 1
+            }
+          },
+          {
+            "title": "Pay 6 M€ to add 1 asteroid to a card",
+            "spend": {
+              "megacredits": 6,
+              "canUseTitanium": true
+            },
+            "addResourcesToAnyCard": {
+              "count": 1,
+              "type": "ASTEROID"
+            }
+          }
+        ]
+      }
+    },
+    "cardNumber": "X19"
+  },
+  {
+    "id": "MEAT_INDUSTRY",
+    "name": "Meat Industry",
+    "class": "MeatIndustry",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 5,
+    "cardNumber": "X25"
+  },
+  {
+    "id": "MELTWORKS",
+    "name": "Meltworks",
+    "class": "Meltworks",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 4,
+    "action": {
+      "spend": {
+        "heat": 5
+      },
+      "stock": {
+        "steel": 3
+      }
+    },
+    "cardNumber": "X26"
+  },
+  {
+    "id": "MOHOLE_LAKE",
+    "name": "Mohole Lake",
+    "class": "MoholeLake",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 31,
+    "behavior": {
+      "stock": {
+        "plants": 3
+      },
+      "global": {
+        "temperature": 1
+      },
+      "ocean": {}
+    },
+    "cardNumber": "X27",
+    "description": "Gain 3 plants. Raise temperature 1 step, and place 1 ocean tile."
+  },
+  {
+    "id": "SUB_CRUST_MEASUREMENTS",
+    "name": "Sub Crust Measurements",
+    "class": "SubCrustMeasurements",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "BUILDING",
+      "EARTH"
+    ],
+    "cost": 20,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "victoryPoints": 2,
+    "action": {
+      "drawCard": 1
+    },
+    "cardNumber": "X29",
+    "description": "Requires 2 science tags."
+  },
+  {
+    "id": "TOPSOIL_CONTRACT",
+    "name": "Topsoil Contract",
+    "class": "TopsoilContract",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "MICROBE",
+      "EARTH"
+    ],
+    "cost": 8,
+    "behavior": {
+      "stock": {
+        "plants": 3
+      }
+    },
+    "cardNumber": "X30",
+    "description": "Gain 3 plants."
+  },
+  {
+    "id": "ASTEROID_RIGHTS",
+    "name": "Asteroid Rights",
+    "class": "AsteroidRights",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ],
+    "cost": 10,
+    "resourceType": "ASTEROID",
+    "behavior": {
+      "addResources": 2
+    },
+    "cardNumber": "X34"
+  },
+  {
+    "id": "BIO_PRINTING_FACILITY",
+    "name": "Bio Printing Facility",
+    "class": "BioPrintingFacility",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 7,
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "spend": {
+              "energy": 2
+            },
+            "addResourcesToAnyCard": {
+              "type": "ANIMAL",
+              "count": 1,
+              "mustHaveCard": true
+            },
+            "title": "Spend 2 energy to add 1 animal to another card"
+          },
+          {
+            "spend": {
+              "energy": 2
+            },
+            "stock": {
+              "plants": 2
+            },
+            "title": "Spend 2 energy to gain 2 plants"
+          }
+        ]
+      }
+    },
+    "cardNumber": "X36"
+  },
+  {
+    "id": "SUPERCAPACITORS",
+    "name": "Supercapacitors",
+    "class": "Supercapacitors",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "cost": 4,
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      }
+    },
+    "cardNumber": "X46",
+    "description": "Increase M€ production 1 step."
+  },
+  {
+    "id": "ICY_IMPACTORS",
+    "name": "Icy Impactors",
+    "class": "IcyImpactors",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 15,
+    "resourceType": "ASTEROID",
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Spend 1 asteroid here to place an ocean (first player chooses where to place it)",
+            "spend": {
+              "resourcesHere": 1
+            },
+            "ocean": {
+              "firstPlayerPlaces": true
+            }
+          },
+          {
+            "title": "Spend 10 M€ to add 2 asteroids here",
+            "spend": {
+              "megacredits": 10,
+              "canUseTitanium": true
+            },
+            "addResources": 2
+          }
+        ]
+      }
+    },
+    "cardNumber": "X47"
+  },
+  {
+    "id": "DIRECTED_HEAT_USAGE",
+    "name": "Directed Heat Usage",
+    "class": "DirectedHeatUsage",
+    "module": "promo",
+    "type": "active",
+    "cost": 1,
+    "action": {
+      "or": {
+        "behaviors": [
+          {
+            "title": "Spend 3 heat to gain 4 M€",
+            "spend": {
+              "heat": 3
+            },
+            "stock": {
+              "megacredits": 4
+            }
+          },
+          {
+            "title": "Spend 3 heat to gain 2 plants",
+            "spend": {
+              "heat": 3
+            },
+            "stock": {
+              "plants": 2
+            }
+          }
+        ]
+      }
+    },
+    "cardNumber": "X48"
+  },
+  {
+    "id": "CARBON_NANOSYSTEMS",
+    "name": "Carbon Nanosystems",
+    "class": "CarbonNanosystems",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "SCIENCE",
+      "BUILDING"
+    ],
+    "cost": 14,
+    "victoryPoints": 1,
+    "resourceType": "GRAPHENE",
+    "cardNumber": "X52"
+  },
+  {
+    "id": "HOMEOSTASIS_BUREAU",
+    "name": "Homeostasis Bureau",
+    "class": "HomeostasisBureau",
+    "module": "promo",
+    "type": "active",
+    "cost": 16,
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "heat": 2
+      }
+    },
+    "cardNumber": "X57",
+    "description": "Increase your heat production 2 steps."
+  },
+  {
+    "id": "MARS_NOMADS",
+    "name": "Mars Nomads",
+    "class": "MarsNomads",
+    "module": "promo",
+    "type": "active",
+    "cost": 13,
+    "cardNumber": "X59"
+  },
+  {
+    "id": "MARTIAN_LUMBER_CORP",
+    "name": "Martian Lumber Corp",
+    "class": "MartianLumberCorp",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "BUILDING",
+      "PLANT"
+    ],
+    "cost": 6,
+    "behavior": {
+      "production": {
+        "plants": 1
+      }
+    },
+    "requirements": {
+      "greeneries": 2
+    },
+    "cardNumber": "X60"
+  },
+  {
+    "id": "NEPTUNIAN_POWER_CONSULTANTS",
+    "name": "Neptunian Power Consultants",
+    "class": "NeptunianPowerConsultants",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "POWER"
+    ],
+    "cost": 14,
+    "resourceType": "HYDROELECTRIC_RESOURCE",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "cardNumber": "X61",
+    "description": "1 VP per hydroelectric resource on this card"
+  },
+  {
+    "id": "RED_SHIPS",
+    "name": "Red Ships",
+    "class": "RedShips",
+    "module": "promo",
+    "type": "active",
+    "cost": 2,
+    "requirements": {
+      "oxygen": 4
+    },
+    "cardNumber": "X62",
+    "description": "Requires 4% oxygen."
+  },
+  {
+    "id": "SOLAR_LOGISTICS",
+    "name": "Solar Logistics",
+    "class": "SolarLogistics",
+    "module": "promo",
+    "type": "active",
+    "cost": 20,
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ],
+    "behavior": {
+      "stock": {
+        "titanium": 2
+      }
+    },
+    "victoryPoints": 1,
+    "cardDiscount": {
+      "tag": "EARTH",
+      "amount": 2
+    },
+    "cardNumber": "X63",
+    "description": "Gain 2 titanium."
+  },
+  {
+    "id": "ST_JOSEPH_OF_CUPERTINO_MISSION",
+    "name": "St Joseph Of Cupertino Mission",
+    "class": "StJosephOfCupertinoMission",
+    "module": "promo",
+    "type": "active",
+    "cost": 7,
+    "victoryPoints": "special",
+    "cardNumber": "X64",
+    "description": "1 VP per City with a Cathedral in it."
+  },
+  {
+    "id": "TESLARACT",
+    "name": "Teslaract",
+    "class": "Teslaract",
+    "module": "promo",
+    "type": "active",
+    "cost": 14,
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "behavior": {
+      "tr": 1
+    },
+    "cardNumber": "X66",
+    "description": "Raise your TR 1 step."
+  },
+  {
+    "id": "HOSPITALS",
+    "name": "Hospitals",
+    "class": "Hospitals",
+    "module": "promo",
+    "type": "active",
+    "cost": 8,
+    "tags": [
+      "BUILDING"
+    ],
+    "resourceType": "DISEASE",
+    "behavior": {
+      "production": {
+        "energy": -1
+      }
+    },
+    "action": {
+      "spend": {
+        "resourceFromAnyCard": {
+          "type": "DISEASE"
+        }
+      },
+      "stock": {
+        "megacredits": {
+          "cities": {}
+        }
+      }
+    },
+    "victoryPoints": 1,
+    "cardNumber": "X69",
+    "description": "Decrease your energy production 1 step."
+  },
+  {
+    "id": "VERMIN",
+    "name": "Vermin",
+    "class": "Vermin",
+    "module": "promo",
+    "type": "active",
+    "tags": [
+      "MICROBE",
+      "ANIMAL"
+    ],
+    "cost": 8,
+    "resourceType": "ANIMAL",
+    "victoryPoints": "special",
+    "action": {
+      "or": {
+        "behaviors": [
+          {
+            "title": "Add one animal here",
+            "addResources": 1
+          },
+          {
+            "title": "Add 1 microbe to ANY card",
+            "addResourcesToAnyCard": {
+              "count": 1,
+              "type": "MICROBE",
+              "mustHaveCard": true
+            }
+          }
+        ],
+        "autoSelect": true
+      }
+    },
+    "cardNumber": "X75",
+    "description": "Each player, including you, gets -1 VP per city they have IF THERE ARE AT LEAST 10 ANIMALS HERE."
+  },
+  {
+    "id": "CLONE_TROOPERS",
+    "name": "Clone Troopers",
+    "class": "CloneTroopers",
+    "module": "starwars",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 12,
+    "resourceType": "CLONE_TROOPER",
+    "requirements": {
+      "oceans": 6
+    },
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "cardNumber": "SW02"
+  },
+  {
+    "id": "TOSCHE_STATION",
+    "name": "Tosche Station",
+    "class": "ToscheStation",
+    "module": "starwars",
+    "type": "active",
+    "tags": [
+      "POWER",
+      "PLANT"
+    ],
+    "cost": 5,
+    "cardNumber": "SW04"
+  },
+  {
+    "id": "EVENT_ANALYSTS",
+    "name": "Event Analysts",
+    "class": "EventAnalysts",
+    "module": "turmoil",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 5,
+    "behavior": {
+      "turmoil": {
+        "influenceBonus": 1
+      }
+    },
+    "requirements": {
+      "party": "SCIENTISTS"
+    },
+    "description": "Requires that Scientists are ruling or that you have 2 delegates there.",
+    "cardNumber": "T05"
+  },
+  {
+    "id": "GMO_CONTRACT",
+    "name": "Gmo Contract",
+    "class": "GMOContract",
+    "module": "turmoil",
+    "type": "active",
+    "tags": [
+      "MICROBE",
+      "SCIENCE"
+    ],
+    "cost": 3,
+    "requirements": {
+      "party": "GREENS"
+    },
+    "description": "Requires that Greens are ruling or that you have 2 delegates there.",
+    "cardNumber": "T06"
+  },
+  {
+    "id": "MARTIAN_MEDIA_CENTER",
+    "name": "Martian Media Center",
+    "class": "MartianMediaCenter",
+    "module": "turmoil",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 7,
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      }
+    },
+    "action": {
+      "spend": {
+        "megacredits": 3
+      },
+      "turmoil": {
+        "sendDelegates": {
+          "count": 1
+        }
+      }
+    },
+    "requirements": {
+      "party": "MARS"
+    },
+    "cardNumber": "T07",
+    "description": "Requires that Mars First is ruling or that you have 2 delegates there. Increase your M€ production 2 steps."
+  },
+  {
+    "id": "GEOLOGIST_TEAM",
+    "name": "Geologist Team",
+    "class": "GeologistTeam",
+    "module": "underworld",
+    "type": "active",
+    "cost": 6,
+    "tags": [
+      "SCIENCE"
+    ],
+    "action": {
+      "underworld": {
+        "identify": 1
+      }
+    },
+    "cardNumber": "U001"
+  },
+  {
+    "id": "TUNNEL_BORING_MACHINE",
+    "name": "Tunnel Boring Machine",
+    "class": "TunnelBoringMachine",
+    "module": "underworld",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 10,
+    "action": {
+      "spend": {
+        "energy": 3
+      },
+      "underworld": {
+        "excavate": 2
+      }
+    },
+    "cardNumber": "U003"
+  },
+  {
+    "id": "LABOR_TRAFFICKING",
+    "name": "Labor Trafficking",
+    "class": "LaborTrafficking",
+    "module": "underworld",
+    "type": "active",
+    "cost": 6,
+    "tags": [
+      "SPACE",
+      "CRIME"
+    ],
+    "victoryPoints": -2,
+    "requirements": {
+      "corruption": 2
+    },
+    "cardNumber": "U014",
+    "description": "Requires 2 corruption."
+  },
+  {
+    "id": "SEARCH_FOR_LIFE_UNDERGROUND",
+    "name": "Search For Life Underground",
+    "class": "SearchforLifeUnderground",
+    "module": "underworld",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 6,
+    "resourceType": "SCIENCE",
+    "victoryPoints": "special",
+    "requirements": {
+      "temperature": -18,
+      "max": true
+    },
+    "cardNumber": "U023",
+    "description": "Temperature must -18° C or colder."
+  },
+  {
+    "id": "GREY_MARKET_EXPLOITATION",
+    "name": "Grey Market Exploitation",
+    "class": "GreyMarketExploitation",
+    "module": "underworld",
+    "type": "active",
+    "tags": [
+      "CRIME"
+    ],
+    "cost": 4,
+    "requirements": {
+      "corruption": 2
+    },
+    "action": {
+      "or": {
+        "behaviors": [
+          {
+            "spend": {
+              "megacredits": 1
+            },
+            "standardResource": 1,
+            "title": "Spend 1 M€ to gain 1 standard resource."
+          },
+          {
+            "spend": {
+              "corruption": 1
+            },
+            "standardResource": 3,
+            "title": "Spend 1 corruption to gain 3 of the same standard resource."
+          }
+        ],
+        "autoSelect": true
+      }
+    },
+    "cardNumber": "U034",
+    "description": "Requires 2 corruption."
+  },
+  {
+    "id": "EXCAVATOR_LEASING",
+    "name": "Excavator Leasing",
+    "class": "ExcavatorLeasing",
+    "module": "underworld",
+    "type": "active",
+    "tags": [
+      "BUILDING"
+    ],
+    "cost": 8,
+    "cardNumber": "U035"
+  },
+  {
+    "id": "FRIENDS_IN_HIGH_PLACES",
+    "name": "Friends In High Places",
+    "class": "FriendsInHighPlaces",
+    "module": "underworld",
+    "type": "active",
+    "tags": [
+      "CRIME",
+      "EARTH"
+    ],
+    "cost": 10,
+    "requirements": [
+      {
+        "tag": "EARTH",
+        "count": 2
+      }
+    ],
+    "behavior": {
+      "underworld": {
+        "corruption": 1
+      }
+    },
+    "cardDiscount": {
+      "amount": 1
+    },
+    "cardNumber": "U041",
+    "description": "Requires 2 Earth tags. Gain 1 corruption."
+  },
+  {
+    "id": "MICROGRAVIMETRY",
+    "name": "Microgravimetry",
+    "class": "Microgravimetry",
+    "module": "underworld",
+    "type": "active",
+    "tags": [
+      "POWER",
+      "SCIENCE"
+    ],
+    "cost": 5,
+    "victoryPoints": 1,
+    "action": {
+      "spend": {
+        "energy": 2
+      },
+      "underworld": {
+        "identify": {
+          "count": 3,
+          "claim": 1
+        }
+      }
+    },
+    "cardNumber": "U042"
+  },
+  {
+    "id": "STEM_FIELD_SUBSIDIES",
+    "name": "Stem Field Subsidies",
+    "class": "StemFieldSubsidies",
+    "module": "underworld",
+    "type": "active",
+    "cost": 10,
+    "tags": [
+      "SCIENCE"
+    ],
+    "resourceType": "DATA",
+    "action": {
+      "spend": {
+        "resourcesHere": 2
+      },
+      "underworld": {
+        "identify": {
+          "count": 3,
+          "claim": 1
+        }
+      }
+    },
+    "cardNumber": "U043"
+  },
+  {
+    "id": "TITAN_MANUFACTURING_COLONY",
+    "name": "Titan Manufacturing Colony",
+    "class": "TitanManufacturingColony",
+    "module": "underworld",
+    "type": "active",
+    "cost": 18,
+    "tags": [
+      "JOVIAN",
+      "SPACE",
+      "BUILDING"
+    ],
+    "resourceType": "TOOL",
+    "action": {
+      "spend": {
+        "resourcesHere": 1
+      },
+      "underworld": {
+        "excavate": 1
+      }
+    },
+    "cardNumber": "U044"
+  },
+  {
+    "id": "MINING_MARKET_INSIDER",
+    "name": "Mining Market Insider",
+    "class": "MiningMarketInsider",
+    "module": "underworld",
+    "type": "active",
+    "cost": 5,
+    "tags": [
+      "EARTH"
+    ],
+    "resourceType": "DATA",
+    "action": {
+      "spend": {
+        "resourcesHere": 4
+      },
+      "drawCard": 1
+    },
+    "cardNumber": "U046"
+  },
+  {
+    "id": "SPACE_WARGAMES",
+    "name": "Space Wargames",
+    "class": "SpaceWargames",
+    "module": "underworld",
+    "type": "active",
+    "cost": 25,
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "victoryPoints": {
+      "tag": "JOVIAN"
+    },
+    "resourceType": "FIGHTER",
+    "behavior": {
+      "addResources": 4
+    },
+    "action": {
+      "or": {
+        "behaviors": [
+          {
+            "spend": {
+              "titanium": 1
+            },
+            "addResources": 2,
+            "title": "Spend 1 titanium to add 2 fighter resources to this card."
+          },
+          {
+            "spend": {
+              "resourcesHere": 6
+            },
+            "underworld": {
+              "markThisGeneration": {}
+            },
+            "title": "Spend 6 fighter resources on this card to take first player next generation."
+          }
+        ],
+        "autoSelect": true
+      }
+    },
+    "cardNumber": "U048",
+    "description": "Put 4 fighters on this card."
+  },
+  {
+    "id": "PRIVATE_MILITARY_CONTRACTOR",
+    "name": "Private Military Contractor",
+    "class": "PrivateMilitaryContractor",
+    "module": "underworld",
+    "type": "active",
+    "cost": 14,
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "resourceType": "FIGHTER",
+    "behavior": {
+      "addResources": 1
+    },
+    "action": {
+      "spend": {
+        "titanium": 1
+      },
+      "addResources": 1
+    },
+    "cardNumber": "U049",
+    "description": "Add 1 fighter resource to this card."
+  },
+  {
+    "id": "SPACE_PRIVATEERS",
+    "name": "Space Privateers",
+    "class": "SpacePrivateers",
+    "module": "underworld",
+    "type": "active",
+    "cost": 10,
+    "tags": [
+      "CRIME",
+      "SPACE"
+    ],
+    "resourceType": "FIGHTER",
+    "victoryPoints": -2,
+    "requirements": {
+      "corruption": 3
+    },
+    "cardNumber": "U050",
+    "description": "Requires 3 corruption."
+  },
+  {
+    "id": "PERSONAL_SPACECRUISER",
+    "name": "Personal Spacecruiser",
+    "class": "PersonalSpacecruiser",
+    "module": "underworld",
+    "type": "active",
+    "cost": 12,
+    "tags": [
+      "CRIME",
+      "SPACE"
+    ],
+    "action": {
+      "spend": {
+        "energy": 1
+      },
+      "stock": {
+        "megacredits": {
+          "underworld": {
+            "corruption": {}
+          },
+          "each": 2
+        }
+      }
+    },
+    "behavior": {
+      "underworld": {
+        "corruption": 1
+      },
+      "addResourcesToAnyCard": {
+        "count": 1,
+        "type": "FIGHTER"
+      }
+    },
+    "cardNumber": "U051",
+    "description": "Gain 1 corruption. Put 1 fighter on ANY card."
+  },
+  {
+    "id": "EARTHQUAKE_MACHINE",
+    "name": "Earthquake Machine",
+    "class": "EarthquakeMachine",
+    "module": "underworld",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 10,
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "behavior": {
+      "decreaseAnyProduction": {
+        "type": "PLANTS",
+        "count": 1
+      }
+    },
+    "action": {
+      "spend": {
+        "energy": 1
+      },
+      "underworld": {
+        "excavate": 1
+      }
+    },
+    "cardNumber": "U055"
+  },
+  {
+    "id": "MICRO_GEODESICS",
+    "name": "Micro Geodesics",
+    "class": "MicroGeodesics",
+    "module": "underworld",
+    "type": "active",
+    "tags": [
+      "MICROBE",
+      "PLANT"
+    ],
+    "resourceType": "MICROBE",
+    "cost": 8,
+    "behavior": {
+      "underworld": {
+        "excavate": {
+          "count": 1
+        }
+      },
+      "addResources": 1
+    },
+    "cardNumber": "U056",
+    "description": "Excavate an underground resource. Put 1 microbe on this card."
+  },
+  {
+    "id": "CHEMICAL_FACTORY",
+    "name": "Chemical Factory",
+    "class": "ChemicalFactory",
+    "module": "underworld",
+    "type": "active",
+    "cost": 18,
+    "tags": [
+      "CRIME",
+      "BUILDING"
+    ],
+    "action": {
+      "spend": {
+        "plants": 1
+      },
+      "underworld": {
+        "excavate": 1
+      }
+    },
+    "behavior": {
+      "underworld": {
+        "corruption": 2
+      }
+    },
+    "cardNumber": "U060",
+    "description": "Gain 2 corruption."
+  },
+  {
+    "id": "CORPORATE_THEFT",
+    "name": "Corporate Theft",
+    "class": "CorporateTheft",
+    "module": "underworld",
+    "type": "active",
+    "tags": [
+      "CRIME"
+    ],
+    "cost": 10,
+    "requirements": {
+      "corruption": 2
+    },
+    "victoryPoints": -1,
+    "cardNumber": "U061",
+    "description": "Requires 2 corruption."
+  },
+  {
+    "id": "MONOPOLY",
+    "name": "Monopoly",
+    "class": "Monopoly",
+    "module": "underworld",
+    "type": "active",
+    "tags": [
+      "CRIME"
+    ],
+    "cost": 8,
+    "requirements": {
+      "corruption": 2
+    },
+    "victoryPoints": -2,
+    "cardNumber": "U065",
+    "description": "Requires 2 corruption. Choose a standard resource type. Steal up to 2 units of that resource from EACH OTHER player."
+  },
+  {
+    "id": "UNDERGROUND_SHELTERS",
+    "name": "Underground Shelters",
+    "class": "UndergroundShelters",
+    "module": "underworld",
+    "type": "active",
+    "cost": 14,
+    "tags": [
+      "BUILDING"
+    ],
+    "victoryPoints": "special",
+    "behavior": {
+      "underworld": {
+        "excavate": 1
+      }
+    },
+    "cardNumber": "U072",
+    "description": "Excavate an underground resource."
+  },
+  {
+    "id": "BATTERY_FACTORY",
+    "name": "Battery Factory",
+    "class": "BatteryFactory",
+    "module": "underworld",
+    "type": "active",
+    "cost": 8,
+    "tags": [
+      "POWER",
+      "BUILDING"
+    ],
+    "action": {
+      "spend": {
+        "energy": 1
+      },
+      "stock": {
+        "megacredits": {
+          "tag": "POWER"
+        }
+      }
+    },
+    "cardNumber": "U075"
+  },
+  {
+    "id": "VOLTAIC_METALLURGY",
+    "name": "Voltaic Metallurgy",
+    "class": "VoltaicMetallurgy",
+    "module": "underworld",
+    "type": "active",
+    "cost": 8,
+    "tags": [
+      "SCIENCE",
+      "POWER"
+    ],
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 1
+    },
+    "cardNumber": "U076",
+    "description": "Requires 1 science tag."
+  },
+  {
+    "id": "MARTIAN_EXPRESS",
+    "name": "Martian Express",
+    "class": "MartianExpress",
+    "module": "underworld",
+    "type": "active",
+    "cost": 5,
+    "victoryPoints": 1,
+    "requirements": {
+      "cities": 1,
+      "all": true
+    },
+    "resourceType": "WARE",
+    "cardNumber": "U078",
+    "description": "Requires 1 city in play."
+  },
+  {
+    "id": "EXPEDITION_VEHICLES",
+    "name": "Expedition Vehicles",
+    "class": "ExpeditionVehicles",
+    "module": "underworld",
+    "type": "active",
+    "cost": 10,
+    "tags": [
+      "SCIENCE"
+    ],
+    "victoryPoints": 1,
+    "cardNumber": "U079"
+  },
+  {
+    "id": "RESEARCH_DEVELOPMENT_HUB",
+    "name": "Research Development Hub",
+    "class": "ResearchDevelopmentHub",
+    "module": "underworld",
+    "type": "active",
+    "cost": 14,
+    "tags": [
+      "SCIENCE",
+      "BUILDING"
+    ],
+    "resourceType": "DATA",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 3
+    },
+    "cardNumber": "U084",
+    "description": "1 VP for every 3 data resources on this card."
+  },
+  {
+    "id": "INVESTIGATIVE_JOURNALISM",
+    "name": "Investigative Journalism",
+    "class": "InvestigativeJournalism",
+    "module": "underworld",
+    "type": "active",
+    "cost": 3,
+    "tags": [
+      "EARTH"
+    ],
+    "resourceType": "JOURNALISM",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "behavior": {
+      "production": {
+        "megacredits": -1
+      }
+    },
+    "cardNumber": "U087",
+    "description": "Decrease your M€ production 1 step. 1 VP per journalism resource on this card."
+  },
+  {
+    "id": "WHALES",
+    "name": "Whales",
+    "class": "Whales",
+    "module": "underworld",
+    "type": "active",
+    "cost": 10,
+    "tags": [
+      "ANIMAL"
+    ],
+    "resourceType": "ANIMAL",
+    "victoryPoints": {
+      "resourcesHere": 1
+    },
+    "requirements": {
+      "oceans": 6
+    },
+    "cardNumber": "U088",
+    "description": "Requires 6 oceans. 1 VP for each animal on this card."
+  },
+  {
+    "id": "THIOLAVA_VENTS",
+    "name": "Thiolava Vents",
+    "class": "ThiolavaVents",
+    "module": "underworld",
+    "type": "active",
+    "cost": 13,
+    "tags": [
+      "MICROBE"
+    ],
+    "resourceType": "MICROBE",
+    "requirements": {
+      "oceans": 1
+    },
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 3
+    },
+    "behavior": {
+      "production": {
+        "heat": 2
+      },
+      "addResources": 2
+    },
+    "cardNumber": "U090",
+    "description": "Requires an ocean. Increase your heat production 2 steps. 1 VP per 3 microbes on this card."
+  },
+  {
+    "id": "DETECTIVE_TV_SERIES",
+    "name": "Detective Tv Series",
+    "class": "DetectiveTVSeries",
+    "module": "underworld",
+    "type": "active",
+    "cost": 5,
+    "tags": [
+      "EARTH"
+    ],
+    "cardNumber": "U091"
+  },
+  {
+    "id": "EXPLOITATION_OF_VENUS",
+    "name": "Exploitation Of Venus",
+    "class": "ExploitationOfVenus",
+    "module": "underworld",
+    "type": "active",
+    "cost": 6,
+    "tags": [
+      "VENUS",
+      "CRIME"
+    ],
+    "action": {
+      "spend": {
+        "corruption": 1
+      },
+      "global": {
+        "venus": 1
+      }
+    },
+    "cardNumber": "U099"
+  },
+  {
+    "id": "DEEP_FOUNDATIONS",
+    "name": "Deep Foundations",
+    "class": "DeepFoundations",
+    "module": "underworld",
+    "type": "active",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cost": 4,
+    "cardNumber": "U100"
+  },
+  {
+    "id": "STANDARD_TECHNOLOGY_UNDERWORLD",
+    "name": "Standard Technology Underworld",
+    "class": "StandardTechnology",
+    "module": "underworld",
+    "type": "active",
+    "cost": 6,
+    "tags": [
+      "SCIENCE"
+    ],
+    "cardNumber": "UX00"
+  },
+  {
+    "id": "AERIAL_MAPPERS",
+    "name": "Aerial Mappers",
+    "class": "AerialMappers",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 11,
+    "resourceType": "FLOATER",
+    "victoryPoints": 1,
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "spend": {
+              "resourcesHere": 1
+            },
+            "drawCard": 1,
+            "title": "Remove 1 floater on this card and draw a card"
+          },
+          {
+            "addResourcesToAnyCard": {
+              "type": "FLOATER",
+              "count": 1
+            },
+            "title": "Add 1 floater to ANY card"
+          }
+        ]
+      }
+    },
+    "cardNumber": "213"
+  },
+  {
+    "id": "DEUTERIUM_EXPORT",
+    "name": "Deuterium Export",
+    "class": "DeuteriumExport",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "SPACE",
+      "VENUS",
+      "POWER"
+    ],
+    "cost": 11,
+    "resourceType": "FLOATER",
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Remove 1 floater to raise energy production 1 step",
+            "spend": {
+              "resourcesHere": 1
+            },
+            "production": {
+              "energy": 1
+            }
+          },
+          {
+            "title": "Add 1 floater to this card",
+            "addResources": 1
+          }
+        ]
+      }
+    },
+    "cardNumber": "221"
+  },
+  {
+    "id": "DIRIGIBLES",
+    "name": "Dirigibles",
+    "class": "Dirigibles",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 11,
+    "resourceType": "FLOATER",
+    "action": {
+      "addResourcesToAnyCard": {
+        "count": 1,
+        "type": "FLOATER",
+        "mustHaveCard": true
+      }
+    },
+    "cardNumber": "222"
+  },
+  {
+    "id": "EXTRACTOR_BALLOONS",
+    "name": "Extractor Balloons",
+    "class": "ExtractorBalloons",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 21,
+    "resourceType": "FLOATER",
+    "behavior": {
+      "addResources": 3
+    },
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Remove 2 floaters here to raise Venus 1 step.",
+            "spend": {
+              "resourcesHere": 2
+            },
+            "global": {
+              "venus": 1
+            }
+          },
+          {
+            "title": "Add 1 floater to this card.",
+            "addResources": 1
+          }
+        ]
+      }
+    },
+    "cardNumber": "223"
+  },
+  {
+    "id": "EXTREMOPHILES",
+    "name": "Extremophiles",
+    "class": "Extremophiles",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS",
+      "MICROBE"
+    ],
+    "cost": 3,
+    "resourceType": "MICROBE",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 3
+    },
+    "action": {
+      "addResourcesToAnyCard": {
+        "type": "MICROBE",
+        "count": 1
+      }
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "cardNumber": "224",
+    "description": "Requires 2 science tags."
+  },
+  {
+    "id": "FLOATING_HABS",
+    "name": "Floating Habs",
+    "class": "FloatingHabs",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 5,
+    "resourceType": "FLOATER",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "action": {
+      "spend": {
+        "megacredits": 2
+      },
+      "addResourcesToAnyCard": {
+        "type": "FLOATER",
+        "count": 1,
+        "autoSelect": true
+      }
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "cardNumber": "225",
+    "description": "Requires 2 science tags."
+  },
+  {
+    "id": "FORCED_PRECIPITATION",
+    "name": "Forced Precipitation",
+    "class": "ForcedPrecipitation",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 8,
+    "resourceType": "FLOATER",
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Remove 2 floaters here to raise Venus 1 step",
+            "spend": {
+              "resourcesHere": 2
+            },
+            "global": {
+              "venus": 1
+            }
+          },
+          {
+            "title": "Pay 2 M€ to add 1 floater to this card",
+            "spend": {
+              "megacredits": 2
+            },
+            "addResources": 1
+          }
+        ]
+      }
+    },
+    "cardNumber": "226"
+  },
+  {
+    "id": "JET_STREAM_MICROSCRAPPERS",
+    "name": "Jet Stream Microscrappers",
+    "class": "JetStreamMicroscrappers",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 12,
+    "resourceType": "FLOATER",
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "spend": {
+              "resourcesHere": 2
+            },
+            "global": {
+              "venus": 1
+            },
+            "title": "Remove 2 floaters to raise Venus 1 step"
+          },
+          {
+            "spend": {
+              "titanium": 1
+            },
+            "addResources": 2,
+            "title": "Spend 1 titanium to add 2 floaters to this card"
+          }
+        ]
+      }
+    },
+    "cardNumber": "234"
+  },
+  {
+    "id": "LOCAL_SHADING",
+    "name": "Local Shading",
+    "class": "LocalShading",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 4,
+    "resourceType": "FLOATER",
+    "action": {
+      "or": {
+        "behaviors": [
+          {
+            "spend": {
+              "resourcesHere": 1
+            },
+            "production": {
+              "megacredits": 1
+            },
+            "title": "Remove 1 floater to increase M€ production 1 step"
+          },
+          {
+            "addResources": 1,
+            "title": "Add 1 floater to this card"
+          }
+        ],
+        "autoSelect": true
+      }
+    },
+    "cardNumber": "235"
+  },
+  {
+    "id": "MAXWELL_BASE",
+    "name": "Maxwell Base",
+    "class": "MaxwellBase",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "CITY",
+      "VENUS"
+    ],
+    "cost": 18,
+    "action": {
+      "addResourcesToAnyCard": {
+        "tag": "VENUS",
+        "count": 1,
+        "autoSelect": true,
+        "mustHaveCard": true
+      }
+    },
+    "requirements": {
+      "venus": 12
+    },
+    "victoryPoints": 3,
+    "behavior": {
+      "production": {
+        "energy": -1
+      },
+      "city": {
+        "space": "MAXWELL_BASE"
+      }
+    },
+    "cardNumber": "238",
+    "description": "Requires Venus 12%. Decrease your energy production 1 step. Place a city tile ON THE RESERVED AREA."
+  },
+  {
+    "id": "ROTATOR_IMPACTS",
+    "name": "Rotator Impacts",
+    "class": "RotatorImpacts",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "SPACE"
+    ],
+    "cost": 6,
+    "resourceType": "ASTEROID",
+    "requirements": {
+      "venus": 14,
+      "max": true
+    },
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Remove 1 asteroid to raise Venus 1 step",
+            "spend": {
+              "resourcesHere": 1
+            },
+            "global": {
+              "venus": 1
+            }
+          },
+          {
+            "title": "Pay 6 M€ to add 1 asteroid to this card",
+            "spend": {
+              "megacredits": 6,
+              "canUseTitanium": true
+            },
+            "addResources": 1
+          }
+        ]
+      }
+    },
+    "cardNumber": "243",
+    "description": "Venus must be 14% or lower"
+  },
+  {
+    "id": "STRATOPOLIS",
+    "name": "Stratopolis",
+    "class": "Stratopolis",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "CITY",
+      "VENUS"
+    ],
+    "cost": 22,
+    "resourceType": "FLOATER",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 3
+    },
+    "requirements": {
+      "tag": "SCIENCE",
+      "count": 2
+    },
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      },
+      "city": {
+        "space": "STRATOPOLIS"
+      }
+    },
+    "action": {
+      "addResourcesToAnyCard": {
+        "count": 2,
+        "tag": "VENUS",
+        "type": "FLOATER",
+        "autoSelect": true
+      }
+    },
+    "cardNumber": "248",
+    "description": "Requires 2 science tags. Increase your M€ production 2 steps. Place a city tile ON THE RESERVED AREA"
+  },
+  {
+    "id": "STRATOSPHERIC_BIRDS",
+    "name": "Stratospheric Birds",
+    "class": "StratosphericBirds",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS",
+      "ANIMAL"
+    ],
+    "cost": 12,
+    "resourceType": "ANIMAL",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "requirements": {
+      "venus": 12
+    },
+    "action": {
+      "addResources": 1
+    },
+    "cardNumber": "249",
+    "description": "Requires Venus 12% and that you spend 1 floater from any card."
+  },
+  {
+    "id": "SULPHUR_EATING_BACTERIA",
+    "name": "Sulphur Eating Bacteria",
+    "class": "SulphurEatingBacteria",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS",
+      "MICROBE"
+    ],
+    "cost": 6,
+    "resourceType": "MICROBE",
+    "requirements": {
+      "venus": 6
+    },
+    "cardNumber": "251",
+    "description": "Requires Venus 6%"
+  },
+  {
+    "id": "THERMOPHILES",
+    "name": "Thermophiles",
+    "class": "Thermophiles",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS",
+      "MICROBE"
+    ],
+    "cost": 9,
+    "resourceType": "MICROBE",
+    "action": {
+      "or": {
+        "autoSelect": true,
+        "behaviors": [
+          {
+            "title": "Spend 2 microbes here to raise Venus 1 step.",
+            "spend": {
+              "resourcesHere": 2
+            },
+            "global": {
+              "venus": 1
+            }
+          },
+          {
+            "title": "Select a Venus card to add 1 microbe",
+            "addResourcesToAnyCard": {
+              "count": 1,
+              "tag": "VENUS",
+              "type": "MICROBE",
+              "autoSelect": true
+            }
+          }
+        ]
+      }
+    },
+    "requirements": {
+      "venus": 6
+    },
+    "cardNumber": "253",
+    "description": "Requires Venus 6%"
+  },
+  {
+    "id": "VENUS_MAGNETIZER",
+    "name": "Venus Magnetizer",
+    "class": "VenusMagnetizer",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS"
+    ],
+    "cost": 7,
+    "action": {
+      "production": {
+        "energy": -1
+      },
+      "global": {
+        "venus": 1
+      }
+    },
+    "requirements": {
+      "venus": 10
+    },
+    "cardNumber": "256",
+    "description": "Requires Venus 10%."
+  },
+  {
+    "id": "VENUS_WAYSTATION",
+    "name": "Venus Waystation",
+    "class": "VenusWaystation",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS",
+      "SPACE"
+    ],
+    "cost": 9,
+    "victoryPoints": 1,
+    "cardDiscount": {
+      "tag": "VENUS",
+      "amount": 2
+    },
+    "cardNumber": "258"
+  },
+  {
+    "id": "VENUSIAN_ANIMALS",
+    "name": "Venusian Animals",
+    "class": "VenusianAnimals",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS",
+      "ANIMAL",
+      "SCIENCE"
+    ],
+    "cost": 15,
+    "resourceType": "ANIMAL",
+    "victoryPoints": {
+      "resourcesHere": {}
+    },
+    "requirements": {
+      "venus": 18
+    },
+    "cardNumber": "259",
+    "description": "Requires Venus 18%"
+  },
+  {
+    "id": "VENUSIAN_INSECTS",
+    "name": "Venusian Insects",
+    "class": "VenusianInsects",
+    "module": "venusNext",
+    "type": "active",
+    "tags": [
+      "VENUS",
+      "MICROBE"
+    ],
+    "cost": 5,
+    "resourceType": "MICROBE",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "action": {
+      "addResources": 1
+    },
+    "requirements": {
+      "venus": 12
+    },
+    "cardNumber": "260",
+    "description": "Requires Venus 12%."
+  }
+]

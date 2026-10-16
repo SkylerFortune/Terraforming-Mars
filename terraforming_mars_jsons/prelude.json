@@ -1,0 +1,1991 @@
+[
+  {
+    "id": "CO_LEADERSHIP",
+    "name": "Co Leadership",
+    "class": "CoLeadership",
+    "module": "ceos",
+    "type": "prelude",
+    "cardNumber": "xxx"
+  },
+  {
+    "id": "AEROSPACE_MISSION",
+    "name": "Aerospace Mission",
+    "class": "AerospaceMission",
+    "module": "community",
+    "type": "prelude",
+    "tags": [
+      "SPACE"
+    ],
+    "startingMegacredits": -14,
+    "cardNumber": "Y01",
+    "description": "Place 2 colonies. Pay 14 M€."
+  },
+  {
+    "id": "BY_ELECTION",
+    "name": "By Election",
+    "class": "ByElection",
+    "module": "community",
+    "type": "prelude",
+    "tags": [
+      "WILD"
+    ],
+    "cardNumber": "Y02"
+  },
+  {
+    "id": "POLITICAL_UPRISING",
+    "name": "Political Uprising",
+    "class": "PoliticalUprising",
+    "module": "community",
+    "type": "prelude",
+    "behavior": {
+      "turmoil": {
+        "sendDelegates": {
+          "count": 4,
+          "manyParties": true
+        }
+      }
+    },
+    "cardNumber": "Y03",
+    "description": "Place 4 delegates in any parties. Draw a Turmoil card."
+  },
+  {
+    "id": "RESEARCH_GRANT",
+    "name": "Research Grant",
+    "class": "ResearchGrant",
+    "module": "community",
+    "type": "prelude",
+    "tags": [
+      "SCIENCE",
+      "SCIENCE"
+    ],
+    "behavior": {
+      "stock": {
+        "megacredits": 8
+      }
+    },
+    "cardNumber": "Y04",
+    "description": "Gain 8 M€."
+  },
+  {
+    "id": "TRADE_ADVANCE",
+    "name": "Trade Advance",
+    "class": "TradeAdvance",
+    "module": "community",
+    "type": "prelude",
+    "tags": [
+      "EARTH"
+    ],
+    "cardNumber": "Y05",
+    "description": "Gain 2 M€ [SOLO: Gain 10 M€]. Immediately trade with all active colonies. You may increase the Colony Tile track 1 step before each of these trades."
+  },
+  {
+    "id": "VALUABLE_GASES",
+    "name": "Valuable Gases",
+    "class": "ValuableGases",
+    "module": "community",
+    "type": "prelude",
+    "tags": [
+      "JOVIAN",
+      "VENUS"
+    ],
+    "behavior": {
+      "stock": {
+        "megacredits": 6
+      }
+    },
+    "cardNumber": "Y06",
+    "description": "Gain 6 M€. Play a Venus card from your hand and add 4 floaters to it."
+  },
+  {
+    "id": "EXECUTIVE_ORDER",
+    "name": "Executive Order",
+    "class": "ExecutiveOrder",
+    "module": "community",
+    "type": "prelude",
+    "cardNumber": "Y31",
+    "description": "Draw 4 global events. Play 1 as the CURRENT GLOBAL EVENT and discard the rest. Place 2 delegates in any party. Gain 10 M€."
+  },
+  {
+    "id": "DELTA_PROJECT",
+    "name": "Delta Project",
+    "class": "DeltaProject",
+    "module": "delta",
+    "type": "prelude",
+    "cardNumber": "DP01"
+  },
+  {
+    "id": "FIRST_LUNAR_SETTLEMENT",
+    "name": "First Lunar Settlement",
+    "class": "FirstLunarSettlement",
+    "module": "moon",
+    "type": "prelude",
+    "tags": [
+      "CITY",
+      "MOON"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      },
+      "moon": {
+        "habitatTile": {}
+      }
+    },
+    "description": "Place a habitat tile on The Moon and raise the habitat rate 1 step. Increase your M€ production 1 step.",
+    "cardNumber": "MP1"
+  },
+  {
+    "id": "CORE_MINE",
+    "name": "Core Mine",
+    "class": "CoreMine",
+    "module": "moon",
+    "type": "prelude",
+    "tags": [
+      "MOON"
+    ],
+    "behavior": {
+      "production": {
+        "titanium": 1
+      },
+      "moon": {
+        "mineTile": {}
+      }
+    },
+    "description": "Place a mine tile on The Moon and raise the mining rate 1 step. Increase your titanium production 1 step.",
+    "cardNumber": "MP2"
+  },
+  {
+    "id": "BASIC_INFRASTRUCTURE",
+    "name": "Basic Infrastructure",
+    "class": "BasicInfrastructure",
+    "module": "moon",
+    "type": "prelude",
+    "tags": [
+      "MOON"
+    ],
+    "behavior": {
+      "moon": {
+        "roadTile": {}
+      },
+      "colonies": {
+        "addTradeFleet": 1
+      }
+    },
+    "description": "Place a road tile on The Moon and raise the logistic rate 1 step. Gain 1 trade fleet.",
+    "cardNumber": "MP3"
+  },
+  {
+    "id": "LUNAR_PlANNING_OFFICE",
+    "name": "Lunar Planning Office",
+    "class": "LunarPlanningOffice",
+    "module": "moon",
+    "type": "prelude",
+    "tags": [
+      "MOON",
+      "BUILDING"
+    ],
+    "behavior": {
+      "stock": {
+        "steel": 6
+      },
+      "drawCard": {
+        "tag": "MOON",
+        "count": 2
+      }
+    },
+    "description": "Draw 2 cards with a Moon tag. Gain 6 steel.",
+    "cardNumber": "MP4"
+  },
+  {
+    "id": "MINING_COMPLEX",
+    "name": "Mining Complex",
+    "class": "MiningComplex",
+    "module": "moon",
+    "type": "prelude",
+    "tags": [
+      "MOON"
+    ],
+    "startingMegacredits": -7,
+    "tr": {
+      "moonMining": 1,
+      "moonLogistic": 1
+    },
+    "tilesBuilt": [
+      "MOON_MINE",
+      "MOON_ROAD"
+    ],
+    "description": "Place a mine tile on The Moon and raise the mining rate 1 step. Place a road tile adjacent to placed mine tile and raise the logistic rate 1 step. Pay 7 M€.",
+    "cardNumber": "MP5"
+  },
+  {
+    "id": "VENUS_FIRST",
+    "name": "Venus First",
+    "class": "VenusFirst",
+    "module": "pathfinders",
+    "type": "prelude",
+    "tags": [
+      "VENUS"
+    ],
+    "behavior": {
+      "drawCard": {
+        "count": 2,
+        "tag": "VENUS"
+      },
+      "global": {
+        "venus": 2
+      }
+    },
+    "cardNumber": "PfP01",
+    "description": "Raise Venus 2 steps. Draw 2 Venus cards."
+  },
+  {
+    "id": "CO2_REDUCERS",
+    "name": "Co2 Reducers",
+    "class": "CO2Reducers",
+    "module": "pathfinders",
+    "type": "prelude",
+    "tags": [
+      "MICROBE",
+      "VENUS"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": 3
+      },
+      "drawCard": {
+        "count": 2,
+        "tag": "MICROBE"
+      }
+    },
+    "cardNumber": "PfP03",
+    "description": "Increase your M€ production 3 steps. Draw 2 cards with a microbe tag."
+  },
+  {
+    "id": "HYDROGEN_BOMBARDMENT",
+    "name": "Hydrogen Bombardment",
+    "class": "HydrogenBombardment",
+    "module": "pathfinders",
+    "type": "prelude",
+    "tags": [
+      "SPACE",
+      "VENUS"
+    ],
+    "behavior": {
+      "production": {
+        "titanium": 1
+      },
+      "global": {
+        "venus": 1
+      },
+      "stock": {
+        "megacredits": 6
+      }
+    },
+    "cardNumber": "PfP04",
+    "description": "Increase the Venus scale 1 step. Increase your titanium production 1 step. Gain 6 M€."
+  },
+  {
+    "id": "CREW_TRAINING",
+    "name": "Crew Training",
+    "class": "CrewTraining",
+    "module": "pathfinders",
+    "type": "prelude",
+    "behavior": {
+      "tr": 2
+    },
+    "cardNumber": "PfP06",
+    "description": "Choose a planet tag. This card counts as having 2 of that tag. Raise the corresponding planetary track 2 steps. Gain 2 TR."
+  },
+  {
+    "id": "SURVEY_MISSION",
+    "name": "Survey Mission",
+    "class": "SurveyMission",
+    "module": "pathfinders",
+    "type": "prelude",
+    "tags": [
+      "MARS"
+    ],
+    "behavior": {
+      "stock": {
+        "steel": 5
+      }
+    },
+    "cardNumber": "PfP07",
+    "description": "Gain 5 steel. Land-claim three non-reserved spaces in a triangle shape. Gain all placement bonuses. Only you may place tiles there, and will gain placement bonuses again."
+  },
+  {
+    "id": "DESIGN_COMPANY",
+    "name": "Design Company",
+    "class": "DesignCompany",
+    "module": "pathfinders",
+    "type": "prelude",
+    "tags": [
+      "MARS"
+    ],
+    "behavior": {
+      "production": {
+        "steel": 1
+      },
+      "drawCard": {
+        "count": 3,
+        "tag": "BUILDING"
+      }
+    },
+    "cardNumber": "PfP08",
+    "description": "Increase your steel production 1 step. Draw 3 cards with a building tag."
+  },
+  {
+    "id": "PERSONAL_AGENDA",
+    "name": "Personal Agenda",
+    "class": "PersonalAgenda",
+    "module": "pathfinders",
+    "type": "prelude",
+    "behavior": {
+      "production": {
+        "megacredits": 3
+      }
+    },
+    "cardNumber": "PfP10",
+    "description": "Increase your M€ production 3 steps. Draw 3 event cards that do not have a space tag."
+  },
+  {
+    "id": "VITAL_COLONY",
+    "name": "Vital Colony",
+    "class": "VitalColony",
+    "module": "pathfinders",
+    "type": "prelude",
+    "tags": [
+      "MARS",
+      "SPACE"
+    ],
+    "cardNumber": "PfP11",
+    "description": "Place a colony. Receive the placement bonus twice."
+  },
+  {
+    "id": "DEEP_SPACE_OPERATIONS",
+    "name": "Deep Space Operations",
+    "class": "DeepSpaceOperations",
+    "module": "pathfinders",
+    "type": "prelude",
+    "tags": [
+      "SPACE"
+    ],
+    "behavior": {
+      "stock": {
+        "titanium": 4
+      },
+      "drawCard": {
+        "count": 2,
+        "tag": "SPACE",
+        "type": "EVENT"
+      }
+    },
+    "cardNumber": "PfP12",
+    "description": "Gain 4 titanium. Draw 2 event cards with a space tag."
+  },
+  {
+    "id": "EXPERIENCED_MARTIANS",
+    "name": "Experienced Martians",
+    "class": "ExperiencedMartians",
+    "module": "pathfinders",
+    "type": "prelude",
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      },
+      "drawCard": {
+        "count": 2,
+        "tag": "MARS"
+      },
+      "turmoil": {
+        "sendDelegates": {
+          "count": 1
+        }
+      }
+    },
+    "cardNumber": "PfP13",
+    "description": "Place 1 delegate in any party. Draw 2 cards with a Mars tag. Increase your M€ production 2 steps."
+  },
+  {
+    "id": "THE_NEW_SPACE_RACE",
+    "name": "The New Space Race",
+    "class": "TheNewSpaceRace",
+    "module": "pathfinders",
+    "type": "prelude",
+    "tags": [
+      "SCIENCE",
+      "EARTH"
+    ],
+    "behavior": {
+      "stock": {
+        "megacredits": 12
+      }
+    },
+    "cardNumber": "PfP14",
+    "description": "REVEALED BEFORE ANY OTHER PRELUDE. You become starting player for the game. Choose and set a ruling policy for the first generation. Gain 12 M€."
+  },
+  {
+    "id": "ALLIED_BANK",
+    "name": "Allied Bank",
+    "class": "AlliedBanks",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "EARTH"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": 4
+      },
+      "stock": {
+        "megacredits": 3
+      }
+    },
+    "cardNumber": "P01",
+    "description": "Increase your M€ production 4 steps. Gain 3 M€."
+  },
+  {
+    "id": "AQUIFER_TURBINES",
+    "name": "Aquifer Turbines",
+    "class": "AquiferTurbines",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "POWER"
+    ],
+    "behavior": {
+      "production": {
+        "energy": 2
+      }
+    },
+    "startingMegacredits": -3,
+    "cardNumber": "P02",
+    "description": "Place an ocean tile. Increase your energy production 2 steps. Pay 3 M€."
+  },
+  {
+    "id": "BIOFUELS",
+    "name": "Biofuels",
+    "class": "Biofuels",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "MICROBE"
+    ],
+    "behavior": {
+      "production": {
+        "energy": 1,
+        "plants": 1
+      },
+      "stock": {
+        "plants": 2
+      }
+    },
+    "cardNumber": "P03",
+    "description": "Increase your energy and plant production 1 step. Gain 2 plants."
+  },
+  {
+    "id": "BIOLAB",
+    "name": "Biolab",
+    "class": "Biolab",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "SCIENCE"
+    ],
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "drawCard": 3
+    },
+    "cardNumber": "P04",
+    "description": "Increase your plant production 1 step. Draw 3 cards."
+  },
+  {
+    "id": "BIOSPHERE_SUPPORT",
+    "name": "Biosphere Support",
+    "class": "BiosphereSupport",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "PLANT"
+    ],
+    "behavior": {
+      "production": {
+        "plants": 2,
+        "megacredits": -1
+      }
+    },
+    "cardNumber": "P05",
+    "description": "Increase your plant production 2 steps. Decrease your M€ production 1 step."
+  },
+  {
+    "id": "BUSINESS_EMPIRE",
+    "name": "Business Empire",
+    "class": "BusinessEmpire",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "EARTH"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": 6
+      }
+    },
+    "startingMegacredits": -6,
+    "cardNumber": "P06",
+    "description": "Increase your M€ production 6 steps. Pay 6 M€."
+  },
+  {
+    "id": "DOME_FARMING",
+    "name": "Dome Farming",
+    "class": "DomeFarming",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "PLANT",
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": 2,
+        "plants": 1
+      }
+    },
+    "cardNumber": "P07",
+    "description": "Increase your M€ production 2 steps and plant production 1 step."
+  },
+  {
+    "id": "DONATION",
+    "name": "Donation",
+    "class": "Donation",
+    "module": "prelude",
+    "type": "prelude",
+    "behavior": {
+      "stock": {
+        "megacredits": 21
+      }
+    },
+    "cardNumber": "P08",
+    "description": "Gain 21 M€."
+  },
+  {
+    "id": "EARLY_SETTLEMENT",
+    "name": "Early Settlement",
+    "class": "EarlySettlement",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "BUILDING",
+      "CITY"
+    ],
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "city": {}
+    },
+    "cardNumber": "P09",
+    "description": "Increase your plant production 1 step. Place a city tile."
+  },
+  {
+    "id": "ECOLOGY_EXPERTS",
+    "name": "Ecology Experts",
+    "class": "EcologyExperts",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "PLANT",
+      "MICROBE"
+    ],
+    "behavior": {
+      "production": {
+        "plants": 1
+      }
+    },
+    "cardNumber": "P10",
+    "description": "Increase your plant production 1 step. PLAY A CARD FROM HAND, IGNORING GLOBAL REQUIREMENTS."
+  },
+  {
+    "id": "ECCENTRIC_SPONSOR",
+    "name": "Eccentric Sponsor",
+    "class": "EccentricSponsor",
+    "module": "prelude",
+    "type": "prelude",
+    "cardNumber": "P11"
+  },
+  {
+    "id": "EXPERIMENTAL_FOREST",
+    "name": "Experimental Forest",
+    "class": "ExperimentalForest",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "PLANT"
+    ],
+    "behavior": {
+      "drawCard": {
+        "count": 2,
+        "tag": "PLANT"
+      },
+      "greenery": {}
+    },
+    "cardNumber": "P12",
+    "description": "Place 1 greenery tile and raise oxygen 1 step. Reveal cards until you reveal two cards with plant tags on them. Take them into your hand and discard the rest."
+  },
+  {
+    "id": "GALILEAN_MINING",
+    "name": "Galilean Mining",
+    "class": "GalileanMining",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "JOVIAN"
+    ],
+    "behavior": {
+      "production": {
+        "titanium": 2
+      }
+    },
+    "startingMegacredits": -5,
+    "cardNumber": "P13",
+    "description": "Increase your titanium production 2 steps. Pay 5 M€."
+  },
+  {
+    "id": "GREAT_AQUIFER",
+    "name": "Great Aquifer",
+    "class": "GreatAquifer",
+    "module": "prelude",
+    "type": "prelude",
+    "behavior": {
+      "ocean": {
+        "count": 2
+      }
+    },
+    "cardNumber": "P14",
+    "description": "Place 2 ocean tiles."
+  },
+  {
+    "id": "HUGE_ASTEROID",
+    "name": "Huge Asteroid",
+    "class": "HugeAsteroid",
+    "module": "prelude",
+    "type": "prelude",
+    "startingMegacredits": -5,
+    "behavior": {
+      "global": {
+        "temperature": 3
+      }
+    },
+    "cardNumber": "P15",
+    "description": "Increase temperature 3 steps. Pay 5 M€."
+  },
+  {
+    "id": "IO_RESEARCH_OUTPOST",
+    "name": "Io Research Outpost",
+    "class": "IoResearchOutpost",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "JOVIAN",
+      "SCIENCE"
+    ],
+    "behavior": {
+      "production": {
+        "titanium": 1
+      },
+      "drawCard": 1
+    },
+    "cardNumber": "P16",
+    "description": "Increase your titanium production 1 step. Draw a card."
+  },
+  {
+    "id": "LOAN",
+    "name": "Loan",
+    "class": "Loan",
+    "module": "prelude",
+    "type": "prelude",
+    "behavior": {
+      "production": {
+        "megacredits": -2
+      },
+      "stock": {
+        "megacredits": 30
+      }
+    },
+    "cardNumber": "P17",
+    "description": "Gain 30 M€. Decrease your M€ production 2 steps."
+  },
+  {
+    "id": "MARTIAN_INDUSTRIES",
+    "name": "Martian Industries",
+    "class": "MartianIndustries",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "energy": 1,
+        "steel": 1
+      },
+      "stock": {
+        "megacredits": 6
+      }
+    },
+    "cardNumber": "P18",
+    "description": "Increase your energy and steel production 1 step. Gain 6 M€."
+  },
+  {
+    "id": "METAL_RICH_ASTEROID",
+    "name": "Metal Rich Asteroid",
+    "class": "MetalRichAsteroid",
+    "module": "prelude",
+    "type": "prelude",
+    "behavior": {
+      "stock": {
+        "titanium": 4,
+        "steel": 4
+      },
+      "global": {
+        "temperature": 1
+      }
+    },
+    "cardNumber": "P19",
+    "description": "Increase temperature 1 step. Gain 4 titanium and 4 steel."
+  },
+  {
+    "id": "METALS_COMPANY",
+    "name": "Metals Company",
+    "class": "MetalsCompany",
+    "module": "prelude",
+    "type": "prelude",
+    "behavior": {
+      "production": {
+        "megacredits": 1,
+        "steel": 1,
+        "titanium": 1
+      }
+    },
+    "cardNumber": "P20",
+    "description": "Increase your M€, steel and titanium production 1 step."
+  },
+  {
+    "id": "MINING_OPERATIONS",
+    "name": "Mining Operations",
+    "class": "MiningOperations",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "steel": 2
+      },
+      "stock": {
+        "steel": 4
+      }
+    },
+    "cardNumber": "P21",
+    "description": "Increase your steel production 2 steps. Gain 4 steel."
+  },
+  {
+    "id": "MOHOLE",
+    "name": "Mohole",
+    "class": "Mohole",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "heat": 3
+      },
+      "stock": {
+        "heat": 3
+      }
+    },
+    "cardNumber": "P22",
+    "description": "Increase your heat production 3 steps. Gain 3 heat."
+  },
+  {
+    "id": "MOHOLE_EXCAVATION",
+    "name": "Mohole Excavation",
+    "class": "MoholeExcavation",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "steel": 1,
+        "heat": 2
+      },
+      "stock": {
+        "heat": 2
+      }
+    },
+    "cardNumber": "P23",
+    "description": "Increase your steel production 1 step and heat production 2 steps. Gain 2 heat."
+  },
+  {
+    "id": "NITROGEN_SHIPMENT",
+    "name": "Nitrogen Shipment",
+    "class": "NitrogenShipment",
+    "module": "prelude",
+    "type": "prelude",
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "tr": 1,
+      "stock": {
+        "megacredits": 5
+      }
+    },
+    "cardNumber": "P24",
+    "description": "Increase your plant production 1 step. Increase your TR 1 step. Gain 5 M€."
+  },
+  {
+    "id": "ORBITAL_CONSTRUCTION_YARD",
+    "name": "Orbital Construction Yard",
+    "class": "OrbitalConstructionYard",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "SPACE"
+    ],
+    "behavior": {
+      "production": {
+        "titanium": 1
+      },
+      "stock": {
+        "titanium": 4
+      }
+    },
+    "cardNumber": "P25",
+    "description": "Increase your titanium production 1 step. Gain 4 titanium."
+  },
+  {
+    "id": "POLAR_INDUSTRIES",
+    "name": "Polar Industries",
+    "class": "PolarIndustries",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "heat": 2
+      },
+      "ocean": {}
+    },
+    "cardNumber": "P26",
+    "description": "Increase your heat production 2 steps. Place an ocean tile."
+  },
+  {
+    "id": "POWER_GENERATION",
+    "name": "Power Generation",
+    "class": "PowerGeneration",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "POWER"
+    ],
+    "behavior": {
+      "production": {
+        "energy": 3
+      }
+    },
+    "cardNumber": "P27",
+    "description": "Increase your energy production 3 steps."
+  },
+  {
+    "id": "RESEARCH_NETWORK",
+    "name": "Research Network",
+    "class": "ResearchNetwork",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "WILD"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      },
+      "drawCard": 3
+    },
+    "cardNumber": "P28",
+    "description": "Increase your M€ production 1 step. Draw 3 cards. After being played, when you perform an action, the wild tag counts as any tag of your choice."
+  },
+  {
+    "id": "SELF_SUFFICIENT_SETTLEMENT",
+    "name": "Self Sufficient Settlement",
+    "class": "SelfSufficientSettlement",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "BUILDING",
+      "CITY"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": 2
+      },
+      "city": {}
+    },
+    "cardNumber": "P29",
+    "description": "Increase your M€ production 2 steps. Place a city tile."
+  },
+  {
+    "id": "SMELTING_PLANT",
+    "name": "Smelting Plant",
+    "class": "SmeltingPlant",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "stock": {
+        "steel": 5
+      },
+      "global": {
+        "oxygen": 2
+      }
+    },
+    "cardNumber": "P30",
+    "description": "Raise oxygen 2 steps. Gain 5 steel."
+  },
+  {
+    "id": "SOCIETY_SUPPORT",
+    "name": "Society Support",
+    "class": "SocietySupport",
+    "module": "prelude",
+    "type": "prelude",
+    "behavior": {
+      "production": {
+        "plants": 1,
+        "energy": 1,
+        "heat": 1,
+        "megacredits": -1
+      }
+    },
+    "cardNumber": "P31",
+    "description": "Increase your plant, energy and heat production 1 step. Decrease M€ production 1 step."
+  },
+  {
+    "id": "SUPPLIER",
+    "name": "Supplier",
+    "class": "Supplier",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "POWER"
+    ],
+    "behavior": {
+      "production": {
+        "energy": 2
+      },
+      "stock": {
+        "steel": 4
+      }
+    },
+    "cardNumber": "P32",
+    "description": "Increase your energy production 2 steps. Gain 4 steel."
+  },
+  {
+    "id": "SUPPLY_DROP",
+    "name": "Supply Drop",
+    "class": "SupplyDrop",
+    "module": "prelude",
+    "type": "prelude",
+    "behavior": {
+      "stock": {
+        "titanium": 3,
+        "steel": 8,
+        "plants": 3
+      }
+    },
+    "cardNumber": "P33",
+    "description": "Gain 3 titanium, 8 steel and 3 plants."
+  },
+  {
+    "id": "UNMI_CONTRACTOR",
+    "name": "Unmi Contractor",
+    "class": "UNMIContractor",
+    "module": "prelude",
+    "type": "prelude",
+    "tags": [
+      "EARTH"
+    ],
+    "behavior": {
+      "drawCard": 1,
+      "tr": 3
+    },
+    "cardNumber": "P34",
+    "description": "Increase your TR 3 steps. Draw a card."
+  },
+  {
+    "id": "ACQUIRED_SPACE_AGENCY",
+    "name": "Acquired Space Agency",
+    "class": "AcquiredSpaceAgency",
+    "module": "prelude",
+    "type": "prelude",
+    "behavior": {
+      "stock": {
+        "titanium": 6
+      },
+      "drawCard": {
+        "count": 2,
+        "tag": "SPACE"
+      }
+    },
+    "cardNumber": "P35",
+    "description": "Gain 6 titanium. Reveal cards until you reveal two cards with Space Tags. Take them into your hand, discard the rest."
+  },
+  {
+    "id": "APPLIED_SCIENCE",
+    "name": "Applied Science",
+    "class": "AppliedScience",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "WILD"
+    ],
+    "resourceType": "SCIENCE",
+    "behavior": {
+      "addResources": 6
+    },
+    "action": {
+      "or": {
+        "behaviors": [
+          {
+            "spend": {
+              "resourcesHere": 1
+            },
+            "standardResource": 1,
+            "title": "Spend 1 science resource here to gain 1 standard resource"
+          },
+          {
+            "spend": {
+              "resourcesHere": 1
+            },
+            "addResourcesToAnyCard": {
+              "count": 1,
+              "min": 1,
+              "mustHaveCard": true,
+              "robotCards": true
+            },
+            "title": "Spend 1 science resource here to gain 1 resource on ANY CARD WITH A RESOURCE."
+          }
+        ],
+        "autoSelect": true
+      }
+    },
+    "cardNumber": "P43",
+    "description": "Add 6 science resources here."
+  },
+  {
+    "id": "ATMOSPHERIC_ENHANCERS",
+    "name": "Atmospheric Enhancers",
+    "class": "AtmosphericEnhancers",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "VENUS"
+    ],
+    "behavior": {
+      "or": {
+        "behaviors": [
+          {
+            "global": {
+              "temperature": 2
+            },
+            "title": "Raise the temperature 2 steps"
+          },
+          {
+            "global": {
+              "oxygen": 2
+            },
+            "title": "Raise the oxygen level 2 steps"
+          },
+          {
+            "global": {
+              "venus": 2
+            },
+            "title": "Raise the Venus scale level 2 steps"
+          }
+        ]
+      }
+    },
+    "cardNumber": "P44",
+    "description": "Raise temperature 2 steps, or raise oxygen 2 steps, or raise Venus 2 steps. Draw 2 cards with floater icons."
+  },
+  {
+    "id": "BOARD_OF_DIRECTORS",
+    "name": "Board Of Directors",
+    "class": "BoardOfDirectors",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "EARTH"
+    ],
+    "resourceType": "DIRECTOR",
+    "behavior": {
+      "addResources": 4
+    },
+    "cardNumber": "P45",
+    "description": "Add 4 director resources here."
+  },
+  {
+    "id": "COLONY_TRADE_HUB",
+    "name": "Colony Trade Hub",
+    "class": "ColonyTradeHub",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "SPACE"
+    ],
+    "behavior": {
+      "production": {
+        "energy": 1
+      },
+      "stock": {
+        "titanium": 2
+      }
+    },
+    "cardNumber": "P46",
+    "description": "Increase your energy production 1 step. Gain 2 titanium"
+  },
+  {
+    "id": "CORRIDORS_OF_POWER",
+    "name": "Corridors Of Power",
+    "class": "CorridorsOfPower",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "EARTH"
+    ],
+    "behavior": {
+      "tr": 1,
+      "stock": {
+        "megacredits": 4
+      }
+    },
+    "cardNumber": "P47"
+  },
+  {
+    "id": "EARLY_COLONIZATION",
+    "name": "Early Colonization",
+    "class": "EarlyColonization",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "SPACE"
+    ],
+    "behavior": {
+      "colonies": {
+        "buildColony": {}
+      },
+      "stock": {
+        "energy": 3
+      }
+    },
+    "cardNumber": "P48",
+    "description": "Place a colony. Gain 3 energy."
+  },
+  {
+    "id": "FLOATING_TRADE_HUB",
+    "name": "Floating Trade Hub",
+    "class": "FloatingTradeHub",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "SPACE"
+    ],
+    "resourceType": "FLOATER",
+    "cardNumber": "P49"
+  },
+  {
+    "id": "FOCUSED_ORGANIZATION",
+    "name": "Focused Organization",
+    "class": "FocusedOrganization",
+    "module": "prelude2",
+    "type": "prelude",
+    "behavior": {
+      "drawCard": 1,
+      "standardResource": 1
+    },
+    "cardNumber": "P50"
+  },
+  {
+    "id": "HIGH_CIRCLES",
+    "name": "High Circles",
+    "class": "HighCircles",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "EARTH"
+    ],
+    "behavior": {
+      "tr": 1,
+      "turmoil": {
+        "influenceBonus": 1,
+        "sendDelegates": {
+          "count": 2
+        }
+      }
+    },
+    "cardNumber": "P51"
+  },
+  {
+    "id": "INDUSTRIAL_COMPLEX",
+    "name": "Industrial Complex",
+    "class": "IndustrialComplex",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "BUILDING"
+    ],
+    "startingMegacredits": -18,
+    "cardNumber": "P52",
+    "description": "Lose 18 M€. INCREASE ALL YOUR PRODUCTIONS THAT ARE LOWER THAN 1, TO 1."
+  },
+  {
+    "id": "MAIN_BELT_ASTEROIDS",
+    "name": "Main Belt Asteroids",
+    "class": "MainBeltAsteroids",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "SPACE"
+    ],
+    "resourceType": "ASTEROID",
+    "victoryPoints": {
+      "resourcesHere": {},
+      "per": 2
+    },
+    "startingMegacredits": -5,
+    "action": {
+      "addResourcesToAnyCard": {
+        "type": "ASTEROID",
+        "count": 1
+      }
+    },
+    "cardNumber": "P53",
+    "description": "Lose 5 M€. 1 VP per 2 asteroids here."
+  },
+  {
+    "id": "NOBEL_PRIZE",
+    "name": "Nobel Prize",
+    "class": "NobelPrize",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "WILD"
+    ],
+    "victoryPoints": 2,
+    "behavior": {
+      "stock": {
+        "megacredits": 5
+      }
+    },
+    "cardNumber": "P54",
+    "description": "Gain 5 M€. Draw 2 cards with requirements."
+  },
+  {
+    "id": "OLD_MINING_COLONY",
+    "name": "Old Mining Colony",
+    "class": "OldMiningColony",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "SPACE"
+    ],
+    "behavior": {
+      "production": {
+        "titanium": 1
+      },
+      "colonies": {
+        "buildColony": {}
+      }
+    },
+    "cardNumber": "P55",
+    "description": "Increase your titanium production 1 step. Place 1 colony. Discard 1 card."
+  },
+  {
+    "id": "PLANETARY_ALLIANCE",
+    "name": "Planetary Alliance",
+    "class": "PlanetaryAlliance",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "EARTH",
+      "JOVIAN",
+      "VENUS"
+    ],
+    "behavior": {
+      "tr": 2
+    },
+    "cardNumber": "P56",
+    "description": "Raise your TR 2 steps. Draw 1 Jovian card and 1 Venus card."
+  },
+  {
+    "id": "PRESERVATION_PROGRAM",
+    "name": "Preservation Program",
+    "class": "PreservationProgram",
+    "module": "prelude2",
+    "type": "prelude",
+    "tr": {
+      "tr": 5
+    },
+    "cardNumber": "P57",
+    "description": "Raise your TR 5 steps."
+  },
+  {
+    "id": "PROJECT_EDEN",
+    "name": "Project Eden",
+    "class": "ProjectEden",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "CITY",
+      "PLANT"
+    ],
+    "tr": {
+      "oceans": 1,
+      "oxygen": 1
+    },
+    "cardNumber": "P58",
+    "description": "Place 1 ocean tile, 1 city tile, and 1 greenery tile. Discard 3 cards."
+  },
+  {
+    "id": "RECESSION",
+    "name": "Recession",
+    "class": "Recession",
+    "module": "prelude2",
+    "type": "prelude",
+    "behavior": {
+      "stock": {
+        "megacredits": 10
+      }
+    },
+    "cardNumber": "P59",
+    "description": "EACH OPPONENT loses 5 M€ and decreases their M€ production 1 step. You gain 10 M€."
+  },
+  {
+    "id": "RISE_TO_POWER",
+    "name": "Rise To Power",
+    "class": "RiseToPower",
+    "module": "prelude2",
+    "type": "prelude",
+    "behavior": {
+      "production": {
+        "megacredits": 3
+      },
+      "turmoil": {
+        "sendDelegates": {
+          "count": 3,
+          "manyParties": true
+        }
+      }
+    },
+    "cardNumber": "P60",
+    "description": "Increase your M€ production 3 steps and place 3 delegates. YOU MAY PLACE THEM IN SEPARATE PARTIES."
+  },
+  {
+    "id": "SOIL_BACTERIA",
+    "name": "Soil Bacteria",
+    "class": "SoilBacteria",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "MICROBE"
+    ],
+    "behavior": {
+      "stock": {
+        "plants": 3
+      },
+      "drawCard": {
+        "count": 2,
+        "tag": "MICROBE"
+      }
+    },
+    "description": "Draw 2 microbe cards and gain 3 plants.",
+    "cardNumber": "P61"
+  },
+  {
+    "id": "SPACE_LANES",
+    "name": "Space Lanes",
+    "class": "SpaceLanes",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "SPACE"
+    ],
+    "cardDiscount": [
+      {
+        "tag": "JOVIAN",
+        "amount": 2
+      },
+      {
+        "tag": "EARTH",
+        "amount": 2
+      },
+      {
+        "tag": "VENUS",
+        "amount": 2
+      }
+    ],
+    "behavior": {
+      "stock": {
+        "titanium": 3
+      }
+    },
+    "cardNumber": "P62",
+    "description": "Gain 3 titanium."
+  },
+  {
+    "id": "SUITABLE_INFRASTRUCTURE",
+    "name": "Suitable Infrastructure",
+    "class": "SuitableInfrastructure",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "stock": {
+        "steel": 5
+      }
+    },
+    "cardNumber": "P63",
+    "description": "Gain 5 steel."
+  },
+  {
+    "id": "TERRAFORMING_DEAL",
+    "name": "Terraforming Deal",
+    "class": "TerraformingDeal",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "EARTH"
+    ],
+    "cardNumber": "P64"
+  },
+  {
+    "id": "VENUS_CONTRACT",
+    "name": "Venus Contract",
+    "class": "VenusContract",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "VENUS"
+    ],
+    "behavior": {
+      "drawCard": {
+        "count": 1,
+        "tag": "VENUS"
+      },
+      "tr": 1
+    },
+    "cardNumber": "P65",
+    "description": "Draw 1 Venus card. Raise your TR 1 step."
+  },
+  {
+    "id": "VENUS_L1_SHADE",
+    "name": "Venus L1 Shade",
+    "class": "VenusL1Shade",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "SPACE"
+    ],
+    "behavior": {
+      "global": {
+        "venus": 3
+      }
+    },
+    "cardNumber": "P66",
+    "description": "Raise Venus 3 steps."
+  },
+  {
+    "id": "WORLD_GOVERNMENT_ADVISOR",
+    "name": "World Government Advisor",
+    "class": "WorldGovernmentAdvisor",
+    "module": "prelude2",
+    "type": "prelude",
+    "tags": [
+      "EARTH"
+    ],
+    "behavior": {
+      "tr": 2,
+      "drawCard": 1
+    },
+    "cardNumber": "P67",
+    "description": "Raise your TR 2 steps. Draw 1 card."
+  },
+  {
+    "id": "CORPORATE_ARCHIVES",
+    "name": "Corporate Archives",
+    "class": "CorporateArchives",
+    "module": "promo",
+    "type": "prelude",
+    "tags": [
+      "SCIENCE"
+    ],
+    "behavior": {
+      "drawCard": {
+        "count": 7,
+        "keep": 2
+      },
+      "stock": {
+        "megacredits": 13
+      }
+    },
+    "cardNumber": "X39",
+    "description": "Gain 13 M€."
+  },
+  {
+    "id": "DOUBLE_DOWN",
+    "name": "Double Down",
+    "class": "DoubleDown",
+    "module": "promo",
+    "type": "prelude",
+    "cardNumber": "X40",
+    "description": ""
+  },
+  {
+    "id": "MERGER",
+    "name": "Merger",
+    "class": "Merger",
+    "module": "promo",
+    "type": "prelude",
+    "cardNumber": "X41",
+    "description": "Draw 4 corporation cards. Play one of them and discard the other 3. Then pay 42 M€."
+  },
+  {
+    "id": "NEW_PARTNER",
+    "name": "New Partner",
+    "class": "NewPartner",
+    "module": "promo",
+    "type": "prelude",
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      }
+    },
+    "cardNumber": "X42",
+    "description": "Raise your M€ production 1 step. Immediately draw 2 prelude cards. Play 1 of them, and discard the other."
+  },
+  {
+    "id": "HEAD_START",
+    "name": "Head Start",
+    "class": "HeadStart",
+    "module": "promo",
+    "type": "prelude",
+    "behavior": {
+      "stock": {
+        "steel": 2
+      }
+    },
+    "cardNumber": "X43"
+  },
+  {
+    "id": "ANTI_DESERTIFICATION_TECHNIQUES",
+    "name": "Anti Desertification Techniques",
+    "class": "AntidesertificationTechniques",
+    "module": "promo",
+    "type": "prelude",
+    "tags": [
+      "MICROBE",
+      "PLANT"
+    ],
+    "behavior": {
+      "production": {
+        "plants": 1,
+        "steel": 1
+      },
+      "stock": {
+        "megacredits": 3
+      }
+    },
+    "cardNumber": "X49",
+    "description": "Gain 3 M€. Increase your plant production 1 step and your steel production 1 step."
+  },
+  {
+    "id": "ESTABLISHED_METHODS",
+    "name": "Established Methods",
+    "class": "EstablishedMethods",
+    "module": "promo",
+    "type": "prelude",
+    "behavior": {
+      "stock": {
+        "megacredits": 30
+      }
+    },
+    "cardNumber": "X54"
+  },
+  {
+    "id": "GIANT_SOLAR_COLLECTOR",
+    "name": "Giant Solar Collector",
+    "class": "GiantSolarCollector",
+    "module": "promo",
+    "type": "prelude",
+    "tags": [
+      "POWER",
+      "SPACE"
+    ],
+    "behavior": {
+      "production": {
+        "energy": 2
+      },
+      "global": {
+        "venus": 1
+      }
+    },
+    "cardNumber": "X55",
+    "description": "Increase your energy production 2 steps. Raise Venus 1 step."
+  },
+  {
+    "id": "STRATEGIC_BASE_PLANNING",
+    "name": "Strategic Base Planning",
+    "class": "StrategicBasePlanning",
+    "module": "promo",
+    "type": "prelude",
+    "tags": [
+      "CITY",
+      "BUILDING",
+      "SPACE"
+    ],
+    "startingMegacredits": -3,
+    "behavior": {
+      "colonies": {
+        "buildColony": {}
+      },
+      "city": {}
+    },
+    "cardNumber": "X65",
+    "description": "Pay 3M€. Place a city. Place a colony."
+  },
+  {
+    "id": "ALBEDO_PLANTS",
+    "name": "Albedo Plants",
+    "class": "AlbedoPlants",
+    "module": "promo",
+    "type": "prelude",
+    "tags": [
+      "PLANT"
+    ],
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "stock": {
+        "plants": 1
+      }
+    },
+    "cardNumber": "X78",
+    "description": "Increase plant production 1 step. Gain 1 plant."
+  },
+  {
+    "id": "BOOM_TOWN",
+    "name": "Boom Town",
+    "class": "BoomTown",
+    "module": "promo",
+    "type": "prelude",
+    "tags": [
+      "BUILDING",
+      "CITY"
+    ],
+    "behavior": {
+      "production": {
+        "titanium": 2
+      },
+      "titaniumValue": -1
+    },
+    "cardNumber": "X80",
+    "description": "Place a city tile on an area with a STEEL OR TITANIUM PLACEMENT BONUS. Increase your titanium production 2 steps."
+  },
+  {
+    "id": "INHERITED_FORTUNE",
+    "name": "Inherited Fortune",
+    "class": "InheritedFortune",
+    "module": "underworld",
+    "type": "prelude",
+    "tags": [
+      "CRIME"
+    ],
+    "behavior": {
+      "production": {
+        "megacredits": 1
+      },
+      "stock": {
+        "megacredits": 10
+      },
+      "underworld": {
+        "corruption": 1
+      }
+    },
+    "cardNumber": "U0P03",
+    "description": "Gain 1 corruption and 10 M€. Increase your M€ production 1 step."
+  },
+  {
+    "id": "FREE_TRADE_PORT",
+    "name": "Free Trade Port",
+    "class": "FreeTradePort",
+    "module": "underworld",
+    "type": "prelude",
+    "tags": [
+      "EARTH",
+      "SPACE"
+    ],
+    "behavior": {
+      "colonies": {
+        "buildColony": {}
+      },
+      "underworld": {
+        "corruption": 1
+      }
+    },
+    "cardNumber": "UP01",
+    "description": "Gain 1 corruption. Place a colony."
+  },
+  {
+    "id": "INVESTOR_PLAZA",
+    "name": "Investor Plaza",
+    "class": "InvestorPlaza",
+    "module": "underworld",
+    "type": "prelude",
+    "tags": [
+      "EARTH",
+      "CITY"
+    ],
+    "behavior": {
+      "city": {},
+      "underworld": {
+        "corruption": 1
+      }
+    },
+    "cardNumber": "UP02",
+    "description": "Place a city and gain 1 corruption."
+  },
+  {
+    "id": "TUNNELING_OPERATION",
+    "name": "Tunneling Operation",
+    "class": "TunnelingOperation",
+    "module": "underworld",
+    "type": "prelude",
+    "tags": [
+      "BUILDING"
+    ],
+    "behavior": {
+      "production": {
+        "steel": 2
+      }
+    },
+    "cardNumber": "UP05",
+    "description": "Identify 1 underground resource. Then excavate 2 underground resources. Increase your steel production 2 steps."
+  },
+  {
+    "id": "GEOLOGICAL_EXPERTISE",
+    "name": "Geological Expertise",
+    "class": "GeologicalExpertise",
+    "module": "underworld",
+    "type": "prelude",
+    "behavior": {
+      "drawCard": {
+        "tag": "SCIENCE",
+        "count": 2
+      },
+      "underworld": {
+        "identify": {
+          "count": 4,
+          "claim": 1
+        }
+      }
+    },
+    "cardNumber": "UP06",
+    "description": "Identify 4 underground resources. Claim one of them. Draw 2 cards with science tags."
+  },
+  {
+    "id": "UNDERGROUND_SETTLEMENT",
+    "name": "Underground Settlement",
+    "class": "UndergroundSettlement",
+    "module": "underworld",
+    "type": "prelude",
+    "tags": [
+      "CITY",
+      "BUILDING"
+    ],
+    "cardNumber": "UP07",
+    "description": "Place a city. Then identify the underground resources in all adjacent spaces. Claim 1 of them."
+  },
+  {
+    "id": "GANYMEDE_TRADING_COMPANY",
+    "name": "Ganymede Trading Company",
+    "class": "GanymedeTradingCompany",
+    "module": "underworld",
+    "type": "prelude",
+    "tags": [
+      "JOVIAN",
+      "SPACE"
+    ],
+    "behavior": {
+      "stock": {
+        "titanium": 3
+      },
+      "colonies": {
+        "addTradeFleet": 1
+      },
+      "underworld": {
+        "corruption": 1
+      }
+    },
+    "cardNumber": "UP08",
+    "description": "Gain 1 corruption, 3 titanium, and a trade fleet."
+  },
+  {
+    "id": "CENTRAL_RESERVOIR",
+    "name": "Central Reservoir",
+    "class": "CentralReservoir",
+    "module": "underworld",
+    "type": "prelude",
+    "tags": [
+      "BUILDING"
+    ],
+    "cardNumber": "UP09",
+    "description": "Place an ocean ON AN AREA NOT RESERVED FOR OCEAN. Then identify the underground resources in all adjacent spaces. Claim 2 of them."
+  },
+  {
+    "id": "BATTERY_SHIPMENT",
+    "name": "Battery Shipment",
+    "class": "BatteryShipment",
+    "module": "underworld",
+    "type": "prelude",
+    "tags": [
+      "POWER"
+    ],
+    "behavior": {
+      "stock": {
+        "energy": 12
+      },
+      "production": {
+        "energy": 2
+      }
+    },
+    "cardNumber": "UP10",
+    "description": "Gain 12 energy. Increase your energy production 2 steps."
+  },
+  {
+    "id": "DEEPWATER_DOME",
+    "name": "Deepwater Dome",
+    "class": "DeepwaterDome",
+    "module": "underworld",
+    "type": "prelude",
+    "tags": [
+      "PLANT",
+      "BUILDING"
+    ],
+    "tr": {
+      "oceans": 1
+    },
+    "behavior": {
+      "production": {
+        "plants": 1
+      },
+      "ocean": {}
+    },
+    "cardNumber": "UP11",
+    "description": "Increase your plant production 1 step. Place an ocean."
+  },
+  {
+    "id": "SECRET_RESEARCH",
+    "name": "Secret Research",
+    "class": "SecretResearch",
+    "module": "underworld",
+    "type": "prelude",
+    "tags": [
+      "SCIENCE"
+    ],
+    "behavior": {
+      "drawCard": 3,
+      "underworld": {
+        "corruption": 1
+      }
+    },
+    "cardNumber": "UP12",
+    "description": "Gain 1 corruption and draw 3 cards."
+  },
+  {
+    "id": "PROSPECTING",
+    "name": "Prospecting",
+    "class": "Prospecting",
+    "module": "underworld",
+    "type": "prelude",
+    "startingMegacredits": -4,
+    "tags": [
+      "SPACE"
+    ],
+    "cardNumber": "UP13",
+    "description": "Pay 4 M€. Put an additional colony tile of your choice into play. Then place a colony on it."
+  },
+  {
+    "id": "ELECTION_SPONSORSHIP",
+    "name": "Election Sponsorship",
+    "class": "ElectionSponsorship",
+    "module": "underworld",
+    "type": "prelude",
+    "tags": [
+      "CRIME"
+    ],
+    "behavior": {
+      "underworld": {
+        "corruption": 1
+      },
+      "turmoil": {
+        "sendDelegates": {
+          "count": 2
+        },
+        "influenceBonus": 1
+      }
+    },
+    "cardNumber": "UP14"
+  },
+  {
+    "id": "CLOUD_VORTEX_OUTPOST",
+    "name": "Cloud Vortex Outpost",
+    "class": "CloudVortexOutpost",
+    "module": "underworld",
+    "type": "prelude",
+    "tags": [
+      "VENUS"
+    ],
+    "resourceType": "FLOATER",
+    "behavior": {
+      "global": {
+        "venus": 2
+      },
+      "addResources": 3
+    },
+    "action": {
+      "spend": {
+        "resourcesHere": 1
+      },
+      "addResourcesToAnyCard": {
+        "count": 1,
+        "type": "FLOATER",
+        "excludeThis": true,
+        "mustHaveCard": true
+      }
+    },
+    "cardNumber": "UP15"
+  }
+]

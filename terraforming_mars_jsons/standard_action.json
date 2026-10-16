@@ -1,0 +1,18 @@
+[
+  {
+    "id": "CONVERT_HEAT",
+    "name": "Convert Heat",
+    "class": "ConvertHeat",
+    "module": "base",
+    "type": "standard_action",
+    "cardNumber": "SA2"
+  },
+  {
+    "id": "CONVERT_PLANTS",
+    "name": "Convert Plants",
+    "class": "ConvertPlants",
+    "module": "base",
+    "type": "standard_action",
+    "cardNumber": "SA2"
+  }
+]

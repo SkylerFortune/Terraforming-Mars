@@ -1,0 +1,284 @@
+[
+  {
+    "id": "AQUIFER_STANDARD_PROJECT",
+    "name": "Aquifer Standard Project",
+    "class": "AquiferStandardProject",
+    "module": "base",
+    "type": "standard_project",
+    "cost": 18,
+    "tr": {
+      "oceans": 1
+    },
+    "cardNumber": "SP2"
+  },
+  {
+    "id": "CITY_STANDARD_PROJECT",
+    "name": "City Standard Project",
+    "class": "CityStandardProject",
+    "module": "base",
+    "type": "standard_project",
+    "cost": 25,
+    "cardNumber": "SP4"
+  },
+  {
+    "id": "GREENERY_STANDARD_PROJECT",
+    "name": "Greenery Standard Project",
+    "class": "GreeneryStandardProject",
+    "module": "base",
+    "type": "standard_project",
+    "cost": 23,
+    "tr": {
+      "oxygen": 1
+    },
+    "cardNumber": "SP6"
+  },
+  {
+    "id": "POWER_PLANT_STANDARD_PROJECT",
+    "name": "Power Plant Standard Project",
+    "class": "PowerPlantStandardProject",
+    "module": "base",
+    "type": "standard_project",
+    "cost": 11,
+    "cardNumber": "SP7"
+  },
+  {
+    "id": "SELL_PATENTS_STANDARD_PROJECT",
+    "name": "Sell Patents Standard Project",
+    "class": "SellPatentsStandardProject",
+    "module": "base",
+    "type": "standard_project",
+    "cost": 0,
+    "cardNumber": "SP8"
+  },
+  {
+    "id": "ASTEROID_STANDARD_PROJECT",
+    "name": "Asteroid Standard Project",
+    "class": "AsteroidStandardProject",
+    "module": "base",
+    "type": "standard_project",
+    "cost": 14,
+    "tr": {
+      "temperature": 1
+    },
+    "cardNumber": "SP9"
+  },
+  {
+    "id": "BUILD_COLONY_STANDARD_PROJECT",
+    "name": "Build Colony Standard Project",
+    "class": "BuildColonyStandardProject",
+    "module": "colonies",
+    "type": "standard_project",
+    "cost": 17,
+    "cardNumber": "SP5"
+  },
+  {
+    "id": "MOON_HABITAT_STANDARD_PROJECT",
+    "name": "Moon Habitat Standard Project",
+    "class": "MoonHabitatStandardProject",
+    "module": "moon",
+    "type": "standard_project",
+    "cost": 22,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "tr": {
+      "moonHabitat": 1
+    },
+    "tilesBuilt": [
+      "MOON_HABITAT"
+    ],
+    "cardNumber": ""
+  },
+  {
+    "id": "MOON_HABITAT_STANDARD_PROJECT_VARIANT_1",
+    "name": "Moon Habitat Standard Project Variant 1",
+    "class": "MoonHabitatStandardProjectVariant1",
+    "module": "moon",
+    "type": "standard_project",
+    "cost": 23,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "tr": {
+      "moonHabitat": 1
+    },
+    "tilesBuilt": [
+      "MOON_HABITAT"
+    ],
+    "cardNumber": ""
+  },
+  {
+    "id": "MOON_HABITAT_STANDARD_PROJECT_VARIANT_2",
+    "name": "Moon Habitat Standard Project Variant 2",
+    "class": "MoonHabitatStandardProjectVariant2",
+    "module": "moon",
+    "type": "standard_project",
+    "cost": 26,
+    "reserveUnits": "EMPTY",
+    "tr": {
+      "moonHabitat": 1
+    },
+    "tilesBuilt": [
+      "MOON_HABITAT"
+    ],
+    "cardNumber": ""
+  },
+  {
+    "id": "MOON_MINE_STANDARD_PROJECT",
+    "name": "Moon Mine Standard Project",
+    "class": "MoonMineStandardProject",
+    "module": "moon",
+    "type": "standard_project",
+    "cost": 20,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "tr": {
+      "moonMining": 1
+    },
+    "tilesBuilt": [
+      "MOON_MINE"
+    ],
+    "cardNumber": ""
+  },
+  {
+    "id": "MOON_MINE_STANDARD_PROJECT_VARIANT_1",
+    "name": "Moon Mine Standard Project Variant 1",
+    "class": "MoonMineStandardProjectVariant1",
+    "module": "moon",
+    "type": "standard_project",
+    "cost": 21,
+    "reserveUnits": {
+      "titanium": 1
+    },
+    "tr": {
+      "moonMining": 1
+    },
+    "tilesBuilt": [
+      "MOON_MINE"
+    ],
+    "cardNumber": ""
+  },
+  {
+    "id": "MOON_MINE_STANDARD_PROJECT_VARIANT_2",
+    "name": "Moon Mine Standard Project Variant 2",
+    "class": "MoonMineStandardProjectVariant2",
+    "module": "moon",
+    "type": "standard_project",
+    "cost": 24,
+    "reserveUnits": "EMPTY",
+    "tr": {
+      "moonMining": 1
+    },
+    "tilesBuilt": [
+      "MOON_MINE"
+    ],
+    "cardNumber": ""
+  },
+  {
+    "id": "MOON_ROAD_STANDARD_PROJECT",
+    "name": "Moon Road Standard Project",
+    "class": "MoonRoadStandardProject",
+    "module": "moon",
+    "type": "standard_project",
+    "cost": 18,
+    "reserveUnits": {
+      "steel": 1
+    },
+    "tr": {
+      "moonLogistic": 1
+    },
+    "tilesBuilt": [
+      "MOON_ROAD"
+    ],
+    "cardNumber": ""
+  },
+  {
+    "id": "MOON_ROAD_STANDARD_PROJECT_VARIANT_1",
+    "name": "Moon Road Standard Project Variant 1",
+    "class": "MoonRoadStandardProjectVariant1",
+    "module": "moon",
+    "type": "standard_project",
+    "cost": 19,
+    "reserveUnits": {
+      "steel": 1
+    },
+    "tr": {
+      "moonLogistic": 1
+    },
+    "tilesBuilt": [
+      "MOON_ROAD"
+    ],
+    "cardNumber": ""
+  },
+  {
+    "id": "MOON_ROAD_STANDARD_PROJECT_VARIANT_2",
+    "name": "Moon Road Standard Project Variant 2",
+    "class": "MoonRoadStandardProjectVariant2",
+    "module": "moon",
+    "type": "standard_project",
+    "cost": 21,
+    "reserveUnits": "EMPTY",
+    "tr": {
+      "moonLogistic": 1
+    },
+    "tilesBuilt": [
+      "MOON_ROAD"
+    ],
+    "cardNumber": ""
+  },
+  {
+    "id": "BUFFER_GAS_STANDARD_PROJECT",
+    "name": "Buffer Gas Standard Project",
+    "class": "BufferGasStandardProject",
+    "module": "prelude",
+    "type": "standard_project",
+    "cost": 16,
+    "tr": {
+      "tr": 1
+    },
+    "cardNumber": "SP3"
+  },
+  {
+    "id": "COLLUSION_STANDARD_PROJECT",
+    "name": "Collusion Standard Project",
+    "class": "CollusionStandardProject",
+    "module": "underworld",
+    "type": "standard_project",
+    "cost": 0,
+    "cardNumber": ""
+  },
+  {
+    "id": "EXCAVATE_STANDARD_PROJECT",
+    "name": "Excavate Standard Project",
+    "class": "ExcavateStandardProject",
+    "module": "underworld",
+    "type": "standard_project",
+    "cost": 7,
+    "cardNumber": ""
+  },
+  {
+    "id": "AIR_SCRAPPING_STANDARD_PROJECT",
+    "name": "Air Scrapping Standard Project",
+    "class": "AirScrappingStandardProject",
+    "module": "venusNext",
+    "type": "standard_project",
+    "cost": 15,
+    "tr": {
+      "venus": 1
+    },
+    "cardNumber": "SP1"
+  },
+  {
+    "id": "AIR_SCRAPPING_STANDARD_PROJECT_VARIANT",
+    "name": "Air Scrapping Standard Project Variant",
+    "class": "AirScrappingStandardProjectVariant",
+    "module": "venusNext",
+    "type": "standard_project",
+    "cost": 15,
+    "tr": {
+      "venus": 1
+    },
+    "cardNumber": "SP1a"
+  }
+]

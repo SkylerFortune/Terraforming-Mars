@@ -1,0 +1,339 @@
+[
+  {
+    "id": "ASIMOV",
+    "name": "Asimov",
+    "class": "Asimov",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L01",
+    "description": "Once per game, draw 10-X awards (min. 1), where X is the current generation number. You may put one into the game and fund it for free."
+  },
+  {
+    "id": "BJORN",
+    "name": "Bjorn",
+    "class": "Bjorn",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L02",
+    "description": "Once per game, steal X+2 M€ from each player that has more M€ than you, where X is the current generation number."
+  },
+  {
+    "id": "CLARKE",
+    "name": "Clarke",
+    "class": "Clarke",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L03",
+    "description": "Once per game, increase your plant and heat production 1 step each. Gain plants and heat equal to your production +4."
+  },
+  {
+    "id": "DUNCAN",
+    "name": "Duncan",
+    "class": "Duncan",
+    "module": "ceos",
+    "type": "ceo",
+    "victoryPoints": "special",
+    "cardNumber": "L04",
+    "description": "Once per game, gain 7-X VP and 4X M€, where X is the current generation number."
+  },
+  {
+    "id": "ENDER",
+    "name": "Ender",
+    "class": "Ender",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L05",
+    "description": "Once per game, discard any number of cards up to twice the current generation number to draw that many cards."
+  },
+  {
+    "id": "FLOYD",
+    "name": "Floyd",
+    "class": "Floyd",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L06",
+    "description": "Once per game, play a card from hand for 13 + 2X M€ less, where X is the current generation number."
+  },
+  {
+    "id": "GORDON",
+    "name": "Gordon",
+    "class": "Gordon",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L07"
+  },
+  {
+    "id": "HAL9000",
+    "name": "Hal9000",
+    "class": "HAL9000",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L08",
+    "description": "Once per game, decrease each of your productions 1 step to gain 4 of that resource."
+  },
+  {
+    "id": "INGRID",
+    "name": "Ingrid",
+    "class": "Ingrid",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L09",
+    "description": "When you take an action that places a tile on Mars THIS GENERATION, draw a card."
+  },
+  {
+    "id": "JANSSON",
+    "name": "Jansson",
+    "class": "Jansson",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L10",
+    "description": "Once per game, gain all placement bonuses under your tiles on Mars."
+  },
+  {
+    "id": "KAREN",
+    "name": "Karen",
+    "class": "Karen",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L11",
+    "description": "Once per game, draw Prelude cards equal to the current generation number and choose one to play, and discard the rest."
+  },
+  {
+    "id": "LOWELL",
+    "name": "Lowell",
+    "class": "Lowell",
+    "module": "ceos",
+    "type": "ceo",
+    "tags": [
+      "WILD"
+    ],
+    "cardNumber": "L12",
+    "description": "Once per game, pay 8 M€ to draw 3 CEO cards and choose one to play. Discard this card."
+  },
+  {
+    "id": "MARIA",
+    "name": "Maria",
+    "class": "Maria",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L13",
+    "description": "Once per game, draw colony tiles equal to the current generation number. Put one into play and build a colony on it for free if possible."
+  },
+  {
+    "id": "NAOMI",
+    "name": "Naomi",
+    "class": "Naomi",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L14",
+    "description": "Once per game, move each colony tile track marker to its highest or lowest value."
+  },
+  {
+    "id": "OSCAR",
+    "name": "Oscar",
+    "class": "Oscar",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L15",
+    "description": "Once per game, replace the Chairman with one of your delegates."
+  },
+  {
+    "id": "PETRA",
+    "name": "Petra",
+    "class": "Petra",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L16",
+    "description": "Once per game, replace all Neutral delegates with your delegates. Gain 3 M€ for each delegate replaced this way. Place 3 Neutral delegates."
+  },
+  {
+    "id": "QUILL",
+    "name": "Quill",
+    "class": "Quill",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L17",
+    "description": "Once per game, add 2 floaters to each of your cards that collect floaters, then add 2 floaters to ANY card. Gain 1 M€ for every 2 floaters added this way."
+  },
+  {
+    "id": "ROGERS",
+    "name": "Rogers",
+    "class": "Rogers",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L18",
+    "description": "Ignore global requirements for your Venus cards THIS GENERATION. When you play a Venus tag THIS GENERATION, you pay 3 M€ less for it."
+  },
+  {
+    "id": "STEFAN",
+    "name": "Stefan",
+    "class": "Stefan",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L19",
+    "description": "Once per game, sell any number of cards from your hand for 3 M€ each."
+  },
+  {
+    "id": "TATE",
+    "name": "Tate",
+    "class": "Tate",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L20",
+    "description": "Once per game, name a tag. Reveal cards from the deck until you find 5 cards with that tag. BUY up to 2 cards and discard the rest."
+  },
+  {
+    "id": "ULRICH",
+    "name": "Ulrich",
+    "class": "Ulrich",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L21",
+    "description": "Once per game, gain 4 M€ for each ocean placed. If all oceans are already placed, gain only 15 M€."
+  },
+  {
+    "id": "VANALLEN",
+    "name": "Vanallen",
+    "class": "VanAllen",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L22"
+  },
+  {
+    "id": "WILL",
+    "name": "Will",
+    "class": "Will",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L23",
+    "description": "Once per game, add the following resources to your cards: 2 animals, 2 microbes, 2 floaters, 2 wild."
+  },
+  {
+    "id": "XAVIER",
+    "name": "Xavier",
+    "class": "Xavier",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L24"
+  },
+  {
+    "id": "YVONNE",
+    "name": "Yvonne",
+    "class": "Yvonne",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L25",
+    "description": "Once per game, gain all your colony bonuses twice."
+  },
+  {
+    "id": "ZAN",
+    "name": "Zan",
+    "class": "Zan",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L26",
+    "description": "Once per game, place all of your available delegates in Reds. Gain 1 M€ for each delegate placed this way."
+  },
+  {
+    "id": "FARADAY",
+    "name": "Faraday",
+    "class": "Faraday",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L27",
+    "description": "When you gain a multiple of 5 for any tag type IN PLAY, you may pay 3 M€ to draw a card with that tag. Wild tags do not count for this effect."
+  },
+  {
+    "id": "MUSK",
+    "name": "Musk",
+    "class": "Musk",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L28",
+    "description": "Once per game, discard any number of Earth cards to draw that many space cards, and gain that many units of titanium, plus 6."
+  },
+  {
+    "id": "HUAN",
+    "name": "Huan",
+    "class": "Huan",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L29",
+    "description": "ALL OPPONENTS CANNOT TRADE NEXT GENERATION. Gain 1 Trade Fleet."
+  },
+  {
+    "id": "RYU",
+    "name": "Ryu",
+    "class": "Ryu",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L30",
+    "description": "Once per game, swap up to X+2 units of production between two resources, where X is the current generation number."
+  },
+  {
+    "id": "GRETA",
+    "name": "Greta",
+    "class": "Greta",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L31",
+    "description": "When you take an action or play a card that increases your TR THIS GENERATION (max 10 times), gain 4 M€."
+  },
+  {
+    "id": "GAIA",
+    "name": "Gaia",
+    "class": "Gaia",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L32",
+    "description": "Once per game, gain the Ares adjacency bonuses of all player-owned tiles on Mars."
+  },
+  {
+    "id": "CAESAR",
+    "name": "Caesar",
+    "class": "Caesar",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L33",
+    "description": "Once per game, place X hazard tiles where X is the current generation number. Each opponent loses 1 unit of production of their choice, or 2 units if there are 6 or more hazard tiles."
+  },
+  {
+    "id": "NEIL",
+    "name": "Neil",
+    "class": "Neil",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L34",
+    "description": "Once per game, increase your M€ production by the value of the LOWEST Moon rate."
+  },
+  {
+    "id": "APOLLO",
+    "name": "Apollo",
+    "class": "Apollo",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "L35",
+    "description": "Once per game, gain 3 M€ for each tile on The Moon."
+  },
+  {
+    "id": "XU",
+    "name": "Xu",
+    "class": "Xu",
+    "module": "ceos",
+    "type": "ceo",
+    "tags": [
+      "VENUS"
+    ],
+    "cardNumber": "L37",
+    "description": "Once per game, gain 2 M€ for each Venus tag in play. Gain an additional 8 M€ if you have the most Venus tags in play."
+  },
+  {
+    "id": "SHARA",
+    "name": "Shara",
+    "class": "Shara",
+    "module": "ceos",
+    "type": "ceo",
+    "cardNumber": "LXXX",
+    "description": "Once per game, choose a planet tag. This card counts as having immediately played 2 of that tag. Then gain M€ equal to that tag's planetary influence track."
+  }
+]
