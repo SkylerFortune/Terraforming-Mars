@@ -5,7 +5,12 @@
     "class": "ConvertHeat",
     "module": "base",
     "type": "standard_action",
-    "cardNumber": "SA2"
+    "cardNumber": "SA2",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "CONVERT_PLANTS",
@@ -13,6 +18,11 @@
     "class": "ConvertPlants",
     "module": "base",
     "type": "standard_action",
-    "cardNumber": "SA2"
+    "cardNumber": "SA2",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "base"
   }
 ]

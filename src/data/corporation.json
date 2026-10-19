@@ -13,7 +13,11 @@
       }
     },
     "cardNumber": "R02",
-    "description": "You start with 45 M€. As your first action, place a colony."
+    "description": "You start with 45 M€. As your first action, place a colony.",
+    "methods": [
+      "onColonyAddedByAnyPlayer"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "ARKLIGHT",
@@ -36,7 +40,12 @@
       }
     },
     "cardNumber": "R04",
-    "description": "You start with 45 M€. Increase your M€ production 2 steps. 1 VP per 2 animals on this card."
+    "description": "You start with 45 M€. Increase your M€ production 2 steps. 1 VP per 2 animals on this card.",
+    "methods": [
+      "onCardPlayed",
+      "onNonCardTagAdded"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "POLYPHEMOS",
@@ -55,7 +64,9 @@
       }
     },
     "cardNumber": "R11",
-    "description": "You start with 50 M€. Increase your M€ production 5 steps. Gain 5 titanium."
+    "description": "You start with 50 M€. Increase your M€ production 5 steps. Gain 5 titanium.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "ARIDOR",
@@ -66,7 +77,18 @@
     "startingMegaCredits": 40,
     "initialActionText": "Add a colony tile",
     "cardNumber": "R20",
-    "description": "You start with 40 M€. As your first action, put an additional Colony Tile of your choice into play"
+    "description": "You start with 40 M€. As your first action, put an additional Colony Tile of your choice into play",
+    "methods": [
+      "bespokePlay",
+      "deserialize",
+      "initialAction",
+      "onCardPlayed",
+      "onNonCardTagAdded",
+      "processTags",
+      "serialize",
+      "tagsForCard"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "STORMCRAFT_INCORPORATED",
@@ -87,7 +109,11 @@
       }
     },
     "cardNumber": "R29",
-    "description": "You start with 48 M€."
+    "description": "You start with 48 M€.",
+    "methods": [
+      "spendHeat"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "AGRICOLA_INC",
@@ -108,7 +134,11 @@
       }
     },
     "cardNumber": "R36",
-    "description": "You start with 1 plant production, 1 M€ production, 1 heat production and 40 M€."
+    "description": "You start with 1 plant production, 1 M€ production, 1 heat production and 40 M€.",
+    "methods": [
+      "getVictoryPoints"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "INCITE",
@@ -134,7 +164,9 @@
       }
     },
     "cardNumber": "R37",
-    "description": "You start with 32 M€. As your first action, place two delegates in one party."
+    "description": "You start with 32 M€. As your first action, place two delegates in one party.",
+    "methods": [],
+    "gameModule": "community"
   },
   {
     "id": "PLAYWRIGHTS",
@@ -152,7 +184,15 @@
       }
     },
     "cardNumber": "R40",
-    "description": "You start with 38 M€ and 1 energy production."
+    "description": "You start with 38 M€ and 1 energy production.",
+    "methods": [
+      "action",
+      "canAct",
+      "getCheckLoops",
+      "getReplayableEvents",
+      "processLawSuit"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "MIDAS",
@@ -164,7 +204,9 @@
     "behavior": {
       "tr": -7
     },
-    "cardNumber": "R41"
+    "cardNumber": "R41",
+    "methods": [],
+    "gameModule": "community"
   },
   {
     "id": "PROJECT_WORKSHOP",
@@ -190,7 +232,14 @@
       }
     },
     "cardNumber": "R45",
-    "description": "You start with 39 M€, 1 steel and 1 titanium. As your first action, draw a blue card."
+    "description": "You start with 39 M€, 1 steel and 1 titanium. As your first action, draw a blue card.",
+    "methods": [
+      "action",
+      "canAct",
+      "convertCardPointsToTR",
+      "getEligibleCards"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "ERIS",
@@ -204,7 +253,15 @@
     "initialActionText": "Draw an Ares card",
     "startingMegaCredits": 46,
     "cardNumber": "R47",
-    "description": "You start with 46 M€. As your first action, draw an Ares card."
+    "description": "You start with 46 M€. As your first action, draw an Ares card.",
+    "methods": [
+      "action",
+      "canAct",
+      "drawAresCard",
+      "getAvailableSpaces",
+      "initialAction"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "JUNK_VENTURES",
@@ -215,7 +272,13 @@
     "initialActionText": "Discard the top 3 cards of the deck",
     "startingMegaCredits": 43,
     "cardNumber": "R49",
-    "description": "You start with 43 M€. As your first action, discard the top 3 cards of the deck."
+    "description": "You start with 43 M€. As your first action, discard the top 3 cards of the deck.",
+    "methods": [
+      "action",
+      "canAct",
+      "initialAction"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "UNITED_NATIONS_MISSION_ONE",
@@ -231,7 +294,11 @@
       "tr": 1
     },
     "cardNumber": "R50",
-    "description": "You start with 39 M€. Increase your TR 1 step."
+    "description": "You start with 39 M€. Increase your TR 1 step.",
+    "methods": [
+      "onIncreaseTerraformRatingByAnyPlayer"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "ATHENA",
@@ -245,7 +312,12 @@
     "initialActionText": "Place 2 hazard tiles adjacent to no other tiles.",
     "startingMegaCredits": 62,
     "cardNumber": "R52",
-    "description": "You start with 62 M€. As your first action, place 2 hazard tiles adjacent to no other tiles."
+    "description": "You start with 62 M€. As your first action, place 2 hazard tiles adjacent to no other tiles.",
+    "methods": [
+      "getAvailableSpaces",
+      "initialAction"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "AEROTECH",
@@ -258,7 +330,11 @@
     ],
     "startingMegaCredits": 48,
     "cardNumber": "R59",
-    "description": "You start with 48 M€."
+    "description": "You start with 48 M€.",
+    "methods": [
+      "onDrawCards"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "CURIOSITY_II",
@@ -277,7 +353,12 @@
       }
     },
     "cardNumber": "Y07",
-    "description": "You start with 40 M€ and 2 steel production."
+    "description": "You start with 40 M€ and 2 steel production.",
+    "methods": [
+      "corpAction",
+      "onTilePlaced"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "BEGINNER_CORPORATION",
@@ -290,7 +371,9 @@
     },
     "startingMegaCredits": 42,
     "cardNumber": "R00",
-    "description": "You start with 42 M€. Instead of choosing from 10 cards during setup, you get 10 cards for free."
+    "description": "You start with 42 M€. Instead of choosing from 10 cards during setup, you get 10 cards for free.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "SATURN_SYSTEMS",
@@ -308,7 +391,12 @@
       }
     },
     "cardNumber": "R03",
-    "description": "You start with 1 titanium production and 42 M€."
+    "description": "You start with 1 titanium production and 42 M€.",
+    "methods": [
+      "onCardPlayedByAnyPlayer",
+      "onNonCardTagAddedByAnyPlayer"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "CREDICOR",
@@ -318,7 +406,13 @@
     "type": "corporation",
     "startingMegaCredits": 57,
     "cardNumber": "R08",
-    "description": "You start with 57 M€."
+    "description": "You start with 57 M€.",
+    "methods": [
+      "effect",
+      "onCardPlayed",
+      "onStandardProject"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "PHOBOLOG",
@@ -337,7 +431,9 @@
       "titaniumValue": 1
     },
     "cardNumber": "R09",
-    "description": "You start with 10 titanium and 23 M€."
+    "description": "You start with 10 titanium and 23 M€.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "THORGATE",
@@ -359,7 +455,11 @@
       "amount": 3
     },
     "cardNumber": "R13",
-    "description": "You start with 1 energy production and 48 M€."
+    "description": "You start with 1 energy production and 48 M€.",
+    "methods": [
+      "getStandardProjectDiscount"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "ECOLINE",
@@ -381,7 +481,9 @@
       "greeneryDiscount": 1
     },
     "cardNumber": "R17",
-    "description": "You start with 2 plant production, 3 plants, and 36 M€."
+    "description": "You start with 2 plant production, 3 plants, and 36 M€.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "HELION",
@@ -399,7 +501,11 @@
       }
     },
     "cardNumber": "R18",
-    "description": "You start with 3 heat production and 42 M€."
+    "description": "You start with 3 heat production and 42 M€.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "INTERPLANETARY_CINEMATICS",
@@ -417,7 +523,11 @@
       }
     },
     "cardNumber": "R19",
-    "description": "You start with 20 steel and 30 M€."
+    "description": "You start with 20 steel and 30 M€.",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "MINING_GUILD",
@@ -440,7 +550,14 @@
     },
     "cardNumber": "R24",
     "description": "You start with 30 M€, 5 steel and 1 steel production.",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "applies",
+      "givesSteelOrTitanium",
+      "onStandardResourcePlacementBonus",
+      "onTilePlaced"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "TERACTOR",
@@ -457,7 +574,9 @@
       "amount": 3
     },
     "cardNumber": "R30",
-    "description": "You start with 60 M€."
+    "description": "You start with 60 M€.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "THARSIS_REPUBLIC",
@@ -474,7 +593,12 @@
       "city": {}
     },
     "cardNumber": "R31",
-    "description": "You start with 40 M€. As your first action in the game, place a city tile."
+    "description": "You start with 40 M€. As your first action in the game, place a city tile.",
+    "methods": [
+      "bespokePlay",
+      "onTilePlaced"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "UNITED_NATIONS_MARS_INITIATIVE",
@@ -487,7 +611,12 @@
     ],
     "startingMegaCredits": 40,
     "cardNumber": "R32",
-    "description": "You start with 40 M€."
+    "description": "You start with 40 M€.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "INVENTRIX",
@@ -507,7 +636,9 @@
       "drawCard": 3
     },
     "cardNumber": "R43",
-    "description": "As your first action in the game, draw 3 cards. Start with 45 M€."
+    "description": "As your first action in the game, draw 3 cards. Start with 45 M€.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "NANOTECH_INDUSTRIES",
@@ -533,7 +664,12 @@
       "per": 2
     },
     "cardNumber": "MC1",
-    "description": "You start with 42 M€. As your first action, draw 3 cards. Take 2 of them into hand, and discard the rest. 1 VP for every 2 science resources here."
+    "description": "You start with 42 M€. As your first action, draw 3 cards. Take 2 of them into hand, and discard the rest. 1 VP for every 2 science resources here.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "THE_ARCHAIC_FOUNDATION_INSTITUTE",
@@ -549,7 +685,14 @@
     "resourceType": "RESOURCE_CUBE",
     "cardNumber": "MC10",
     "description": "You start with 55 M€.",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "action",
+      "canAct",
+      "onCardPlayed",
+      "onResourceAdded"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "TEMPEST_CONSULTANCY",
@@ -570,7 +713,12 @@
       }
     },
     "description": "You start with 37 M€. As your first action, place 2 delegates in one party.",
-    "cardNumber": "MC2"
+    "cardNumber": "MC2",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "THE_DARKSIDE_OF_THE_MOON_SYNDICATE",
@@ -586,7 +734,13 @@
     "behavior": {
       "addResources": 2
     },
-    "cardNumber": "MC3"
+    "cardNumber": "MC3",
+    "methods": [
+      "action",
+      "canAct",
+      "onTilePlaced"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_HYPERLOOP_CORPORATION",
@@ -621,7 +775,9 @@
       "all": true
     },
     "description": "You start with 38 M€ and 4 steel.",
-    "cardNumber": "MC4"
+    "cardNumber": "MC4",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "CRESCENT_RESEARCH_ASSOCIATION",
@@ -639,7 +795,11 @@
       "per": 3
     },
     "description": "You start with 50 M€.",
-    "cardNumber": "MC5"
+    "cardNumber": "MC5",
+    "methods": [
+      "getCardDiscount"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_FIRST_INCORPORATED",
@@ -658,7 +818,11 @@
       }
     },
     "description": "You start with 40 M€, 1 steel, and 1 titanium.",
-    "cardNumber": "MC6"
+    "cardNumber": "MC6",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "THE_GRAND_LUNA_CAPITAL_GROUP",
@@ -684,7 +848,12 @@
       }
     },
     "description": "You start with 32 M€ and 1 titanium. As your first action, place a habitat tile on The Moon and raise the habitat rate 1 step.",
-    "cardNumber": "MC7"
+    "cardNumber": "MC7",
+    "methods": [
+      "getVictoryPoints",
+      "onTilePlaced"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "INTRAGEN_SANCTUARY_HEADQUARTERS",
@@ -709,7 +878,11 @@
       }
     },
     "description": "You start with 38 M€. As your first action, place a habitat tile on The Moon and raise the habitat rate 1 step. 1 VP for every 2 animals on this card.",
-    "cardNumber": "MC8"
+    "cardNumber": "MC8",
+    "methods": [
+      "onCardPlayedByAnyPlayer"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_TRADE_FEDERATION",
@@ -728,7 +901,12 @@
       }
     },
     "description": "You start with 15 M€ and 10 titanium.",
-    "cardNumber": "MC9"
+    "cardNumber": "MC9",
+    "methods": [
+      "bespokePlay",
+      "onTilePlaced"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "MARS_DIRECT",
@@ -741,7 +919,11 @@
     ],
     "startingMegaCredits": 52,
     "description": "You start with 52 M€.",
-    "cardNumber": "PFC11"
+    "cardNumber": "PFC11",
+    "methods": [
+      "getCardDiscount"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "POLARIS",
@@ -758,7 +940,12 @@
       "ocean": {}
     },
     "cardNumber": "PfC1",
-    "description": "You start with 32 M€. As your first action, place an ocean tile."
+    "description": "You start with 32 M€. As your first action, place an ocean tile.",
+    "methods": [
+      "gainsFromTilePlacement",
+      "onTilePlaced"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "MARS_MATHS",
@@ -777,7 +964,12 @@
       }
     },
     "cardNumber": "PfC10",
-    "description": "You start with 40 M€. As your first action, draw 2 cards"
+    "description": "You start with 40 M€. As your first action, draw 2 cards",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "MARTIAN_INSURANCE_GROUP",
@@ -795,7 +987,11 @@
       }
     },
     "cardNumber": "PfC12",
-    "description": "You start with 42 M€ and 1 M€ production."
+    "description": "You start with 42 M€ and 1 M€ production.",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "SOLBANK",
@@ -806,7 +1002,11 @@
     "startingMegaCredits": 40,
     "resourceType": "DATA",
     "cardNumber": "PfC13",
-    "description": "You start with 40 M€"
+    "description": "You start with 40 M€",
+    "methods": [
+      "onProductionPhase"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "BIO_SOL",
@@ -837,7 +1037,9 @@
       }
     },
     "cardNumber": "PfC14",
-    "description": "You start with 42 M€. As your first action, draw 2 cards with a microbe tag."
+    "description": "You start with 42 M€. As your first action, draw 2 cards with a microbe tag.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "AURORAI",
@@ -854,7 +1056,11 @@
       "addResources": 2
     },
     "cardNumber": "PfC15",
-    "description": "You start with 33 M€. and 2 data on this card"
+    "description": "You start with 33 M€. and 2 data on this card",
+    "methods": [
+      "onIncreaseTerraformRatingByAnyPlayer"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "COLLEGIUM_COPERNICUS",
@@ -876,7 +1082,13 @@
       }
     },
     "cardNumber": "PfC16",
-    "description": "You start with 33 M€. As your first action, draw 2 cards with a science tag."
+    "description": "You start with 33 M€. As your first action, draw 2 cards with a science tag.",
+    "methods": [
+      "action",
+      "canAct",
+      "onCardPlayed"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "ROBIN_HAULINGS",
@@ -916,7 +1128,11 @@
       }
     },
     "cardNumber": "PfC17",
-    "description": "You start with 39 M€."
+    "description": "You start with 39 M€.",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "ODYSSEY",
@@ -926,7 +1142,14 @@
     "type": "corporation",
     "startingMegaCredits": 33,
     "cardNumber": "PfC18",
-    "description": "You start with 33 M€."
+    "description": "You start with 33 M€.",
+    "methods": [
+      "action",
+      "availableEventCards",
+      "canAct",
+      "getCheckLoops"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "GAGARIN_MOBILE_BASE",
@@ -940,7 +1163,16 @@
     "startingMegaCredits": 42,
     "initialActionText": "Place Gagarin Mobile Base on ANY space ON MARS",
     "cardNumber": "PfC19",
-    "description": "You start with 42 M€. As your first action, put Gagarin Mobile Base on ANY area on Mars. Collect the bonus."
+    "description": "You start with 42 M€. As your first action, put Gagarin Mobile Base on ANY area on Mars. Collect the bonus.",
+    "methods": [
+      "action",
+      "availableSpaces",
+      "canAct",
+      "closestSpaces",
+      "initialAction",
+      "onTilePlaced"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "MARS_FRONTIER_ALLIANCE",
@@ -952,7 +1184,11 @@
     "startingMegaCredits": 40,
     "cardNumber": "PfC20",
     "description": "You start with 40 M€. When you reveal this card, select any remaining political program tile (you may use its effect as a passive effect of your corporation or as ruling party this generation).",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "MIND_SET_MARS",
@@ -966,7 +1202,15 @@
       "addResources": 1
     },
     "cardNumber": "PfC21",
-    "description": "You start with 44 M€ and 1 agenda resource to this card."
+    "description": "You start with 44 M€ and 1 agenda resource to this card.",
+    "methods": [
+      "action",
+      "canAct",
+      "canAddCity",
+      "canAddDelegate",
+      "onCardPlayed"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "HABITAT_MARTE",
@@ -979,7 +1223,9 @@
     ],
     "startingMegaCredits": 40,
     "cardNumber": "PfC22",
-    "description": "You start with 40 M€."
+    "description": "You start with 40 M€.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "ADHAI_HIGH_ORBIT_CONSTRUCTIONS",
@@ -993,7 +1239,14 @@
     "startingMegaCredits": 43,
     "resourceType": "ORBITAL",
     "cardNumber": "PfC23",
-    "description": "You start with 43 M€."
+    "description": "You start with 43 M€.",
+    "methods": [
+      "getCardDiscount",
+      "getStandardProjectDiscount",
+      "matchingTags",
+      "onCardPlayed"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "AMBIENT",
@@ -1012,7 +1265,13 @@
       }
     },
     "cardNumber": "PfC3",
-    "description": "You start with 38 M€. As your first action, raise the Venus scale 2 steps."
+    "description": "You start with 38 M€. As your first action, raise the Venus scale 2 steps.",
+    "methods": [
+      "action",
+      "canAct",
+      "onCardPlayed"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "RINGCOM",
@@ -1037,7 +1296,11 @@
       }
     },
     "cardNumber": "PfC4",
-    "description": "You start with 39 M€. and 3 M€ production. As your first action, draw 2 cards with a Jovian tag."
+    "description": "You start with 39 M€. and 3 M€ production. As your first action, draw 2 cards with a Jovian tag.",
+    "methods": [
+      "onCardPlayedByAnyPlayer"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "CHIMERA",
@@ -1057,7 +1320,9 @@
       }
     },
     "cardNumber": "PfC5",
-    "description": "You start with 36 M€, 1 steel, and 1 titanium."
+    "description": "You start with 36 M€, 1 steel, and 1 titanium.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "SOYLENT_SEEDLING_SYSTEMS",
@@ -1075,7 +1340,11 @@
       "addResources": 2
     },
     "cardNumber": "PfC8",
-    "description": "You start with 38M€ and 2 seeds on this card."
+    "description": "You start with 38M€ and 2 seeds on this card.",
+    "methods": [
+      "onTilePlaced"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "STEELARIS",
@@ -1089,7 +1358,11 @@
     ],
     "startingMegaCredits": 42,
     "cardNumber": "PfC9",
-    "description": "You start with 42 M€."
+    "description": "You start with 42 M€.",
+    "methods": [
+      "onTilePlaced"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "POINT_LUNA",
@@ -1108,7 +1381,11 @@
       }
     },
     "cardNumber": "R10",
-    "description": "You start with 1 titanium production and 38 M€."
+    "description": "You start with 1 titanium production and 38 M€.",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "prelude"
   },
   {
     "id": "CHEUNG_SHING_MARS",
@@ -1130,7 +1407,9 @@
       "amount": 2
     },
     "cardNumber": "R16",
-    "description": "You start with 3 M€ production and 44 M€."
+    "description": "You start with 3 M€ production and 44 M€.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "ROBINSON_INDUSTRIES",
@@ -1140,7 +1419,12 @@
     "type": "corporation",
     "startingMegaCredits": 47,
     "cardNumber": "R27",
-    "description": "You start with 47 M€."
+    "description": "You start with 47 M€.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "prelude"
   },
   {
     "id": "VALLEY_TRUST",
@@ -1158,7 +1442,11 @@
       "amount": 2
     },
     "cardNumber": "R34",
-    "description": "You start with 37 M€. As your first action, draw 3 Prelude cards, and play one of them. Discard the other two."
+    "description": "You start with 37 M€. As your first action, draw 3 Prelude cards, and play one of them. Discard the other two.",
+    "methods": [
+      "initialAction"
+    ],
+    "gameModule": "prelude"
   },
   {
     "id": "VITOR",
@@ -1172,7 +1460,13 @@
     "startingMegaCredits": 48,
     "initialActionText": "Fund an award for free",
     "cardNumber": "R35",
-    "description": "You start with 45 M€. As your first action, fund an award for free."
+    "description": "You start with 45 M€. As your first action, fund an award for free.",
+    "methods": [
+      "initialAction",
+      "onCardPlayed",
+      "selectAwardToFund"
+    ],
+    "gameModule": "prelude"
   },
   {
     "id": "NIRGAL_ENTERPRISES",
@@ -1194,7 +1488,9 @@
       }
     },
     "cardNumber": "PC01",
-    "description": "You start with 30 M€. Increase your energy, plant, and steel production 1 step each."
+    "description": "You start with 30 M€. Increase your energy, plant, and steel production 1 step each.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "PALLADIN_SHIPPING",
@@ -1220,7 +1516,11 @@
       }
     },
     "cardNumber": "PC02",
-    "description": "You start with 36 M€. Gain 5 titanium."
+    "description": "You start with 36 M€. Gain 5 titanium.",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "SAGITTA_FRONTIER_SERVICES",
@@ -1237,7 +1537,12 @@
     },
     "cardNumber": "PC03",
     "description": "You start with 31 M€. Increase energy production 1 step and M€ production 2 steps. Draw a card that has no tag.",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "bespokePlay",
+      "onCardPlayed"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "ECOTEC",
@@ -1256,7 +1561,13 @@
       }
     },
     "cardNumber": "PC04",
-    "description": "You start with 42 M€. Increase your plant production 1 step."
+    "description": "You start with 42 M€. Increase your plant production 1 step.",
+    "methods": [
+      "onCardPlayed",
+      "onNonCardTagAdded",
+      "process"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "SPIRE",
@@ -1271,7 +1582,12 @@
     "startingMegaCredits": 50,
     "initialActionText": "Draw 4 cards, then discard 3 cards.",
     "resourceType": "SCIENCE",
-    "cardNumber": "PC05"
+    "cardNumber": "PC05",
+    "methods": [
+      "initialAction",
+      "onCardPlayed"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "ASTRODRILL",
@@ -1288,7 +1604,12 @@
       "addResources": 3
     },
     "cardNumber": "R21",
-    "description": "You start with 35 M€ and 3 asteroid resources."
+    "description": "You start with 35 M€ and 3 asteroid resources.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "FACTORUM",
@@ -1307,7 +1628,12 @@
       }
     },
     "cardNumber": "R22",
-    "description": "You start with 37 M€. Increase your steel production 1 step."
+    "description": "You start with 37 M€. Increase your steel production 1 step.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "PHILARES",
@@ -1325,7 +1651,11 @@
     },
     "cardNumber": "R25",
     "description": "You start with 47 M€. As your first action, place a greenery tile and raise the oxygen 1 step.",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "onTilePlaced"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "RECYCLON",
@@ -1345,7 +1675,11 @@
       }
     },
     "cardNumber": "R26",
-    "description": "You start with 38 M€ and 1 steel production."
+    "description": "You start with 38 M€ and 1 steel production.",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "SPLICE",
@@ -1365,7 +1699,11 @@
       }
     },
     "cardNumber": "R28",
-    "description": "You start with 44 M€. As your first action, reveal cards until you have revealed a microbe tag. Take it and discard the rest."
+    "description": "You start with 44 M€. As your first action, reveal cards until you have revealed a microbe tag. Take it and discard the rest.",
+    "methods": [
+      "onCardPlayedByAnyPlayer"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "PHARMACY_UNION",
@@ -1381,7 +1719,18 @@
         "tag": "SCIENCE"
       }
     },
-    "cardNumber": "R39"
+    "cardNumber": "R39",
+    "methods": [
+      "addDisease",
+      "deserialize",
+      "disable",
+      "logAddingDisease",
+      "onCardPlayedByAnyPlayer",
+      "onNonCardTagAdded",
+      "onScienceTagAdded",
+      "serialize"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "ARCADIAN_COMMUNITIES",
@@ -1397,7 +1746,15 @@
       }
     },
     "cardNumber": "R44",
-    "description": "You start with 40 M€ and 10 steel. AS YOUR FIRST ACTION, PLACE A COMMUNITY [PLAYER MARKER] ON A NON-RESERVED AREA."
+    "description": "You start with 40 M€ and 10 steel. AS YOUR FIRST ACTION, PLACE A COMMUNITY [PLAYER MARKER] ON A NON-RESERVED AREA.",
+    "methods": [
+      "action",
+      "askToClaimSpace",
+      "canAct",
+      "getAvailableSpacesForMarker",
+      "initialAction"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "MONS_INSURANCE",
@@ -1412,7 +1769,12 @@
       }
     },
     "cardNumber": "R46",
-    "description": "You start with 48 M€. Increase your M€ production 4 steps. ALL OPPONENTS DECREASE THEIR M€ production 2 STEPS. THIS DOES NOT TRIGGER THE EFFECT BELOW."
+    "description": "You start with 48 M€. Increase your M€ production 4 steps. ALL OPPONENTS DECREASE THEIR M€ production 2 STEPS. THIS DOES NOT TRIGGER THE EFFECT BELOW.",
+    "methods": [
+      "bespokePlay",
+      "payDebt"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "POLDERTECH_DUTCH",
@@ -1426,7 +1788,12 @@
     "startingMegaCredits": 35,
     "initialActionText": "Place an ocean tile and a greenery tile next to each other",
     "cardNumber": "X-3",
-    "description": "You start with 35 M€. As your first action, place an ocean tile and a greenery tile next to each other IGNORING GREENERY PLACEMENT RESTRICTIONS. Raise oxygen 1 step."
+    "description": "You start with 35 M€. As your first action, place an ocean tile and a greenery tile next to each other IGNORING GREENERY PLACEMENT RESTRICTIONS. Raise oxygen 1 step.",
+    "methods": [
+      "initialAction",
+      "onTilePlaced"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "KUIPER_COOPERATIVE",
@@ -1451,7 +1818,9 @@
       }
     },
     "cardNumber": "XC01",
-    "description": "You start with 33 M€. Increase titanium production 1 step."
+    "description": "You start with 33 M€. Increase titanium production 1 step.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "TYCHO_MAGNETICS",
@@ -1470,7 +1839,12 @@
       }
     },
     "cardNumber": "XC02",
-    "description": "You start with 42 M€. Increase your energy production 1 step."
+    "description": "You start with 42 M€. Increase your energy production 1 step.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "PRISTAR",
@@ -1487,7 +1861,11 @@
       "tr": -2
     },
     "cardNumber": "R07",
-    "description": "You start with 53 M€. Decrease your TR 2 steps. 1 VP per preservation resource here."
+    "description": "You start with 53 M€. Decrease your TR 2 steps. 1 VP per preservation resource here.",
+    "methods": [
+      "onProductionPhase"
+    ],
+    "gameModule": "turmoil"
   },
   {
     "id": "TERRALABS_RESEARCH",
@@ -1505,7 +1883,9 @@
       "tr": -1
     },
     "cardNumber": "R14",
-    "description": "You start with 14 M€. Lower your TR 1 step."
+    "description": "You start with 14 M€. Lower your TR 1 step.",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "SEPTUM_TRIBUS",
@@ -1518,7 +1898,12 @@
     ],
     "startingMegaCredits": 36,
     "cardNumber": "R15",
-    "description": "You start with 36 M€. When you perform an action, the wild tag counts as any tag of your choice."
+    "description": "You start with 36 M€. When you perform an action, the wild tag counts as any tag of your choice.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "turmoil"
   },
   {
     "id": "UTOPIA_INVEST",
@@ -1598,7 +1983,9 @@
       }
     },
     "cardNumber": "R33",
-    "description": "You start with 40 M€. Increase your steel and titanium production 1 step each."
+    "description": "You start with 40 M€. Increase your steel and titanium production 1 step each.",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "LAKEFRONT_RESORTS",
@@ -1611,7 +1998,14 @@
     ],
     "startingMegaCredits": 54,
     "cardNumber": "R38",
-    "description": "You start with 54 M€."
+    "description": "You start with 54 M€.",
+    "methods": [
+      "bespokePlay",
+      "gainsFromTilePlacement",
+      "onDiscard",
+      "onTilePlaced"
+    ],
+    "gameModule": "turmoil"
   },
   {
     "id": "HADESPHERE",
@@ -1640,7 +2034,9 @@
       }
     },
     "cardNumber": "UC01",
-    "description": "You start with 40 M€ and 5 steel. As your first action, identify any 3 underground resources on Mars."
+    "description": "You start with 40 M€ and 5 steel. As your first action, identify any 3 underground resources on Mars.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "DEMETRON_LABS",
@@ -1668,7 +2064,13 @@
       }
     },
     "cardNumber": "UC02",
-    "description": "You start with 45 M€ and 2 data on this card."
+    "description": "You start with 45 M€ and 2 data on this card.",
+    "methods": [
+      "onCardPlayed",
+      "onNonCardTagAdded",
+      "onScienceTagAdded"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "JENSON_BOYLE_CO",
@@ -1728,7 +2130,9 @@
       }
     },
     "cardNumber": "UC03",
-    "description": "You start with 46 M€ and 2 corruption."
+    "description": "You start with 46 M€ and 2 corruption.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "HENKEI_GENETICS",
@@ -1763,7 +2167,13 @@
       }
     },
     "cardNumber": "UC04",
-    "description": "You start with 47 M€ and 1 corruption. As your first action, draw 2 microbe cards."
+    "description": "You start with 47 M€ and 1 corruption. As your first action, draw 2 microbe cards.",
+    "methods": [
+      "action",
+      "availableCards",
+      "canAct"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "ARBORIST_COLLECTIVE",
@@ -1796,7 +2206,11 @@
       }
     },
     "cardNumber": "UC05",
-    "description": "You start with 40 M€, 2 plants and 2 plant production."
+    "description": "You start with 40 M€, 2 plants and 2 plant production.",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "KINGDOM_OF_TAURARO",
@@ -1819,7 +2233,11 @@
       "city": {}
     },
     "cardNumber": "UC06",
-    "description": "You start with 50 M€ and 6 M€ production. All opponents gain 2 M€ production. As your first action, place a city."
+    "description": "You start with 50 M€ and 6 M€ production. All opponents gain 2 M€ production. As your first action, place a city.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "AERON_GENOMICS",
@@ -1843,7 +2261,12 @@
       "addResources": 2
     },
     "cardNumber": "UC07",
-    "description": "You start with 35 M€, 5 steel, and 2 animals on this card. 1 VP per 3 animals on this card."
+    "description": "You start with 35 M€, 5 steel, and 2 animals on this card. 1 VP per 3 animals on this card.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "KEPLERTEC",
@@ -1877,7 +2300,12 @@
       }
     },
     "cardNumber": "UC08",
-    "description": "You start with 33 M€, 3 titanium, and 1 titanium production."
+    "description": "You start with 33 M€, 3 titanium, and 1 titanium production.",
+    "methods": [
+      "effect",
+      "onResourceAdded"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "VOLTAGON",
@@ -1921,7 +2349,11 @@
       }
     },
     "cardNumber": "UC09",
-    "description": "You start with 38 M€ and 1 energy production."
+    "description": "You start with 38 M€ and 1 energy production.",
+    "methods": [
+      "onClaim"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "ANUBIS_SECURITIES",
@@ -1935,7 +2367,15 @@
     "startingMegaCredits": 42,
     "initialActionText": "Play a card, ignoring global requirements",
     "cardNumber": "UC11",
-    "description": "You start with 42 M€. As your first action, play a card ignoring global requirements."
+    "description": "You start with 42 M€. As your first action, play a card ignoring global requirements.",
+    "methods": [
+      "action",
+      "canAct",
+      "getGlobalParameterRequirementBonus",
+      "initialAction",
+      "onIncreaseTerraformRatingByAnyPlayer"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "HECATE_SPEDITIONS",
@@ -1956,7 +2396,11 @@
       }
     },
     "cardNumber": "UC12",
-    "description": "You start with 38 M€, 2 supply chain resources here, and an extra trade fleet."
+    "description": "You start with 38 M€, 2 supply chain resources here, and an extra trade fleet.",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "APHRODITE",
@@ -1975,7 +2419,9 @@
       }
     },
     "cardNumber": "R01",
-    "description": "You start with 1 plant production and 47 M€."
+    "description": "You start with 1 plant production and 47 M€.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "CELESTIC",
@@ -2001,7 +2447,11 @@
       }
     },
     "cardNumber": "R05",
-    "description": "You start with 42 M€. As your first action, reveal cards from the deck until you have revealed 2 cards with a floater icon on it. Take them into hand and discard the rest."
+    "description": "You start with 42 M€. As your first action, reveal cards from the deck until you have revealed 2 cards with a floater icon on it. Take them into hand and discard the rest.",
+    "methods": [
+      "initialAction"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "MORNING_STAR_INC",
@@ -2025,7 +2475,9 @@
       }
     },
     "cardNumber": "R06",
-    "description": "You start with 50 M€. As your first action, reveal cards from the deck until you have revealed 3 Venus-tag cards. Take those into hand and discard the rest."
+    "description": "You start with 50 M€. As your first action, reveal cards from the deck until you have revealed 3 Venus-tag cards. Take those into hand and discard the rest.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "VIRON",
@@ -2038,7 +2490,13 @@
     ],
     "startingMegaCredits": 48,
     "cardNumber": "R12",
-    "description": "You start with 48 M€."
+    "description": "You start with 48 M€.",
+    "methods": [
+      "action",
+      "canAct",
+      "getActionCards"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "MANUTECH",
@@ -2056,6 +2514,10 @@
       }
     },
     "cardNumber": "R23",
-    "description": "You start with 1 steel production, and 35 M€."
+    "description": "You start with 1 steel production, and 35 M€.",
+    "methods": [
+      "onProductionGain"
+    ],
+    "gameModule": "venus"
   }
 ]

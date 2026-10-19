@@ -3,16 +3,16 @@
 
 Compares two things:
 
-  * the generated card data (data/cards/*.json), whose `methods` field says which hooks
+  * the generated card data (src/data/*.json), whose `methods` field says which hooks
     each card needs written by hand, and
-  * the hook registry (tmars.hooks.registry.HOOKS), which says which hooks exist.
+  * the hook registry (engine.hooks.registry.HOOKS), which says which hooks exist.
 
 It writes a deterministic Markdown report (no timestamps, so diffs in version control only
 show real changes) and can fail a CI job when something is wrong.
 
 Usage (from the project root):
 
-    python tools/hook_status.py                    # write src/tmars/hooks/STATUS.md
+    python tools/hook_status.py                    # write src/engine/hooks/STATUS.md
     python tools/hook_status.py --check            # also exit 1 on errors (typos, unknown cards)
     python tools/hook_status.py --require-complete # also exit 1 if any hook is still missing
     python tools/hook_status.py --module moon      # print one module's missing cards, write nothing
@@ -290,11 +290,11 @@ def print_module(cards: dict[str, CardStatus], module: str) -> None:
 # ---------------------------------------------------------------------------------------
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    ap.add_argument("--cards", type=Path, default=Path("data/cards"), help="directory of card JSON files")
+    ap.add_argument("--cards", type=Path, default=Path("src/data"), help="directory of card JSON files")
     ap.add_argument("--src", type=Path, default=Path("src"), help="directory containing the package")
-    ap.add_argument("--hooks-module", default="tmars.hooks", help="importable hooks package")
+    ap.add_argument("--hooks-module", default="engine.hooks", help="importable hooks package")
     ap.add_argument("--tests", type=Path, default=Path("tests"), help="tests directory to scan")
-    ap.add_argument("--out", type=Path, default=Path("src/tmars/hooks/STATUS.md"), help="report path")
+    ap.add_argument("--out", type=Path, default=Path("src/engine/hooks/STATUS.md"), help="report path")
     ap.add_argument("--module", help="print one module's missing cards and write nothing")
     ap.add_argument("--check", action="store_true", help="exit 1 if there are errors")
     ap.add_argument("--require-complete", action="store_true",

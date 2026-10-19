@@ -1,0 +1,12 @@
+[project]
+name = "terraforming-mars"
+version = "0.1.0"
+description = "A Python rules engine for Terraforming Mars"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

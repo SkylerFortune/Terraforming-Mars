@@ -9,7 +9,13 @@
     "tr": {
       "oceans": 1
     },
-    "cardNumber": "SP2"
+    "cardNumber": "SP2",
+    "methods": [
+      "actionEssence",
+      "canAct",
+      "canPayWith"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "CITY_STANDARD_PROJECT",
@@ -18,7 +24,13 @@
     "module": "base",
     "type": "standard_project",
     "cost": 25,
-    "cardNumber": "SP4"
+    "cardNumber": "SP4",
+    "methods": [
+      "actionEssence",
+      "canAct",
+      "canPayWith"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "GREENERY_STANDARD_PROJECT",
@@ -30,7 +42,13 @@
     "tr": {
       "oxygen": 1
     },
-    "cardNumber": "SP6"
+    "cardNumber": "SP6",
+    "methods": [
+      "actionEssence",
+      "canAct",
+      "canPayWith"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "POWER_PLANT_STANDARD_PROJECT",
@@ -39,7 +57,11 @@
     "module": "base",
     "type": "standard_project",
     "cost": 11,
-    "cardNumber": "SP7"
+    "cardNumber": "SP7",
+    "methods": [
+      "actionEssence"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "SELL_PATENTS_STANDARD_PROJECT",
@@ -48,7 +70,13 @@
     "module": "base",
     "type": "standard_project",
     "cost": 0,
-    "cardNumber": "SP8"
+    "cardNumber": "SP8",
+    "methods": [
+      "action",
+      "actionEssence",
+      "canAct"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "ASTEROID_STANDARD_PROJECT",
@@ -60,7 +88,13 @@
     "tr": {
       "temperature": 1
     },
-    "cardNumber": "SP9"
+    "cardNumber": "SP9",
+    "methods": [
+      "actionEssence",
+      "canAct",
+      "canPayWith"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "BUILD_COLONY_STANDARD_PROJECT",
@@ -69,7 +103,12 @@
     "module": "colonies",
     "type": "standard_project",
     "cost": 17,
-    "cardNumber": "SP5"
+    "cardNumber": "SP5",
+    "methods": [
+      "actionEssence",
+      "canAct"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "MOON_HABITAT_STANDARD_PROJECT",
@@ -87,7 +126,12 @@
     "tilesBuilt": [
       "MOON_HABITAT"
     ],
-    "cardNumber": ""
+    "cardNumber": "",
+    "methods": [
+      "actionEssence",
+      "canAct"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "MOON_HABITAT_STANDARD_PROJECT_VARIANT_1",
@@ -105,7 +149,13 @@
     "tilesBuilt": [
       "MOON_HABITAT"
     ],
-    "cardNumber": ""
+    "cardNumber": "",
+    "methods": [
+      "actionEssence",
+      "canAct",
+      "canPayWith"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "MOON_HABITAT_STANDARD_PROJECT_VARIANT_2",
@@ -121,7 +171,12 @@
     "tilesBuilt": [
       "MOON_HABITAT"
     ],
-    "cardNumber": ""
+    "cardNumber": "",
+    "methods": [
+      "actionEssence",
+      "canAct"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "MOON_MINE_STANDARD_PROJECT",
@@ -139,7 +194,12 @@
     "tilesBuilt": [
       "MOON_MINE"
     ],
-    "cardNumber": ""
+    "cardNumber": "",
+    "methods": [
+      "actionEssence",
+      "canAct"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "MOON_MINE_STANDARD_PROJECT_VARIANT_1",
@@ -157,7 +217,13 @@
     "tilesBuilt": [
       "MOON_MINE"
     ],
-    "cardNumber": ""
+    "cardNumber": "",
+    "methods": [
+      "actionEssence",
+      "canAct",
+      "canPayWith"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "MOON_MINE_STANDARD_PROJECT_VARIANT_2",
@@ -173,7 +239,12 @@
     "tilesBuilt": [
       "MOON_MINE"
     ],
-    "cardNumber": ""
+    "cardNumber": "",
+    "methods": [
+      "actionEssence",
+      "canAct"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "MOON_ROAD_STANDARD_PROJECT",
@@ -191,7 +262,12 @@
     "tilesBuilt": [
       "MOON_ROAD"
     ],
-    "cardNumber": ""
+    "cardNumber": "",
+    "methods": [
+      "actionEssence",
+      "canAct"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "MOON_ROAD_STANDARD_PROJECT_VARIANT_1",
@@ -209,7 +285,13 @@
     "tilesBuilt": [
       "MOON_ROAD"
     ],
-    "cardNumber": ""
+    "cardNumber": "",
+    "methods": [
+      "actionEssence",
+      "canAct",
+      "canPayWith"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "MOON_ROAD_STANDARD_PROJECT_VARIANT_2",
@@ -225,7 +307,12 @@
     "tilesBuilt": [
       "MOON_ROAD"
     ],
-    "cardNumber": ""
+    "cardNumber": "",
+    "methods": [
+      "actionEssence",
+      "canAct"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "BUFFER_GAS_STANDARD_PROJECT",
@@ -237,7 +324,11 @@
     "tr": {
       "tr": 1
     },
-    "cardNumber": "SP3"
+    "cardNumber": "SP3",
+    "methods": [
+      "actionEssence"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "COLLUSION_STANDARD_PROJECT",
@@ -246,7 +337,14 @@
     "module": "underworld",
     "type": "standard_project",
     "cost": 0,
-    "cardNumber": ""
+    "cardNumber": "",
+    "methods": [
+      "actionEssence",
+      "canAct",
+      "execute",
+      "getParties"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "EXCAVATE_STANDARD_PROJECT",
@@ -255,7 +353,14 @@
     "module": "underworld",
     "type": "standard_project",
     "cost": 7,
-    "cardNumber": ""
+    "cardNumber": "",
+    "methods": [
+      "actionEssence",
+      "canAct",
+      "canPayWith",
+      "discount"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "AIR_SCRAPPING_STANDARD_PROJECT",
@@ -267,7 +372,12 @@
     "tr": {
       "venus": 1
     },
-    "cardNumber": "SP1"
+    "cardNumber": "SP1",
+    "methods": [
+      "actionEssence",
+      "canAct"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "AIR_SCRAPPING_STANDARD_PROJECT_VARIANT",
@@ -279,6 +389,12 @@
     "tr": {
       "venus": 1
     },
-    "cardNumber": "SP1a"
+    "cardNumber": "SP1a",
+    "methods": [
+      "actionEssence",
+      "canAct",
+      "discount"
+    ],
+    "gameModule": "venus"
   }
 ]

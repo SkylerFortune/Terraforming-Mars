@@ -29,7 +29,9 @@
       "tag": "SCIENCE"
     },
     "description": "Requires 1 science tag to play. Add 2 animals to this card. OTHERS MAY NOT REMOVE ANIMALS FROM THIS CARD.",
-    "cardNumber": "A01"
+    "cardNumber": "A01",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "ECOLOGICAL_SURVEY",
@@ -46,7 +48,17 @@
       "all": true
     },
     "description": "Requires 3 greeneries on Mars.",
-    "cardNumber": "A07"
+    "cardNumber": "A07",
+    "methods": [
+      "log",
+      "maybeRewardCardResource",
+      "onStandardResourcePlacementBonus",
+      "onTilePlaced",
+      "placedTileGivesBonus",
+      "spaceRewardsStandardResource",
+      "validPlaceAndPhase"
+    ],
+    "gameModule": "ares"
   },
   {
     "id": "ECOLOGICAL_ZONE_ARES",
@@ -73,7 +85,15 @@
       "greeneries": 1
     },
     "description": "Requires that YOU have a greenery tile. Place this tile adjacent to ANY greenery.",
-    "cardNumber": "A08"
+    "cardNumber": "A08",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getAvailableSpaces",
+      "onCardPlayed",
+      "onNonCardTagAdded"
+    ],
+    "gameModule": "ares"
   },
   {
     "id": "GEOLOGICAL_SURVEY",
@@ -91,7 +111,17 @@
       "max": true
     },
     "cardNumber": "A09",
-    "description": "Requires 5 or fewer greeneries on Mars."
+    "description": "Requires 5 or fewer greeneries on Mars.",
+    "methods": [
+      "log",
+      "maybeRewardCardResource",
+      "onStandardResourcePlacementBonus",
+      "onTilePlaced",
+      "placedTileGivesBonus",
+      "spaceRewardsStandardResource",
+      "validPlaceAndPhase"
+    ],
+    "gameModule": "ares"
   },
   {
     "id": "INDUSTRIAL_CENTER_ARES",
@@ -117,7 +147,13 @@
       }
     },
     "cardNumber": "A10",
-    "description": "Place this tile adjacent to a city tile. This tile grants an ADJACENCY BONUS of 1 steel."
+    "description": "Place this tile adjacent to a city tile. This tile grants an ADJACENCY BONUS of 1 steel.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getAvailableSpaces"
+    ],
+    "gameModule": "ares"
   },
   {
     "id": "MARKETING_EXPERTS",
@@ -135,7 +171,9 @@
       }
     },
     "cardNumber": "A12",
-    "description": "Increase your M€ production 1 step."
+    "description": "Increase your M€ production 1 step.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "OCEAN_SANCTUARY",
@@ -167,7 +205,9 @@
       }
     },
     "cardNumber": "A22",
-    "description": "Requires 5 ocean tiles. Place this tile on top of an existing ocean tile. The tile grants an ADJACENCY BONUS of 1 animal. Add 1 animal to this card."
+    "description": "Requires 5 ocean tiles. Place this tile on top of an existing ocean tile. The tile grants an ADJACENCY BONUS of 1 animal. Add 1 animal to this card.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "RESTRICTED_AREA_ARES",
@@ -197,7 +237,9 @@
       "drawCard": 1
     },
     "cardNumber": "A24",
-    "description": "Place this tile which grants an ADJACENCY BONUS of 1 card."
+    "description": "Place this tile which grants an ADJACENCY BONUS of 1 card.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "SEARCH_FOR_LIFE",
@@ -216,7 +258,13 @@
       "max": true
     },
     "cardNumber": "005",
-    "description": "Oxygen must be 6% or less."
+    "description": "Oxygen must be 6% or less.",
+    "methods": [
+      "action",
+      "canAct",
+      "getVictoryPoints"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "INVENTORS_GUILD",
@@ -234,7 +282,9 @@
         "pay": true
       }
     },
-    "cardNumber": "006"
+    "cardNumber": "006",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "MARTIAN_RAILS",
@@ -258,7 +308,9 @@
         }
       }
     },
-    "cardNumber": "007"
+    "cardNumber": "007",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "WATER_IMPORT_FROM_EUROPA",
@@ -281,7 +333,9 @@
       },
       "ocean": {}
     },
-    "cardNumber": "012"
+    "cardNumber": "012",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "SPACE_ELEVATOR",
@@ -309,7 +363,9 @@
     },
     "victoryPoints": 2,
     "cardNumber": "013",
-    "description": "Increase your titanium production 1 step."
+    "description": "Increase your titanium production 1 step.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "DEVELOPMENT_CENTER",
@@ -328,7 +384,9 @@
       },
       "drawCard": 1
     },
-    "cardNumber": "014"
+    "cardNumber": "014",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "EQUATORIAL_MAGNETIZER",
@@ -346,7 +404,9 @@
       },
       "tr": 1
     },
-    "cardNumber": "015"
+    "cardNumber": "015",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "RESEARCH_OUTPOST",
@@ -369,7 +429,9 @@
       "amount": 1
     },
     "cardNumber": "020",
-    "description": "Place a city tile NEXT TO NO OTHER TILE."
+    "description": "Place a city tile NEXT TO NO OTHER TILE.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ARCTIC_ALGAE",
@@ -391,7 +453,11 @@
       "max": true
     },
     "description": "It must be -12 C or colder to play. Gain 1 plant.",
-    "cardNumber": "023"
+    "cardNumber": "023",
+    "methods": [
+      "onTilePlaced"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "PREDATORS",
@@ -418,7 +484,9 @@
       "addResources": 1
     },
     "cardNumber": "024",
-    "description": "Requires 11% oxygen."
+    "description": "Requires 11% oxygen.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "SPACE_STATION",
@@ -435,7 +503,9 @@
       "tag": "SPACE",
       "amount": 2
     },
-    "cardNumber": "025"
+    "cardNumber": "025",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "SECURITY_FLEET",
@@ -457,7 +527,9 @@
       },
       "addResources": 1
     },
-    "cardNumber": "028"
+    "cardNumber": "028",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "OPTIMAL_AEROBRAKING",
@@ -469,7 +541,11 @@
       "SPACE"
     ],
     "cost": 7,
-    "cardNumber": "031"
+    "cardNumber": "031",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "REGOLITH_EATERS",
@@ -503,7 +579,9 @@
         ]
       }
     },
-    "cardNumber": "033"
+    "cardNumber": "033",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "GHG_PRODUCING_BACTERIA",
@@ -541,7 +619,9 @@
       }
     },
     "description": "Requires 4% oxygen.",
-    "cardNumber": "034"
+    "cardNumber": "034",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ANTS",
@@ -569,7 +649,9 @@
       "addResources": 1
     },
     "cardNumber": "035",
-    "description": "Requires 4% oxygen."
+    "description": "Requires 4% oxygen.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ROVER_CONSTRUCTION",
@@ -582,7 +664,11 @@
     ],
     "cost": 8,
     "victoryPoints": 1,
-    "cardNumber": "038"
+    "cardNumber": "038",
+    "methods": [
+      "onTilePlaced"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "TARDIGRADES",
@@ -602,7 +688,9 @@
     "action": {
       "addResources": 1
     },
-    "cardNumber": "049"
+    "cardNumber": "049",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "FISH",
@@ -631,7 +719,9 @@
       "temperature": 2
     },
     "cardNumber": "052",
-    "description": "Requires +2 C° or warmer. Decrease any plant production 1 step."
+    "description": "Requires +2 C° or warmer. Decrease any plant production 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "SMALL_ANIMALS",
@@ -661,7 +751,9 @@
       "addResources": 1
     },
     "cardNumber": "054",
-    "description": "Requires 6% oxygen. Decrease any plant production 1 step."
+    "description": "Requires 6% oxygen. Decrease any plant production 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ELECTRO_CATAPULT",
@@ -708,7 +800,9 @@
       "oxygen": 8,
       "max": true
     },
-    "cardNumber": "069"
+    "cardNumber": "069",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "EARTH_CATAPULT",
@@ -724,7 +818,9 @@
     "cardDiscount": {
       "amount": 2
     },
-    "cardNumber": "070"
+    "cardNumber": "070",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "ADVANCED_ALLOYS",
@@ -740,7 +836,9 @@
       "steelValue": 1,
       "titaniumValue": 1
     },
-    "cardNumber": "071"
+    "cardNumber": "071",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "BIRDS",
@@ -768,7 +866,9 @@
     "action": {
       "addResources": 1
     },
-    "cardNumber": "072"
+    "cardNumber": "072",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "MARS_UNIVERSITY",
@@ -782,7 +882,13 @@
     ],
     "cost": 8,
     "victoryPoints": 1,
-    "cardNumber": "073"
+    "cardNumber": "073",
+    "methods": [
+      "onCardPlayed",
+      "onNonCardTagAdded",
+      "onScienceTagAdded"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "VIRAL_ENHANCERS",
@@ -795,7 +901,13 @@
       "MICROBE"
     ],
     "cost": 9,
-    "cardNumber": "074"
+    "cardNumber": "074",
+    "methods": [
+      "addPlant",
+      "onCardPlayed",
+      "onNonCardTagAdded"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "SPACE_MIRRORS",
@@ -816,7 +928,9 @@
         "energy": 1
       }
     },
-    "cardNumber": "076"
+    "cardNumber": "076",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "QUANTUM_EXTRACTOR",
@@ -843,7 +957,9 @@
       "amount": 2
     },
     "cardNumber": "079",
-    "description": "Requires 4 science tags. Increase your energy production 4 steps."
+    "description": "Requires 4 science tags. Increase your energy production 4 steps.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "MASS_CONVERTER",
@@ -871,7 +987,9 @@
       "per": "card"
     },
     "cardNumber": "094",
-    "description": "Requires 5 science tags. Increase your energy production 6 steps."
+    "description": "Requires 5 science tags. Increase your energy production 6 steps.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "PHYSICS_COMPLEX",
@@ -895,7 +1013,9 @@
       },
       "addResources": 1
     },
-    "cardNumber": "095"
+    "cardNumber": "095",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "IRONWORKS",
@@ -918,7 +1038,9 @@
         "oxygen": 1
       }
     },
-    "cardNumber": "101"
+    "cardNumber": "101",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "STEELWORKS",
@@ -941,7 +1063,9 @@
         "oxygen": 1
       }
     },
-    "cardNumber": "103"
+    "cardNumber": "103",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ORE_PROCESSOR",
@@ -964,7 +1088,9 @@
         "oxygen": 1
       }
     },
-    "cardNumber": "104"
+    "cardNumber": "104",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "EARTH_OFFICE",
@@ -980,7 +1106,9 @@
       "tag": "EARTH",
       "amount": 3
     },
-    "cardNumber": "105"
+    "cardNumber": "105",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "MEDIA_GROUP",
@@ -992,7 +1120,11 @@
       "EARTH"
     ],
     "cost": 6,
-    "cardNumber": "109"
+    "cardNumber": "109",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "BUSINESS_NETWORK",
@@ -1016,7 +1148,9 @@
       }
     },
     "cardNumber": "110",
-    "description": "Decrease your M€ production 1 step."
+    "description": "Decrease your M€ production 1 step.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "INDUSTRIAL_CENTER",
@@ -1038,7 +1172,13 @@
       }
     },
     "cardNumber": "123",
-    "description": "Place this tile adjacent to a city tile."
+    "description": "Place this tile adjacent to a city tile.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getAvailableSpaces"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "ECOLOGICAL_ZONE",
@@ -1060,7 +1200,15 @@
     "requirements": {
       "greeneries": 1
     },
-    "cardNumber": "128"
+    "cardNumber": "128",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getAvailableSpaces",
+      "onCardPlayed",
+      "onNonCardTagAdded"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "DECOMPOSERS",
@@ -1081,7 +1229,13 @@
       "oxygen": 3
     },
     "cardNumber": "131",
-    "description": "Requires 3% oxygen."
+    "description": "Requires 3% oxygen.",
+    "methods": [
+      "bespokePlay",
+      "onCardPlayed",
+      "onNonCardTagAdded"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "SYMBIOTIC_FUNGUS",
@@ -1104,7 +1258,9 @@
       "temperature": -14
     },
     "cardNumber": "133",
-    "description": "Requires -14 C° or warmer."
+    "description": "Requires -14 C° or warmer.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "EXTREME_COLD_FUNGUS",
@@ -1121,7 +1277,12 @@
       "max": true
     },
     "cardNumber": "134",
-    "description": "It must be -10 C or colder."
+    "description": "It must be -10 C or colder.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "HERBIVORES",
@@ -1149,7 +1310,11 @@
       "addResources": 1
     },
     "cardNumber": "147",
-    "description": "Requires 8% oxygen. +1 animal to this card. -1 any plant production"
+    "description": "Requires 8% oxygen. +1 animal to this card. -1 any plant production",
+    "methods": [
+      "onTilePlaced"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "ANTI_GRAVITY_TECHNOLOGY",
@@ -1170,7 +1335,9 @@
       "amount": 2
     },
     "description": "Requires 7 science tags.",
-    "cardNumber": "150"
+    "cardNumber": "150",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "ADAPTATION_TECHNOLOGY",
@@ -1186,7 +1353,9 @@
     "globalParameterRequirementBonus": {
       "steps": 2
     },
-    "cardNumber": "153"
+    "cardNumber": "153",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "CARETAKER_CONTRACT",
@@ -1205,7 +1374,9 @@
       "tr": 1
     },
     "cardNumber": "154",
-    "description": "Requires 0° C or warmer."
+    "description": "Requires 0° C or warmer.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "NITRITE_REDUCING_BACTERIA",
@@ -1240,7 +1411,9 @@
       }
     },
     "cardNumber": "157",
-    "description": "Add 3 microbes to this card."
+    "description": "Add 3 microbes to this card.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "SHUTTLES",
@@ -1267,7 +1440,9 @@
       "amount": 2
     },
     "cardNumber": "166",
-    "description": "Requires 5% oxygen. Decrease your energy production 1 step and increase your M€ production 2 steps."
+    "description": "Requires 5% oxygen. Decrease your energy production 1 step and increase your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "PETS",
@@ -1290,7 +1465,11 @@
       "addResources": 1
     },
     "cardNumber": "172",
-    "description": "Add 1 animal to this card."
+    "description": "Add 1 animal to this card.",
+    "methods": [
+      "onTilePlaced"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "PROTECTED_HABITATS",
@@ -1299,7 +1478,9 @@
     "module": "base",
     "type": "active",
     "cost": 5,
-    "cardNumber": "173"
+    "cardNumber": "173",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "WATER_SPLITTING_PLANT",
@@ -1323,7 +1504,11 @@
       "oceans": 2
     },
     "cardNumber": "177",
-    "description": "Requires 2 ocean tiles."
+    "description": "Requires 2 ocean tiles.",
+    "methods": [
+      "bespokeCanAct"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "LIVESTOCK",
@@ -1352,7 +1537,9 @@
       "addResources": 1
     },
     "cardNumber": "184",
-    "description": "Requires 9% oxygen. Decrease your plant production 1 step and increase your M€ production 2 steps."
+    "description": "Requires 9% oxygen. Decrease your plant production 1 step and increase your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "OLYMPUS_CONFERENCE",
@@ -1369,7 +1556,13 @@
     "resourceType": "SCIENCE",
     "victoryPoints": 1,
     "cardNumber": "185",
-    "description": "When you play a science tag, including this, either add a science resource to this card, or remove a science resource from this card to draw a card."
+    "description": "When you play a science tag, including this, either add a science resource to this card, or remove a science resource from this card to draw a card.",
+    "methods": [
+      "onCardPlayed",
+      "onNonCardTagAdded",
+      "onScienceTagAdded"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "AQUIFER_PUMPING",
@@ -1388,7 +1581,9 @@
       },
       "ocean": {}
     },
-    "cardNumber": "187"
+    "cardNumber": "187",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "POWER_INFRASTRUCTURE",
@@ -1401,7 +1596,12 @@
       "BUILDING"
     ],
     "cost": 4,
-    "cardNumber": "194"
+    "cardNumber": "194",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "RESTRICTED_AREA",
@@ -1427,7 +1627,9 @@
       "drawCard": 1
     },
     "cardNumber": "199",
-    "description": "Place this tile."
+    "description": "Place this tile.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "IMMIGRANT_CITY",
@@ -1441,7 +1643,14 @@
     ],
     "cost": 13,
     "cardNumber": "200",
-    "description": "Decrease your energy production 1 step and decrease your M€ production 2 steps. Place a city tile."
+    "description": "Decrease your energy production 1 step and decrease your M€ production 2 steps. Place a city tile.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "onTilePlaced",
+      "productionBox"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "UNDERGROUND_DETONATIONS",
@@ -1461,7 +1670,9 @@
         "heat": 2
       }
     },
-    "cardNumber": "202"
+    "cardNumber": "202",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "AI_CENTRAL",
@@ -1489,7 +1700,9 @@
       "tag": "SCIENCE",
       "count": 3
     },
-    "cardNumber": "208"
+    "cardNumber": "208",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "ATMO_COLLECTORS",
@@ -1544,7 +1757,9 @@
       }
     },
     "description": "Add 2 floaters to ANY card.",
-    "cardNumber": "C03"
+    "cardNumber": "C03",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "CRYO_SLEEP",
@@ -1562,7 +1777,9 @@
         "tradeDiscount": 1
       }
     },
-    "cardNumber": "C07"
+    "cardNumber": "C07",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "FLOATER_TECHNOLOGY",
@@ -1580,7 +1797,9 @@
         "count": "1 /* , mustHaveCard: true */"
       }
     },
-    "cardNumber": "C12"
+    "cardNumber": "C12",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "JOVIAN_LANTERNS",
@@ -1614,7 +1833,9 @@
       "addResources": 2
     },
     "cardNumber": "C18",
-    "description": "Requires 1 Jovian tag. Increase your TR 1 step. Add 2 floaters to ANY card."
+    "description": "Requires 1 Jovian tag. Increase your TR 1 step. Add 2 floaters to ANY card.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "JUPITER_FLOATING_STATION",
@@ -1633,7 +1854,12 @@
     },
     "victoryPoints": 1,
     "cardNumber": "C19",
-    "description": "Requires 3 science tags."
+    "description": "Requires 3 science tags.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "MARTIAN_ZOO",
@@ -1653,7 +1879,13 @@
     },
     "victoryPoints": 1,
     "cardNumber": "C24",
-    "description": "Requires 2 city tiles in play."
+    "description": "Requires 2 city tiles in play.",
+    "methods": [
+      "action",
+      "canAct",
+      "onCardPlayed"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "RED_SPOT_OBSERVATORY",
@@ -1694,7 +1926,9 @@
       "count": 3
     },
     "cardNumber": "C32",
-    "description": "Requires 3 science tags. Draw 2 cards."
+    "description": "Requires 3 science tags. Draw 2 cards.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "REFUGEE_CAMPS",
@@ -1716,7 +1950,9 @@
       },
       "addResources": 1
     },
-    "cardNumber": "C33"
+    "cardNumber": "C33",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "RIM_FREIGHTERS",
@@ -1733,7 +1969,9 @@
         "tradeDiscount": 1
       }
     },
-    "cardNumber": "C35"
+    "cardNumber": "C35",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "SKY_DOCKS",
@@ -1760,7 +1998,9 @@
       "amount": 1
     },
     "cardNumber": "C36",
-    "description": "Requires 2 Earth tags. Gain 1 Trade Fleet."
+    "description": "Requires 2 Earth tags. Gain 1 Trade Fleet.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "SPINOFF_DEPARTMENT",
@@ -1778,7 +2018,11 @@
       }
     },
     "cardNumber": "C41",
-    "description": "Increase your M€ production 2 steps."
+    "description": "Increase your M€ production 2 steps.",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "SUBZERO_SALT_FISH",
@@ -1808,7 +2052,9 @@
       "addResources": 1
     },
     "cardNumber": "C42",
-    "description": "Requires -6 C. Decrease any plant production 1 step."
+    "description": "Requires -6 C. Decrease any plant production 1 step.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "TITAN_AIRSCRAPPING",
@@ -1843,7 +2089,9 @@
         ]
       }
     },
-    "cardNumber": "C43"
+    "cardNumber": "C43",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "TITAN_FLOATING_LAUNCHPAD",
@@ -1865,7 +2113,12 @@
       }
     },
     "cardNumber": "C44",
-    "description": "Add two floaters to ANY JOVIAN CARD."
+    "description": "Add two floaters to ANY JOVIAN CARD.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "TITAN_SHUTTLES",
@@ -1880,7 +2133,12 @@
     ],
     "resourceType": "FLOATER",
     "victoryPoints": 1,
-    "cardNumber": "C45"
+    "cardNumber": "C45",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "TRADE_ENVOYS",
@@ -1894,7 +2152,9 @@
         "tradeOffset": 1
       }
     },
-    "cardNumber": "C46"
+    "cardNumber": "C46",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "TRADING_COLONY",
@@ -1913,7 +2173,9 @@
       }
     },
     "cardNumber": "C47",
-    "description": "Place a colony."
+    "description": "Place a colony.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "WARP_DRIVE",
@@ -1935,7 +2197,9 @@
       "amount": 4
     },
     "cardNumber": "C49",
-    "description": "Requires 5 science tags."
+    "description": "Requires 5 science tags.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "LUNA_TRADE_STATION",
@@ -1971,7 +2235,9 @@
       }
     },
     "description": "Spend 2 titanium. Place this tile ON THE RESERVED AREA.",
-    "cardNumber": "M13"
+    "cardNumber": "M13",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "LUNAR_DUST_PROCESSING_PLANT",
@@ -1992,7 +2258,9 @@
       }
     },
     "description": "Spend 1 titanium. Raise the logistic rate 1 step.",
-    "cardNumber": "M17"
+    "cardNumber": "M17",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "ANCIENT_SHIPYARDS",
@@ -2013,7 +2281,12 @@
     "reserveUnits": {
       "titanium": 3
     },
-    "cardNumber": "M19"
+    "cardNumber": "M19",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "LUNAR_OBSERVATION_POST",
@@ -2041,7 +2314,9 @@
       }
     },
     "description": "Spend 1 titanium. 1 VP for every 3 data resources here.",
-    "cardNumber": "M22"
+    "cardNumber": "M22",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "PRIDE_OF_THE_EARTH_ARKSHIP",
@@ -2078,7 +2353,9 @@
       }
     },
     "description": "Requires 1 science and 2 space tags. Spend 2 titanium. 1 VP per science resource here.",
-    "cardNumber": "M24"
+    "cardNumber": "M24",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "STEEL_MARKET_MONOPOLISTS",
@@ -2091,7 +2368,16 @@
       "miningRate": 3
     },
     "description": "Requires the mining rate to be 3 or higher.",
-    "cardNumber": "M28"
+    "cardNumber": "M28",
+    "methods": [
+      "action",
+      "canAct",
+      "canBuy",
+      "canSell",
+      "getBuyingOption",
+      "getSellingOption"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "TITANIUM_MARKET_MONOPOLISTS",
@@ -2104,7 +2390,16 @@
       "miningRate": 3
     },
     "description": "Requires the mining rate to be 3 or higher.",
-    "cardNumber": "M29"
+    "cardNumber": "M29",
+    "methods": [
+      "action",
+      "canAct",
+      "canBuy",
+      "canSell",
+      "getBuyingOption",
+      "getSellingOption"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "SUBTERRANEAN_HABITATS",
@@ -2125,7 +2420,9 @@
       }
     },
     "description": "Spend 2 steel. Raise the habitat rate 1 step.",
-    "cardNumber": "M36"
+    "cardNumber": "M36",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "IMPROVED_MOON_CONCRETE",
@@ -2146,7 +2443,9 @@
       }
     },
     "description": "Spend 2 steel. Raise the mining rate 1 step.",
-    "cardNumber": "M37"
+    "cardNumber": "M37",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "MOONCRATE_BLOCK_FACTORY",
@@ -2163,7 +2462,11 @@
       "all": true
     },
     "description": "Requires 1 mine on The Moon.",
-    "cardNumber": "M38"
+    "cardNumber": "M38",
+    "methods": [
+      "getStandardProjectDiscount"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "LUNAR_SECURITY_STATIONS",
@@ -2185,7 +2488,9 @@
       }
     },
     "description": "Requires 3 road tiles on The Moon. Raise the logistic rate 1 step.",
-    "cardNumber": "M42"
+    "cardNumber": "M42",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "DARKSIDE_INCUBATION_PLANT",
@@ -2227,7 +2532,9 @@
       }
     },
     "description": "Spend 1 titanium. 1 VP for every 2 microbes here.",
-    "cardNumber": "M45"
+    "cardNumber": "M45",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "HE3_REFINERY",
@@ -2248,7 +2555,9 @@
         }
       }
     },
-    "cardNumber": "M49"
+    "cardNumber": "M49",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_ARCHIVES",
@@ -2267,7 +2576,9 @@
         "tag": "MOON"
       }
     },
-    "cardNumber": "M69"
+    "cardNumber": "M69",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_POLITICAL_INSTITUTE",
@@ -2292,7 +2603,9 @@
       }
     },
     "description": "Requires that you have 2 Moon tags.",
-    "cardNumber": "M71"
+    "cardNumber": "M71",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "COPERNICUS_TOWER",
@@ -2331,7 +2644,9 @@
         ]
       }
     },
-    "cardNumber": "M72"
+    "cardNumber": "M72",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "DARKSIDE_OBSERVATORY",
@@ -2343,7 +2658,14 @@
       "SCIENCE"
     ],
     "cost": 12,
-    "cardNumber": "M75"
+    "cardNumber": "M75",
+    "methods": [
+      "action",
+      "addResource",
+      "canAct",
+      "include"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "EARTH_EMBASSY",
@@ -2356,7 +2678,9 @@
       "EARTH"
     ],
     "cost": 16,
-    "cardNumber": "M77"
+    "cardNumber": "M77",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "DARKSIDE_SMUGGLERS_UNION",
@@ -2374,7 +2698,12 @@
       }
     },
     "description": "raise the logistic rate 1 step.",
-    "cardNumber": "M80"
+    "cardNumber": "M80",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "LTF_PRIVILEGES",
@@ -2386,7 +2715,9 @@
       "MOON"
     ],
     "cost": 21,
-    "cardNumber": "M82"
+    "cardNumber": "M82",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "PROCESSOR_FACTORY",
@@ -2413,7 +2744,9 @@
       "resourcesHere": {},
       "per": 3
     },
-    "cardNumber": "M86"
+    "cardNumber": "M86",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "LUNAR_STEEL",
@@ -2428,7 +2761,9 @@
     "behavior": {
       "steelValue": 1
     },
-    "cardNumber": "M87"
+    "cardNumber": "M87",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "RUST_EATING_BACTERIA",
@@ -2451,7 +2786,9 @@
       },
       "addResources": 2
     },
-    "cardNumber": "M88"
+    "cardNumber": "M88",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "SOLAR_PANEL_FOUNDRY",
@@ -2473,7 +2810,9 @@
         "energy": 1
       }
     },
-    "cardNumber": "M89"
+    "cardNumber": "M89",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "MOON_TETHER",
@@ -2495,7 +2834,9 @@
       "amount": 2
     },
     "cardNumber": "M90",
-    "description": "Requires 6 space tags."
+    "description": "Requires 6 space tags.",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "BREEDING_FARMS",
@@ -2533,7 +2874,9 @@
       }
     ],
     "cardNumber": "Pf01",
-    "description": "Requires 1 science tag and 1 animal tag. Raise the temperature 1 step."
+    "description": "Requires 1 science tag and 1 animal tag. Raise the temperature 1 step.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "PREFABRICATION_OF_HUMAN_HABITATS",
@@ -2555,7 +2898,11 @@
       "amount": 2
     },
     "cardNumber": "Pf02",
-    "description": "Requires that you have steel production."
+    "description": "Requires that you have steel production.",
+    "methods": [
+      "getStandardProjectDiscount"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "AGRO_DRONES",
@@ -2572,7 +2919,12 @@
       "temperature": -18
     },
     "cardNumber": "Pf04",
-    "description": "Requires -18° C or warmer."
+    "description": "Requires -18° C or warmer.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "TERRAFORMING_CONTROL_STATION",
@@ -2600,7 +2952,9 @@
       }
     ],
     "cardNumber": "Pf12",
-    "description": "Raise your TR 2 steps."
+    "description": "Raise your TR 2 steps.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "DYSON_SCREENS",
@@ -2639,7 +2993,9 @@
       }
     },
     "cardNumber": "Pf15",
-    "description": "Raise the temperature 1 step. Draw a card. Place a city tile ON THE RESERVED AREA. Raise your energy and heat production 2 steps."
+    "description": "Raise the temperature 1 step. Draw a card. Place a city tile ON THE RESERVED AREA. Raise your energy and heat production 2 steps.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "GEOLOGICAL_EXPEDITION",
@@ -2653,7 +3009,11 @@
       "SCIENCE"
     ],
     "victoryPoints": 2,
-    "cardNumber": "Pf17"
+    "cardNumber": "Pf17",
+    "methods": [
+      "onTilePlaced"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "PRIVATE_SECURITY",
@@ -2665,7 +3025,9 @@
     "tags": [
       "EARTH"
     ],
-    "cardNumber": "Pf25"
+    "cardNumber": "Pf25",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "COMMUNICATION_CENTER",
@@ -2684,7 +3046,15 @@
       "addResources": 2
     },
     "cardNumber": "Pf28",
-    "description": "Decrease your energy production 1 step. Place 2 data on this card."
+    "description": "Decrease your energy production 1 step. Place 2 data on this card.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "onCardPlayedByAnyPlayer",
+      "onResourceAdded",
+      "productionBox"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "MARTIAN_REPOSITORY",
@@ -2704,7 +3074,15 @@
       "per": 3
     },
     "cardNumber": "Pf29",
-    "description": "Decrease your energy production 1 step. 1 VP for every 3 data here."
+    "description": "Decrease your energy production 1 step. 1 VP for every 3 data here.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "onCardPlayed",
+      "onNonCardTagAdded",
+      "productionBox"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "SPACE_RELAY",
@@ -2723,7 +3101,11 @@
       }
     },
     "cardNumber": "Pf33",
-    "description": "Increase your M€ production 1 step."
+    "description": "Increase your M€ production 1 step.",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "MARTIAN_CULTURE",
@@ -2753,7 +3135,9 @@
       }
     },
     "cardNumber": "Pf35",
-    "description": "Requires ANY 2 Mars tags in play.  1 VP for every 2 data here."
+    "description": "Requires ANY 2 Mars tags in play.  1 VP for every 2 data here.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "OZONE_GENERATORS",
@@ -2776,7 +3160,9 @@
       "tr": 1
     },
     "cardNumber": "Pf36",
-    "description": "Requires 6% Oxygen."
+    "description": "Requires 6% Oxygen.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "ECONOMIC_ESPIONAGE",
@@ -2802,7 +3188,9 @@
         "type": "DATA"
       }
     },
-    "cardNumber": "Pf38"
+    "cardNumber": "Pf38",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "CULTIVATION_OF_VENUS",
@@ -2827,7 +3215,9 @@
         "venus": 1
       }
     },
-    "cardNumber": "Pf45"
+    "cardNumber": "Pf45",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "THINK_TANK",
@@ -2851,7 +3241,9 @@
         "type": "DATA"
       }
     },
-    "cardNumber": "Pf49"
+    "cardNumber": "Pf49",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "BOTANICAL_EXPERIENCE",
@@ -2872,7 +3264,12 @@
     "resourceType": "DATA",
     "cardNumber": "Pf50",
     "description": "Requires one greenery tile on Mars.",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "onResourceAdded",
+      "onTilePlaced"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "CRYPTOCURRENCY",
@@ -2885,7 +3282,12 @@
       "POWER"
     ],
     "resourceType": "DATA",
-    "cardNumber": "Pf51"
+    "cardNumber": "Pf51",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "SOLARPEDIA",
@@ -2929,7 +3331,9 @@
       }
     },
     "cardNumber": "Pf54",
-    "description": "Requires 1 Venus, Earth, Mars, and Jovian Tag. Add 2 data to ANY card. 1 VP for every 6 data resources here."
+    "description": "Requires 1 Venus, Earth, Mars, and Jovian Tag. Add 2 data to ANY card. 1 VP for every 6 data resources here.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "ANTHOZOA",
@@ -2958,7 +3362,9 @@
       "addResources": 1
     },
     "cardNumber": "Pf55",
-    "description": "Requires 3 oceans on Mars."
+    "description": "Requires 3 oceans on Mars.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "FLOATER_URBANISM",
@@ -2986,7 +3392,9 @@
       "addResources": 1
     },
     "cardNumber": "Pf59",
-    "description": "Requires 4 Venus tags."
+    "description": "Requires 4 Venus tags.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "NOBEL_LABS",
@@ -3003,7 +3411,12 @@
       "count": 4
     },
     "cardNumber": "Pf60",
-    "description": "Requires 4 science tags."
+    "description": "Requires 4 science tags.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "MICROBIOLOGY_PATENTS",
@@ -3016,7 +3429,11 @@
       "MARS",
       "MICROBE"
     ],
-    "cardNumber": "Pf63"
+    "cardNumber": "Pf63",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "VENERA_BASE",
@@ -3054,7 +3471,9 @@
       }
     },
     "cardNumber": "Pf67",
-    "description": "Requires Unity is ruling or that you have 2 delegates there. Raise your M€ production 3 steps and place a city tile ON THE RESERVED AREA."
+    "description": "Requires Unity is ruling or that you have 2 delegates there. Raise your M€ production 3 steps and place a city tile ON THE RESERVED AREA.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "TERRAFORMING_ROBOTS",
@@ -3075,7 +3494,11 @@
       "resourcesHere": {}
     },
     "cardNumber": "PfT12",
-    "description": "Requires 4 science tags."
+    "description": "Requires 4 science tags.",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "POLLINATORS",
@@ -3106,7 +3529,9 @@
       "addResources": 1
     },
     "cardNumber": "PfT9",
-    "description": "Requires 3 plant tags. Raise your plant production 1 step and your M€ production 2 steps."
+    "description": "Requires 3 plant tags. Raise your plant production 1 step and your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "HIGH_TEMP_SUPERCONDUCTORS",
@@ -3132,7 +3557,11 @@
       }
     },
     "cardNumber": "PfTMP",
-    "description": "Requires Kelvinists are ruling or you have 2 delegates there. Increase your energy production 2 steps."
+    "description": "Requires Kelvinists are ruling or you have 2 delegates there. Increase your energy production 2 steps.",
+    "methods": [
+      "getStandardProjectDiscount"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "SOIL_DETOXIFICATION",
@@ -3155,7 +3584,9 @@
       "greeneryDiscount": 1
     },
     "cardNumber": "PfTmp",
-    "description": "Requires that Greens are ruling or you have 2 delegates there. Increase your plant production 1 step"
+    "description": "Requires that Greens are ruling or you have 2 delegates there. Increase your plant production 1 step",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "PSYCHROPHILES",
@@ -3176,7 +3607,9 @@
       "max": true
     },
     "cardNumber": "P39",
-    "description": "Temperature must be -20 C or lower."
+    "description": "Temperature must be -20 C or lower.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "CERES_TECH_MARKET",
@@ -3200,7 +3633,12 @@
         }
       }
     },
-    "cardNumber": "P68"
+    "cardNumber": "P68",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "CLOUD_TOURISM",
@@ -3222,7 +3660,11 @@
       "addResources": 1
     },
     "cardNumber": "P69",
-    "description": "Increase your M€ production 1 step for each pair of Earth and Venus tags you own. 1 VP for every 3rd floater on this card."
+    "description": "Increase your M€ production 1 step for each pair of Earth and Venus tags you own. 1 VP for every 3rd floater on this card.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "COLONIAL_REPRESENTATION",
@@ -3245,7 +3687,9 @@
       }
     },
     "cardNumber": "P71",
-    "description": "Gain 3 M€ per colony you have."
+    "description": "Gain 3 M€ per colony you have.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "FLOATING_REFINERY",
@@ -3286,7 +3730,9 @@
       }
     },
     "cardNumber": "P73",
-    "description": "Add 1 floater here for each Venus tag you have."
+    "description": "Add 1 floater here for each Venus tag you have.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "L1_TRADE_TERMINAL",
@@ -3304,7 +3750,14 @@
         "tradeOffset": 2
       }
     },
-    "cardNumber": "P78"
+    "cardNumber": "P78",
+    "methods": [
+      "addResources",
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getEligibleCards"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "VENUS_ORBITAL_SURVEY",
@@ -3317,7 +3770,12 @@
       "SPACE"
     ],
     "cost": 18,
-    "cardNumber": "P88"
+    "cardNumber": "P88",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "VENUS_SHUTTLES",
@@ -3338,7 +3796,13 @@
       }
     },
     "cardNumber": "P89",
-    "description": "Add 2 floaters to ANY VENUS CARD."
+    "description": "Add 2 floaters to ANY VENUS CARD.",
+    "methods": [
+      "action",
+      "actionCost",
+      "canAct"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "VENUS_TRADE_HUB",
@@ -3359,7 +3823,9 @@
       }
     ],
     "cardNumber": "P90",
-    "description": "Requires 2 Venus tags."
+    "description": "Requires 2 Venus tags.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "WEATHER_BALLOONS",
@@ -3400,7 +3866,9 @@
       }
     },
     "cardNumber": "033",
-    "description": "Draw 1 card."
+    "description": "Draw 1 card.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "SELF_REPLICATING_ROBOTS",
@@ -3414,7 +3882,15 @@
       "count": 2
     },
     "cardNumber": "210",
-    "description": "Requires 2 science tags."
+    "description": "Requires 2 science tags.",
+    "methods": [
+      "action",
+      "canAct",
+      "deserialize",
+      "getCardDiscount",
+      "serialize"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "PENGUINS",
@@ -3437,7 +3913,9 @@
       "oceans": 8
     },
     "cardNumber": "212",
-    "description": "Requires 8 oceans."
+    "description": "Requires 8 oceans.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "FLOYD_CONTINUUM",
@@ -3450,7 +3928,12 @@
       "SCIENCE"
     ],
     "cardNumber": "X-1",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "ENERGY_MARKET",
@@ -3462,7 +3945,14 @@
       "POWER"
     ],
     "cost": 3,
-    "cardNumber": "X03"
+    "cardNumber": "X03",
+    "methods": [
+      "action",
+      "canAct",
+      "getEnergyOption",
+      "getMegacreditsOption"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "HI_TECH_LAB",
@@ -3476,7 +3966,12 @@
     ],
     "cost": 17,
     "victoryPoints": 1,
-    "cardNumber": "X04"
+    "cardNumber": "X04",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "MERCURIAN_ALLOYS",
@@ -3496,7 +3991,9 @@
       "count": 2
     },
     "cardNumber": "X07",
-    "description": "Requires 2 science tags."
+    "description": "Requires 2 science tags.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "ORBITAL_CLEANUP",
@@ -3523,7 +4020,9 @@
       }
     },
     "cardNumber": "X08",
-    "description": "Decrease your M€ production 2 steps."
+    "description": "Decrease your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "REGO_PLASTICS",
@@ -3539,7 +4038,9 @@
     "behavior": {
       "steelValue": 1
     },
-    "cardNumber": "X10"
+    "cardNumber": "X10",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "SATURN_SURFING",
@@ -3560,7 +4061,12 @@
       }
     },
     "cardNumber": "X11",
-    "description": "Add 1 floater here for every Earth tag you have, including this."
+    "description": "Add 1 floater here for every Earth tag you have, including this.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "ADVERTISING",
@@ -3572,7 +4078,11 @@
       "EARTH"
     ],
     "cost": 4,
-    "cardNumber": "X13"
+    "cardNumber": "X13",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "ASTEROID_DEFLECTION_SYSTEM",
@@ -3596,7 +4106,12 @@
       }
     },
     "cardNumber": "X14",
-    "description": "Decrease your energy production 1 step. 1 VP per asteroid on this card."
+    "description": "Decrease your energy production 1 step. 1 VP per asteroid on this card.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "ASTEROID_HOLLOWING",
@@ -3622,7 +4137,9 @@
       "resourcesHere": {},
       "per": 2
     },
-    "cardNumber": "X15"
+    "cardNumber": "X15",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "COMET_AIMING",
@@ -3660,7 +4177,9 @@
         ]
       }
     },
-    "cardNumber": "X16"
+    "cardNumber": "X16",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "CUTTING_EDGE_TECHNOLOGY",
@@ -3673,7 +4192,11 @@
     ],
     "cost": 12,
     "victoryPoints": 1,
-    "cardNumber": "X18"
+    "cardNumber": "X18",
+    "methods": [
+      "getCardDiscount"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "DIRECTED_IMPACTORS",
@@ -3713,7 +4236,9 @@
         ]
       }
     },
-    "cardNumber": "X19"
+    "cardNumber": "X19",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "MEAT_INDUSTRY",
@@ -3725,7 +4250,11 @@
       "BUILDING"
     ],
     "cost": 5,
-    "cardNumber": "X25"
+    "cardNumber": "X25",
+    "methods": [
+      "onResourceAdded"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "MELTWORKS",
@@ -3745,7 +4274,9 @@
         "steel": 3
       }
     },
-    "cardNumber": "X26"
+    "cardNumber": "X26",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "MOHOLE_LAKE",
@@ -3767,7 +4298,12 @@
       "ocean": {}
     },
     "cardNumber": "X27",
-    "description": "Gain 3 plants. Raise temperature 1 step, and place 1 ocean tile."
+    "description": "Gain 3 plants. Raise temperature 1 step, and place 1 ocean tile.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "SUB_CRUST_MEASUREMENTS",
@@ -3790,7 +4326,9 @@
       "drawCard": 1
     },
     "cardNumber": "X29",
-    "description": "Requires 2 science tags."
+    "description": "Requires 2 science tags.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "TOPSOIL_CONTRACT",
@@ -3809,7 +4347,11 @@
       }
     },
     "cardNumber": "X30",
-    "description": "Gain 3 plants."
+    "description": "Gain 3 plants.",
+    "methods": [
+      "onResourceAdded"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "ASTEROID_RIGHTS",
@@ -3826,7 +4368,12 @@
     "behavior": {
       "addResources": 2
     },
-    "cardNumber": "X34"
+    "cardNumber": "X34",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "BIO_PRINTING_FACILITY",
@@ -3865,7 +4412,9 @@
         ]
       }
     },
-    "cardNumber": "X36"
+    "cardNumber": "X36",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "SUPERCAPACITORS",
@@ -3884,7 +4433,11 @@
       }
     },
     "cardNumber": "X46",
-    "description": "Increase M€ production 1 step."
+    "description": "Increase M€ production 1 step.",
+    "methods": [
+      "onProduction"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "ICY_IMPACTORS",
@@ -3921,7 +4474,9 @@
         ]
       }
     },
-    "cardNumber": "X47"
+    "cardNumber": "X47",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "DIRECTED_HEAT_USAGE",
@@ -3954,7 +4509,9 @@
         ]
       }
     },
-    "cardNumber": "X48"
+    "cardNumber": "X48",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "CARBON_NANOSYSTEMS",
@@ -3969,7 +4526,12 @@
     "cost": 14,
     "victoryPoints": 1,
     "resourceType": "GRAPHENE",
-    "cardNumber": "X52"
+    "cardNumber": "X52",
+    "methods": [
+      "onCardPlayed",
+      "onNonCardTagAdded"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "HOMEOSTASIS_BUREAU",
@@ -3987,7 +4549,9 @@
       }
     },
     "cardNumber": "X57",
-    "description": "Increase your heat production 2 steps."
+    "description": "Increase your heat production 2 steps.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "MARS_NOMADS",
@@ -3996,7 +4560,16 @@
     "module": "promo",
     "type": "active",
     "cost": 13,
-    "cardNumber": "X59"
+    "cardNumber": "X59",
+    "methods": [
+      "action",
+      "bespokeCanPlay",
+      "bespokePlay",
+      "canAct",
+      "canAffordPlacementBonus",
+      "eliglbleDestinationSpaces"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "MARTIAN_LUMBER_CORP",
@@ -4017,7 +4590,12 @@
     "requirements": {
       "greeneries": 2
     },
-    "cardNumber": "X60"
+    "cardNumber": "X60",
+    "methods": [
+      "bespokePlay",
+      "onDiscard"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "NEPTUNIAN_POWER_CONSULTANTS",
@@ -4034,7 +4612,11 @@
       "resourcesHere": {}
     },
     "cardNumber": "X61",
-    "description": "1 VP per hydroelectric resource on this card"
+    "description": "1 VP per hydroelectric resource on this card",
+    "methods": [
+      "onTilePlaced"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "RED_SHIPS",
@@ -4047,7 +4629,12 @@
       "oxygen": 4
     },
     "cardNumber": "X62",
-    "description": "Requires 4% oxygen."
+    "description": "Requires 4% oxygen.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "SOLAR_LOGISTICS",
@@ -4071,7 +4658,11 @@
       "amount": 2
     },
     "cardNumber": "X63",
-    "description": "Gain 2 titanium."
+    "description": "Gain 2 titanium.",
+    "methods": [
+      "onCardPlayedByAnyPlayer"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "ST_JOSEPH_OF_CUPERTINO_MISSION",
@@ -4082,7 +4673,14 @@
     "cost": 7,
     "victoryPoints": "special",
     "cardNumber": "X64",
-    "description": "1 VP per City with a Cathedral in it."
+    "description": "1 VP per City with a Cathedral in it.",
+    "methods": [
+      "action",
+      "canAct",
+      "getEligibleCities",
+      "getVictoryPoints"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "TESLARACT",
@@ -4099,7 +4697,12 @@
       "tr": 1
     },
     "cardNumber": "X66",
-    "description": "Raise your TR 1 step."
+    "description": "Raise your TR 1 step.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "HOSPITALS",
@@ -4131,7 +4734,11 @@
     },
     "victoryPoints": 1,
     "cardNumber": "X69",
-    "description": "Decrease your energy production 1 step."
+    "description": "Decrease your energy production 1 step.",
+    "methods": [
+      "onTilePlaced"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "VERMIN",
@@ -4166,7 +4773,12 @@
       }
     },
     "cardNumber": "X75",
-    "description": "Each player, including you, gets -1 VP per city they have IF THERE ARE AT LEAST 10 ANIMALS HERE."
+    "description": "Each player, including you, gets -1 VP per city they have IF THERE ARE AT LEAST 10 ANIMALS HERE.",
+    "methods": [
+      "getVictoryPoints",
+      "onTilePlaced"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "CLONE_TROOPERS",
@@ -4185,7 +4797,12 @@
     "victoryPoints": {
       "resourcesHere": {}
     },
-    "cardNumber": "SW02"
+    "cardNumber": "SW02",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "starwars"
   },
   {
     "id": "TOSCHE_STATION",
@@ -4198,7 +4815,12 @@
       "PLANT"
     ],
     "cost": 5,
-    "cardNumber": "SW04"
+    "cardNumber": "SW04",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "starwars"
   },
   {
     "id": "EVENT_ANALYSTS",
@@ -4219,7 +4841,9 @@
       "party": "SCIENTISTS"
     },
     "description": "Requires that Scientists are ruling or that you have 2 delegates there.",
-    "cardNumber": "T05"
+    "cardNumber": "T05",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "GMO_CONTRACT",
@@ -4236,7 +4860,12 @@
       "party": "GREENS"
     },
     "description": "Requires that Greens are ruling or that you have 2 delegates there.",
-    "cardNumber": "T06"
+    "cardNumber": "T06",
+    "methods": [
+      "onCardPlayed",
+      "onNonCardTagAdded"
+    ],
+    "gameModule": "turmoil"
   },
   {
     "id": "MARTIAN_MEDIA_CENTER",
@@ -4267,7 +4896,9 @@
       "party": "MARS"
     },
     "cardNumber": "T07",
-    "description": "Requires that Mars First is ruling or that you have 2 delegates there. Increase your M€ production 2 steps."
+    "description": "Requires that Mars First is ruling or that you have 2 delegates there. Increase your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "GEOLOGIST_TEAM",
@@ -4284,7 +4915,11 @@
         "identify": 1
       }
     },
-    "cardNumber": "U001"
+    "cardNumber": "U001",
+    "methods": [
+      "onIdentificationByAnyPlayer"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "TUNNEL_BORING_MACHINE",
@@ -4304,7 +4939,9 @@
         "excavate": 2
       }
     },
-    "cardNumber": "U003"
+    "cardNumber": "U003",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "LABOR_TRAFFICKING",
@@ -4322,7 +4959,12 @@
       "corruption": 2
     },
     "cardNumber": "U014",
-    "description": "Requires 2 corruption."
+    "description": "Requires 2 corruption.",
+    "methods": [
+      "getStandardProjectDiscount",
+      "onStandardProject"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "SEARCH_FOR_LIFE_UNDERGROUND",
@@ -4341,7 +4983,13 @@
       "max": true
     },
     "cardNumber": "U023",
-    "description": "Temperature must -18° C or colder."
+    "description": "Temperature must -18° C or colder.",
+    "methods": [
+      "action",
+      "canAct",
+      "getVictoryPoints"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "GREY_MARKET_EXPLOITATION",
@@ -4378,7 +5026,9 @@
       }
     },
     "cardNumber": "U034",
-    "description": "Requires 2 corruption."
+    "description": "Requires 2 corruption.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "EXCAVATOR_LEASING",
@@ -4390,7 +5040,9 @@
       "BUILDING"
     ],
     "cost": 8,
-    "cardNumber": "U035"
+    "cardNumber": "U035",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "FRIENDS_IN_HIGH_PLACES",
@@ -4418,7 +5070,9 @@
       "amount": 1
     },
     "cardNumber": "U041",
-    "description": "Requires 2 Earth tags. Gain 1 corruption."
+    "description": "Requires 2 Earth tags. Gain 1 corruption.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "MICROGRAVIMETRY",
@@ -4443,7 +5097,9 @@
         }
       }
     },
-    "cardNumber": "U042"
+    "cardNumber": "U042",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "STEM_FIELD_SUBSIDIES",
@@ -4467,7 +5123,13 @@
         }
       }
     },
-    "cardNumber": "U043"
+    "cardNumber": "U043",
+    "methods": [
+      "onCardPlayed",
+      "onNonCardTagAdded",
+      "onScienceTagAdded"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "TITAN_MANUFACTURING_COLONY",
@@ -4490,7 +5152,11 @@
         "excavate": 1
       }
     },
-    "cardNumber": "U044"
+    "cardNumber": "U044",
+    "methods": [
+      "onCardPlayed"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "MINING_MARKET_INSIDER",
@@ -4509,7 +5175,11 @@
       },
       "drawCard": 1
     },
-    "cardNumber": "U046"
+    "cardNumber": "U046",
+    "methods": [
+      "onIdentificationByAnyPlayer"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "SPACE_WARGAMES",
@@ -4553,7 +5223,9 @@
       }
     },
     "cardNumber": "U048",
-    "description": "Put 4 fighters on this card."
+    "description": "Put 4 fighters on this card.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "PRIVATE_MILITARY_CONTRACTOR",
@@ -4577,7 +5249,9 @@
       "addResources": 1
     },
     "cardNumber": "U049",
-    "description": "Add 1 fighter resource to this card."
+    "description": "Add 1 fighter resource to this card.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "SPACE_PRIVATEERS",
@@ -4596,7 +5270,13 @@
       "corruption": 3
     },
     "cardNumber": "U050",
-    "description": "Requires 3 corruption."
+    "description": "Requires 3 corruption.",
+    "methods": [
+      "action",
+      "canAct",
+      "onCardPlayed"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "PERSONAL_SPACECRUISER",
@@ -4632,7 +5312,9 @@
       }
     },
     "cardNumber": "U051",
-    "description": "Gain 1 corruption. Put 1 fighter on ANY card."
+    "description": "Gain 1 corruption. Put 1 fighter on ANY card.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "EARTHQUAKE_MACHINE",
@@ -4662,7 +5344,9 @@
         "excavate": 1
       }
     },
-    "cardNumber": "U055"
+    "cardNumber": "U055",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "MICRO_GEODESICS",
@@ -4685,7 +5369,12 @@
       "addResources": 1
     },
     "cardNumber": "U056",
-    "description": "Excavate an underground resource. Put 1 microbe on this card."
+    "description": "Excavate an underground resource. Put 1 microbe on this card.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "CHEMICAL_FACTORY",
@@ -4712,7 +5401,9 @@
       }
     },
     "cardNumber": "U060",
-    "description": "Gain 2 corruption."
+    "description": "Gain 2 corruption.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "CORPORATE_THEFT",
@@ -4729,7 +5420,12 @@
     },
     "victoryPoints": -1,
     "cardNumber": "U061",
-    "description": "Requires 2 corruption."
+    "description": "Requires 2 corruption.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "MONOPOLY",
@@ -4746,7 +5442,15 @@
     },
     "victoryPoints": -2,
     "cardNumber": "U065",
-    "description": "Requires 2 corruption. Choose a standard resource type. Steal up to 2 units of that resource from EACH OTHER player."
+    "description": "Requires 2 corruption. Choose a standard resource type. Steal up to 2 units of that resource from EACH OTHER player.",
+    "methods": [
+      "action",
+      "bespokeCanPlay",
+      "bespokePlay",
+      "canAct",
+      "stealableResources"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "UNDERGROUND_SHELTERS",
@@ -4765,7 +5469,14 @@
       }
     },
     "cardNumber": "U072",
-    "description": "Excavate an underground resource."
+    "description": "Excavate an underground resource.",
+    "methods": [
+      "action",
+      "availableTokens",
+      "canAct",
+      "getVictoryPoints"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "BATTERY_FACTORY",
@@ -4788,7 +5499,9 @@
         }
       }
     },
-    "cardNumber": "U075"
+    "cardNumber": "U075",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "VOLTAIC_METALLURGY",
@@ -4806,7 +5519,12 @@
       "count": 1
     },
     "cardNumber": "U076",
-    "description": "Requires 1 science tag."
+    "description": "Requires 1 science tag.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "MARTIAN_EXPRESS",
@@ -4822,7 +5540,12 @@
     },
     "resourceType": "WARE",
     "cardNumber": "U078",
-    "description": "Requires 1 city in play."
+    "description": "Requires 1 city in play.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "EXPEDITION_VEHICLES",
@@ -4835,7 +5558,11 @@
       "SCIENCE"
     ],
     "victoryPoints": 1,
-    "cardNumber": "U079"
+    "cardNumber": "U079",
+    "methods": [
+      "onTilePlaced"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "RESEARCH_DEVELOPMENT_HUB",
@@ -4854,7 +5581,11 @@
       "per": 3
     },
     "cardNumber": "U084",
-    "description": "1 VP for every 3 data resources on this card."
+    "description": "1 VP for every 3 data resources on this card.",
+    "methods": [
+      "onProductionPhase"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "INVESTIGATIVE_JOURNALISM",
@@ -4876,7 +5607,12 @@
       }
     },
     "cardNumber": "U087",
-    "description": "Decrease your M€ production 1 step. 1 VP per journalism resource on this card."
+    "description": "Decrease your M€ production 1 step. 1 VP per journalism resource on this card.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "WHALES",
@@ -4896,7 +5632,9 @@
       "oceans": 6
     },
     "cardNumber": "U088",
-    "description": "Requires 6 oceans. 1 VP for each animal on this card."
+    "description": "Requires 6 oceans. 1 VP for each animal on this card.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "THIOLAVA_VENTS",
@@ -4923,7 +5661,11 @@
       "addResources": 2
     },
     "cardNumber": "U090",
-    "description": "Requires an ocean. Increase your heat production 2 steps. 1 VP per 3 microbes on this card."
+    "description": "Requires an ocean. Increase your heat production 2 steps. 1 VP per 3 microbes on this card.",
+    "methods": [
+      "onProductionGain"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "DETECTIVE_TV_SERIES",
@@ -4935,7 +5677,11 @@
     "tags": [
       "EARTH"
     ],
-    "cardNumber": "U091"
+    "cardNumber": "U091",
+    "methods": [
+      "onCardPlayedByAnyPlayer"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "EXPLOITATION_OF_VENUS",
@@ -4956,7 +5702,12 @@
         "venus": 1
       }
     },
-    "cardNumber": "U099"
+    "cardNumber": "U099",
+    "methods": [
+      "bespokePlay",
+      "onDiscard"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "DEEP_FOUNDATIONS",
@@ -4969,7 +5720,13 @@
       "BUILDING"
     ],
     "cost": 4,
-    "cardNumber": "U100"
+    "cardNumber": "U100",
+    "methods": [
+      "action",
+      "canAct",
+      "getCandidateSpaces"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "STANDARD_TECHNOLOGY_UNDERWORLD",
@@ -4981,7 +5738,11 @@
     "tags": [
       "SCIENCE"
     ],
-    "cardNumber": "UX00"
+    "cardNumber": "UX00",
+    "methods": [
+      "onStandardProject"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "AERIAL_MAPPERS",
@@ -5016,7 +5777,9 @@
         ]
       }
     },
-    "cardNumber": "213"
+    "cardNumber": "213",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "DEUTERIUM_EXPORT",
@@ -5051,7 +5814,9 @@
         ]
       }
     },
-    "cardNumber": "221"
+    "cardNumber": "221",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "DIRIGIBLES",
@@ -5071,7 +5836,9 @@
         "mustHaveCard": true
       }
     },
-    "cardNumber": "222"
+    "cardNumber": "222",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "EXTRACTOR_BALLOONS",
@@ -5107,7 +5874,9 @@
         ]
       }
     },
-    "cardNumber": "223"
+    "cardNumber": "223",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "EXTREMOPHILES",
@@ -5136,7 +5905,9 @@
       "count": 2
     },
     "cardNumber": "224",
-    "description": "Requires 2 science tags."
+    "description": "Requires 2 science tags.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "FLOATING_HABS",
@@ -5168,7 +5939,9 @@
       "count": 2
     },
     "cardNumber": "225",
-    "description": "Requires 2 science tags."
+    "description": "Requires 2 science tags.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "FORCED_PRECIPITATION",
@@ -5204,7 +5977,9 @@
         ]
       }
     },
-    "cardNumber": "226"
+    "cardNumber": "226",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "JET_STREAM_MICROSCRAPPERS",
@@ -5240,7 +6015,9 @@
         ]
       }
     },
-    "cardNumber": "234"
+    "cardNumber": "234",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "LOCAL_SHADING",
@@ -5273,7 +6050,9 @@
         "autoSelect": true
       }
     },
-    "cardNumber": "235"
+    "cardNumber": "235",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "MAXWELL_BASE",
@@ -5307,7 +6086,9 @@
       }
     },
     "cardNumber": "238",
-    "description": "Requires Venus 12%. Decrease your energy production 1 step. Place a city tile ON THE RESERVED AREA."
+    "description": "Requires Venus 12%. Decrease your energy production 1 step. Place a city tile ON THE RESERVED AREA.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "ROTATOR_IMPACTS",
@@ -5349,7 +6130,9 @@
       }
     },
     "cardNumber": "243",
-    "description": "Venus must be 14% or lower"
+    "description": "Venus must be 14% or lower",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "STRATOPOLIS",
@@ -5388,7 +6171,9 @@
       }
     },
     "cardNumber": "248",
-    "description": "Requires 2 science tags. Increase your M€ production 2 steps. Place a city tile ON THE RESERVED AREA"
+    "description": "Requires 2 science tags. Increase your M€ production 2 steps. Place a city tile ON THE RESERVED AREA",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "STRATOSPHERIC_BIRDS",
@@ -5412,7 +6197,12 @@
       "addResources": 1
     },
     "cardNumber": "249",
-    "description": "Requires Venus 12% and that you spend 1 floater from any card."
+    "description": "Requires Venus 12% and that you spend 1 floater from any card.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "SULPHUR_EATING_BACTERIA",
@@ -5430,7 +6220,13 @@
       "venus": 6
     },
     "cardNumber": "251",
-    "description": "Requires Venus 6%"
+    "description": "Requires Venus 6%",
+    "methods": [
+      "action",
+      "canAct",
+      "spendResource"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "THERMOPHILES",
@@ -5473,7 +6269,9 @@
       "venus": 6
     },
     "cardNumber": "253",
-    "description": "Requires Venus 6%"
+    "description": "Requires Venus 6%",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "VENUS_MAGNETIZER",
@@ -5497,7 +6295,9 @@
       "venus": 10
     },
     "cardNumber": "256",
-    "description": "Requires Venus 10%."
+    "description": "Requires Venus 10%.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "VENUS_WAYSTATION",
@@ -5515,7 +6315,9 @@
       "tag": "VENUS",
       "amount": 2
     },
-    "cardNumber": "258"
+    "cardNumber": "258",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "VENUSIAN_ANIMALS",
@@ -5537,7 +6339,12 @@
       "venus": 18
     },
     "cardNumber": "259",
-    "description": "Requires Venus 18%"
+    "description": "Requires Venus 18%",
+    "methods": [
+      "onCardPlayed",
+      "onNonCardTagAdded"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "VENUSIAN_INSECTS",
@@ -5562,6 +6369,25 @@
       "venus": 12
     },
     "cardNumber": "260",
-    "description": "Requires Venus 12%."
+    "description": "Requires Venus 12%.",
+    "methods": [],
+    "gameModule": "venus"
+  },
+  {
+    "id": "STANDARD_TECHNOLOGY",
+    "name": "Standard Technology",
+    "class": "StandardTechnology",
+    "module": "base",
+    "type": "active",
+    "tags": [
+      "SCIENCE"
+    ],
+    "cost": 6,
+    "description": "Effect: After you pay for a standard project, except selling patents, you gain 3 M€.",
+    "cardNumber": "156",
+    "methods": [
+      "onStandardProject"
+    ],
+    "gameModule": "corpera"
   }
 ]

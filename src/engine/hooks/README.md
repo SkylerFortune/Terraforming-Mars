@@ -1,7 +1,7 @@
 # `hooks/`: hand-written card logic
 
 Most cards are fully described by data (`behavior`, `action`, `requirements`) and are run by
-the generic interpreter in `behavior/`. This package holds the cards that data can't express:
+the generic interpreter in `engine/behavior.py`. This package holds the cards that data can't express:
 the 446 cards whose original TypeScript overrides one or more methods. Each of those methods
 is a **hook**, and every hook is written here by hand.
 
@@ -10,8 +10,9 @@ Progress is tracked in [`STATUS.md`](STATUS.md), which is generated. Don't edit 
 | Read this | For |
 | --- | --- |
 | [`STATUS.md`](STATUS.md) | What's done, what's missing, what's tested |
-| `data/reference/hooks_reference.md` | What each hook means and when the game calls it |
-| `data/reference/behavior_spec.md` | How the data-driven part works (so you know what *not* to rewrite) |
+| [`hooks_reference.md`](hooks_reference.md) | What each hook means and when the game calls it |
+| [`docs/engine.md`](../../../docs/engine.md) | How the engine runs a game, and where it differs from the original |
+| `src/data/behavior_spec.md` | How the data-driven part works (so you know what *not* to rewrite) |
 
 ---
 
@@ -51,15 +52,18 @@ def sponsor_play(state, owner):
     """Eccentric Sponsor (P11): play a card from hand with a 25 M€ discount.
 
     Original: prelude/EccentricSponsor.ts  (bespokePlay, getCardDiscount)
-    Asks:     play_card -> "sponsor.done"
-    Fizzles:  if no card is played (rule: the prelude is lost)
-    Diverges: the discount is passed to play_card instead of a lastCardPlayed flag.
+    Asks:     card (or pass) -> "eccentric_sponsor.played"
+    The question comes after this card is in play, so `last_card_played` is this card while
+    the player chooses and the discount applies. With nothing playable, the card fizzles.
     """
-    ...
+    return defer(state, owner, "eccentric_sponsor.ask")
 ```
 
-(The helpers used inside hooks, such as `ask`, `play_card` and `fizzle`, live in
-`engine/primitives.py` and `engine/pending.py`.)
+The helpers used inside hooks live in the engine: `ask`, `defer`, `continuation` and
+`Priority` in `engine/pending.py`; stock, production, tiles, payment and triggers in
+`engine/primitives.py`; `play_card`, `fizzle` and `ask_play_from_hand` in
+`engine/actions.py`; spaces and adjacency in `engine/board.py`. Small helpers shared by hook
+modules are in `hooks/_helpers.py`.
 
 A single function can serve several cards. Variants such as the Ares versions share logic
 with their base card, and the decorator takes any number of IDs:
@@ -77,23 +81,23 @@ defining the same hook for the same card twice raises an error at import time.
 
 ### Hooks you decide not to need
 
-Sometimes your design makes a hook unnecessary. Eccentric Sponsor's `getCardDiscount` only
-exists in the original because it uses a `lastCardPlayed` flag. Don't leave it out silently.
-Register a trivial version and record why, so the status page stays honest and the decision
-is visible:
+Sometimes a hook has nothing to do in this engine, for example Tharsis Republic's
+`bespokePlay`, which only matters in solo games. Don't leave it out silently. Register a
+trivial version and record why, so the status page stays honest and the decision is
+visible:
 
 ```python
-@hook("ECCENTRIC_SPONSOR", name="get_card_discount")
-def sponsor_discount(state, owner, card):
-    """Diverges: always 0. The 25 M€ is passed explicitly by sponsor_play."""
-    return 0
+@hook("THARSIS_REPUBLIC", name="bespoke_play")
+def tharsis_republic_play(state, owner):
+    """Diverges: solo mode isn't modelled, so this does nothing."""
+    return state
 ```
 
 ---
 
 ## 3. Signatures
 
-These are the proposed Python signatures, derived from the TypeScript ones. `state` is the
+These are the Python signatures the engine calls, derived from the TypeScript ones. `state` is the
 current game state, and `owner` is the player who owns the card.
 
 | Kind | Rule | Returns |
@@ -110,12 +114,12 @@ them fast and free of side effects.
 | `bespoke_play`, `bespoke_play_before`, `play` | none | state |
 | `bespoke_can_play`, `can_play`, `bespoke_can_act`, `can_act` | none | bool |
 | `action`, `action_essence`, `initial_action` | none | state |
-| `on_card_played` | `card` | state |
-| `on_card_played_by_any_player` | `card, active_player` | state |
-| `on_tile_placed` | `active_player, space, board_type` | state |
+| `on_card_played` | `card_id` | state |
+| `on_card_played_by_any_player` | `card_id, active_player` | state |
+| `on_tile_placed` | `active_player, space_id, board_type` | state |
 | `on_non_card_tag_added`, `on_non_card_tag_added_by_any_player` | `tag` | state |
 | `on_science_tag_added` | `count` | state |
-| `on_resource_added` | `card, count` | state |
+| `on_resource_added` | `card_id, count` | state |
 | `on_increase_terraform_rating_by_any_player` | `player, steps` | state |
 | `on_global_parameter_increase` | `parameter, steps` | state |
 | `on_production_gain` | `resource, amount` | state |
@@ -123,15 +127,25 @@ them fast and free of side effects.
 | `on_colony_added_by_any_player` | `colony_owner` | state |
 | `on_claim` | `is_excavate, space` | state |
 | `on_identification_by_any_player` | `identifying_player, token` | state |
-| `on_standard_project` | `project` | state |
+| `on_standard_project` | `project_id` | state |
 | `gains_from_tile_placement` | `space, tile_type` | `(stock, production)` |
-| `get_card_discount` | `card` | int |
-| `get_standard_project_discount` | `project` | int |
+| `get_card_discount` | `card_id` | int |
+| `get_standard_project_discount` | `project_id` | int |
 | `get_global_parameter_requirement_bonus` | `parameter` | int |
-| `can_pay_with` | none | mapping |
-| `get_victory_points` | `context="default"` | int |
+| `can_pay_with` | see below | mapping |
+| `get_victory_points` | none | int |
 | `production_box` | none | units |
 | `serialize`, `deserialize` | usually not needed | n/a |
+
+`can_pay_with` has two forms. On a standard project it takes no extra arguments and returns
+which resources may pay, for example `{"steel": True}`. On a card in a tableau it takes the
+tags of what is being paid for and returns extra payment sources, `{source: (amount, value)}`.
+
+Trigger call sites are in `engine/primitives.py` (tiles, resources, production, TR, global
+parameters), `engine/actions.py` (cards played, standard projects) and `engine/game.py`
+(production phase). Nothing in the base game adds a tag without a card, so
+`on_non_card_tag_added` and the expansion triggers (`on_colony_added_by_any_player`,
+`on_claim`, ...) have no caller yet; add one when the expansion that needs it lands.
 
 `serialize` and `deserialize` exist in the original only to save and restore per-card
 fields. If your game state is plain frozen data that you can copy and save directly, you
@@ -165,12 +179,13 @@ order matters.
 random number generator. Randomness belongs in effects, through the seeded RNG stored in the
 state.
 
-**Dependencies run one way.** Hooks import from `engine/primitives`, `engine/pending` and
-`state`. Those modules never import `hooks`. This is what prevents circular imports.
+**Dependencies run one way.** Hooks import from `engine/primitives`, `engine/pending`,
+`engine/actions`, `engine/board` and `engine/game_state`. Those modules never import `hooks` at module level (`primitives.get_hook` imports the
+registry lazily). This is what prevents circular imports.
 
 **Prefer data over code.** Before writing a hook, check whether the card's `behavior` already
 covers part of it. The interpreter runs `behavior` first, so a hook should only do the part
-the data can't say. Check `behavior_spec.md` for what the interpreter already handles.
+the data can't say. Check `src/data/behavior_spec.md` for what the interpreter already handles.
 
 ---
 
@@ -231,8 +246,8 @@ python tools/hook_status.py --require-complete  # also exit 1 if any hook is sti
 python tools/hook_status.py --module moon       # list one module's missing hooks; write nothing
 ```
 
-Run it from the project root. By default it reads `data/cards/*.json`, imports `tmars.hooks`
-from `src/`, scans `tests/`, and writes `src/tmars/hooks/STATUS.md`. The paths and package
+Run it from the project root. By default it reads `src/data/*.json`, imports `engine.hooks`
+from `src/`, scans `tests/`, and writes `src/engine/hooks/STATUS.md`. The paths and package
 name can be changed with `--cards`, `--src`, `--hooks-module`, `--tests` and `--out`. It uses
 only the standard library, and its output has no timestamps, so version-control diffs show
 only real changes.
@@ -267,7 +282,13 @@ ignored. The list of known hooks is `HOOK_KINDS` at the top of the script.
 
 ## 8. Keeping the data current
 
-`data/cards/*.json` is generated by `tools/extract_cards.py` from the original TypeScript.
-Never edit it by hand. If a card's data is wrong, fix the extractor and regenerate, so your
-fix survives the next update from the original repo. Then run `hook_status.py`. Any hooks
+Each card's `methods` and `gameModule` fields in `src/data/*.json` come from
+`tools/extract_methods.py`, which reads a checkout of the original repository:
+
+```bash
+python tools/extract_methods.py /path/to/terraforming-mars
+```
+
+Don't edit those two fields by hand; rerun the extractor so the change survives the next
+update from the original repo. Then run `hook_status.py`. Any hooks
 that appeared or disappeared will show up in `STATUS.md`.

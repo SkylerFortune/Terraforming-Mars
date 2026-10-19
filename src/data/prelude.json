@@ -5,7 +5,12 @@
     "class": "CoLeadership",
     "module": "ceos",
     "type": "prelude",
-    "cardNumber": "xxx"
+    "cardNumber": "xxx",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "ceo"
   },
   {
     "id": "AEROSPACE_MISSION",
@@ -18,7 +23,12 @@
     ],
     "startingMegacredits": -14,
     "cardNumber": "Y01",
-    "description": "Place 2 colonies. Pay 14 M€."
+    "description": "Place 2 colonies. Pay 14 M€.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "BY_ELECTION",
@@ -29,7 +39,11 @@
     "tags": [
       "WILD"
     ],
-    "cardNumber": "Y02"
+    "cardNumber": "Y02",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "POLITICAL_UPRISING",
@@ -46,7 +60,12 @@
       }
     },
     "cardNumber": "Y03",
-    "description": "Place 4 delegates in any parties. Draw a Turmoil card."
+    "description": "Place 4 delegates in any parties. Draw a Turmoil card.",
+    "methods": [
+      "bespokePlay",
+      "drawTurmoilCard"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "RESEARCH_GRANT",
@@ -64,7 +83,9 @@
       }
     },
     "cardNumber": "Y04",
-    "description": "Gain 8 M€."
+    "description": "Gain 8 M€.",
+    "methods": [],
+    "gameModule": "community"
   },
   {
     "id": "TRADE_ADVANCE",
@@ -76,7 +97,12 @@
       "EARTH"
     ],
     "cardNumber": "Y05",
-    "description": "Gain 2 M€ [SOLO: Gain 10 M€]. Immediately trade with all active colonies. You may increase the Colony Tile track 1 step before each of these trades."
+    "description": "Gain 2 M€ [SOLO: Gain 10 M€]. Immediately trade with all active colonies. You may increase the Colony Tile track 1 step before each of these trades.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "VALUABLE_GASES",
@@ -94,7 +120,13 @@
       }
     },
     "cardNumber": "Y06",
-    "description": "Gain 6 M€. Play a Venus card from your hand and add 4 floaters to it."
+    "description": "Gain 6 M€. Play a Venus card from your hand and add 4 floaters to it.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getPlayableCards"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "EXECUTIVE_ORDER",
@@ -103,7 +135,11 @@
     "module": "community",
     "type": "prelude",
     "cardNumber": "Y31",
-    "description": "Draw 4 global events. Play 1 as the CURRENT GLOBAL EVENT and discard the rest. Place 2 delegates in any party. Gain 10 M€."
+    "description": "Draw 4 global events. Play 1 as the CURRENT GLOBAL EVENT and discard the rest. Place 2 delegates in any party. Gain 10 M€.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "community"
   },
   {
     "id": "DELTA_PROJECT",
@@ -111,7 +147,12 @@
     "class": "DeltaProject",
     "module": "delta",
     "type": "prelude",
-    "cardNumber": "DP01"
+    "cardNumber": "DP01",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "deltaProject"
   },
   {
     "id": "FIRST_LUNAR_SETTLEMENT",
@@ -132,7 +173,9 @@
       }
     },
     "description": "Place a habitat tile on The Moon and raise the habitat rate 1 step. Increase your M€ production 1 step.",
-    "cardNumber": "MP1"
+    "cardNumber": "MP1",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "CORE_MINE",
@@ -152,7 +195,9 @@
       }
     },
     "description": "Place a mine tile on The Moon and raise the mining rate 1 step. Increase your titanium production 1 step.",
-    "cardNumber": "MP2"
+    "cardNumber": "MP2",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "BASIC_INFRASTRUCTURE",
@@ -172,7 +217,9 @@
       }
     },
     "description": "Place a road tile on The Moon and raise the logistic rate 1 step. Gain 1 trade fleet.",
-    "cardNumber": "MP3"
+    "cardNumber": "MP3",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "LUNAR_PlANNING_OFFICE",
@@ -194,7 +241,9 @@
       }
     },
     "description": "Draw 2 cards with a Moon tag. Gain 6 steel.",
-    "cardNumber": "MP4"
+    "cardNumber": "MP4",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "MINING_COMPLEX",
@@ -215,7 +264,14 @@
       "MOON_ROAD"
     ],
     "description": "Place a mine tile on The Moon and raise the mining rate 1 step. Place a road tile adjacent to placed mine tile and raise the logistic rate 1 step. Pay 7 M€.",
-    "cardNumber": "MP5"
+    "cardNumber": "MP5",
+    "methods": [
+      "adjacentRoadSpaces",
+      "availableMineSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "VENUS_FIRST",
@@ -236,7 +292,9 @@
       }
     },
     "cardNumber": "PfP01",
-    "description": "Raise Venus 2 steps. Draw 2 Venus cards."
+    "description": "Raise Venus 2 steps. Draw 2 Venus cards.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "CO2_REDUCERS",
@@ -258,7 +316,9 @@
       }
     },
     "cardNumber": "PfP03",
-    "description": "Increase your M€ production 3 steps. Draw 2 cards with a microbe tag."
+    "description": "Increase your M€ production 3 steps. Draw 2 cards with a microbe tag.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "HYDROGEN_BOMBARDMENT",
@@ -282,7 +342,9 @@
       }
     },
     "cardNumber": "PfP04",
-    "description": "Increase the Venus scale 1 step. Increase your titanium production 1 step. Gain 6 M€."
+    "description": "Increase the Venus scale 1 step. Increase your titanium production 1 step. Gain 6 M€.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "CREW_TRAINING",
@@ -294,7 +356,11 @@
       "tr": 2
     },
     "cardNumber": "PfP06",
-    "description": "Choose a planet tag. This card counts as having 2 of that tag. Raise the corresponding planetary track 2 steps. Gain 2 TR."
+    "description": "Choose a planet tag. This card counts as having 2 of that tag. Raise the corresponding planetary track 2 steps. Gain 2 TR.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "SURVEY_MISSION",
@@ -311,7 +377,14 @@
       }
     },
     "cardNumber": "PfP07",
-    "description": "Gain 5 steel. Land-claim three non-reserved spaces in a triangle shape. Gain all placement bonuses. Only you may place tiles there, and will gain placement bonuses again."
+    "description": "Gain 5 steel. Land-claim three non-reserved spaces in a triangle shape. Gain all placement bonuses. Only you may place tiles there, and will gain placement bonuses again.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "selectSpace",
+      "validTriplets"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "DESIGN_COMPANY",
@@ -332,7 +405,9 @@
       }
     },
     "cardNumber": "PfP08",
-    "description": "Increase your steel production 1 step. Draw 3 cards with a building tag."
+    "description": "Increase your steel production 1 step. Draw 3 cards with a building tag.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "PERSONAL_AGENDA",
@@ -346,7 +421,11 @@
       }
     },
     "cardNumber": "PfP10",
-    "description": "Increase your M€ production 3 steps. Draw 3 event cards that do not have a space tag."
+    "description": "Increase your M€ production 3 steps. Draw 3 event cards that do not have a space tag.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "VITAL_COLONY",
@@ -359,7 +438,11 @@
       "SPACE"
     ],
     "cardNumber": "PfP11",
-    "description": "Place a colony. Receive the placement bonus twice."
+    "description": "Place a colony. Receive the placement bonus twice.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "DEEP_SPACE_OPERATIONS",
@@ -381,7 +464,9 @@
       }
     },
     "cardNumber": "PfP12",
-    "description": "Gain 4 titanium. Draw 2 event cards with a space tag."
+    "description": "Gain 4 titanium. Draw 2 event cards with a space tag.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "EXPERIENCED_MARTIANS",
@@ -404,7 +489,9 @@
       }
     },
     "cardNumber": "PfP13",
-    "description": "Place 1 delegate in any party. Draw 2 cards with a Mars tag. Increase your M€ production 2 steps."
+    "description": "Place 1 delegate in any party. Draw 2 cards with a Mars tag. Increase your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "THE_NEW_SPACE_RACE",
@@ -422,7 +509,11 @@
       }
     },
     "cardNumber": "PfP14",
-    "description": "REVEALED BEFORE ANY OTHER PRELUDE. You become starting player for the game. Choose and set a ruling policy for the first generation. Gain 12 M€."
+    "description": "REVEALED BEFORE ANY OTHER PRELUDE. You become starting player for the game. Choose and set a ruling policy for the first generation. Gain 12 M€.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "ALLIED_BANK",
@@ -442,7 +533,9 @@
       }
     },
     "cardNumber": "P01",
-    "description": "Increase your M€ production 4 steps. Gain 3 M€."
+    "description": "Increase your M€ production 4 steps. Gain 3 M€.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "AQUIFER_TURBINES",
@@ -460,7 +553,15 @@
     },
     "startingMegacredits": -3,
     "cardNumber": "P02",
-    "description": "Place an ocean tile. Increase your energy production 2 steps. Pay 3 M€."
+    "description": "Place an ocean tile. Increase your energy production 2 steps. Pay 3 M€.",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay",
+      "megacreditsFromCards",
+      "spendable"
+    ],
+    "gameModule": "prelude"
   },
   {
     "id": "BIOFUELS",
@@ -481,7 +582,9 @@
       }
     },
     "cardNumber": "P03",
-    "description": "Increase your energy and plant production 1 step. Gain 2 plants."
+    "description": "Increase your energy and plant production 1 step. Gain 2 plants.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "BIOLAB",
@@ -499,7 +602,9 @@
       "drawCard": 3
     },
     "cardNumber": "P04",
-    "description": "Increase your plant production 1 step. Draw 3 cards."
+    "description": "Increase your plant production 1 step. Draw 3 cards.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "BIOSPHERE_SUPPORT",
@@ -517,7 +622,9 @@
       }
     },
     "cardNumber": "P05",
-    "description": "Increase your plant production 2 steps. Decrease your M€ production 1 step."
+    "description": "Increase your plant production 2 steps. Decrease your M€ production 1 step.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "BUSINESS_EMPIRE",
@@ -535,7 +642,12 @@
     },
     "startingMegacredits": -6,
     "cardNumber": "P06",
-    "description": "Increase your M€ production 6 steps. Pay 6 M€."
+    "description": "Increase your M€ production 6 steps. Pay 6 M€.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "prelude"
   },
   {
     "id": "DOME_FARMING",
@@ -554,7 +666,9 @@
       }
     },
     "cardNumber": "P07",
-    "description": "Increase your M€ production 2 steps and plant production 1 step."
+    "description": "Increase your M€ production 2 steps and plant production 1 step.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "DONATION",
@@ -568,7 +682,9 @@
       }
     },
     "cardNumber": "P08",
-    "description": "Gain 21 M€."
+    "description": "Gain 21 M€.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "EARLY_SETTLEMENT",
@@ -587,7 +703,9 @@
       "city": {}
     },
     "cardNumber": "P09",
-    "description": "Increase your plant production 1 step. Place a city tile."
+    "description": "Increase your plant production 1 step. Place a city tile.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "ECOLOGY_EXPERTS",
@@ -605,7 +723,13 @@
       }
     },
     "cardNumber": "P10",
-    "description": "Increase your plant production 1 step. PLAY A CARD FROM HAND, IGNORING GLOBAL REQUIREMENTS."
+    "description": "Increase your plant production 1 step. PLAY A CARD FROM HAND, IGNORING GLOBAL REQUIREMENTS.",
+    "methods": [
+      "bespokePlay",
+      "canPlay",
+      "getGlobalParameterRequirementBonus"
+    ],
+    "gameModule": "prelude"
   },
   {
     "id": "ECCENTRIC_SPONSOR",
@@ -613,7 +737,12 @@
     "class": "EccentricSponsor",
     "module": "prelude",
     "type": "prelude",
-    "cardNumber": "P11"
+    "cardNumber": "P11",
+    "methods": [
+      "bespokePlay",
+      "getCardDiscount"
+    ],
+    "gameModule": "prelude"
   },
   {
     "id": "EXPERIMENTAL_FOREST",
@@ -632,7 +761,9 @@
       "greenery": {}
     },
     "cardNumber": "P12",
-    "description": "Place 1 greenery tile and raise oxygen 1 step. Reveal cards until you reveal two cards with plant tags on them. Take them into your hand and discard the rest."
+    "description": "Place 1 greenery tile and raise oxygen 1 step. Reveal cards until you reveal two cards with plant tags on them. Take them into your hand and discard the rest.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "GALILEAN_MINING",
@@ -650,7 +781,12 @@
     },
     "startingMegacredits": -5,
     "cardNumber": "P13",
-    "description": "Increase your titanium production 2 steps. Pay 5 M€."
+    "description": "Increase your titanium production 2 steps. Pay 5 M€.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "prelude"
   },
   {
     "id": "GREAT_AQUIFER",
@@ -664,7 +800,9 @@
       }
     },
     "cardNumber": "P14",
-    "description": "Place 2 ocean tiles."
+    "description": "Place 2 ocean tiles.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "HUGE_ASTEROID",
@@ -679,7 +817,12 @@
       }
     },
     "cardNumber": "P15",
-    "description": "Increase temperature 3 steps. Pay 5 M€."
+    "description": "Increase temperature 3 steps. Pay 5 M€.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "prelude"
   },
   {
     "id": "IO_RESEARCH_OUTPOST",
@@ -698,7 +841,9 @@
       "drawCard": 1
     },
     "cardNumber": "P16",
-    "description": "Increase your titanium production 1 step. Draw a card."
+    "description": "Increase your titanium production 1 step. Draw a card.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "LOAN",
@@ -715,7 +860,9 @@
       }
     },
     "cardNumber": "P17",
-    "description": "Gain 30 M€. Decrease your M€ production 2 steps."
+    "description": "Gain 30 M€. Decrease your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "MARTIAN_INDUSTRIES",
@@ -736,7 +883,9 @@
       }
     },
     "cardNumber": "P18",
-    "description": "Increase your energy and steel production 1 step. Gain 6 M€."
+    "description": "Increase your energy and steel production 1 step. Gain 6 M€.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "METAL_RICH_ASTEROID",
@@ -754,7 +903,9 @@
       }
     },
     "cardNumber": "P19",
-    "description": "Increase temperature 1 step. Gain 4 titanium and 4 steel."
+    "description": "Increase temperature 1 step. Gain 4 titanium and 4 steel.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "METALS_COMPANY",
@@ -770,7 +921,9 @@
       }
     },
     "cardNumber": "P20",
-    "description": "Increase your M€, steel and titanium production 1 step."
+    "description": "Increase your M€, steel and titanium production 1 step.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "MINING_OPERATIONS",
@@ -790,7 +943,9 @@
       }
     },
     "cardNumber": "P21",
-    "description": "Increase your steel production 2 steps. Gain 4 steel."
+    "description": "Increase your steel production 2 steps. Gain 4 steel.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "MOHOLE",
@@ -810,7 +965,9 @@
       }
     },
     "cardNumber": "P22",
-    "description": "Increase your heat production 3 steps. Gain 3 heat."
+    "description": "Increase your heat production 3 steps. Gain 3 heat.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "MOHOLE_EXCAVATION",
@@ -831,7 +988,9 @@
       }
     },
     "cardNumber": "P23",
-    "description": "Increase your steel production 1 step and heat production 2 steps. Gain 2 heat."
+    "description": "Increase your steel production 1 step and heat production 2 steps. Gain 2 heat.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "NITROGEN_SHIPMENT",
@@ -849,7 +1008,9 @@
       }
     },
     "cardNumber": "P24",
-    "description": "Increase your plant production 1 step. Increase your TR 1 step. Gain 5 M€."
+    "description": "Increase your plant production 1 step. Increase your TR 1 step. Gain 5 M€.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "ORBITAL_CONSTRUCTION_YARD",
@@ -869,7 +1030,9 @@
       }
     },
     "cardNumber": "P25",
-    "description": "Increase your titanium production 1 step. Gain 4 titanium."
+    "description": "Increase your titanium production 1 step. Gain 4 titanium.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "POLAR_INDUSTRIES",
@@ -887,7 +1050,9 @@
       "ocean": {}
     },
     "cardNumber": "P26",
-    "description": "Increase your heat production 2 steps. Place an ocean tile."
+    "description": "Increase your heat production 2 steps. Place an ocean tile.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "POWER_GENERATION",
@@ -904,7 +1069,9 @@
       }
     },
     "cardNumber": "P27",
-    "description": "Increase your energy production 3 steps."
+    "description": "Increase your energy production 3 steps.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "RESEARCH_NETWORK",
@@ -922,7 +1089,9 @@
       "drawCard": 3
     },
     "cardNumber": "P28",
-    "description": "Increase your M€ production 1 step. Draw 3 cards. After being played, when you perform an action, the wild tag counts as any tag of your choice."
+    "description": "Increase your M€ production 1 step. Draw 3 cards. After being played, when you perform an action, the wild tag counts as any tag of your choice.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "SELF_SUFFICIENT_SETTLEMENT",
@@ -941,7 +1110,9 @@
       "city": {}
     },
     "cardNumber": "P29",
-    "description": "Increase your M€ production 2 steps. Place a city tile."
+    "description": "Increase your M€ production 2 steps. Place a city tile.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "SMELTING_PLANT",
@@ -961,7 +1132,9 @@
       }
     },
     "cardNumber": "P30",
-    "description": "Raise oxygen 2 steps. Gain 5 steel."
+    "description": "Raise oxygen 2 steps. Gain 5 steel.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "SOCIETY_SUPPORT",
@@ -978,7 +1151,9 @@
       }
     },
     "cardNumber": "P31",
-    "description": "Increase your plant, energy and heat production 1 step. Decrease M€ production 1 step."
+    "description": "Increase your plant, energy and heat production 1 step. Decrease M€ production 1 step.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "SUPPLIER",
@@ -998,7 +1173,9 @@
       }
     },
     "cardNumber": "P32",
-    "description": "Increase your energy production 2 steps. Gain 4 steel."
+    "description": "Increase your energy production 2 steps. Gain 4 steel.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "SUPPLY_DROP",
@@ -1014,7 +1191,9 @@
       }
     },
     "cardNumber": "P33",
-    "description": "Gain 3 titanium, 8 steel and 3 plants."
+    "description": "Gain 3 titanium, 8 steel and 3 plants.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "UNMI_CONTRACTOR",
@@ -1030,7 +1209,9 @@
       "tr": 3
     },
     "cardNumber": "P34",
-    "description": "Increase your TR 3 steps. Draw a card."
+    "description": "Increase your TR 3 steps. Draw a card.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "ACQUIRED_SPACE_AGENCY",
@@ -1048,7 +1229,9 @@
       }
     },
     "cardNumber": "P35",
-    "description": "Gain 6 titanium. Reveal cards until you reveal two cards with Space Tags. Take them into your hand, discard the rest."
+    "description": "Gain 6 titanium. Reveal cards until you reveal two cards with Space Tags. Take them into your hand, discard the rest.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "APPLIED_SCIENCE",
@@ -1090,7 +1273,9 @@
       }
     },
     "cardNumber": "P43",
-    "description": "Add 6 science resources here."
+    "description": "Add 6 science resources here.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "ATMOSPHERIC_ENHANCERS",
@@ -1126,7 +1311,12 @@
       }
     },
     "cardNumber": "P44",
-    "description": "Raise temperature 2 steps, or raise oxygen 2 steps, or raise Venus 2 steps. Draw 2 cards with floater icons."
+    "description": "Raise temperature 2 steps, or raise oxygen 2 steps, or raise Venus 2 steps. Draw 2 cards with floater icons.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "BOARD_OF_DIRECTORS",
@@ -1142,7 +1332,13 @@
       "addResources": 4
     },
     "cardNumber": "P45",
-    "description": "Add 4 director resources here."
+    "description": "Add 4 director resources here.",
+    "methods": [
+      "action",
+      "canAct",
+      "discard"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "COLONY_TRADE_HUB",
@@ -1162,7 +1358,11 @@
       }
     },
     "cardNumber": "P46",
-    "description": "Increase your energy production 1 step. Gain 2 titanium"
+    "description": "Increase your energy production 1 step. Gain 2 titanium",
+    "methods": [
+      "onColonyAddedByAnyPlayer"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "CORRIDORS_OF_POWER",
@@ -1179,7 +1379,9 @@
         "megacredits": 4
       }
     },
-    "cardNumber": "P47"
+    "cardNumber": "P47",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "EARLY_COLONIZATION",
@@ -1199,7 +1401,11 @@
       }
     },
     "cardNumber": "P48",
-    "description": "Place a colony. Gain 3 energy."
+    "description": "Place a colony. Gain 3 energy.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "FLOATING_TRADE_HUB",
@@ -1211,7 +1417,14 @@
       "SPACE"
     ],
     "resourceType": "FLOATER",
-    "cardNumber": "P49"
+    "cardNumber": "P49",
+    "methods": [
+      "action",
+      "add2Floaters",
+      "add2FloatersOption",
+      "canAct"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "FOCUSED_ORGANIZATION",
@@ -1223,7 +1436,12 @@
       "drawCard": 1,
       "standardResource": 1
     },
-    "cardNumber": "P50"
+    "cardNumber": "P50",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "HIGH_CIRCLES",
@@ -1243,7 +1461,11 @@
         }
       }
     },
-    "cardNumber": "P51"
+    "cardNumber": "P51",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "INDUSTRIAL_COMPLEX",
@@ -1256,7 +1478,12 @@
     ],
     "startingMegacredits": -18,
     "cardNumber": "P52",
-    "description": "Lose 18 M€. INCREASE ALL YOUR PRODUCTIONS THAT ARE LOWER THAN 1, TO 1."
+    "description": "Lose 18 M€. INCREASE ALL YOUR PRODUCTIONS THAT ARE LOWER THAN 1, TO 1.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "MAIN_BELT_ASTEROIDS",
@@ -1280,7 +1507,13 @@
       }
     },
     "cardNumber": "P53",
-    "description": "Lose 5 M€. 1 VP per 2 asteroids here."
+    "description": "Lose 5 M€. 1 VP per 2 asteroids here.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "onResourceAdded"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "NOBEL_PRIZE",
@@ -1298,7 +1531,11 @@
       }
     },
     "cardNumber": "P54",
-    "description": "Gain 5 M€. Draw 2 cards with requirements."
+    "description": "Gain 5 M€. Draw 2 cards with requirements.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "OLD_MINING_COLONY",
@@ -1318,7 +1555,12 @@
       }
     },
     "cardNumber": "P55",
-    "description": "Increase your titanium production 1 step. Place 1 colony. Discard 1 card."
+    "description": "Increase your titanium production 1 step. Place 1 colony. Discard 1 card.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "PLANETARY_ALLIANCE",
@@ -1335,7 +1577,11 @@
       "tr": 2
     },
     "cardNumber": "P56",
-    "description": "Raise your TR 2 steps. Draw 1 Jovian card and 1 Venus card."
+    "description": "Raise your TR 2 steps. Draw 1 Jovian card and 1 Venus card.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "PRESERVATION_PROGRAM",
@@ -1347,7 +1593,11 @@
       "tr": 5
     },
     "cardNumber": "P57",
-    "description": "Raise your TR 5 steps."
+    "description": "Raise your TR 5 steps.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "PROJECT_EDEN",
@@ -1364,7 +1614,13 @@
       "oxygen": 1
     },
     "cardNumber": "P58",
-    "description": "Place 1 ocean tile, 1 city tile, and 1 greenery tile. Discard 3 cards."
+    "description": "Place 1 ocean tile, 1 city tile, and 1 greenery tile. Discard 3 cards.",
+    "methods": [
+      "bespokeCanPlay",
+      "play",
+      "selectNextAction"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "RECESSION",
@@ -1378,7 +1634,12 @@
       }
     },
     "cardNumber": "P59",
-    "description": "EACH OPPONENT loses 5 M€ and decreases their M€ production 1 step. You gain 10 M€."
+    "description": "EACH OPPONENT loses 5 M€ and decreases their M€ production 1 step. You gain 10 M€.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "RISE_TO_POWER",
@@ -1398,7 +1659,9 @@
       }
     },
     "cardNumber": "P60",
-    "description": "Increase your M€ production 3 steps and place 3 delegates. YOU MAY PLACE THEM IN SEPARATE PARTIES."
+    "description": "Increase your M€ production 3 steps and place 3 delegates. YOU MAY PLACE THEM IN SEPARATE PARTIES.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "SOIL_BACTERIA",
@@ -1419,7 +1682,12 @@
       }
     },
     "description": "Draw 2 microbe cards and gain 3 plants.",
-    "cardNumber": "P61"
+    "cardNumber": "P61",
+    "methods": [
+      "onCardPlayed",
+      "onNonCardTagAdded"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "SPACE_LANES",
@@ -1450,7 +1718,9 @@
       }
     },
     "cardNumber": "P62",
-    "description": "Gain 3 titanium."
+    "description": "Gain 3 titanium.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "SUITABLE_INFRASTRUCTURE",
@@ -1467,7 +1737,11 @@
       }
     },
     "cardNumber": "P63",
-    "description": "Gain 5 steel."
+    "description": "Gain 5 steel.",
+    "methods": [
+      "onProductionGain"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "TERRAFORMING_DEAL",
@@ -1478,7 +1752,11 @@
     "tags": [
       "EARTH"
     ],
-    "cardNumber": "P64"
+    "cardNumber": "P64",
+    "methods": [
+      "onIncreaseTerraformRatingByAnyPlayer"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "VENUS_CONTRACT",
@@ -1497,7 +1775,11 @@
       "tr": 1
     },
     "cardNumber": "P65",
-    "description": "Draw 1 Venus card. Raise your TR 1 step."
+    "description": "Draw 1 Venus card. Raise your TR 1 step.",
+    "methods": [
+      "onGlobalParameterIncrease"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "VENUS_L1_SHADE",
@@ -1514,7 +1796,9 @@
       }
     },
     "cardNumber": "P66",
-    "description": "Raise Venus 3 steps."
+    "description": "Raise Venus 3 steps.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "WORLD_GOVERNMENT_ADVISOR",
@@ -1530,7 +1814,12 @@
       "drawCard": 1
     },
     "cardNumber": "P67",
-    "description": "Raise your TR 2 steps. Draw 1 card."
+    "description": "Raise your TR 2 steps. Draw 1 card.",
+    "methods": [
+      "action",
+      "canAct"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "CORPORATE_ARCHIVES",
@@ -1551,7 +1840,9 @@
       }
     },
     "cardNumber": "X39",
-    "description": "Gain 13 M€."
+    "description": "Gain 13 M€.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "DOUBLE_DOWN",
@@ -1560,7 +1851,13 @@
     "module": "promo",
     "type": "prelude",
     "cardNumber": "X40",
-    "description": ""
+    "description": "",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "cloneablePreludes"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "MERGER",
@@ -1569,7 +1866,13 @@
     "module": "promo",
     "type": "prelude",
     "cardNumber": "X41",
-    "description": "Draw 4 corporation cards. Play one of them and discard the other 3. Then pay 42 M€."
+    "description": "Draw 4 corporation cards. Play one of them and discard the other 3. Then pay 42 M€.",
+    "methods": [
+      "bespokePlay",
+      "dealCorporations",
+      "spendableMegacredits"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "NEW_PARTNER",
@@ -1583,7 +1886,12 @@
       }
     },
     "cardNumber": "X42",
-    "description": "Raise your M€ production 1 step. Immediately draw 2 prelude cards. Play 1 of them, and discard the other."
+    "description": "Raise your M€ production 1 step. Immediately draw 2 prelude cards. Play 1 of them, and discard the other.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "HEAD_START",
@@ -1596,7 +1904,11 @@
         "steel": 2
       }
     },
-    "cardNumber": "X43"
+    "cardNumber": "X43",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "ANTI_DESERTIFICATION_TECHNIQUES",
@@ -1618,7 +1930,9 @@
       }
     },
     "cardNumber": "X49",
-    "description": "Gain 3 M€. Increase your plant production 1 step and your steel production 1 step."
+    "description": "Gain 3 M€. Increase your plant production 1 step and your steel production 1 step.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "ESTABLISHED_METHODS",
@@ -1631,7 +1945,13 @@
         "megacredits": 30
       }
     },
-    "cardNumber": "X54"
+    "cardNumber": "X54",
+    "methods": [
+      "askForStandardProject",
+      "bespokePlay",
+      "prepareForSecondStandardProject"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "GIANT_SOLAR_COLLECTOR",
@@ -1652,7 +1972,9 @@
       }
     },
     "cardNumber": "X55",
-    "description": "Increase your energy production 2 steps. Raise Venus 1 step."
+    "description": "Increase your energy production 2 steps. Raise Venus 1 step.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "STRATEGIC_BASE_PLANNING",
@@ -1673,7 +1995,12 @@
       "city": {}
     },
     "cardNumber": "X65",
-    "description": "Pay 3M€. Place a city. Place a colony."
+    "description": "Pay 3M€. Place a city. Place a colony.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "ALBEDO_PLANTS",
@@ -1693,7 +2020,12 @@
       }
     },
     "cardNumber": "X78",
-    "description": "Increase plant production 1 step. Gain 1 plant."
+    "description": "Increase plant production 1 step. Gain 1 plant.",
+    "methods": [
+      "onCardPlayed",
+      "onNonCardTagAdded"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "BOOM_TOWN",
@@ -1712,7 +2044,13 @@
       "titaniumValue": -1
     },
     "cardNumber": "X80",
-    "description": "Place a city tile on an area with a STEEL OR TITANIUM PLACEMENT BONUS. Increase your titanium production 2 steps."
+    "description": "Place a city tile on an area with a STEEL OR TITANIUM PLACEMENT BONUS. Increase your titanium production 2 steps.",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "INHERITED_FORTUNE",
@@ -1735,7 +2073,9 @@
       }
     },
     "cardNumber": "U0P03",
-    "description": "Gain 1 corruption and 10 M€. Increase your M€ production 1 step."
+    "description": "Gain 1 corruption and 10 M€. Increase your M€ production 1 step.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "FREE_TRADE_PORT",
@@ -1756,7 +2096,9 @@
       }
     },
     "cardNumber": "UP01",
-    "description": "Gain 1 corruption. Place a colony."
+    "description": "Gain 1 corruption. Place a colony.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "INVESTOR_PLAZA",
@@ -1775,7 +2117,9 @@
       }
     },
     "cardNumber": "UP02",
-    "description": "Place a city and gain 1 corruption."
+    "description": "Place a city and gain 1 corruption.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "TUNNELING_OPERATION",
@@ -1792,7 +2136,12 @@
       }
     },
     "cardNumber": "UP05",
-    "description": "Identify 1 underground resource. Then excavate 2 underground resources. Increase your steel production 2 steps."
+    "description": "Identify 1 underground resource. Then excavate 2 underground resources. Increase your steel production 2 steps.",
+    "methods": [
+      "bespokePlay",
+      "canPlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "GEOLOGICAL_EXPERTISE",
@@ -1813,7 +2162,9 @@
       }
     },
     "cardNumber": "UP06",
-    "description": "Identify 4 underground resources. Claim one of them. Draw 2 cards with science tags."
+    "description": "Identify 4 underground resources. Claim one of them. Draw 2 cards with science tags.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "UNDERGROUND_SETTLEMENT",
@@ -1826,7 +2177,13 @@
       "BUILDING"
     ],
     "cardNumber": "UP07",
-    "description": "Place a city. Then identify the underground resources in all adjacent spaces. Claim 1 of them."
+    "description": "Place a city. Then identify the underground resources in all adjacent spaces. Claim 1 of them.",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "GANYMEDE_TRADING_COMPANY",
@@ -1850,7 +2207,9 @@
       }
     },
     "cardNumber": "UP08",
-    "description": "Gain 1 corruption, 3 titanium, and a trade fleet."
+    "description": "Gain 1 corruption, 3 titanium, and a trade fleet.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "CENTRAL_RESERVOIR",
@@ -1862,7 +2221,13 @@
       "BUILDING"
     ],
     "cardNumber": "UP09",
-    "description": "Place an ocean ON AN AREA NOT RESERVED FOR OCEAN. Then identify the underground resources in all adjacent spaces. Claim 2 of them."
+    "description": "Place an ocean ON AN AREA NOT RESERVED FOR OCEAN. Then identify the underground resources in all adjacent spaces. Claim 2 of them.",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "BATTERY_SHIPMENT",
@@ -1882,7 +2247,9 @@
       }
     },
     "cardNumber": "UP10",
-    "description": "Gain 12 energy. Increase your energy production 2 steps."
+    "description": "Gain 12 energy. Increase your energy production 2 steps.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "DEEPWATER_DOME",
@@ -1904,7 +2271,11 @@
       "ocean": {}
     },
     "cardNumber": "UP11",
-    "description": "Increase your plant production 1 step. Place an ocean."
+    "description": "Increase your plant production 1 step. Place an ocean.",
+    "methods": [
+      "onClaim"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "SECRET_RESEARCH",
@@ -1922,7 +2293,9 @@
       }
     },
     "cardNumber": "UP12",
-    "description": "Gain 1 corruption and draw 3 cards."
+    "description": "Gain 1 corruption and draw 3 cards.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "PROSPECTING",
@@ -1935,7 +2308,12 @@
       "SPACE"
     ],
     "cardNumber": "UP13",
-    "description": "Pay 4 M€. Put an additional colony tile of your choice into play. Then place a colony on it."
+    "description": "Pay 4 M€. Put an additional colony tile of your choice into play. Then place a colony on it.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "ELECTION_SPONSORSHIP",
@@ -1957,7 +2335,9 @@
         "influenceBonus": 1
       }
     },
-    "cardNumber": "UP14"
+    "cardNumber": "UP14",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "CLOUD_VORTEX_OUTPOST",
@@ -1986,6 +2366,8 @@
         "mustHaveCard": true
       }
     },
-    "cardNumber": "UP15"
+    "cardNumber": "UP15",
+    "methods": [],
+    "gameModule": "underworld"
   }
 ]
