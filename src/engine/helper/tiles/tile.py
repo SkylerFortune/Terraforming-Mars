@@ -1,5 +1,5 @@
-from src.engine.classes.player import Player
-from game_manager import Reward
+from engine.old.classes.player import Player
+from engine.game_manager import Reward
 
 
 class Tile:

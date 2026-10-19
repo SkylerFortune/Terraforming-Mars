@@ -1,7 +1,7 @@
 from abc import abstractmethod
 
-from src.engine.classes.helper.action import Action
-from src.engine.classes.helper.game_state import GameState
+from engine.old.classes.helper.action import Action
+from engine.game_state import GameState
 
 
 class BaseAgent:

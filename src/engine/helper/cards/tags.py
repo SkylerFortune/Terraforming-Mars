@@ -14,3 +14,6 @@ class Tags:
     venus: int = 0
     other: Tags | None = None
     everyone: Tags | None = None
+
+    def sum(self):
+        return self.science + self.microbe + self.building + self.city + self.power + self.animal + self.plant + self.earth + self.jovian + self.venus

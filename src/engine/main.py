@@ -14,8 +14,8 @@ TODO:
 import random
 
 from src.agents.random_agent import RandomAgent
-from src.engine.classes.player import Player
-from game_manager import GameManager
+from engine.old.classes.player import Player
+from engine.game_manager import GameManager
 
 ocean_locations = []
 volcano_locations = []

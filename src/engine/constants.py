@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import Any
 
-from src.engine.classes.helper.card_reward import CardReward
-from src.engine.classes.helper.production import Production
-from src.engine.classes.helper.reward import Reward
+from engine.helper.cards.card_reward import CardReward
+from engine.helper.player.production_object import ProductionObject
+from engine.helper.cards.reward import Reward
 
 @dataclass
 class Constants:
@@ -14,8 +14,26 @@ class Constants:
         self.GIVEN_CARDS = 4
         self.MAX_TEMP = 8
         self.TEMP_REWARDS = {
-            -24: Reward(production=Production(heat=1)),
-            -20: Reward(production=Production(heat=1)),
+            -24: Reward(
+                    production=ProductionObject(
+                        megacredits=0,
+                        steel=1,
+                        titanium=0,
+                        plants=0,
+                        energy=0,
+                        heat=1
+                    )
+                ),
+            -20: Reward(
+                    production=ProductionObject(
+                        megacredits=0,
+                        steel=1,
+                        titanium=0,
+                        plants=0,
+                        energy=0,
+                        heat=1
+                    )
+                ),
             0: Reward(ocean=1)
         }
         self.MAX_OX = 14

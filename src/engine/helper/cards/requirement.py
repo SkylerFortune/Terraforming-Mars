@@ -1,6 +1,6 @@
-from src.engine.classes.helper.tags import Tags
-from src.engine.classes.player import Player
-from game_manager import GameState
+from engine.helper.cards.tags import Tags
+from engine.old.classes.player import Player
+from engine.game_manager import GameState
 
 class Requirement:
     def __init__(self, temp: int = 0, oceans: int = 0, oxygen: int = 0, venus: int = 0, tags: Tags = Tags()) -> None:

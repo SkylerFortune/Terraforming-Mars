@@ -1,8 +1,8 @@
 from typing import Callable, Optional
 
-from src.engine.classes.player import Player
-from src.engine.classes.tile import Tile
-from game_manager import GameState, Reward
+from engine.helper.player.player_state import PlayerState
+from engine.helper.tiles.tile import Tile
+from engine.game_manager import GameState, Reward
 
 class Planet:
     def __init__(self, name: str, placement_bonus: Reward, colony_bonus: Reward | Callable[[], Reward], track_values: list[int] | None, starting_index: int = 1, resource: str | Callable[[], Reward] | None = None) -> None:
@@ -11,7 +11,7 @@ class Planet:
         self.colony_bonus = colony_bonus
         self.index = starting_index
         self.track_values = track_values
-        self.colonies: list[Player] = [] #list of player refs
+        self.colonies: list[PlayerState] = [] #list of player refs
         if track_values:
             self.maximum_index = len(track_values)
         else:
@@ -22,7 +22,7 @@ class Planet:
         if self.index < self.maximum_index:
             self.index += 1
 
-    def place_colony(self, player: Player) -> None:
+    def place_colony(self, player: PlayerState) -> None:
         if len(self.colonies) == 3:
             return
 

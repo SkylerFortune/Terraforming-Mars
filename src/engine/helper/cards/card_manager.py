@@ -3,11 +3,12 @@ import json
 import random
 from types import MappingProxyType
 
-from src.engine.classes.board import Board
-from src.engine.classes.card import CardDef, _as_tuple_of_dicts
-from src.engine.classes.helper.production import Production
-from src.engine.classes.helper.requirement import Requirement
-from src.engine.classes.helper.reward import Reward
+from engine.helper.board import Board
+from engine.helper.cards.card_def import CardDef, _as_tuple_of_dicts
+
+from engine.helper.cards.requirement import Requirement
+from engine.helper.cards.reward import Reward
+from engine.helper.cards.tags import Tags
 from src.engine.hooks.registry import HOOKS
 
 
@@ -56,7 +57,7 @@ class CardManager:
                     type=raw["type"], 
                     module=raw["module"],
                     cost=raw.get("cost"),
-                    tags=tuple(raw.get("tags") or ()),
+                    tags = Tags(**raw.get("tags", {})),
                     requirements=_as_tuple_of_dicts(raw.get("requirements")),
                     behavior=raw.get("behavior"),
                     action=raw.get("action"),
@@ -66,7 +67,5 @@ class CardManager:
                     hooks=MappingProxyType(hooks.get(raw["id"], {})),
                 )
         return cards
-    
-    #return list of cards
 
 

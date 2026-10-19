@@ -1,6 +1,6 @@
-from src.engine.classes.player import Player
-from src.engine.classes.tile import Tile
-from game_manager import Reward
+from engine.old.classes.player import Player
+from engine.helper.tiles.tile import Tile
+from engine.game_manager import Reward
 
 class Board:
     def __init__(self, ocean_locations: list[tuple[int, int, int]], volcano_locations: list[tuple[int, int, int]]) -> None:
