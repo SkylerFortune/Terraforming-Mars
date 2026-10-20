@@ -1,64 +1,120 @@
+"""Run a full game from the command line with random agents.
+
+    cd src
+    python -m engine.main --players 4 --seed 1
+    python -m engine.main --players 3 --seed 7 --modules base corpera --log
+    python -m engine.main --games 200 --players 4          # smoke test: many seeds, summary only
+
+Any agent with a `choose(state, pending)` method can play; see `agents/base_agent.py`.
 """
-TODO:
-    - MAKE GAMESTATE LOGIC IMMUTABLE
-    - card input: united_nations_mars_initiative
-    - Add resolve corps/preludes to game loop
-    - Add isolated cities on board
-    - Implement card playing logic
-    - Start adding cards
-    - Research player logic via deep learning -> simulation environment?
-        -Requirements
-    - Graph traversal for board, similar to catan
-"""
+from __future__ import annotations
 
-import random
+import argparse
+import sys
+import time
+from collections.abc import Mapping
 
-from src.agents.random_agent import RandomAgent
-from engine.old.classes.player import Player
-from engine.game_manager import GameManager
+from agents.base_agent import BaseAgent
+from agents.random_agent import RandomAgent
+from engine.game import is_over, new_game
+from engine.game_state import GameOptions, GameState
+from engine.pending import advance, resume
+from engine.cards import card
+from engine.scoring import AWARD_VP, MILESTONE_VP, award_winners, card_vp, final_scores, ranking
 
-ocean_locations = []
-volcano_locations = []
-expansions = []
-settings = {}
+DEFAULT_MODULES = ("base", "corpera", "prelude")
+MAX_STEPS = 200_000     # guards against a rule bug looping forever
 
-players = [Player(1, RandomAgent()), Player(2, RandomAgent()), Player(3, RandomAgent()), Player(4, RandomAgent())]
 
-game_manager = GameManager(players=players, ocean_locations=ocean_locations, volcano_locations=volcano_locations, expansions=expansions, settings=settings)
-
-#TODO: update all logic
-def setup_phase(self):
-    #deal cards, corps, and preludes
-    for player in game_manager.game_state.players:
-        give_cards(player, 10)
-        player.gain_cards(game_manager.game_state.draw_corps(2))
-        player.gain_cards(game_manager.game_state.draw_preludes(2))
-    #TODO: players decide which cards to keep
-    game_loop()
-
-def game_loop(self):
-    for player in game_manager.game_state.players:
-        if player.corp:
-            player.play_card(player.corp, game_manager.game_state.board)
-        if player.preludes:
-            for prelude in player.preludes:
-                player.play_card(prelude, game_manager.game_state.board)
-    #do turns
-    while not is_game_over():
-        resolve_current_player_turn()
-        game_manager.game_state.current_player = game_manager.game_state.next_player()
-        if game_manager.game_state.generation_over:
-            production()
-            game_manager.game_state.generation_over = False
-
-    endgame()
-
-def endgame(self):
-    #place greenery tiles
+class GameStuck(RuntimeError):
     pass
-    #count points
-    for player in game_manager.game_state.players:
-        print(f"{player.id}: {calculate_points(player)}")
 
 
-#TODO: build main game loop
+def play(state: GameState, agents: Mapping[str, BaseAgent], max_steps: int = MAX_STEPS) -> GameState:
+    """Answer questions until the game ends. Returns the final state."""
+    state = advance(state)
+    for _ in range(max_steps):
+        if is_over(state):
+            return state
+        if not state.pending:
+            raise GameStuck(f"nothing pending in phase {state.phase!r} but the game isn't over")
+        question = state.pending[0]
+        state = resume(state, agents[question.player].choose(state, question))
+    raise GameStuck(f"no result after {max_steps} answers")
+
+
+def run_game(n_players: int, seed: int, modules=DEFAULT_MODULES, log: bool = False,
+             max_generations: int = 100) -> GameState:
+    ids = [f"p{i + 1}" for i in range(n_players)]
+    options = GameOptions(modules=tuple(modules), log=log, max_generations=max_generations)
+    state = new_game(ids, seed=seed, options=options)
+    agents = {pid: RandomAgent(seed=f"{seed}:{pid}") for pid in ids}
+    return play(state, agents)
+
+
+def print_result(state: GameState) -> None:
+    scores = final_scores(state)
+    print(f"Game over after {state.generation} generations "
+          f"(temperature {state.temperature}, oxygen {state.oxygen}%, oceans {state.oceans}).")
+    for place, pid in enumerate(ranking(state), start=1):
+        s = scores[pid]
+        parts = ", ".join(f"{k} {v}" for k, v in s.items() if k != "total" and v)
+        corp = state.player(pid).corporation
+        print(f"  {place}. {pid} ({corp}): {s['total']} VP  [{parts}]")
+    print(explain_scores(state))
+
+
+def explain_scores(state: GameState) -> str:
+    """Where the milestone, award and card points came from."""
+    lines = []
+    if state.claimed_milestones:
+        claimed = ", ".join(f"{name} by {pid}" for name, pid in state.claimed_milestones)
+        lines.append(f"Milestones ({MILESTONE_VP} VP each): {claimed}")
+    for name, funder in state.funded_awards:
+        first, second = award_winners(state, name)
+        line = f"Award {name} (funded by {funder}): 1st {', '.join(first)} ({AWARD_VP[0]} VP)"
+        if second:
+            line += f", 2nd {', '.join(second)} ({AWARD_VP[1]} VP)"
+        lines.append(line)
+    for p in state.players:
+        vps = [(cid, card_vp(state, p.id, cid)) for cid in p.tableau + p.events]
+        vps = [f"{card(cid).name} {v:+d}" for cid, v in vps if v]
+        if vps:
+            lines.append(f"Card VP for {p.id}: {', '.join(vps)}")
+    return "\n".join("  " + line for line in lines)
+
+
+def main(argv: list[str] | None = None) -> int:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--players", type=int, default=2, help="number of players, 2 to 5")
+    ap.add_argument("--seed", type=int, default=0, help="seed for the first game")
+    ap.add_argument("--games", type=int, default=1, help="play this many games with seeds seed, seed+1, ...")
+    ap.add_argument("--modules", nargs="+", default=list(DEFAULT_MODULES),
+                    help="card modules to use (default: base corpera prelude)")
+    ap.add_argument("--max-generations", type=int, default=100)
+    ap.add_argument("--log", action="store_true", help="print the game log")
+    args = ap.parse_args(argv)
+
+    failures = 0
+    started = time.perf_counter()
+    for seed in range(args.seed, args.seed + args.games):
+        try:
+            state = run_game(args.players, seed, args.modules, log=args.log, max_generations=args.max_generations)
+        except Exception as e:     # report and carry on, so one bad seed doesn't hide the rest
+            failures += 1
+            print(f"seed {seed}: {type(e).__name__}: {e}", file=sys.stderr)
+            if args.games == 1:
+                raise
+            continue
+        if args.games == 1:
+            if args.log:
+                print("\n".join(state.log))
+            print_result(state)
+    if args.games > 1:
+        elapsed = time.perf_counter() - started
+        print(f"{args.games - failures}/{args.games} games finished, {failures} failed, {elapsed:.1f}s")
+    return 1 if failures else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

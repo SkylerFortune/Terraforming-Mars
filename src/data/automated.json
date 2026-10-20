@@ -33,7 +33,9 @@
       "tag": "SCIENCE"
     },
     "description": "Requires 1 science tag. Increase your plant production 1 step. Add up to 2 microbes to ANY card. Place this tile which grants an ADJACENCY BONUS of 1 plant and 1 microbe.",
-    "cardNumber": "A02"
+    "cardNumber": "A02",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "CAPITAL_ARES",
@@ -71,7 +73,9 @@
       "nextToThis": {}
     },
     "cardNumber": "A05",
-    "description": "Requires 4 ocean tiles. Place tile with ADJACENCY BONUS of 2 M€. Energy prod -2 and M€ prod +5."
+    "description": "Requires 4 ocean tiles. Place tile with ADJACENCY BONUS of 2 M€. Energy prod -2 and M€ prod +5.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "COMMERCIAL_DISTRICT_ARES",
@@ -104,7 +108,9 @@
       "nextToThis": {}
     },
     "cardNumber": "A06",
-    "description": "Place this tile which grants an ADJACENCY BONUS of 2 M€. Decrease your energy production 1 step and increase your M€ production 4 steps."
+    "description": "Place this tile which grants an ADJACENCY BONUS of 2 M€. Decrease your energy production 1 step and increase your M€ production 4 steps.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "MINING_AREA_ARES",
@@ -117,7 +123,17 @@
     ],
     "cost": 4,
     "cardNumber": "A14",
-    "description": "Place one of these tiles on an area with a steel or titanium placement bonus, ADJACENT TO ANOTHER OF YOUR TILES. This tile provides an ADJACENCY BONUS of the same resource as the area. Increase your production of that resource 1 step."
+    "description": "Place one of these tiles on an area with a steel or titanium placement bonus, ADJACENT TO ANOTHER OF YOUR TILES. This tile provides an ADJACENCY BONUS of the same resource as the area. Increase your production of that resource 1 step.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getAdjacencyBonus",
+      "getAvailableSpaces",
+      "getTileType",
+      "productionBox",
+      "spaceSelected"
+    ],
+    "gameModule": "ares"
   },
   {
     "id": "MINING_RIGHTS_ARES",
@@ -130,7 +146,17 @@
     ],
     "cost": 9,
     "cardNumber": "A15",
-    "description": "Place one of these tiles on an area with a steel or titanium placement bonus. This tile provides an ADJACENCY BONUS of the same resource as the area. Increase your production of that resource 1 step."
+    "description": "Place one of these tiles on an area with a steel or titanium placement bonus. This tile provides an ADJACENCY BONUS of the same resource as the area. Increase your production of that resource 1 step.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getAdjacencyBonus",
+      "getAvailableSpaces",
+      "getTileType",
+      "productionBox",
+      "spaceSelected"
+    ],
+    "gameModule": "ares"
   },
   {
     "id": "MOHOLE_AREA_ARES",
@@ -158,7 +184,9 @@
       }
     },
     "cardNumber": "A16",
-    "description": "Increase your heat production 4 steps. Place this tile ON AN AREA RESERVED FOR OCEAN. The tile grants an ADJACENCY BONUS of 2 heat."
+    "description": "Increase your heat production 4 steps. Place this tile ON AN AREA RESERVED FOR OCEAN. The tile grants an ADJACENCY BONUS of 2 heat.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "SOLAR_FARM",
@@ -172,7 +200,13 @@
     ],
     "cost": 12,
     "cardNumber": "A17",
-    "description": "Place this tile which grants an ADJACENCY BONUS of 2 energy. Increase your energy production 1 step for each plant resource on the area where you place the tile."
+    "description": "Place this tile which grants an ADJACENCY BONUS of 2 energy. Increase your energy production 1 step for each plant resource on the area where you place the tile.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "productionBox"
+    ],
+    "gameModule": "ares"
   },
   {
     "id": "NATURAL_PRESERVE_ARES",
@@ -210,7 +244,9 @@
     },
     "victoryPoints": 1,
     "cardNumber": "A18",
-    "description": "Oxygen must be 4% or less. Place this tile NEXT TO NO OTHER TILE. The tile grants an ADJACENCY BONUS of of 1 M€. Increase your M€ production 1 step."
+    "description": "Oxygen must be 4% or less. Place this tile NEXT TO NO OTHER TILE. The tile grants an ADJACENCY BONUS of of 1 M€. Increase your M€ production 1 step.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "NUCLEAR_ZONE_ARES",
@@ -237,7 +273,9 @@
     },
     "victoryPoints": -2,
     "cardNumber": "A19",
-    "description": "Raise the temperature two steps. Place this tile. Players must pay an additional 2M€ when they place a tile with their player marker on it ADJACENT to the Nuclear Zone."
+    "description": "Raise the temperature two steps. Place this tile. Players must pay an additional 2M€ when they place a tile with their player marker on it ADJACENT to the Nuclear Zone.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "OCEAN_CITY",
@@ -264,7 +302,9 @@
       "oceans": 6
     },
     "cardNumber": "A20",
-    "description": "Requires 6 ocean tiles. Decrease your energy production 1 step and increase your M€ production 3 steps. Place this tile on top of an existing ocean tile, IGNORING NORMAL PLACEMENT RESTRICTIONS FOR CITIES. The tile counts as a city as well as an ocean."
+    "description": "Requires 6 ocean tiles. Decrease your energy production 1 step and increase your M€ production 3 steps. Place this tile on top of an existing ocean tile, IGNORING NORMAL PLACEMENT RESTRICTIONS FOR CITIES. The tile counts as a city as well as an ocean.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "OCEAN_FARM",
@@ -296,7 +336,9 @@
       "oceans": 4
     },
     "cardNumber": "A21",
-    "description": "Requires 4 ocean tiles. Increase your heat production 1 step and increase your plant production 1 step. Place this tile on top of an existing ocean tile. The tile grants an ADJACENCY BONUS of 1 plant."
+    "description": "Requires 4 ocean tiles. Increase your heat production 1 step and increase your plant production 1 step. Place this tile on top of an existing ocean tile. The tile grants an ADJACENCY BONUS of 1 plant.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "GREAT_DAM_ARES",
@@ -325,7 +367,13 @@
     },
     "victoryPoints": 1,
     "cardNumber": "A25",
-    "description": "Requires 4 ocean tiles. Increase your energy production 2 steps. Place this tile ADJACENT TO an ocean tile. The tile grants an ADJACENCY BONUS of 2 Energy."
+    "description": "Requires 4 ocean tiles. Increase your energy production 2 steps. Place this tile ADJACENT TO an ocean tile. The tile grants an ADJACENCY BONUS of 2 Energy.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getAvailableSpaces"
+    ],
+    "gameModule": "ares"
   },
   {
     "id": "MAGNETIC_FIELD_GENERATORS_ARES",
@@ -355,7 +403,9 @@
       }
     },
     "cardNumber": "Axx",
-    "description": "Decrease your energy production 4 steps and increase your plant production 2 steps. Raise your TR 3 steps. Place this tile, which provides an ADJACENCY BONUS of 1 plant and 1 microbe."
+    "description": "Decrease your energy production 4 steps and increase your plant production 2 steps. Raise your TR 3 steps. Place this tile, which provides an ADJACENCY BONUS of 1 plant and 1 microbe.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "COLONIZER_TRAINING_CAMP",
@@ -374,7 +424,9 @@
       "max": true
     },
     "description": "Oxygen must be 5% or less.",
-    "cardNumber": "001"
+    "cardNumber": "001",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ASTEROID_MINING_CONSORTIUM",
@@ -392,7 +444,12 @@
       "count": 1
     },
     "description": "Requires that you have titanium production. Decrease any titanium production 1 step and increase your own 1 step.",
-    "cardNumber": "002"
+    "cardNumber": "002",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "DEEP_WELL_HEATING",
@@ -414,7 +471,9 @@
       }
     },
     "cardNumber": "003",
-    "description": "Increase your energy production 1 step. Increase temperature 1 step."
+    "description": "Increase your energy production 1 step. Increase temperature 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "CLOUD_SEEDING",
@@ -437,7 +496,9 @@
       "oceans": 3
     },
     "cardNumber": "004",
-    "description": "Requires 3 ocean tiles. Decrease your M€ production 1 step and any heat production 1 step. Increase your plant production 2 steps."
+    "description": "Requires 3 ocean tiles. Decrease your M€ production 1 step and any heat production 1 step. Increase your plant production 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "CAPITAL",
@@ -470,7 +531,9 @@
       "nextToThis": {}
     },
     "cardNumber": "008",
-    "description": "Requires 4 ocean tiles. Place this tile. Decrease your energy production 2 steps and increase your M€ production 5 steps."
+    "description": "Requires 4 ocean tiles. Place this tile. Decrease your energy production 2 steps and increase your M€ production 5 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "DOMED_CRATER",
@@ -499,7 +562,9 @@
       "max": true
     },
     "cardNumber": "016",
-    "description": "Oxygen must be 7% or less. Gain 3 plants. Place a city tile. Decrease your energy production 1 step and increase your M€ production 3 steps."
+    "description": "Oxygen must be 7% or less. Gain 3 plants. Place a city tile. Decrease your energy production 1 step and increase your M€ production 3 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "NOCTIS_CITY",
@@ -518,7 +583,13 @@
       }
     },
     "cardNumber": "017",
-    "description": "Decrease your energy production 1 step and increase your M€ production 3 steps. Place a city tile ON THE RESERVED AREA, disregarding normal placement restrictions."
+    "description": "Decrease your energy production 1 step and increase your M€ production 3 steps. Place a city tile ON THE RESERVED AREA, disregarding normal placement restrictions.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "productionBox"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "METHANE_FROM_TITAN",
@@ -542,7 +613,9 @@
       "oxygen": 2
     },
     "description": "Requires 2% oxygen. Increase your heat production 2 steps and your plant production 2 steps.",
-    "cardNumber": "018"
+    "cardNumber": "018",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "PHOBOS_SPACE_HAVEN",
@@ -565,7 +638,9 @@
       }
     },
     "cardNumber": "021",
-    "description": "Increase your titanium production 1 step and place a city tile ON THE RESERVED AREA."
+    "description": "Increase your titanium production 1 step and place a city tile ON THE RESERVED AREA.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "BLACK_POLAR_DUST",
@@ -582,7 +657,9 @@
       }
     },
     "cardNumber": "022",
-    "description": "Place an ocean tile. Decrease your M€ production 2 steps and increase your heat production 3 steps."
+    "description": "Place an ocean tile. Decrease your M€ production 2 steps and increase your heat production 3 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "EOS_CHASMA_NATIONAL_PARK",
@@ -612,7 +689,9 @@
       "temperature": -12
     },
     "cardNumber": "026",
-    "description": "Requires -12 C or warmer. Add 1 animal TO ANY ANIMAL CARD. Gain 3 plants. Increase your M€ production 2 steps."
+    "description": "Requires -12 C or warmer. Add 1 animal TO ANY ANIMAL CARD. Gain 3 plants. Increase your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "CUPOLA_CITY",
@@ -637,7 +716,9 @@
       "max": true
     },
     "cardNumber": "029",
-    "description": "Oxygen must be 9% or less. Place a city tile. Decrease your energy production 1 step and increase your M€ production 3 steps."
+    "description": "Oxygen must be 9% or less. Place a city tile. Decrease your energy production 1 step and increase your M€ production 3 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "LUNAR_BEAM",
@@ -658,7 +739,9 @@
       }
     },
     "cardNumber": "030",
-    "description": "Decrease your M€ production 2 steps and increase your heat production and energy production 2 steps each."
+    "description": "Decrease your M€ production 2 steps and increase your heat production and energy production 2 steps each.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "UNDERGROUND_CITY",
@@ -679,7 +762,9 @@
       "city": {}
     },
     "cardNumber": "032",
-    "description": "Place a city tile. Decrease your energy production 2 steps and increase your steel production 2 steps."
+    "description": "Place a city tile. Decrease your energy production 2 steps and increase your steel production 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ASTEROID_MINING",
@@ -699,7 +784,9 @@
       }
     },
     "description": "Increase your titanium production 2 steps.",
-    "cardNumber": "040"
+    "cardNumber": "040",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "FOOD_FACTORY",
@@ -719,7 +806,9 @@
     },
     "victoryPoints": 1,
     "cardNumber": "041",
-    "description": "Decrease your plant production 1 step and increase your M€ production 4 steps."
+    "description": "Decrease your plant production 1 step and increase your M€ production 4 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ARCHAEBACTERIA",
@@ -741,7 +830,9 @@
       "max": true
     },
     "description": "It must be -18 C or colder. Increase your plant production 1 step.",
-    "cardNumber": "042"
+    "cardNumber": "042",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "CARBONATE_PROCESSING",
@@ -760,7 +851,9 @@
       }
     },
     "cardNumber": "043",
-    "description": "Decrease your energy production 1 step and increase your heat production 3 steps."
+    "description": "Decrease your energy production 1 step and increase your heat production 3 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "NATURAL_PRESERVE",
@@ -790,7 +883,9 @@
     },
     "victoryPoints": 1,
     "cardNumber": "044",
-    "description": "Oxygen must be 4% or less. Place this tile NEXT TO NO OTHER TILE. Increase your M€ production 1 step."
+    "description": "Oxygen must be 4% or less. Place this tile NEXT TO NO OTHER TILE. Increase your M€ production 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "NUCLEAR_POWER",
@@ -810,7 +905,9 @@
       }
     },
     "cardNumber": "045",
-    "description": "Decrease your M€ production 2 steps and increase your energy production 3 steps."
+    "description": "Decrease your M€ production 2 steps and increase your energy production 3 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "LIGHTNING_HARVEST",
@@ -834,7 +931,9 @@
       "count": 3
     },
     "cardNumber": "046",
-    "description": "Requires 3 science tags. Increase your energy production and your M€ production one step each."
+    "description": "Requires 3 science tags. Increase your energy production and your M€ production one step each.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "ALGAE",
@@ -858,7 +957,9 @@
       "oceans": 5
     },
     "description": "Requires 5 ocean tiles. Gain 1 plant and increase your plant production 2 steps.",
-    "cardNumber": "047"
+    "cardNumber": "047",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ADAPTED_LICHEN",
@@ -876,7 +977,9 @@
       }
     },
     "description": "Increase your plant production 1 step.",
-    "cardNumber": "048"
+    "cardNumber": "048",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "MIRANDA_RESORT",
@@ -898,7 +1001,9 @@
       }
     },
     "cardNumber": "051",
-    "description": "Increase your M€ production 1 step for each Earth tag you have."
+    "description": "Increase your M€ production 1 step for each Earth tag you have.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "LAKE_MARINERIS",
@@ -917,7 +1022,9 @@
       }
     },
     "cardNumber": "053",
-    "description": "Requires 0° C or warmer. Place 2 ocean tiles."
+    "description": "Requires 0° C or warmer. Place 2 ocean tiles.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "KELP_FARMING",
@@ -943,7 +1050,9 @@
       "oceans": 6
     },
     "cardNumber": "055",
-    "description": "Requires 6 ocean tiles. Increase your M€ production 2 steps and your plant production 3 steps. Gain 2 plants."
+    "description": "Requires 6 ocean tiles. Increase your M€ production 2 steps and your plant production 3 steps. Gain 2 plants.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "MINE",
@@ -961,7 +1070,9 @@
       }
     },
     "description": "Increase your steel production 1 step.",
-    "cardNumber": "056"
+    "cardNumber": "056",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "VESTA_SHIPYARD",
@@ -981,7 +1092,9 @@
       }
     },
     "cardNumber": "057",
-    "description": "Increase your titanium production 1 step."
+    "description": "Increase your titanium production 1 step.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "BEAM_FROM_A_THORIUM_ASTEROID",
@@ -1006,7 +1119,9 @@
       "tag": "JOVIAN"
     },
     "cardNumber": "058",
-    "description": "Requires a Jovian tag. Increase your heat production and energy production 3 steps each."
+    "description": "Requires a Jovian tag. Increase your heat production and energy production 3 steps each.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "MANGROVE",
@@ -1028,7 +1143,9 @@
       "temperature": 4
     },
     "cardNumber": "059",
-    "description": "Requires +4 C or warmer. Place a greenery tile ON AN AREA RESERVED FOR OCEAN and raise oxygen 1 step. Disregard normal placement restrictions for this."
+    "description": "Requires +4 C or warmer. Place a greenery tile ON AN AREA RESERVED FOR OCEAN and raise oxygen 1 step. Disregard normal placement restrictions for this.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "TREES",
@@ -1053,7 +1170,9 @@
       "temperature": -4
     },
     "cardNumber": "060",
-    "description": "Requires -4 C or warmer. Increase your plant production 3 steps. Gain 1 plant."
+    "description": "Requires -4 C or warmer. Increase your plant production 3 steps. Gain 1 plant.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "GREAT_ESCARPMENT_CONSORTIUM",
@@ -1067,7 +1186,11 @@
       "count": 1
     },
     "cardNumber": "061",
-    "description": "Requires that you have steel production. Decrease any steel production 1 step and increase your own 1 step."
+    "description": "Requires that you have steel production. Decrease any steel production 1 step and increase your own 1 step.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "MINING_AREA",
@@ -1080,7 +1203,17 @@
     ],
     "cost": 4,
     "cardNumber": "064",
-    "description": "Place this tile on an area with a steel or titanium placement bonus, adjacent to another of your tiles. Increase your production of that resource 1 step."
+    "description": "Place this tile on an area with a steel or titanium placement bonus, adjacent to another of your tiles. Increase your production of that resource 1 step.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getAdjacencyBonus",
+      "getAvailableSpaces",
+      "getTileType",
+      "productionBox",
+      "spaceSelected"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "BUILDING_INDUSTRIES",
@@ -1099,7 +1232,9 @@
       }
     },
     "cardNumber": "065",
-    "description": "Decrease your energy production 1 step and increase your steel production 2 steps."
+    "description": "Decrease your energy production 1 step and increase your steel production 2 steps.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "MINING_RIGHTS",
@@ -1112,7 +1247,17 @@
     ],
     "cost": 9,
     "cardNumber": "067",
-    "description": "Place this tile on an area with a steel or titanium placement bonus. Increase that production 1 step."
+    "description": "Place this tile on an area with a steel or titanium placement bonus. Increase that production 1 step.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getAdjacencyBonus",
+      "getAvailableSpaces",
+      "getTileType",
+      "productionBox",
+      "spaceSelected"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "SPONSORS",
@@ -1130,7 +1275,9 @@
       }
     },
     "cardNumber": "068",
-    "description": "Increase your M€ production 2 steps."
+    "description": "Increase your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "SOLAR_WIND_POWER",
@@ -1153,7 +1300,9 @@
       }
     },
     "cardNumber": "077",
-    "description": "Increase your energy production 1 step and gain 2 titanium."
+    "description": "Increase your energy production 1 step and gain 2 titanium.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "GANYMEDE_COLONY",
@@ -1176,7 +1325,9 @@
       }
     },
     "description": "Place a city tile ON THE RESERVED AREA.",
-    "cardNumber": "081"
+    "cardNumber": "081",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "CALLISTO_PENAL_MINES",
@@ -1196,7 +1347,9 @@
       }
     },
     "description": "Increase your M€ production 3 steps.",
-    "cardNumber": "082"
+    "cardNumber": "082",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "GIANT_SPACE_MIRROR",
@@ -1215,7 +1368,9 @@
       }
     },
     "cardNumber": "083",
-    "description": "Increase your energy production 3 steps."
+    "description": "Increase your energy production 3 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "TRANS_NEPTUNE_PROBE",
@@ -1229,7 +1384,9 @@
     ],
     "cost": 6,
     "victoryPoints": 1,
-    "cardNumber": "084"
+    "cardNumber": "084",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "COMMERCIAL_DISTRICT",
@@ -1257,7 +1414,9 @@
       "nextToThis": {}
     },
     "cardNumber": "085",
-    "description": "Place this tile. Decrease your energy production 1 step and increase your M€ production 4 steps."
+    "description": "Place this tile. Decrease your energy production 1 step and increase your M€ production 4 steps.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "ROBOTIC_WORKFORCE",
@@ -1271,7 +1430,16 @@
     "cost": 9,
     "cardNumber": "086",
     "description": "Duplicate only the production box of one of your building cards.",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getPlayableBuildingCards",
+      "isCardApplicable",
+      "productionBehavior",
+      "selectBuildingCard"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "GRASS",
@@ -1295,7 +1463,9 @@
       "temperature": -16
     },
     "cardNumber": "087",
-    "description": "Requires -16° C or warmer. Increase your plant production 1 step. Gain 3 plants."
+    "description": "Requires -16° C or warmer. Increase your plant production 1 step. Gain 3 plants.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "PEROXIDE_POWER",
@@ -1315,7 +1485,9 @@
       }
     },
     "cardNumber": "089",
-    "description": "Decrease your M€ production 1 step and increase your energy production 2 steps."
+    "description": "Decrease your M€ production 1 step and increase your energy production 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "RESEARCH",
@@ -1333,7 +1505,9 @@
       "drawCard": 2
     },
     "cardNumber": "090",
-    "description": "Counts as playing 2 science cards. Draw 2 cards."
+    "description": "Counts as playing 2 science cards. Draw 2 cards.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "GENE_REPAIR",
@@ -1356,7 +1530,9 @@
       "count": 3
     },
     "cardNumber": "091",
-    "description": "Requires 3 science tags. Increase your M€ production 2 steps."
+    "description": "Requires 3 science tags. Increase your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "IO_MINING_INDUSTRIES",
@@ -1379,7 +1555,9 @@
       }
     },
     "cardNumber": "092",
-    "description": "Increase your titanium production 2 steps and your M€ production 2 steps."
+    "description": "Increase your titanium production 2 steps and your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "BUSHES",
@@ -1403,7 +1581,9 @@
       "temperature": -10
     },
     "cardNumber": "093",
-    "description": "Requires -10 C or warmer. Increase your plant production 2 steps. Gain 2 plants."
+    "description": "Requires -10 C or warmer. Increase your plant production 2 steps. Gain 2 plants.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "GREENHOUSES",
@@ -1424,7 +1604,9 @@
       }
     },
     "cardNumber": "096",
-    "description": "Gain 1 plant for each city tile in play."
+    "description": "Gain 1 plant for each city tile in play.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "NUCLEAR_ZONE",
@@ -1448,7 +1630,9 @@
     },
     "victoryPoints": -2,
     "cardNumber": "097",
-    "description": "Place this tile and raise temperature 2 steps."
+    "description": "Place this tile and raise temperature 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "TROPICAL_RESORT",
@@ -1468,7 +1652,9 @@
     },
     "victoryPoints": 2,
     "cardNumber": "098",
-    "description": "Reduce your heat production 2 steps and increase your M€ production 3 steps."
+    "description": "Reduce your heat production 2 steps and increase your M€ production 3 steps.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "TOLL_STATION",
@@ -1489,7 +1675,9 @@
       }
     },
     "cardNumber": "099",
-    "description": "Increase your M€ production 1 step for each space tag your OPPONENTS have."
+    "description": "Increase your M€ production 1 step for each space tag your OPPONENTS have.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "FUELED_GENERATORS",
@@ -1509,7 +1697,9 @@
       }
     },
     "cardNumber": "100",
-    "description": "Decrease your M€ production 1 step and increase your energy production 1 steps."
+    "description": "Decrease your M€ production 1 step and increase your energy production 1 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "POWER_GRID",
@@ -1529,7 +1719,9 @@
       }
     },
     "cardNumber": "102",
-    "description": "Increase your energy production step for each power tag you have, including this."
+    "description": "Increase your energy production step for each power tag you have, including this.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ACQUIRED_COMPANY",
@@ -1547,7 +1739,9 @@
       }
     },
     "description": "Increase your M€ production 3 steps.",
-    "cardNumber": "106"
+    "cardNumber": "106",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "MEDIA_ARCHIVES",
@@ -1568,7 +1762,9 @@
       }
     },
     "cardNumber": "107",
-    "description": "Gain 1 M€ for each event EVER PLAYED by all players."
+    "description": "Gain 1 M€ for each event EVER PLAYED by all players.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "OPEN_CITY",
@@ -1596,7 +1792,9 @@
       "city": {}
     },
     "cardNumber": "108",
-    "description": "Requires 12% oxygen. Gain 2 plants. Place a city tile. Decrease your energy production 1 step and increase your M€ production 4 steps."
+    "description": "Requires 12% oxygen. Gain 2 plants. Place a city tile. Decrease your energy production 1 step and increase your M€ production 4 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "SOLAR_POWER",
@@ -1616,7 +1814,9 @@
     },
     "victoryPoints": 1,
     "cardNumber": "113",
-    "description": "Increase your energy production 1 step."
+    "description": "Increase your energy production 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "BREATHING_FILTERS",
@@ -1633,7 +1833,9 @@
       "oxygen": 7
     },
     "description": "Requires 7% oxygen.",
-    "cardNumber": "114"
+    "cardNumber": "114",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ARTIFICIAL_PHOTOSYNTHESIS",
@@ -1665,7 +1867,9 @@
       }
     },
     "description": "Increase your plant production 1 step or your energy production 2 steps.",
-    "cardNumber": "115"
+    "cardNumber": "115",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ARTIFICIAL_LAKE",
@@ -1687,7 +1891,11 @@
       "temperature": -6
     },
     "description": "Requires -6 C or warmer. Place 1 ocean tile ON AN AREA NOT RESERVED FOR OCEAN.",
-    "cardNumber": "116"
+    "cardNumber": "116",
+    "methods": [
+      "bespokeCanPlay"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "GEOTHERMAL_POWER",
@@ -1706,7 +1914,9 @@
       }
     },
     "cardNumber": "117",
-    "description": "Increase your energy production 2 steps."
+    "description": "Increase your energy production 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "FARMING",
@@ -1732,7 +1942,9 @@
       "temperature": 4
     },
     "cardNumber": "118",
-    "description": "Requires +4° C or warmer. Increase your M€ production 2 steps and your plant production 2 steps. Gain 2 plants."
+    "description": "Requires +4° C or warmer. Increase your M€ production 2 steps and your plant production 2 steps. Gain 2 plants.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "DUST_SEALS",
@@ -1747,7 +1959,9 @@
       "max": true
     },
     "description": "Requires 3 or less ocean tiles.",
-    "cardNumber": "119"
+    "cardNumber": "119",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "URBANIZED_AREA",
@@ -1766,7 +1980,14 @@
       }
     },
     "cardNumber": "120",
-    "description": "Decrease your energy production 1 step and increase your M€ production 2 steps. Place a city tile ADJACENT TO AT LEAST 2 OTHER CITY TILES."
+    "description": "Decrease your energy production 1 step and increase your M€ production 2 steps. Place a city tile ADJACENT TO AT LEAST 2 OTHER CITY TILES.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getAvailableSpaces",
+      "productionBox"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "MOSS",
@@ -1787,7 +2008,12 @@
       "oceans": 3
     },
     "cardNumber": "122",
-    "description": "Requires 3 ocean tiles and that you lose 1 plant. Increase your plant production 1 step."
+    "description": "Requires 3 ocean tiles and that you lose 1 plant. Increase your plant production 1 step.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "GHG_FACTORIES",
@@ -1806,7 +2032,9 @@
       }
     },
     "cardNumber": "126",
-    "description": "Decrease your energy production 1 step and increase your heat production 4 steps."
+    "description": "Decrease your energy production 1 step and increase your heat production 4 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ZEPPELINS",
@@ -1829,7 +2057,9 @@
       "oxygen": 5
     },
     "cardNumber": "129",
-    "description": "Requires 5% oxygen. Increase your M€ production 1 step for each city tile ON MARS."
+    "description": "Requires 5% oxygen. Increase your M€ production 1 step for each city tile ON MARS.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "WORMS",
@@ -1853,7 +2083,9 @@
       "oxygen": 4
     },
     "cardNumber": "130",
-    "description": "Requires 4% oxygen. Increase your plant production 1 step for every 2 microbe tags you have, including this."
+    "description": "Requires 4% oxygen. Increase your plant production 1 step for every 2 microbe tags you have, including this.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "FUSION_POWER",
@@ -1877,7 +2109,9 @@
       "count": 2
     },
     "cardNumber": "132",
-    "description": "Requires 2 power tags. Increase your energy production 3 steps."
+    "description": "Requires 2 power tags. Increase your energy production 3 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ADVANCED_ECOSYSTEMS",
@@ -1904,7 +2138,9 @@
       }
     ],
     "description": "Requires a plant tag, a microbe tag, and an animal tag.",
-    "cardNumber": "135"
+    "cardNumber": "135",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "GREAT_DAM",
@@ -1927,7 +2163,9 @@
       "oceans": 4
     },
     "cardNumber": "136",
-    "description": "Requires 4 ocean tiles. Increase your energy production 2 steps."
+    "description": "Requires 4 ocean tiles. Increase your energy production 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "CARTEL",
@@ -1947,7 +2185,9 @@
       }
     },
     "cardNumber": "137",
-    "description": "Increase your M€ production 1 step for each Earth tag you have, including this."
+    "description": "Increase your M€ production 1 step for each Earth tag you have, including this.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "STRIP_MINE",
@@ -1970,7 +2210,9 @@
       }
     },
     "cardNumber": "138",
-    "description": "Decrease your energy production 2 steps. Increase your steel production 2 steps and your titanium production 1 step. Raise oxygen 2 steps."
+    "description": "Decrease your energy production 2 steps. Increase your steel production 2 steps and your titanium production 1 step. Raise oxygen 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "WAVE_POWER",
@@ -1992,7 +2234,9 @@
       "oceans": 3
     },
     "cardNumber": "139",
-    "description": "Requires 3 ocean tiles. Increase your energy production 1 step."
+    "description": "Requires 3 ocean tiles. Increase your energy production 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "POWER_PLANT",
@@ -2011,7 +2255,9 @@
       }
     },
     "cardNumber": "141",
-    "description": "Increase your energy production 1 step."
+    "description": "Increase your energy production 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "MOHOLE_AREA",
@@ -2034,7 +2280,9 @@
       }
     },
     "cardNumber": "142",
-    "description": "Increase your heat production 4 steps. Place this tile ON AN AREA RESERVED FOR OCEAN."
+    "description": "Increase your heat production 4 steps. Place this tile ON AN AREA RESERVED FOR OCEAN.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "TITANIUM_MINE",
@@ -2052,7 +2300,9 @@
       }
     },
     "cardNumber": "144",
-    "description": "Increase your titanium production 1 step."
+    "description": "Increase your titanium production 1 step.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "TECTONIC_STRESS_POWER",
@@ -2076,7 +2326,9 @@
       "count": 2
     },
     "cardNumber": "145",
-    "description": "Requires 2 science tags. Increase your energy production 3 steps."
+    "description": "Requires 2 science tags. Increase your energy production 3 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "NITROPHILIC_MOSS",
@@ -2097,7 +2349,12 @@
       "oceans": 3
     },
     "cardNumber": "146",
-    "description": "Requires 3 ocean tiles and that you lose 2 plants. Increase your plant production 2 steps."
+    "description": "Requires 3 ocean tiles and that you lose 2 plants. Increase your plant production 2 steps.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "INSECTS",
@@ -2120,7 +2377,9 @@
       "oxygen": 6
     },
     "cardNumber": "148",
-    "description": "Requires 6% oxygen. Increase your plant production 1 step for each plant tag you have."
+    "description": "Requires 6% oxygen. Increase your plant production 1 step for each plant tag you have.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "INSULATION",
@@ -2130,7 +2389,12 @@
     "type": "automated",
     "cost": 2,
     "cardNumber": "152",
-    "description": "Decrease your heat production any number of steps and increase your M€ production the same number of steps."
+    "description": "Decrease your heat production any number of steps and increase your M€ production the same number of steps.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "DESIGNED_MICROORGANISMS",
@@ -2153,7 +2417,9 @@
       "max": true
     },
     "cardNumber": "155",
-    "description": "It must be -14 C or colder. Increase your plant production 2 steps."
+    "description": "It must be -14 C or colder. Increase your plant production 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "INDUSTRIAL_MICROBES",
@@ -2173,7 +2439,9 @@
       }
     },
     "cardNumber": "158",
-    "description": "Increase your energy production and your steel production 1 step each."
+    "description": "Increase your energy production and your steel production 1 step each.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "LICHEN",
@@ -2194,7 +2462,9 @@
       "temperature": -24
     },
     "cardNumber": "159",
-    "description": "Requires -24 C or warmer. Increase your plant production 1 step."
+    "description": "Requires -24 C or warmer. Increase your plant production 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "POWER_SUPPLY_CONSORTIUM",
@@ -2211,7 +2481,11 @@
       "count": 2
     },
     "cardNumber": "160",
-    "description": "Requires 2 power tags. Decrease any energy production 1 step and increase your own 1 step."
+    "description": "Requires 2 power tags. Decrease any energy production 1 step and increase your own 1 step.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "MICRO_MILLS",
@@ -2226,7 +2500,9 @@
       }
     },
     "cardNumber": "164",
-    "description": "Increase your heat production 1 step."
+    "description": "Increase your heat production 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "MAGNETIC_FIELD_GENERATORS",
@@ -2246,7 +2522,9 @@
       "tr": 3
     },
     "cardNumber": "165",
-    "description": "Decrease your energy production 4 steps and increase your plant production 2 steps. Raise your TR 3 steps."
+    "description": "Decrease your energy production 4 steps and increase your plant production 2 steps. Raise your TR 3 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "WINDMILLS",
@@ -2269,7 +2547,9 @@
       "oxygen": 7
     },
     "cardNumber": "168",
-    "description": "Requires 7% oxygen. Increase your energy production 1 step."
+    "description": "Requires 7% oxygen. Increase your energy production 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "TUNDRA_FARMING",
@@ -2295,7 +2575,9 @@
       "temperature": -6
     },
     "cardNumber": "169",
-    "description": "Requires -6° C or warmer. Increase your plant production 1 step and your M€ production 2 steps. Gain 1 plant."
+    "description": "Requires -6° C or warmer. Increase your plant production 1 step and your M€ production 2 steps. Gain 1 plant.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "MAGNETIC_FIELD_DOME",
@@ -2315,7 +2597,9 @@
       "tr": 1
     },
     "cardNumber": "171",
-    "description": "Decrease your energy production 2 steps and increase your plant production 1 step. Raise your TR 1 step."
+    "description": "Decrease your energy production 2 steps and increase your plant production 1 step. Raise your TR 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "PROTECTED_VALLEY",
@@ -2337,7 +2621,9 @@
       }
     },
     "cardNumber": "174",
-    "description": "Increase your M€ production 2 steps. Place a greenery tile ON AN AREA RESERVED FOR OCEAN, disregarding normal placement restrictions, and increase oxygen 1 step."
+    "description": "Increase your M€ production 2 steps. Place a greenery tile ON AN AREA RESERVED FOR OCEAN, disregarding normal placement restrictions, and increase oxygen 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "SATELLITES",
@@ -2357,7 +2643,9 @@
       }
     },
     "cardNumber": "175",
-    "description": "Increase your M€ production 1 step for each space tag you have, including this one."
+    "description": "Increase your M€ production 1 step for each space tag you have, including this one.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "NOCTIS_FARMING",
@@ -2383,7 +2671,9 @@
       }
     },
     "cardNumber": "176",
-    "description": "Requires -20 C or warmer. Increase your M€ production 1 step and gain 2 plants."
+    "description": "Requires -20 C or warmer. Increase your M€ production 1 step and gain 2 plants.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "HEAT_TRAPPERS",
@@ -2407,7 +2697,9 @@
       }
     },
     "cardNumber": "178",
-    "description": "Decrease any heat production 2 steps and increase your energy production 1 step."
+    "description": "Decrease any heat production 2 steps and increase your energy production 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "SOIL_FACTORY",
@@ -2427,7 +2719,9 @@
     },
     "victoryPoints": 1,
     "cardNumber": "179",
-    "description": "Decrease your energy production 1 step and increase your plant production 1 step."
+    "description": "Decrease your energy production 1 step and increase your plant production 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "FUEL_FACTORY",
@@ -2447,7 +2741,9 @@
       }
     },
     "cardNumber": "180",
-    "description": "Decrease your energy production 1 step and increase your titanium and your M€ production 1 step each."
+    "description": "Decrease your energy production 1 step and increase your titanium and your M€ production 1 step each.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "CORPORATE_STRONGHOLD",
@@ -2469,7 +2765,9 @@
     },
     "victoryPoints": -2,
     "cardNumber": "182",
-    "description": "Decrease your energy production 1 step and increase your M€ production 3 steps. Place a city tile."
+    "description": "Decrease your energy production 1 step and increase your M€ production 3 steps. Place a city tile.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "BIOMASS_COMBUSTORS",
@@ -2496,7 +2794,9 @@
       "oxygen": 6
     },
     "description": "Requires 6% oxygen. Decrease any plant production 1 step and increase your energy production 2 steps.",
-    "cardNumber": "183"
+    "cardNumber": "183",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "RAD_SUITS",
@@ -2516,7 +2816,9 @@
       "all": true
     },
     "cardNumber": "186",
-    "description": "Requires two cities in play. Increase your M€ production 1 step."
+    "description": "Requires two cities in play. Increase your M€ production 1 step.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "ENERGY_SAVING",
@@ -2536,7 +2838,9 @@
       }
     },
     "cardNumber": "189",
-    "description": "Increase your energy production 1 step for each city tile in play."
+    "description": "Increase your energy production 1 step for each city tile in play.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "PLANTATION",
@@ -2556,7 +2860,9 @@
       "count": 2
     },
     "cardNumber": "193",
-    "description": "Requires 2 science tags. Place a greenery tile and raise oxygen 1 step."
+    "description": "Requires 2 science tags. Place a greenery tile and raise oxygen 1 step.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "LAGRANGE_OBSERVATORY",
@@ -2574,7 +2880,9 @@
       "drawCard": 1
     },
     "cardNumber": "196",
-    "description": "Draw 1 card."
+    "description": "Draw 1 card.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "TERRAFORMING_GANYMEDE",
@@ -2589,7 +2897,12 @@
     "cost": 33,
     "victoryPoints": 2,
     "cardNumber": "197",
-    "description": "Raise your TR 1 step for each Jovian tag you have, including this."
+    "description": "Raise your TR 1 step for each Jovian tag you have, including this.",
+    "methods": [
+      "bespokePlay",
+      "computeTr"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "IMMIGRATION_SHUTTLES",
@@ -2613,7 +2926,9 @@
       }
     },
     "cardNumber": "198",
-    "description": "Increase your M€ production 5 steps."
+    "description": "Increase your M€ production 5 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ENERGY_TAPPING",
@@ -2627,7 +2942,11 @@
     "cost": 3,
     "victoryPoints": -1,
     "cardNumber": "201",
-    "description": "Decrease any energy production 1 step and increase your own 1 step."
+    "description": "Decrease any energy production 1 step and increase your own 1 step.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "SOLETTA",
@@ -2645,7 +2964,9 @@
       }
     },
     "cardNumber": "203",
-    "description": "Increase your heat production 7 steps."
+    "description": "Increase your heat production 7 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "RAD_CHEM_FACTORY",
@@ -2664,7 +2985,9 @@
       "tr": 2
     },
     "cardNumber": "205",
-    "description": "Decrease your energy production 1 step. Raise your TR 2 steps."
+    "description": "Decrease your energy production 1 step. Raise your TR 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "MEDICAL_LAB",
@@ -2687,7 +3010,9 @@
       }
     },
     "cardNumber": "207",
-    "description": "Increase your M€ production 1 step for every 2 building tags you have, including this."
+    "description": "Increase your M€ production 1 step for every 2 building tags you have, including this.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "HEATHER",
@@ -2711,7 +3036,9 @@
       "temperature": -14
     },
     "cardNumber": "88",
-    "description": "Requires -14 C° or warmer. Increase your plant production 1 step. Gain 1 plant."
+    "description": "Requires -14 C° or warmer. Increase your plant production 1 step. Gain 1 plant.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "AIRLINERS",
@@ -2734,7 +3061,9 @@
       }
     },
     "cardNumber": "C01",
-    "description": "Requires that you have 3 floaters. Increase your M€ production 2 steps. Add 2 floaters to ANY card."
+    "description": "Requires that you have 3 floaters. Increase your M€ production 2 steps. Add 2 floaters to ANY card.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "COMMUNITY_SERVICES",
@@ -2745,7 +3074,11 @@
     "cost": 13,
     "victoryPoints": 1,
     "cardNumber": "C04",
-    "description": "Increase your M€ production 1 step per CARD WITH NO TAGS, including this."
+    "description": "Increase your M€ production 1 step per CARD WITH NO TAGS, including this.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "CORONA_EXTRACTOR",
@@ -2768,7 +3101,9 @@
       "count": 4
     },
     "cardNumber": "C06",
-    "description": "Requires 4 science tags. Increase your energy production 4 steps."
+    "description": "Requires 4 science tags. Increase your energy production 4 steps.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "EARTH_ELEVATOR",
@@ -2788,7 +3123,9 @@
       }
     },
     "description": "Increase your titanium production 3 steps.",
-    "cardNumber": "C08"
+    "cardNumber": "C08",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "ECOLOGY_RESEARCH",
@@ -2814,7 +3151,11 @@
       }
     },
     "description": "Increase your plant production 1 step for each colony you own. Add 1 animal to ANOTHER card and 2 microbes to ANOTHER card.",
-    "cardNumber": "C09"
+    "cardNumber": "C09",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "FLOATER_LEASING",
@@ -2832,7 +3173,9 @@
       }
     },
     "cardNumber": "C10",
-    "description": "Increase your M€ production 1 step PER 3 floaters you have."
+    "description": "Increase your M€ production 1 step PER 3 floaters you have.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "GALILEAN_WAYSTATION",
@@ -2854,7 +3197,9 @@
       }
     },
     "description": "Increase your M€ production 1 step for every Jovian tag in play.",
-    "cardNumber": "C13"
+    "cardNumber": "C13",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "HEAVY_TAXATION",
@@ -2880,7 +3225,9 @@
       "count": 2
     },
     "cardNumber": "C14",
-    "description": "Requires 2 Earth tags. Increase your M€ production 2 steps, and gain 4 M€."
+    "description": "Requires 2 Earth tags. Increase your M€ production 2 steps, and gain 4 M€.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "ICE_MOON_COLONY",
@@ -2899,7 +3246,11 @@
       "ocean": {}
     },
     "cardNumber": "C15",
-    "description": "Place 1 colony and 1 ocean tile."
+    "description": "Place 1 colony and 1 ocean tile.",
+    "methods": [
+      "bespokeCanPlay"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "LUNA_GOVERNOR",
@@ -2922,7 +3273,9 @@
       "count": 3
     },
     "cardNumber": "C20",
-    "description": "Requires 3 Earth tags. Increase your M€ production 2 steps."
+    "description": "Requires 3 Earth tags. Increase your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "LUNAR_EXPORTS",
@@ -2954,7 +3307,9 @@
       }
     },
     "cardNumber": "C21",
-    "description": "Increase your plant production 2 steps, or your M€ production 5 steps."
+    "description": "Increase your plant production 2 steps, or your M€ production 5 steps.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "LUNAR_MINING",
@@ -2975,7 +3330,9 @@
       }
     },
     "cardNumber": "C22",
-    "description": "Increase your titanium production 1 step for every 2 Earth tags you have in play, including this."
+    "description": "Increase your titanium production 1 step for every 2 Earth tags you have in play, including this.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "MINING_COLONY",
@@ -2996,7 +3353,9 @@
       }
     },
     "cardNumber": "C25",
-    "description": "Increase your titanium production 1 step. Place a colony."
+    "description": "Increase your titanium production 1 step. Place a colony.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "MINORITY_REFUGE",
@@ -3009,7 +3368,12 @@
       "SPACE"
     ],
     "cardNumber": "C26",
-    "description": "Decrease your M€ production 2 steps. Place a colony."
+    "description": "Decrease your M€ production 2 steps. Place a colony.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "MOLECULAR_PRINTING",
@@ -3034,7 +3398,9 @@
       }
     },
     "cardNumber": "C27",
-    "description": "Gain 1 M€ for each city tile in play. Gain 1 M€ for each colony in play."
+    "description": "Gain 1 M€ for each city tile in play. Gain 1 M€ for each colony in play.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "NITROGEN_FROM_TITAN",
@@ -3057,7 +3423,9 @@
       }
     },
     "cardNumber": "C28",
-    "description": "Raise your TR 2 steps. Add 2 floaters to a JOVIAN CARD."
+    "description": "Raise your TR 2 steps. Add 2 floaters to a JOVIAN CARD.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "PIONEER_SETTLEMENT",
@@ -3075,7 +3443,12 @@
     },
     "victoryPoints": 2,
     "cardNumber": "C29",
-    "description": "Requires that you have no more than 1 colony. Decrease your M€ production 2 steps. Place a colony."
+    "description": "Requires that you have no more than 1 colony. Decrease your M€ production 2 steps. Place a colony.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "PRODUCTIVE_OUTPOST",
@@ -3084,7 +3457,11 @@
     "module": "colonies",
     "type": "automated",
     "cost": 0,
-    "cardNumber": "C30"
+    "cardNumber": "C30",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "QUANTUM_COMMUNICATIONS",
@@ -3099,7 +3476,11 @@
     },
     "victoryPoints": 1,
     "cardNumber": "C31",
-    "description": "Requires 4 science tags. Increase your M€ production 1 step for each colony in play."
+    "description": "Requires 4 science tags. Increase your M€ production 1 step for each colony in play.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "RESEARCH_COLONY",
@@ -3121,7 +3502,9 @@
       }
     },
     "cardNumber": "C34",
-    "description": "Place a colony. MAY BE PLACED WHERE YOU ALREADY HAVE A COLONY. Draw 2 cards."
+    "description": "Place a colony. MAY BE PLACED WHERE YOU ALREADY HAVE A COLONY. Draw 2 cards.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "SOLAR_REFLECTORS",
@@ -3139,7 +3522,9 @@
       }
     },
     "cardNumber": "C38",
-    "description": "Increase your heat production 5 steps."
+    "description": "Increase your heat production 5 steps.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "SPACE_PORT",
@@ -3166,7 +3551,9 @@
       "colonies": 1
     },
     "cardNumber": "C39",
-    "description": "Requires 1 colony. Decrease your energy production 1 step and increase your M€ production 4 steps. Place a city tile. Gain 1 Trade Fleet."
+    "description": "Requires 1 colony. Decrease your energy production 1 step and increase your M€ production 4 steps. Place a city tile. Gain 1 Trade Fleet.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "SPACE_PORT_COLONY",
@@ -3197,7 +3584,9 @@
       }
     },
     "cardNumber": "C40",
-    "description": "Requires a colony. Place a colony. MAY BE PLACED ON A COLONY TILE WHERE YOU ALREADY HAVE A COLONY. Gain 1 Trade Fleet."
+    "description": "Requires a colony. Place a colony. MAY BE PLACED ON A COLONY TILE WHERE YOU ALREADY HAVE A COLONY. Gain 1 Trade Fleet.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "URBAN_DECOMPOSERS",
@@ -3227,7 +3616,11 @@
       }
     ],
     "cardNumber": "C48",
-    "description": "Requires that you have 1 city tile and 1 colony in play. Increase your plant production 1 step, and add 2 microbes to ANOTHER card."
+    "description": "Requires that you have 1 city tile and 1 colony in play. Increase your plant production 1 step, and add 2 microbes to ANOTHER card.",
+    "methods": [
+      "bespokeCanPlay"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "MARE_NECTARIS_MINE",
@@ -3254,7 +3647,9 @@
       "titanium": 1
     },
     "description": "Spend 1 titanium. Increase your steel production 1 step. Place a mine ON THE RESERVED AREA and raise the mining rate 1 step.",
-    "cardNumber": "M01"
+    "cardNumber": "M01",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "MARE_NUBIUM_MINE",
@@ -3281,7 +3676,9 @@
       "titanium": 1
     },
     "description": "Spend 1 titanium. Increase your titanium production 1 step. Place a mine ON THE RESERVED AREA and raise the mining rate 1 step.",
-    "cardNumber": "M02"
+    "cardNumber": "M02",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "MARE_IMBRIUM_MINE",
@@ -3309,7 +3706,9 @@
       }
     },
     "description": "Spend 1 titanium. Increase your steel production 1 step and your titanium production 1 step. Place a mine ON THE RESERVED AREA and raise the mining rate 1 step.",
-    "cardNumber": "M03"
+    "cardNumber": "M03",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "MARE_SERENITATIS_MINE",
@@ -3341,7 +3740,11 @@
       "MOON_ROAD"
     ],
     "description": "Spend 2 titanium and 1 steel. Increase your steel and titanium production 1 step. Place a mine ON THE RESERVED AREA and a road tile adjacent to it. Raise the mining rate 1 step and the logistic rate 1 step.",
-    "cardNumber": "M04"
+    "cardNumber": "M04",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "HABITAT_14",
@@ -3367,7 +3770,9 @@
       "titanium": 1
     },
     "description": "Decrease your energy production 1 step and your M€ production 1 step. Spend 1 titanium. Place a habitat tile on The Moon and raise the habitat rate 1 step.",
-    "cardNumber": "M05"
+    "cardNumber": "M05",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "GEODESIC_TENTS",
@@ -3394,7 +3799,9 @@
       }
     },
     "description": "Decrease your energy production 1 step and increase your plant production 1 step. Spend 1 titanium. Place a habitat tile on The Moon and raise the habitat rate 1 step.",
-    "cardNumber": "M06"
+    "cardNumber": "M06",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "SPHERE_HABITATS",
@@ -3416,7 +3823,9 @@
       }
     },
     "description": "Spend 1 titanium. Place a habitat tile on The Moon and raise the habitat rate 1 step.",
-    "cardNumber": "M07"
+    "cardNumber": "M07",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "THE_WOMB",
@@ -3442,7 +3851,9 @@
       "titanium": 2
     },
     "description": "Decrease your energy production 2 steps and increase your M€ production 4 steps. Spend 2 titanium. Place a habitat tile on The Moon and raise the habitat rate 1 step.",
-    "cardNumber": "M08"
+    "cardNumber": "M08",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "TYCHO_ROAD_NETWORK",
@@ -3466,7 +3877,9 @@
       "steel": 1
     },
     "description": "Spend 1 steel. Increase your M€ production 1 step. Place a road tile on The Moon and raise the logistic rate 1 step.",
-    "cardNumber": "M09"
+    "cardNumber": "M09",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "ARISTARCHUS_ROAD_NETWORK",
@@ -3490,7 +3903,9 @@
       }
     },
     "description": "Spend 2 steel. Increase your M€ production 2 steps. Place a road tile on The Moon and raise the logistic rate 1 step.",
-    "cardNumber": "M10"
+    "cardNumber": "M10",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "SINUS_IRIDUM_ROAD_NETWORK",
@@ -3515,7 +3930,9 @@
       "steel": 1
     },
     "description": "Decrease your energy production 1 step and increase your M€ production 3 steps. Spend 1 steel. Place a road tile on The Moon and raise the logistic rate 1 step.",
-    "cardNumber": "M11"
+    "cardNumber": "M11",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "MOMENTUM_VIRIUM_HABITAT",
@@ -3543,7 +3960,9 @@
       "titanium": 1
     },
     "description": "Spend 1 titanium. Increase your heat production 2 steps and your M€ production 3 steps. Place a habitat tile ON THE RESERVED AREA and raise the habitat rate 1 step.",
-    "cardNumber": "M12"
+    "cardNumber": "M12",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_MINING_HUB",
@@ -3581,7 +4000,9 @@
     "requirements": {
       "miningRate": 5
     },
-    "cardNumber": "M14"
+    "cardNumber": "M14",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_TRAIN_STATION",
@@ -3618,7 +4039,9 @@
       "logisticRate": 5
     },
     "description": "Requires a logistic rate of 5 or higher. Spend 2 steel. Increase your M€ production 4 steps. Place this tile on The Moon and raise the logistic rate 1 step. 2 VP FOR EACH ROAD TILE ADJACENT TO THIS TILE.",
-    "cardNumber": "M15"
+    "cardNumber": "M15",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "COLONIST_SHUTTLES",
@@ -3647,7 +4070,9 @@
       }
     },
     "description": "Spend 1 titanium. Raise the habitat rate 1 step. Gain 2M€ for each habitat tile on The Moon.",
-    "cardNumber": "M16"
+    "cardNumber": "M16",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "DEEP_LUNAR_MINING",
@@ -3671,7 +4096,9 @@
       }
     },
     "description": "Spend 1 titanium. Increase your titanium production 2 steps. Raise the mining rate 1 step.",
-    "cardNumber": "M18"
+    "cardNumber": "M18",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_PROJECT_OFFICE",
@@ -3688,7 +4115,12 @@
       "count": 2
     },
     "description": "Requires 2 science tags.",
-    "cardNumber": "M20"
+    "cardNumber": "M20",
+    "methods": [
+      "bespokePlay",
+      "isActive"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_RESORT",
@@ -3717,7 +4149,9 @@
       "all": true
     },
     "description": "Requires 2 habitats on The Moon. Spend 2 titanium. Decrease your energy production 1 step and increase your M€ production 3 steps. Raise the habitat rate 1 step.",
-    "cardNumber": "M21"
+    "cardNumber": "M21",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "MINING_ROBOTS_MANUF_CENTER",
@@ -3739,7 +4173,9 @@
       }
     },
     "description": "Spend 1 titanium. Raise the mining rate 2 steps.",
-    "cardNumber": "M23"
+    "cardNumber": "M23",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "IRON_EXTRACTION_CENTER",
@@ -3765,7 +4201,9 @@
       }
     },
     "description": "Spend 1 titanium. Increase your steel production 1 step for every 2 raised steps of mining rate.",
-    "cardNumber": "M25"
+    "cardNumber": "M25",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "TITANIUM_EXTRACTION_CENTER",
@@ -3791,7 +4229,9 @@
       }
     },
     "description": "Spend 2 titanium. Increase your titanium production 1 step for every 2 raised steps of mining rate.",
-    "cardNumber": "M26"
+    "cardNumber": "M26",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "ARCHIMEDES_HYDROPONICS_STATION",
@@ -3811,7 +4251,9 @@
       }
     },
     "description": "Decrease your energy production 1 step and your M€ production 1 step. Increase your plant production 2 steps.",
-    "cardNumber": "M27"
+    "cardNumber": "M27",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_STAGING_STATION",
@@ -3836,7 +4278,9 @@
       "logisticRate": 2
     },
     "description": "Requires the logistic rate to be 2 or higher. Spend 1 titanium. Raise the logistic rate 2 steps.",
-    "cardNumber": "M30"
+    "cardNumber": "M30",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "NEW_COLONY_PLANNING_INITIAITIVES",
@@ -3857,7 +4301,9 @@
       "habitatRate": 2
     },
     "description": "Requires the habitat rate to be 2 or higher. Raise the habitat rate 1 step.",
-    "cardNumber": "M31"
+    "cardNumber": "M31",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "AI_CONTROLLED_MINE_NETWORK",
@@ -3878,7 +4324,9 @@
       "logisticRate": 2
     },
     "description": "Requires the logistic rate to be 2 or higher. Raise the logistic rate 1 step",
-    "cardNumber": "M32"
+    "cardNumber": "M32",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "LUNAR_TRADE_FLEET",
@@ -3904,7 +4352,9 @@
       "count": 2
     },
     "description": "Requires that you have 2 titanium production. Increase your M€ production 1 step. Raise the logistic rate 1 step.",
-    "cardNumber": "M35"
+    "cardNumber": "M35",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "HEAVY_DUTY_ROVERS",
@@ -3919,7 +4369,11 @@
       }
     },
     "description": "Gain 4 M€ for each mining tile adjacent to a road tile. Raise the logistic rate 1 step.",
-    "cardNumber": "M39"
+    "cardNumber": "M39",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "MICROSINGULARITY_PLANT",
@@ -3941,7 +4395,9 @@
       }
     },
     "description": "Requires 2 habitats on The Moon. Increase your energy production 2 steps.",
-    "cardNumber": "M40"
+    "cardNumber": "M40",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "HELIOSTAT_MIRROR_ARRAY",
@@ -3965,7 +4421,9 @@
       "titanium": 1
     },
     "description": "Spend 1 titanium. Gain 1 heat. Increase your energy production 2 steps.",
-    "cardNumber": "M41"
+    "cardNumber": "M41",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "HYPERSENSITIVE_SILICON_CHIP_FACTORY",
@@ -3990,7 +4448,9 @@
       "titanium": 2
     },
     "description": "Requires 2 mining tiles on The Moon. Spend 2 titanium. Increase your M€ production 4 steps.",
-    "cardNumber": "M43"
+    "cardNumber": "M43",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "COPERNICUS_SOLAR_ARRAYS",
@@ -4015,7 +4475,9 @@
       }
     },
     "description": "Spend 1 titanium. Gain 2 heat. Increase your energy production 1 step.",
-    "cardNumber": "M44"
+    "cardNumber": "M44",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "WATER_TREATMENT_COMPLEX",
@@ -4040,7 +4502,9 @@
       }
     },
     "description": "Requires 1 habitat tile on The Moon. Spend 1 titanium. Raise the habitat rate 2 steps.",
-    "cardNumber": "M46"
+    "cardNumber": "M46",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "ALGAE_BIOREACTORS",
@@ -4064,7 +4528,9 @@
       }
     },
     "description": "Decrease your plant production 1 step. Raise the habitat rate 1 step and oxygen 1%.",
-    "cardNumber": "M47"
+    "cardNumber": "M47",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "HE3_FUSION_PLANT",
@@ -4091,7 +4557,9 @@
       "miningRate": 2
     },
     "description": "Requires the mining rate of 2 or higher. Increase your energy production 1 step for each mining tile on The Moon.",
-    "cardNumber": "M48"
+    "cardNumber": "M48",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "HE3_LOBBYISTS",
@@ -4111,7 +4579,9 @@
       }
     },
     "description": "Increase your M€ production 1 step for each Moon tag you have (including this).",
-    "cardNumber": "M50"
+    "cardNumber": "M50",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "OFF_WORLD_CITY_LIVING",
@@ -4142,7 +4612,9 @@
       }
     },
     "description": "Increase your M€ production 1 step per city tile NOT ON MARS. Increase habitat rate 1 step.",
-    "cardNumber": "M53"
+    "cardNumber": "M53",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "DARKSIDE_MINING_SYNDICATE",
@@ -4159,7 +4631,11 @@
       "moonMining": 1
     },
     "description": "Increase your titanium production 2 steps, or 1 step if the mining rate is at least 2. And then raise the mining rate 1 step.",
-    "cardNumber": "M66"
+    "cardNumber": "M66",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "STAGING_STATION_BEHEMOTH",
@@ -4180,7 +4656,9 @@
       }
     },
     "description": "Gain 2 Trade Fleets. Raise the logistic rate 1 step.",
-    "cardNumber": "M68"
+    "cardNumber": "M68",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_SENATE",
@@ -4209,7 +4687,9 @@
       "count": 3
     },
     "description": "Requires that you have 3 Moon tags. Increase your M€ production 1 step per Moon tag your OPPONENTS have.",
-    "cardNumber": "M70"
+    "cardNumber": "M70",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "SMALL_DUTY_ROVERS",
@@ -4231,7 +4711,11 @@
       }
     },
     "description": "Spend 1 titanium. Raise the logistic rate 1 step. Gain 1 M€ per habitat tile, mine tile and road tile on The Moon.",
-    "cardNumber": "M73"
+    "cardNumber": "M73",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "LUNAR_INDUSTRY_COMPLEX",
@@ -4259,7 +4743,9 @@
       "titanium": 2
     },
     "description": "Spend 2 titanium. Place a mine tile on The Moon and raise the mining rate 1 step. Increase your steel, titanium, and heat production 1 step each. Increase your energy production 2 steps.",
-    "cardNumber": "M74"
+    "cardNumber": "M74",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "MARTIAN_EMBASSY",
@@ -4273,7 +4759,11 @@
     ],
     "cost": 11,
     "cardNumber": "M76",
-    "description": "Raise the Mars Planetary Track 1 step for every 3 Moon tags you have, including this."
+    "description": "Raise the Mars Planetary Track 1 step for every 3 Moon tags you have, including this.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "ROVER_DRIVERS_UNION",
@@ -4294,7 +4784,11 @@
       }
     },
     "description": "Requires 2 logistic rate. Raise the logistic rate 1 step. Increase your M€ production 1 step per logistic rate.",
-    "cardNumber": "M78"
+    "cardNumber": "M78",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "LTF_HEADQUARTERS",
@@ -4316,7 +4810,9 @@
       }
     },
     "description": "Raise the habitat rate 1 step. Place a colony. Gain 1 Trade Fleet.",
-    "cardNumber": "M79"
+    "cardNumber": "M79",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "UNDERMOON_DRUG_LORDS_NETWORK",
@@ -4340,7 +4836,9 @@
       }
     },
     "description": "Increase your M€ production 1 step per 2 steps of habitat rate.",
-    "cardNumber": "M81"
+    "cardNumber": "M81",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "GRAND_LUNA_ACADEMY",
@@ -4361,7 +4859,9 @@
       }
     },
     "description": "Draw 1 card per 2 Moon tags you have, including this.",
-    "cardNumber": "M83"
+    "cardNumber": "M83",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_ECUMENOPOLIS",
@@ -4384,7 +4884,14 @@
     ],
     "cardNumber": "M84",
     "description": "Spend 2 titanium. Place 2 habitat tiles adjacent to at least 2 other habitat tiles and raise habitat rate 2 steps. Increase your TR 1 step for each 2 steps of the habitat rate.",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "canAffordTRBump",
+      "getSpaces"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "ORBITAL_POWER_GRID",
@@ -4408,7 +4915,9 @@
       }
     },
     "description": "Increase your energy production 1 step per city tile NOT ON MARS.",
-    "cardNumber": "M85"
+    "cardNumber": "M85",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "SPECIALIZED_SETTLEMENT",
@@ -4423,7 +4932,17 @@
     ],
     "cost": 20,
     "cardNumber": "PF57",
-    "description": "Decrease your energy production 1 step and increase your M€ production 3 steps. Place a city tile on Mars. Increase your production by 1 of a resource on the map gained by placement bonus."
+    "description": "Decrease your energy production 1 step and increase your M€ production 3 steps. Place a city tile on Mars. Increase your production by 1 of a resource on the map gained by placement bonus.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "bonusResources",
+      "gainProduction",
+      "onStandardResourcePlacementBonus",
+      "produceForTile",
+      "productionBox"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "RED_CITY",
@@ -4447,7 +4966,15 @@
     },
     "victoryPoints": "special",
     "cardNumber": "PFT2",
-    "description": "Requires that Reds are ruling or that you have 2 delegates there. -1 energy prod, +2 M€ prod. Place the special tile on Mars ADJACENT TO NO GREENERY. NO GREENERY MAY BE PLACED NEXT TO THIS TILE. 1 VP for every empty space (or hazard) next to this tile."
+    "description": "Requires that Reds are ruling or that you have 2 delegates there. -1 energy prod, +2 M€ prod. Place the special tile on Mars ADJACENT TO NO GREENERY. NO GREENERY MAY BE PLACED NEXT TO THIS TILE. 1 VP for every empty space (or hazard) next to this tile.",
+    "methods": [
+      "availableRedCitySpaces",
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getVictoryPoints",
+      "isEmpty"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "WETLANDS",
@@ -4471,7 +4998,13 @@
       "plants": 4
     },
     "victoryPoints": 1,
-    "cardNumber": "Pf03"
+    "cardNumber": "Pf03",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "RARE_EARTH_ELEMENTS",
@@ -4485,7 +5018,11 @@
       "MARS"
     ],
     "cardNumber": "Pf06",
-    "description": "Increase your M€ production by 1 for every special tile you own on Mars."
+    "description": "Increase your M€ production by 1 for every special tile you own on Mars.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "ORBITAL_LABORATORIES",
@@ -4508,7 +5045,9 @@
       }
     },
     "cardNumber": "Pf07",
-    "description": "Increase your plant production 2 steps. Gain 1 plant."
+    "description": "Increase your plant production 2 steps. Gain 1 plant.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "MARTIAN_MONUMENTS",
@@ -4533,7 +5072,11 @@
       }
     },
     "cardNumber": "Pf09",
-    "description": "Requires that you own a city ON MARS. Raise your M€ production 1 step for every Mars tag you own (including this.)"
+    "description": "Requires that you own a city ON MARS. Raise your M€ production 1 step for every Mars tag you own (including this.)",
+    "methods": [
+      "bespokeCanPlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "MARTIAN_NATURE_WONDERS",
@@ -4553,7 +5096,12 @@
       }
     },
     "cardNumber": "Pf10",
-    "description": "Place a neutral player cube on a non-reserved space. No tile can be placed on that space this game. Gather any bonus on that space, but no bonuses from adjacent spaces. Add 2 data to ANY card."
+    "description": "Place a neutral player cube on a non-reserved space. No tile can be placed on that space this game. Gather any bonus on that space, but no bonuses from adjacent spaces. Add 2 data to ANY card.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "MUSEUM_OF_EARLY_COLONISATION",
@@ -4583,7 +5131,13 @@
       "tr": 1
     },
     "cardNumber": "Pf11",
-    "description": "Requires 1 ocean, 1 city and one greenery on Mars. Decrease your energy production 1 step. Raise your steel, titanium, and plant production 1 step. Gain 1 TR."
+    "description": "Requires 1 ocean, 1 city and one greenery on Mars. Decrease your energy production 1 step. Raise your steel, titanium, and plant production 1 step. Gain 1 TR.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "productionBox"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "CERES_SPACEPORT",
@@ -4614,7 +5168,9 @@
       }
     },
     "cardNumber": "Pf14",
-    "description": "Increase your M€ production 2 steps, and titanium production 1 step for every 2 Jovian tags (including these.) Draw a card. Place an ocean tile. Place a city tile ON THE RESERVED AREA."
+    "description": "Increase your M€ production 2 steps, and titanium production 1 step for every 2 Jovian tags (including these.) Draw a card. Place an ocean tile. Place a city tile ON THE RESERVED AREA.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "LUNAR_EMBASSY",
@@ -4644,7 +5200,9 @@
       }
     },
     "cardNumber": "Pf16",
-    "description": "Increase your M€ production 3 steps, and plant production 1 step for every 2 Earth tags (including this.) Draw a card. Place a city tile ON THE RESERVED AREA."
+    "description": "Increase your M€ production 3 steps, and plant production 1 step for every 2 Earth tags (including this.) Draw a card. Place a city tile ON THE RESERVED AREA.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "EARLY_EXPEDITION",
@@ -4676,7 +5234,9 @@
       }
     },
     "cardNumber": "Pf18",
-    "description": "Temperature must be -18 C or lower. Decrease your energy production 1 step and Raise your M€ production 3 steps. Add 1 data to ANY card. Place a city tile on Mars NEXT TO NO OTHER TILE."
+    "description": "Temperature must be -18 C or lower. Decrease your energy production 1 step and Raise your M€ production 3 steps. Add 1 data to ANY card. Place a city tile on Mars NEXT TO NO OTHER TILE.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "HYDROGEN_PROCESSING_PLANT",
@@ -4706,7 +5266,9 @@
     },
     "cardNumber": "Pf19",
     "description": "Oxygen level must be 3% or higher. Decrease oxygen level 1%. Raise your energy production 1 step for every two ocean tiles on Mars.",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "LUXURY_ESTATE",
@@ -4733,7 +5295,9 @@
       }
     },
     "cardNumber": "Pf21",
-    "description": "Oxygen must be 7% or greater. Gain 1 titanium for each city tile and greenery tile you own."
+    "description": "Oxygen must be 7% or greater. Gain 1 titanium for each city tile and greenery tile you own.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "DESIGNED_ORGANISMS",
@@ -4770,7 +5334,9 @@
       ]
     },
     "cardNumber": "Pf23",
-    "description": "Requires 5 science tags. Increase your plant production 2 steps. Gain 3 plants. Add 3 microbes to ANY card. Add 1 animal to ANY card."
+    "description": "Requires 5 science tags. Increase your plant production 2 steps. Gain 3 plants. Add 3 microbes to ANY card. Add 1 animal to ANY card.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "SECRET_LABS",
@@ -4794,7 +5360,13 @@
     ],
     "victoryPoints": 1,
     "cardNumber": "Pf26",
-    "description": "Requires 1 science tag and 1 Jovian tag. Place an ocean tile. Add 2 microbes to ANY card. OR Raise temperature 1 step. Gain 3 plants. OR Raise oxygen level 1 step. Add 2 floaters to ANY card."
+    "description": "Requires 1 science tag and 1 Jovian tag. Place an ocean tile. Add 2 microbes to ANY card. OR Raise temperature 1 step. Gain 3 plants. OR Raise oxygen level 1 step. Add 2 floaters to ANY card.",
+    "methods": [
+      "adjustedOptions",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "CYANOBACTERIA",
@@ -4813,7 +5385,11 @@
       }
     },
     "cardNumber": "Pf27",
-    "description": "Raise the oxygen level 1%. For every ocean tile, add a microbe to ANY card."
+    "description": "Raise the oxygen level 1%. For every ocean tile, add a microbe to ANY card.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "NEW_VENICE",
@@ -4845,7 +5421,9 @@
       "oceans": 3
     },
     "cardNumber": "Pf3",
-    "description": "Requires 3 ocean tiles. Lose 2 plants. Increase your energy production 1 step and your M€ production 2 steps. Place this tile on top of an existing ocean tile, IGNORING NORMAL PLACEMENT RESTRICTIONS FOR CITIES. The tile counts as a city as well as an ocean."
+    "description": "Requires 3 ocean tiles. Lose 2 plants. Increase your energy production 1 step and your M€ production 2 steps. Place this tile on top of an existing ocean tile, IGNORING NORMAL PLACEMENT RESTRICTIONS FOR CITIES. The tile counts as a city as well as an ocean.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "SMALL_OPEN_PIT_MINE",
@@ -4858,7 +5436,12 @@
       "BUILDING"
     ],
     "cardNumber": "Pf31",
-    "description": "Increase your steel production 2 steps OR increase your titanium production 1 step."
+    "description": "Increase your steel production 2 steps OR increase your titanium production 1 step.",
+    "methods": [
+      "bespokePlay",
+      "produce"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "FLAT_MARS_THEORY",
@@ -4876,7 +5459,11 @@
       "max": true
     },
     "cardNumber": "Pf39",
-    "description": "Requires maximum 1 science tag. Increase your M€ production 1 step for every generation played so far."
+    "description": "Requires maximum 1 science tag. Increase your M€ production 1 step for every generation played so far.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "ASTEROID_RESOURCES",
@@ -4922,7 +5509,9 @@
       }
     },
     "cardNumber": "Pf40",
-    "description": "Spend 3 energy. Either increase your steel and titanium production one step, OR place an ocean, and gain 2 steel and one titanium."
+    "description": "Spend 3 energy. Either increase your steel and titanium production one step, OR place an ocean, and gain 2 steel and one titanium.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "KICKSTARTER",
@@ -4932,7 +5521,11 @@
     "type": "automated",
     "cost": 12,
     "cardNumber": "Pf41",
-    "description": "Choose a planet tag. This card counts as having 1 of that tag. Raise the corresponding planetary track 3 steps in total."
+    "description": "Choose a planet tag. This card counts as having 1 of that tag. Raise the corresponding planetary track 3 steps in total.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "INTERPLANETARY_TRANSPORT",
@@ -4957,7 +5550,9 @@
       }
     },
     "cardNumber": "Pf43",
-    "description": "Increase your M€ production 1 step for every offworld city tile."
+    "description": "Increase your M€ production 1 step for every offworld city tile.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "MARTIAN_DUST_PROCESSING_PLANT",
@@ -4974,7 +5569,13 @@
       "tr": 1
     },
     "cardNumber": "Pf44",
-    "description": "Decrease your energy production 1 step, and raise your steel production 2 steps. Gain 1 TR."
+    "description": "Decrease your energy production 1 step, and raise your steel production 2 steps. Gain 1 TR.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "productionBox"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "RICH_DEPOSITS",
@@ -4993,7 +5594,9 @@
       "count": 2
     },
     "cardNumber": "Pf52",
-    "description": "Requires 2 science tags. Increase your steel production 3 steps."
+    "description": "Requires 2 science tags. Increase your steel production 3 steps.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "OUMUAMUA_TYPE_OBJECT_SURVEY",
@@ -5015,7 +5618,14 @@
       }
     ],
     "cardNumber": "Pf53",
-    "description": "Requires 1 space tag and 1 science tag. Add 2 data to ANY card."
+    "description": "Requires 1 space tag and 1 science tag. Add 2 data to ANY card.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "keep",
+      "processCard"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "ADVANCED_POWER_GRID",
@@ -5038,7 +5648,9 @@
       }
     },
     "cardNumber": "Pf56",
-    "description": "Increase your energy production 2 steps. Increase your M€ production 1 step per power tag you have, including this."
+    "description": "Increase your energy production 2 steps. Increase your M€ production 1 step per power tag you have, including this.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "HUYGENS_OBSERVATORY",
@@ -5056,7 +5668,14 @@
       "tr": 1
     },
     "cardNumber": "Pf61",
-    "description": "Place a colony. MAY BE PLACED ON A COLONY TILE WHERE YOU ALREADY HAVE A COLONY. Trade for free. You may use a Trade Fleet that is already on a colony tile, but you may not trade with the tile that fleet came from. Gain 1 TR."
+    "description": "Place a colony. MAY BE PLACED ON A COLONY TILE WHERE YOU ALREADY HAVE A COLONY. Trade for free. You may use a Trade Fleet that is already on a colony tile, but you may not trade with the tile that fleet came from. Gain 1 TR.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "trade",
+      "tryToTrade"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "CASSINI_STATION",
@@ -5081,7 +5700,11 @@
       }
     },
     "cardNumber": "Pf62",
-    "description": "Increase your energy production 1 step for every colony in play. Add 2 floaters to ANY card OR add 3 data to ANY card."
+    "description": "Increase your energy production 1 step for every colony in play. Add 2 floaters to ANY card OR add 3 data to ANY card.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "LOBBY_HALLS",
@@ -5101,7 +5724,11 @@
       }
     },
     "cardNumber": "PfT1",
-    "description": "Increase your M€ production 2 steps. Place 1 delegate in any party. Choose a planet tag. This card counts as having 1 of that tag. Raise the corresponding planetary track 1 step."
+    "description": "Increase your M€ production 2 steps. Place 1 delegate in any party. Choose a planet tag. This card counts as having 1 of that tag. Raise the corresponding planetary track 1 step.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "HOUSE_PRINTING",
@@ -5120,7 +5747,9 @@
     },
     "victoryPoints": 1,
     "cardNumber": "P36",
-    "description": "Increase your steel production 1 step."
+    "description": "Increase your steel production 1 step.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "LAVA_TUBE_SETTLEMENT",
@@ -5140,7 +5769,13 @@
       }
     },
     "cardNumber": "P37",
-    "description": "Decrease your energy production 1 step and increase your M€ production 2 steps. Place a city tile on a VOLCANIC AREA regardless of adjacent cities."
+    "description": "Decrease your energy production 1 step and increase your M€ production 2 steps. Place a city tile on a VOLCANIC AREA regardless of adjacent cities.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getSpacesForCity"
+    ],
+    "gameModule": "prelude"
   },
   {
     "id": "RESEARCH_COORDINATION",
@@ -5153,7 +5788,9 @@
     ],
     "cost": 4,
     "cardNumber": "P40",
-    "description": "After being played, when you perform an action, the wild tag counts as any tag of your choice."
+    "description": "After being played, when you perform an action, the wild tag counts as any tag of your choice.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "SF_MEMORIAL",
@@ -5170,7 +5807,9 @@
       "drawCard": 1
     },
     "cardNumber": "P41",
-    "description": "Draw 1 card."
+    "description": "Draw 1 card.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "SPACE_HOTELS",
@@ -5193,7 +5832,9 @@
       "count": 2
     },
     "cardNumber": "P42",
-    "description": "Requires 2 Earth tags. Increase M€ production 4 steps."
+    "description": "Requires 2 Earth tags. Increase M€ production 4 steps.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "FRONTIER_TOWN",
@@ -5210,7 +5851,14 @@
       "party": "MARS"
     },
     "cardNumber": "P74",
-    "description": "Requires that Mars First is ruling or that you have 2 delegates there. Decrease your energy production one step. Place a city tile. GAIN THE PRINTED PLACEMENT BONUS 2 ADDITIONAL TIMES."
+    "description": "Requires that Mars First is ruling or that you have 2 delegates there. Decrease your energy production one step. Place a city tile. GAIN THE PRINTED PLACEMENT BONUS 2 ADDITIONAL TIMES.",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay",
+      "productionBox"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "MICROGRAVITY_NUTRITION",
@@ -5232,7 +5880,9 @@
       }
     },
     "description": "Increase your M€ production 1 step for each colony you have.",
-    "cardNumber": "P79"
+    "cardNumber": "P79",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "SPONSORING_NATION",
@@ -5257,7 +5907,9 @@
       "count": 4
     },
     "cardNumber": "P83",
-    "description": "Requires 4 Earth tags. Gain 3 TR. Place 2 delegates."
+    "description": "Requires 4 Earth tags. Gain 3 TR. Place 2 delegates.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "SUMMIT_LOGISTICS",
@@ -5289,7 +5941,9 @@
       },
       "drawCard": 2
     },
-    "cardNumber": "P85"
+    "cardNumber": "P85",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "VENUS_ALLIES",
@@ -5317,7 +5971,9 @@
       }
     },
     "cardNumber": "P87",
-    "description": "Raise Venus 2 steps. Gain 4 M€ per colony you have."
+    "description": "Raise Venus 2 steps. Gain 4 M€ per colony you have.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "WG_PROJECT",
@@ -5333,7 +5989,12 @@
       "chairman": true
     },
     "description": "Requires that you are Chairman. DRAW 3 PRELUDE CARDS AND PLAY 1 OF THEM, Discard the other 2.",
-    "cardNumber": "P91"
+    "cardNumber": "P91",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "SNOW_ALGAE",
@@ -5355,7 +6016,9 @@
       "oceans": 2
     },
     "cardNumber": "211",
-    "description": "Requires 2 oceans. Increase your plant production and your heat production 1 step each."
+    "description": "Requires 2 oceans. Increase your plant production and your heat production 1 step each.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "NEW_HOLLAND",
@@ -5382,7 +6045,11 @@
       "all": true
     },
     "cardNumber": "X-2",
-    "description": "Requires 4 city tiles ON MARS. Increase your M€ production 3 steps. Place a city tile on top of an already placed ocean tile, FOLLOWING NORMAL CITY PLACEMENT RESTRICTIONS. The tile counts as a city and an ocean."
+    "description": "Requires 4 city tiles ON MARS. Increase your M€ production 3 steps. Place a city tile on top of an already placed ocean tile, FOLLOWING NORMAL CITY PLACEMENT RESTRICTIONS. The tile counts as a city and an ocean.",
+    "methods": [
+      "bespokeCanPlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "DUSK_LASER_MINING",
@@ -5408,7 +6075,9 @@
       "count": 2
     },
     "cardNumber": "X01",
-    "description": "Requires 2 science tags. Decrease your energy production 1 step, and increase your titanium production 1 step. Gain 4 titanium."
+    "description": "Requires 2 science tags. Decrease your energy production 1 step, and increase your titanium production 1 step. Gain 4 titanium.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "INTERPLANETARY_TRADE",
@@ -5422,7 +6091,11 @@
     "cost": 27,
     "victoryPoints": 1,
     "cardNumber": "X05",
-    "description": "Increase your M€ production 1 step per different tag you have in play, including this."
+    "description": "Increase your M€ production 1 step per different tag you have in play, including this.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "STANFORD_TORUS",
@@ -5442,7 +6115,9 @@
       }
     },
     "cardNumber": "X12",
-    "description": "Place a city tile IN SPACE, outside and separate from the planet."
+    "description": "Place a city tile IN SPACE, outside and separate from the planet.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "FIELD_CAPPED_CITY",
@@ -5467,7 +6142,9 @@
       "city": {}
     },
     "cardNumber": "X21",
-    "description": "Increase your M€ production 2 steps, increase your energy production 1 step, gain 3 plants, and place a city tile."
+    "description": "Increase your M€ production 2 steps, increase your energy production 1 step, gain 3 plants, and place a city tile.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "JOVIAN_EMBASSY",
@@ -5485,7 +6162,9 @@
       "tr": 1
     },
     "cardNumber": "X23",
-    "description": "Raise your TR 1 step."
+    "description": "Raise your TR 1 step.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "MAGNETIC_SHIELD",
@@ -5505,7 +6184,9 @@
       "count": 3
     },
     "cardNumber": "X24",
-    "description": "Requires 3 power tags. Raise your TR 4 steps."
+    "description": "Requires 3 power tags. Raise your TR 4 steps.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "POTATOES",
@@ -5523,7 +6204,12 @@
       }
     },
     "cardNumber": "X28",
-    "description": "Lose 2 plants. Increase your M€ production 2 steps."
+    "description": "Lose 2 plants. Increase your M€ production 2 steps.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "GREAT_DAM_PROMO",
@@ -5547,7 +6233,13 @@
     },
     "victoryPoints": 1,
     "cardNumber": "X32",
-    "description": "Requires 4 ocean tiles. Increase your energy production 2 steps. Place this tile ADJACENT TO an ocean tile."
+    "description": "Requires 4 ocean tiles. Increase your energy production 2 steps. Place this tile ADJACENT TO an ocean tile.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getAvailableSpaces"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "MAGNETIC_FIELD_GENERATORS_PROMO",
@@ -5572,7 +6264,9 @@
       }
     },
     "cardNumber": "X33",
-    "description": "Decrease your energy production 4 steps and increase your plant production 2 steps. Raise your TR 3 steps. Place this tile."
+    "description": "Decrease your energy production 4 steps and increase your plant production 2 steps. Raise your TR 3 steps. Place this tile.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "BACTOVIRAL_RESEARCH",
@@ -5595,7 +6289,9 @@
       }
     },
     "cardNumber": "X35",
-    "description": "Draw 1 card. Choose 1 of your played cards and add 1 microbe to it for each science tag you have, including this."
+    "description": "Draw 1 card. Choose 1 of your played cards and add 1 microbe to it for each science tag you have, including this.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "OUTDOOR_SPORTS",
@@ -5621,7 +6317,11 @@
       }
     ],
     "cardNumber": "X38",
-    "description": "Requires any city adjacent to an ocean. Increase your M€ production 2 steps."
+    "description": "Requires any city adjacent to an ocean. Increase your M€ production 2 steps.",
+    "methods": [
+      "bespokeCanPlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "PSYCHE",
@@ -5643,7 +6343,9 @@
       }
     },
     "cardNumber": "X44",
-    "description": "Increase titanium production 2 steps. Gain 3 titanium."
+    "description": "Increase titanium production 2 steps. Gain 3 titanium.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "ROBOT_POLLINATORS",
@@ -5666,7 +6368,9 @@
       }
     },
     "cardNumber": "X45",
-    "description": "Requires 4% oxygen. Increase your plant production 1 step. Gain 1 plant for every plant tag you have."
+    "description": "Requires 4% oxygen. Increase your plant production 1 step. Gain 1 plant for every plant tag you have.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "AQUEDUCT_SYSTEMS",
@@ -5695,7 +6399,11 @@
       }
     ],
     "cardNumber": "X50",
-    "description": "Requires you have a city next to an ocean. Draw 3 cards with a building tag."
+    "description": "Requires you have a city next to an ocean. Draw 3 cards with a building tag.",
+    "methods": [
+      "bespokeCanPlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "ASTRA_MECHANICA",
@@ -5709,7 +6417,14 @@
     "cost": 7,
     "cardNumber": "X51",
     "description": "RETURN UP TO 2 OF YOUR PLAYED EVENT CARDS TO YOUR HAND. THEY MAY NOT BE CARDS THAT PLACE SPECIAL TILES.",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getCards",
+      "hasUnusableCards"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "CYBERIA_SYSTEMS",
@@ -5725,7 +6440,16 @@
     },
     "cardNumber": "X53",
     "description": "Increase your steel production 1 step. Copy the PRODUCTION BOXES of 2 of your cards with building tags.",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getPlayableBuildingCards",
+      "isCardApplicable",
+      "productionBehavior",
+      "selectBuildingCard"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "HERMETIC_ORDER_OF_MARS",
@@ -5744,7 +6468,11 @@
       }
     },
     "cardNumber": "X56",
-    "description": "Oxygen must be 4% or lower. Increase your M€ production 2 steps. Gain 1 M€ per empty area adjacent to your tiles."
+    "description": "Oxygen must be 4% or lower. Increase your M€ production 2 steps. Gain 1 M€ per empty area adjacent to your tiles.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "KAGUYA_TECH",
@@ -5763,7 +6491,13 @@
       },
       "drawCard": 1
     },
-    "cardNumber": "X58"
+    "cardNumber": "X58",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "SUPERMARKETS",
@@ -5783,7 +6517,9 @@
       "all": true
     },
     "cardNumber": "X68",
-    "description": "Requires two cities in play. Increase your M€ production 2 steps."
+    "description": "Requires two cities in play. Increase your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "PUBLIC_BATHS",
@@ -5805,7 +6541,9 @@
       "oceans": 6
     },
     "cardNumber": "X70",
-    "description": "Requires 6 oceans. Gain 6 M€."
+    "description": "Requires 6 oceans. Gain 6 M€.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "CITY_PARKS",
@@ -5827,7 +6565,9 @@
       }
     },
     "cardNumber": "X71",
-    "description": "Requires that you have 3 cities. Gain 2 plants."
+    "description": "Requires that you have 3 cities. Gain 2 plants.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "CASINOS",
@@ -5849,7 +6589,9 @@
       "cities": 1
     },
     "cardNumber": "X72",
-    "description": "Requires that you have a city. Decrease your energy production 1 step and increase your M€ production 4 steps."
+    "description": "Requires that you have a city. Decrease your energy production 1 step and increase your M€ production 4 steps.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "STATIC_HARVESTING",
@@ -5876,7 +6618,9 @@
       "max": true
     },
     "cardNumber": "X74",
-    "description": "Requires 3 or fewer ocean tiles. Increase your energy production 1 step. Gain 1 M€ per building tag you have."
+    "description": "Requires 3 or fewer ocean tiles. Increase your energy production 1 step. Gain 1 M€ per building tag you have.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "STERLING_VENTS",
@@ -5897,7 +6641,9 @@
       }
     },
     "description": "Decrease heat production 2 steps. Increase energy production 2 steps.",
-    "cardNumber": "X79"
+    "cardNumber": "X79",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "CLOUD_CITY",
@@ -5922,7 +6668,9 @@
       }
     },
     "cardNumber": "SW05",
-    "description": "Requires Venus 6%. Raise Venus 1 step. Add 2 floaters to any card."
+    "description": "Requires Venus 6%. Raise Venus 1 step. Add 2 floaters to any card.",
+    "methods": [],
+    "gameModule": "starwars"
   },
   {
     "id": "FOREST_MOON",
@@ -5951,7 +6699,9 @@
       }
     },
     "cardNumber": "SW06",
-    "description": "Requires any 4 greeneries on Mars. Decrease any energy production 2 steps. Add an animal to any card."
+    "description": "Requires any 4 greeneries on Mars. Decrease any energy production 2 steps. Add an animal to any card.",
+    "methods": [],
+    "gameModule": "starwars"
   },
   {
     "id": "TAKONDA_CASTLE",
@@ -5975,7 +6725,9 @@
       }
     },
     "cardNumber": "SW07",
-    "description": "Gain 1 M€ for each of your microbe tags and animal tags."
+    "description": "Gain 1 M€ for each of your microbe tags and animal tags.",
+    "methods": [],
+    "gameModule": "starwars"
   },
   {
     "id": "TOOL_WITH_THE_FIRST_ORDER",
@@ -5991,7 +6743,11 @@
       "tr": 1
     },
     "cardNumber": "SW08",
-    "description": "Take another action this turn. Gain 1 TR."
+    "description": "Take another action this turn. Gain 1 TR.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "starwars"
   },
   {
     "id": "REY_SKYWALKER",
@@ -6010,7 +6766,11 @@
       }
     },
     "cardNumber": "SW09",
-    "description": "Raise your M€ production 4 steps. Place a bronze cube on an empty unreserved space on Mars. No tile or token may be placed on that space for the rest of the game."
+    "description": "Raise your M€ production 4 steps. Place a bronze cube on an empty unreserved space on Mars. No tile or token may be placed on that space for the rest of the game.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "starwars"
   },
   {
     "id": "AERIAL_LENSES",
@@ -6030,7 +6790,9 @@
       "party": "KELVINISTS"
     },
     "description": "Requires that Kelvinists are ruling or that you have 2 delegates there. Remove up to 2 plants from any player. Increase your heat production 2 steps.",
-    "cardNumber": "T01"
+    "cardNumber": "T01",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "CULTURAL_METROPOLIS",
@@ -6054,7 +6816,12 @@
       "party": "UNITY"
     },
     "cardNumber": "T03",
-    "description": "Requires that Unity is ruling or that you have 2 delegates there. Decrease your energy production 1 step and increase your M€ production 3 steps. Place a city tile. Place 2 delegates in 1 party."
+    "description": "Requires that Unity is ruling or that you have 2 delegates there. Decrease your energy production 1 step and increase your M€ production 3 steps. Place a city tile. Place 2 delegates in 1 party.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "turmoil"
   },
   {
     "id": "PARLIAMENT_HALL",
@@ -6079,7 +6846,9 @@
       }
     },
     "cardNumber": "T08",
-    "description": "Requires that Mars First are ruling or that you have 2 delegates there. Increase your M€ production 1 step for every 3 building tags you have, including this."
+    "description": "Requires that Mars First are ruling or that you have 2 delegates there. Increase your M€ production 1 step for every 3 building tags you have, including this.",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "PR_OFFICE",
@@ -6103,7 +6872,9 @@
       "party": "UNITY"
     },
     "cardNumber": "T09",
-    "description": "Requires that Unity are ruling or that you have 2 delegates there. Gain 1 TR. Gain 1 M€ for each Earth tag you have, including this."
+    "description": "Requires that Unity are ruling or that you have 2 delegates there. Gain 1 TR. Gain 1 M€ for each Earth tag you have, including this.",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "SPONSORED_MOHOLE",
@@ -6124,7 +6895,9 @@
       "party": "KELVINISTS"
     },
     "cardNumber": "T13",
-    "description": "Requires that Kelvinists are ruling or that you have 2 delegates there. Increase your heat production 2 steps."
+    "description": "Requires that Kelvinists are ruling or that you have 2 delegates there. Increase your heat production 2 steps.",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "SUPPORTED_RESEARCH",
@@ -6143,7 +6916,9 @@
       "party": "SCIENTISTS"
     },
     "cardNumber": "T14",
-    "description": "Requires that Scientists are ruling or that you have 2 delegates there. Draw 2 cards."
+    "description": "Requires that Scientists are ruling or that you have 2 delegates there. Draw 2 cards.",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "WILDLIFE_DOME",
@@ -6164,7 +6939,9 @@
       "greenery": {}
     },
     "cardNumber": "T15",
-    "description": "Requires that Greens are ruling or that you have 2 delegates there. Place a greenery tile and raise oxygen 1 step."
+    "description": "Requires that Greens are ruling or that you have 2 delegates there. Place a greenery tile and raise oxygen 1 step.",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "DIASPORA_MOVEMENT",
@@ -6189,7 +6966,9 @@
       }
     },
     "cardNumber": "TO4",
-    "description": "Requires that Reds are ruling or that you have 2 delegates there. Gain 1M€ for each Jovian tag in play, including this."
+    "description": "Requires that Reds are ruling or that you have 2 delegates there. Gain 1M€ for each Jovian tag in play, including this.",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "GEOSCAN_SATELLITE",
@@ -6203,7 +6982,12 @@
       "SPACE"
     ],
     "cardNumber": "U002",
-    "description": "Pick a space on the board. Identify the underground resource in that space and in all adjacent spaces. Claim one of them."
+    "description": "Pick a space on the board. Identify the underground resource in that space and in all adjacent spaces. Claim one of them.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "UNDERGROUND_RAILWAY",
@@ -6227,7 +7011,9 @@
       }
     },
     "cardNumber": "U004",
-    "description": "Decrease your energy production 1 step. Gain 1 TR for every 4 underground tokens you have."
+    "description": "Decrease your energy production 1 step. Gain 1 TR for every 4 underground tokens you have.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "GAIA_CITY",
@@ -6248,7 +7034,13 @@
       }
     },
     "cardNumber": "U005",
-    "description": "Reduce your energy production one step and increase your plant production 2 steps. Place a city on a NON-RESERVED SPACE WITH YOUR EXCAVATION MARKER, ignoring other placement restrictions"
+    "description": "Reduce your energy production one step and increase your plant production 2 steps. Place a city on a NON-RESERVED SPACE WITH YOUR EXCAVATION MARKER, ignoring other placement restrictions",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "OLD_WORLD_MAFIA",
@@ -6270,7 +7062,9 @@
       }
     },
     "cardNumber": "U007",
-    "description": "Gain 1 corruption for every 2 Earth tags you have, including this."
+    "description": "Gain 1 corruption for every 2 Earth tags you have, including this.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "NIGHTCLUBS",
@@ -6295,7 +7089,9 @@
       }
     },
     "cardNumber": "U008",
-    "description": "Requires that you own a city in play. Gain 1 corruption and increase your M€ production 2 steps."
+    "description": "Requires that you own a city in play. Gain 1 corruption and increase your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "OFF_WORLD_TAX_HAVEN",
@@ -6318,7 +7114,9 @@
       }
     },
     "cardNumber": "U010",
-    "description": "Requires 2 corruption. Increase your M€ production 5 steps."
+    "description": "Requires 2 corruption. Increase your M€ production 5 steps.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "SUBTERRANEAN_SEA",
@@ -6334,7 +7132,13 @@
       "oceans": 1
     },
     "cardNumber": "U015",
-    "description": "Place an ocean tile ON AN AREA NOT RESERVED FOR OCEAN where you have an excavation marker."
+    "description": "Place an ocean tile ON AN AREA NOT RESERVED FOR OCEAN where you have an excavation marker.",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "FOREST_TUNNELS",
@@ -6356,7 +7160,9 @@
       }
     },
     "cardNumber": "U016",
-    "description": "Gain 1 plant for each underground token you own."
+    "description": "Gain 1 plant for each underground token you own.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "MAN_MADE_VOLCANO",
@@ -6377,7 +7183,13 @@
         "heat": 4
       }
     },
-    "cardNumber": "U017"
+    "cardNumber": "U017",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "TUNNELING_SUBCONTRACTOR",
@@ -6396,7 +7208,9 @@
       }
     },
     "cardNumber": "U018",
-    "description": "Gain 1 corruption. Excavate an underground resource."
+    "description": "Gain 1 corruption. Excavate an underground resource.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "UNDERGROUND_AMUSEMENT_PARK",
@@ -6418,7 +7232,9 @@
       }
     },
     "cardNumber": "U019",
-    "description": "Requires you have 1 underground token. Increase your M€ production 1 step."
+    "description": "Requires you have 1 underground token. Increase your M€ production 1 step.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "CASINO",
@@ -6443,7 +7259,9 @@
       }
     },
     "cardNumber": "U020",
-    "description": "Requires that you own 2 city tiles. Gain 1 corruption. Increase your M€ production 4 steps."
+    "description": "Requires that you own 2 city tiles. Gain 1 corruption. Increase your M€ production 4 steps.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "IMPORTED_HEAVY_MACHINERY",
@@ -6462,7 +7280,9 @@
       }
     },
     "cardNumber": "U021",
-    "description": "Excavate 2 underground resources."
+    "description": "Excavate 2 underground resources.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "MICROPROBING_TECHNOLOGY",
@@ -6489,7 +7309,9 @@
       }
     },
     "cardNumber": "U022",
-    "description": "Requires 1 science tag. Gain 3 plants. Identify 2 underground resources. Claim 1 of them."
+    "description": "Requires 1 science tag. Gain 3 plants. Identify 2 underground resources. Claim 1 of them.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "GEOTHERMAL_NETWORK",
@@ -6511,7 +7333,9 @@
     },
     "victoryPoints": 1,
     "cardNumber": "U024",
-    "description": "Requires 3 underground tokens. Increase your heat production 3 steps."
+    "description": "Requires 3 underground tokens. Increase your heat production 3 steps.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "CAVE_CITY",
@@ -6530,7 +7354,13 @@
       }
     },
     "cardNumber": "U027",
-    "description": "Increase your steel production 1 step. Place a city in a NON-RESERVED SPACE WITH YOUR EXCAVATION MARKER, ignoring other placement restrictions"
+    "description": "Increase your steel production 1 step. Place a city in a NON-RESERVED SPACE WITH YOUR EXCAVATION MARKER, ignoring other placement restrictions",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "UNDERGROUND_SMUGGLING_RING",
@@ -6552,7 +7382,9 @@
       "standardResource": 2
     },
     "cardNumber": "U028",
-    "description": "Requires you have 1 underground token. Gain 1 corruption and 2 of the same standard resource."
+    "description": "Requires you have 1 underground token. Gain 1 corruption and 2 of the same standard resource.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "DEEPMINING",
@@ -6565,7 +7397,15 @@
       "BUILDING"
     ],
     "cardNumber": "U029",
-    "description": "Excavate an underground resource that depicts steel or titanium ANYWHERE ON THE BOARD. Increase your production of that resource 1 step."
+    "description": "Excavate an underground resource that depicts steel or titanium ANYWHERE ON THE BOARD. Increase your production of that resource 1 step.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getAvailableSpaces",
+      "productionBox",
+      "spaceSelected"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "BEHEMOTH_EXCAVATOR",
@@ -6583,7 +7423,9 @@
       }
     },
     "cardNumber": "U030",
-    "description": "Excavate 3 underground resources."
+    "description": "Excavate 3 underground resources.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "LOBBYING_NETWORK",
@@ -6601,7 +7443,9 @@
       }
     },
     "cardNumber": "U031",
-    "description": "Gain 1 corruption."
+    "description": "Gain 1 corruption.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "ORBITAL_LASER_DRILL",
@@ -6628,7 +7472,9 @@
       }
     },
     "cardNumber": "U033",
-    "description": "Requires 2 science tags. Excavate 2 underground resources, IGNORING PLACEMENT RESTRICTIONS."
+    "description": "Requires 2 science tags. Excavate 2 underground resources, IGNORING PLACEMENT RESTRICTIONS.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "LANDFILL",
@@ -6642,7 +7488,12 @@
     "cost": 2,
     "victoryPoints": -2,
     "cardNumber": "U036",
-    "description": "Increase your M€ production 1 step for each different TYPE of production you have at least 1 step of."
+    "description": "Increase your M€ production 1 step for each different TYPE of production you have at least 1 step of.",
+    "methods": [
+      "bespokePlay",
+      "productionBox"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "ROBOT_MOLES",
@@ -6666,7 +7517,9 @@
       }
     },
     "cardNumber": "U045",
-    "description": "Gain 2 steel. Identify 4 underground resources. Claim 1 of them."
+    "description": "Gain 2 steel. Identify 4 underground resources. Claim 1 of them.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "HYPERSPACE_DRIVE_PROTOTYPE",
@@ -6684,7 +7537,11 @@
       "count": 3
     },
     "cardNumber": "U052",
-    "description": "Requires that 3 science tags. Put a fighter resource on a card you own, or gain 1 titanium if you have no suitable card. Put a science resource on a card you own, or gain 1 TR if you have no suitable card."
+    "description": "Requires that 3 science tags. Put a fighter resource on a card you own, or gain 1 titanium if you have no suitable card. Put a science resource on a card you own, or gain 1 TR if you have no suitable card.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "STAR_VEGAS",
@@ -6708,7 +7565,13 @@
       }
     },
     "cardNumber": "U053",
-    "description": "Requires any 3 cities in play. Place a city on a space reserved for a different space city. Gain 2 corruption. Increase your M€ production one step for each city in play."
+    "description": "Requires any 3 cities in play. Place a city on a space reserved for a different space city. Gain 2 corruption. Increase your M€ production one step for each city in play.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "eligibleSpaces"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "PRIVATE_RESORTS",
@@ -6733,7 +7596,9 @@
       }
     },
     "cardNumber": "U054",
-    "description": "Requires 3 oceans. Reduce your heat production 1 step. Increase your M€ production 3 steps. Gain 1 corruption."
+    "description": "Requires 3 oceans. Reduce your heat production 1 step. Increase your M€ production 3 steps. Gain 1 corruption.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "NEUTRINOGRAPH",
@@ -6759,7 +7624,9 @@
       }
     },
     "cardNumber": "U057",
-    "description": "Requires 5 science tags. Identify 7 underground resources. Claim 3 of them."
+    "description": "Requires 5 science tags. Identify 7 underground resources. Claim 3 of them.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "SOIL_EXPORT",
@@ -6782,7 +7649,9 @@
         "excavate": 1
       }
     },
-    "cardNumber": "U058"
+    "cardNumber": "U058",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "ARTESIAN_AQUIFER",
@@ -6798,7 +7667,13 @@
       "oceans": 1
     },
     "cardNumber": "U059",
-    "description": "Excavate 1 underground resource on ANY SPACE RESERVED FOR AN OCEAN. Then, place an ocean tile there, if possible."
+    "description": "Excavate 1 underground resource on ANY SPACE RESERVED FOR AN OCEAN. Then, place an ocean tile there, if possible.",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "UNDERGROUND_RESEARCH_CENTER",
@@ -6822,7 +7697,12 @@
       }
     },
     "cardNumber": "U062",
-    "description": "Requires you have 4 underground tokens. Excavate an underground resource. Choose a tag that is not the wild tag or clone tag. Draw a card with that tag."
+    "description": "Requires you have 4 underground tokens. Excavate an underground resource. Choose a tag that is not the wild tag or clone tag. Draw a card with that tag.",
+    "methods": [
+      "bespokePlay",
+      "chooseTagsAndDraw"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "INFRASTRUCTURE_OVERLOAD",
@@ -6846,7 +7726,9 @@
       }
     },
     "cardNumber": "U068",
-    "description": "Gain 1 corruption. Reduce any energy production 2 steps."
+    "description": "Gain 1 corruption. Reduce any energy production 2 steps.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "UNDERGROUND_HABITAT",
@@ -6874,7 +7756,9 @@
       }
     },
     "cardNumber": "U071",
-    "description": "Excavate an underground resource. Increase your plant production 1 step. Add 1 animal on another card."
+    "description": "Excavate an underground resource. Increase your plant production 1 step. Add 1 animal on another card.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "NANOFOUNDRY",
@@ -6903,7 +7787,9 @@
       }
     },
     "cardNumber": "U074",
-    "description": "Requires 2 science tags. Reduce your energy production 5 steps. Draw 1 card for every power tag you have, including this."
+    "description": "Requires 2 science tags. Reduce your energy production 5 steps. Draw 1 card for every power tag you have, including this.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "PUBLIC_SPACELINE",
@@ -6932,7 +7818,9 @@
       }
     },
     "cardNumber": "U077",
-    "description": "Requires 5 space tags. This card has 2 Earth tags, 2 Jovian tags, 2 Venus tags, and 2 Mars tags."
+    "description": "Requires 5 space tags. This card has 2 Earth tags, 2 Jovian tags, 2 Venus tags, and 2 Mars tags.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "CUT_THROAT_BUDGETING",
@@ -6956,7 +7844,9 @@
       }
     },
     "cardNumber": "U080",
-    "description": "Requires 1 corruption. Increase your M€, steel, and energy production 1 step each."
+    "description": "Requires 1 corruption. Increase your M€, steel, and energy production 1 step each.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "GUERILLA_ECOLOGISTS",
@@ -6972,7 +7862,13 @@
       "corruption": 1
     },
     "cardNumber": "U089",
-    "description": "Requires 1 corruption. Spend 4 plants to place a greenery tile IGNORING ADJACENCY RESTRICTIONS."
+    "description": "Requires 1 corruption. Spend 4 plants to place a greenery tile IGNORING ADJACENCY RESTRICTIONS.",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "RACKETEERING",
@@ -6989,7 +7885,11 @@
       "corruption": 1
     },
     "cardNumber": "U092",
-    "description": "Requires 1 corruption. Increase your M€ production one step for each crime tag you have INCLUDING EVENTS and this card."
+    "description": "Requires 1 corruption. Increase your M€ production one step for each crime tag you have INCLUDING EVENTS and this card.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "GAS_TRUST",
@@ -7007,7 +7907,11 @@
       }
     },
     "cardNumber": "U093",
-    "description": "Gain 1 corruption. Gain 3 heat for each crime tag you have INCLUDING EVENTS and this card."
+    "description": "Gain 1 corruption. Gain 3 heat for each crime tag you have INCLUDING EVENTS and this card.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "BIOBATTERIES",
@@ -7026,7 +7930,11 @@
       }
     },
     "cardNumber": "U096",
-    "description": "Increase your energy production 1 step. Gain 1 energy for every microbe tag you have (including this.) For every power tag you have (including this) put 1 microbe on another card."
+    "description": "Increase your energy production 1 step. Gain 1 energy for every microbe tag you have (including this.) For every power tag you have (including this) put 1 microbe on another card.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "ACIDIZING",
@@ -7048,7 +7956,9 @@
       }
     },
     "cardNumber": "U098",
-    "description": "Raise Venus 1 step. Excavate an underground resource."
+    "description": "Raise Venus 1 step. Excavate an underground resource.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "HACKERS_UNDERWORLD",
@@ -7074,7 +7984,11 @@
       }
     },
     "cardNumber": "UX01",
-    "description": "Requires 2 corruption. Decrease any M€ production 2 steps. Increase your M€ production 1 step for every unit of corruption you have."
+    "description": "Requires 2 corruption. Decrease any M€ production 2 steps. Increase your M€ production 1 step for every unit of corruption you have.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "ATALANTA_PLANITIA_LAB",
@@ -7096,7 +8010,9 @@
       "drawCard": 2
     },
     "cardNumber": "216",
-    "description": "Requires 3 science tags. Draw 2 cards."
+    "description": "Requires 3 science tags. Draw 2 cards.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "ATMOSCOOP",
@@ -7121,7 +8037,14 @@
       }
     },
     "cardNumber": "217",
-    "description": "Requires 3 science tags. Either raise the temperature 2 steps, or raise Venus 2 steps. Add 2 floaters to ANY card."
+    "description": "Requires 3 science tags. Either raise the temperature 2 steps, or raise Venus 2 steps. Add 2 floaters to ANY card.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "temperatureIsMaxed",
+      "venusIsMaxed"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "CORRODER_SUITS",
@@ -7143,7 +8066,9 @@
       }
     },
     "cardNumber": "219",
-    "description": "Increase your M€ production 2 steps. Add 1 resource to ANY Venus CARD."
+    "description": "Increase your M€ production 2 steps. Add 1 resource to ANY Venus CARD.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "DAWN_CITY",
@@ -7171,7 +8096,9 @@
       }
     },
     "cardNumber": "220",
-    "description": "Requires 4 science tags. Decrease your energy production 1 step. Increase your titanium production 1 step. Place a city tile on the RESERVED AREA."
+    "description": "Requires 4 science tags. Decrease your energy production 1 step. Increase your titanium production 1 step. Place a city tile on the RESERVED AREA.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "FREYJA_BIODOMES",
@@ -7195,7 +8122,12 @@
       }
     },
     "cardNumber": "227",
-    "description": "Requires 10% on the Venus track. Add 2 microbes or 2 animals to another Venus card. Production: energy -1, M€ +2."
+    "description": "Requires 10% on the Venus track. Add 2 microbes or 2 animals to another Venus card. Production: energy -1, M€ +2.",
+    "methods": [
+      "bespokePlay",
+      "getResCards"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "GIANT_SOLAR_SHADE",
@@ -7214,7 +8146,9 @@
       }
     },
     "cardNumber": "229",
-    "description": "Raise Venus 3 steps."
+    "description": "Raise Venus 3 steps.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "GYROPOLIS",
@@ -7240,7 +8174,9 @@
       }
     },
     "cardNumber": "230",
-    "description": "Decrease your energy production 2 steps. Increase your M€ production 1 step for each Venus and Earth tag you have. Place a city tile."
+    "description": "Decrease your energy production 2 steps. Increase your M€ production 1 step for each Venus and Earth tag you have. Place a city tile.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "IO_SULPHUR_RESEARCH",
@@ -7255,7 +8191,11 @@
     "cost": 17,
     "victoryPoints": 2,
     "cardNumber": "232",
-    "description": "Draw 1 card, or draw 3 if you have at least 3 Venus tags."
+    "description": "Draw 1 card, or draw 3 if you have at least 3 Venus tags.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "ISHTAR_MINING",
@@ -7276,7 +8216,9 @@
       "venus": 8
     },
     "cardNumber": "233",
-    "description": "Requires Venus 8%. Increase your titanium production 1 step."
+    "description": "Requires Venus 8%. Increase your titanium production 1 step.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "LUNA_METROPOLIS",
@@ -7302,7 +8244,9 @@
       }
     },
     "cardNumber": "236",
-    "description": "Increase your M€ production 1 step for each Earth tag you have, including this. Place a city tile on the RESERVED AREA."
+    "description": "Increase your M€ production 1 step for each Earth tag you have, including this. Place a city tile on the RESERVED AREA.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "LUXURY_FOODS",
@@ -7324,7 +8268,11 @@
       }
     ],
     "description": "Requires that you have a Venus tag, an Earth tag and a Jovian tag.",
-    "cardNumber": "237"
+    "cardNumber": "237",
+    "methods": [
+      "bespokeCanPlay"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "MINING_QUOTA",
@@ -7353,7 +8301,9 @@
       }
     ],
     "cardNumber": "239",
-    "description": "Requires Venus, Earth and Jovian tags. Increase your steel production 2 steps."
+    "description": "Requires Venus, Earth and Jovian tags. Increase your steel production 2 steps.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "NEUTRALIZER_FACTORY",
@@ -7374,7 +8324,9 @@
       "venus": 10
     },
     "cardNumber": "240",
-    "description": "Requires Venus 10%. Increase the Venus track 1 step."
+    "description": "Requires Venus 10%. Increase the Venus track 1 step.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "OMNICOURT",
@@ -7401,7 +8353,9 @@
       }
     ],
     "cardNumber": "241",
-    "description": "Requires Venus, Earth and Jovian tags. Increase your TR 2 steps."
+    "description": "Requires Venus, Earth and Jovian tags. Increase your TR 2 steps.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "ORBITAL_REFLECTORS",
@@ -7423,7 +8377,9 @@
       }
     },
     "cardNumber": "242",
-    "description": "Raise Venus 2 steps. Increase your heat production 2 steps."
+    "description": "Raise Venus 2 steps. Increase your heat production 2 steps.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "SISTER_PLANET_SUPPORT",
@@ -7450,7 +8406,9 @@
       }
     ],
     "cardNumber": "244",
-    "description": "Requires Venus and Earth tags. Increase your M€ production 3 steps."
+    "description": "Requires Venus and Earth tags. Increase your M€ production 3 steps.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "SOLARNET",
@@ -7475,7 +8433,9 @@
       "drawCard": 2
     },
     "cardNumber": "245",
-    "description": "Requires Venus, Earth and Jovian tags. Draw 2 cards."
+    "description": "Requires Venus, Earth and Jovian tags. Draw 2 cards.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "SPONSORED_ACADEMIES",
@@ -7490,7 +8450,12 @@
     "cost": 9,
     "victoryPoints": 1,
     "cardNumber": "247",
-    "description": "Discard 1 card from your hand and THEN draw 3 cards. All OPPONENTS draw 1 card."
+    "description": "Discard 1 card from your hand and THEN draw 3 cards. All OPPONENTS draw 1 card.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "SULPHUR_EXPORTS",
@@ -7514,7 +8479,9 @@
       }
     },
     "cardNumber": "250",
-    "description": "Increase Venus 1 step. Increase your M€ production 1 step for each Venus tag you have, including this."
+    "description": "Increase Venus 1 step. Increase your M€ production 1 step for each Venus tag you have, including this.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "TERRAFORMING_CONTRACT",
@@ -7535,7 +8502,9 @@
       "tr": 25
     },
     "cardNumber": "252",
-    "description": "Requires that you have at least 25 TR. Increase your M€ production 4 steps."
+    "description": "Requires that you have at least 25 TR. Increase your M€ production 4 steps.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "VENUS_GOVERNOR",
@@ -7558,7 +8527,9 @@
       }
     },
     "cardNumber": "255",
-    "description": "Requires 2 Venus tags. Increase your M€ production 2 steps."
+    "description": "Requires 2 Venus tags. Increase your M€ production 2 steps.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "VENUS_SOILS",
@@ -7584,7 +8555,9 @@
       }
     },
     "cardNumber": "257",
-    "description": "Raise Venus 1 step. Increase your plant production 1 step. Add 2 microbes to ANOTHER card"
+    "description": "Raise Venus 1 step. Increase your plant production 1 step. Add 2 microbes to ANOTHER card",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "VENUSIAN_PLANTS",
@@ -7607,6 +8580,32 @@
       }
     },
     "cardNumber": "261",
-    "description": "Requires Venus 16%. Raise Venus 1 step. Add 1 microbe or 1 animal to ANOTHER VENUS CARD"
+    "description": "Requires Venus 16%. Raise Venus 1 step. Add 1 microbe or 1 animal to ANOTHER VENUS CARD",
+    "methods": [
+      "bespokePlay",
+      "getResCards"
+    ],
+    "gameModule": "venus"
+  },
+  {
+    "id": "HACKERS",
+    "name": "Hackers",
+    "class": "Hackers",
+    "module": "base",
+    "type": "automated",
+    "cost": 3,
+    "victoryPoints": -1,
+    "behavior": {
+      "production": {
+        "energy": -1,
+        "megacredits": 2
+      }
+    },
+    "description": "Decrease your energy production 1 step and any M€ production 2 steps. Increase your M€ production 2 steps.",
+    "cardNumber": "125",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "corpera"
   }
 ]

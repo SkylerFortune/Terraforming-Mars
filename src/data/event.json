@@ -10,7 +10,11 @@
       "tr": 1
     },
     "cardNumber": "A03",
-    "description": "Gain 1 TR. Move each hazard marker up to 1 step up or down along its terraforming track."
+    "description": "Gain 1 TR. Move each hazard marker up to 1 step up or down along its terraforming track.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "ares"
   },
   {
     "id": "DESPERATE_MEASURES",
@@ -21,7 +25,12 @@
     "cost": 1,
     "victoryPoints": -2,
     "cardNumber": "A04",
-    "description": "Place a bronze cube on a dust storm tile and raise oxygen 1 step, or place a bronze cube on an erosion tile and raise the temperature 1 step. The hazard tile with the bronze cube cannot be removed."
+    "description": "Place a bronze cube on a dust storm tile and raise oxygen 1 step, or place a bronze cube on an erosion tile and raise the temperature 1 step. The hazard tile with the bronze cube cannot be removed.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "ares"
   },
   {
     "id": "LAVA_FLOWS_ARES",
@@ -53,7 +62,9 @@
       }
     },
     "cardNumber": "A11",
-    "description": "Raise temperature 2 steps and place this tile ON EITHER THARSIS THOLUS, ASCRAEUS MONS, PAVONIS MONS OR ARSIA MONS. This tile grants an ADJACENCY BONUS of 2 heat."
+    "description": "Raise temperature 2 steps and place this tile ON EITHER THARSIS THOLUS, ASCRAEUS MONS, PAVONIS MONS OR ARSIA MONS. This tile grants an ADJACENCY BONUS of 2 heat.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "METALLIC_ASTEROID",
@@ -84,7 +95,9 @@
       }
     },
     "cardNumber": "A13",
-    "description": "Raise temperature 1 step and gain 1 titanium. Remove up to 4 plants from any player. Place this tile which grants an ADJACENCY BONUS of 1 titanium."
+    "description": "Raise temperature 1 step and gain 1 titanium. Remove up to 4 plants from any player. Place this tile which grants an ADJACENCY BONUS of 1 titanium.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "DEIMOS_DOWN_ARES",
@@ -116,7 +129,9 @@
       }
     },
     "cardNumber": "A26",
-    "description": "Raise temperature 3 steps and gain 4 steel. Place this tile ADJACENT TO no city tile. It provides adjacency bonus of 1 asteroid and 1 steel. Remove up to 6 plants from any player."
+    "description": "Raise temperature 3 steps and gain 4 steel. Place this tile ADJACENT TO no city tile. It provides adjacency bonus of 1 asteroid and 1 steel. Remove up to 6 plants from any player.",
+    "methods": [],
+    "gameModule": "ares"
   },
   {
     "id": "ASTEROID",
@@ -138,7 +153,9 @@
       "removeAnyPlants": 3
     },
     "description": "Raise temperature 1 step and gain 2 titanium. Remove up to 3 plants from any player.",
-    "cardNumber": "009"
+    "cardNumber": "009",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "COMET",
@@ -158,7 +175,9 @@
       "removeAnyPlants": 3
     },
     "cardNumber": "010",
-    "description": "Raise temperature 1 step and place an ocean tile. Remove up to 3 plants from any player."
+    "description": "Raise temperature 1 step and place an ocean tile. Remove up to 3 plants from any player.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "BIG_ASTEROID",
@@ -180,7 +199,9 @@
       "removeAnyPlants": 4
     },
     "description": "Raise temperature 2 steps and gain 4 titanium. Remove up to 4 plants from any player.",
-    "cardNumber": "011"
+    "cardNumber": "011",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "IMPORTED_HYDROGEN",
@@ -197,7 +218,11 @@
       "ocean": {}
     },
     "cardNumber": "019",
-    "description": "Gain 3 plants, or add 3 microbes or 2 animals to ANOTHER card. Place an ocean tile."
+    "description": "Gain 3 plants, or add 3 microbes or 2 animals to ANOTHER card. Place an ocean tile.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "INTERSTELLAR_COLONY_SHIP",
@@ -216,7 +241,9 @@
       "count": 5
     },
     "description": "Requires that you have 5 science tags.",
-    "cardNumber": "027"
+    "cardNumber": "027",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "RELEASE_OF_INERT_GASES",
@@ -229,7 +256,9 @@
       "tr": 2
     },
     "cardNumber": "036",
-    "description": "Raise your terraforming rating 2 steps."
+    "description": "Raise your terraforming rating 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "NITROGEN_RICH_ASTEROID",
@@ -248,7 +277,11 @@
       "tr": 2
     },
     "cardNumber": "037",
-    "description": "Raise your terraforming rating 2 steps and temperature 1 step. Increase your plant production 1 step, or 4 steps if you have 3 plant tags."
+    "description": "Raise your terraforming rating 2 steps and temperature 1 step. Increase your plant production 1 step, or 4 steps if you have 3 plant tags.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "DEIMOS_DOWN",
@@ -270,7 +303,9 @@
       "removeAnyPlants": 8
     },
     "cardNumber": "039",
-    "description": "Raise temperature 3 steps and gain 4 steel. Remove up to 8 plants from any player."
+    "description": "Raise temperature 3 steps and gain 4 steel. Remove up to 8 plants from any player.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "MINERAL_DEPOSIT",
@@ -285,7 +320,9 @@
       }
     },
     "cardNumber": "062",
-    "description": "Gain 5 steel."
+    "description": "Gain 5 steel.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "MINING_EXPEDITION",
@@ -304,7 +341,9 @@
       "removeAnyPlants": 2
     },
     "cardNumber": "063",
-    "description": "Raise oxygen 1 step. Remove 2 plants from any player. Gain 2 steel."
+    "description": "Raise oxygen 1 step. Remove 2 plants from any player. Gain 2 steel.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "LAND_CLAIM",
@@ -313,7 +352,12 @@
     "module": "base",
     "type": "event",
     "cost": 1,
-    "cardNumber": "066"
+    "cardNumber": "066",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "TOWING_A_COMET",
@@ -335,7 +379,9 @@
       "ocean": {}
     },
     "cardNumber": "075",
-    "description": "Gain 2 plants. Raise oxygen level 1 step and place an ocean tile."
+    "description": "Gain 2 plants. Raise oxygen level 1 step and place an ocean tile.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ICE_ASTEROID",
@@ -353,7 +399,9 @@
       }
     },
     "cardNumber": "078",
-    "description": "Place 2 ocean tiles."
+    "description": "Place 2 ocean tiles.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "GIANT_ICE_ASTEROID",
@@ -375,7 +423,9 @@
       }
     },
     "description": "Raise temperature 2 steps and place 2 ocean tiles. Remove up to 6 plants from any player.",
-    "cardNumber": "080"
+    "cardNumber": "080",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "BUSINESS_CONTACTS",
@@ -393,7 +443,9 @@
         "keep": 2
       }
     },
-    "cardNumber": "111"
+    "cardNumber": "111",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "BRIBED_COMMITTEE",
@@ -410,7 +462,9 @@
       "tr": 2
     },
     "cardNumber": "112",
-    "description": "Raise your TR 2 steps."
+    "description": "Raise your TR 2 steps.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "SABOTAGE",
@@ -420,7 +474,12 @@
     "type": "event",
     "cost": 1,
     "cardNumber": "121",
-    "description": "Remove up to 3 titanium from any player, or 4 steel, or 7 M€."
+    "description": "Remove up to 3 titanium from any player, or 4 steel, or 7 M€.",
+    "methods": [
+      "bespokePlay",
+      "title"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "SUBTERRANEAN_RESERVOIR",
@@ -433,7 +492,9 @@
       "ocean": {}
     },
     "cardNumber": "127",
-    "description": "Place 1 ocean tile."
+    "description": "Place 1 ocean tile.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "LAVA_FLOWS",
@@ -455,7 +516,9 @@
       }
     },
     "cardNumber": "140",
-    "description": "Raise temperature 2 steps and place this tile ON EITHER THARSIS THOLUS, ASCRAEUS MONS, PAVONIS MONS OR ARSIA MONS."
+    "description": "Raise temperature 2 steps and place this tile ON EITHER THARSIS THOLUS, ASCRAEUS MONS, PAVONIS MONS OR ARSIA MONS.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "LARGE_CONVOY",
@@ -474,7 +537,11 @@
       "ocean": {}
     },
     "cardNumber": "143",
-    "description": "Place an ocean tile and draw 2 cards. Gain 5 plants or add 4 animals to ANOTHER card."
+    "description": "Place an ocean tile and draw 2 cards. Gain 5 plants or add 4 animals to ANOTHER card.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "CEOS_FAVORITE_PROJECT",
@@ -491,7 +558,9 @@
         "robotCards": true
       }
     },
-    "cardNumber": "149"
+    "cardNumber": "149",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "INVESTMENT_LOAN",
@@ -512,7 +581,9 @@
       }
     },
     "cardNumber": "151",
-    "description": "Decrease your M€ production 1 step. Gain 10 M€."
+    "description": "Decrease your M€ production 1 step. Gain 10 M€.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "CONVOY_FROM_EUROPA",
@@ -529,7 +600,9 @@
       "drawCard": 1
     },
     "cardNumber": "161",
-    "description": "Place 1 ocean tile and draw 1 card."
+    "description": "Place 1 ocean tile and draw 1 card.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "IMPORTED_GHG",
@@ -551,7 +624,9 @@
       }
     },
     "cardNumber": "162",
-    "description": "Increase your heat production 1 step and gain 3 heat."
+    "description": "Increase your heat production 1 step and gain 3 heat.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "IMPORTED_NITROGEN",
@@ -581,7 +656,9 @@
       ]
     },
     "cardNumber": "163",
-    "description": "Raise your TR 1 step and gain 4 plants. Add 3 microbes to ANOTHER card and 2 animals to ANOTHER card."
+    "description": "Raise your TR 1 step and gain 4 plants. Add 3 microbes to ANOTHER card and 2 animals to ANOTHER card.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "IMPORT_OF_ADVANCED_GHG",
@@ -600,7 +677,9 @@
       }
     },
     "cardNumber": "167",
-    "description": "Increase your heat production 2 steps."
+    "description": "Increase your heat production 2 steps.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "AEROBRAKED_AMMONIA_ASTEROID",
@@ -623,7 +702,9 @@
       }
     },
     "description": "Increase your heat production 3 steps and your plant production 1 step. Add 2 microbes to ANOTHER card.",
-    "cardNumber": "170"
+    "cardNumber": "170",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "ICE_CAP_MELTING",
@@ -639,7 +720,9 @@
       "temperature": 2
     },
     "cardNumber": "181",
-    "description": "Requires +2 C or warmer. Place 1 ocean tile."
+    "description": "Requires +2 C or warmer. Place 1 ocean tile.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "FLOODING",
@@ -653,7 +736,11 @@
     },
     "victoryPoints": -1,
     "cardNumber": "188",
-    "description": "Place an ocean tile. IF THERE ARE TILES ADJACENT TO THIS OCEAN TILE, YOU MAY REMOVE 4 M€ FROM THE OWNER OF ONE OF THOSE TILES."
+    "description": "Place an ocean tile. IF THERE ARE TILES ADJACENT TO THIS OCEAN TILE, YOU MAY REMOVE 4 M€ FROM THE OWNER OF ONE OF THOSE TILES.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "LOCAL_HEAT_TRAPPING",
@@ -666,7 +753,12 @@
       "heat": 5
     },
     "cardNumber": "190",
-    "description": "Spend 5 heat to gain either 4 plants, or to add 2 animals to ANOTHER card."
+    "description": "Spend 5 heat to gain either 4 plants, or to add 2 animals to ANOTHER card.",
+    "methods": [
+      "canPlay",
+      "play"
+    ],
+    "gameModule": "base"
   },
   {
     "id": "PERMAFROST_EXTRACTION",
@@ -682,7 +774,9 @@
       "temperature": -8
     },
     "cardNumber": "191",
-    "description": "Requires -8 C or warmer. Place 1 ocean tile."
+    "description": "Requires -8 C or warmer. Place 1 ocean tile.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "INVENTION_CONTEST",
@@ -700,7 +794,9 @@
         "keep": 1
       }
     },
-    "cardNumber": "192"
+    "cardNumber": "192",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "INDENTURED_WORKERS",
@@ -711,7 +807,11 @@
     "cost": 0,
     "victoryPoints": -1,
     "cardNumber": "195",
-    "description": "The next card you play this generation costs 8 M€ less."
+    "description": "The next card you play this generation costs 8 M€ less.",
+    "methods": [
+      "getCardDiscount"
+    ],
+    "gameModule": "corpera"
   },
   {
     "id": "TECHNOLOGY_DEMONSTRATION",
@@ -728,7 +828,9 @@
       "drawCard": 2
     },
     "cardNumber": "204",
-    "description": "Draw two cards."
+    "description": "Draw two cards.",
+    "methods": [],
+    "gameModule": "corpera"
   },
   {
     "id": "SPECIAL_DESIGN",
@@ -745,7 +847,9 @@
       "nextCardOnly": true
     },
     "cardNumber": "206",
-    "description": "The next card you play this generation is +2 or -2 steps in global requirements, your choice."
+    "description": "The next card you play this generation is +2 or -2 steps in global requirements, your choice.",
+    "methods": [],
+    "gameModule": "base"
   },
   {
     "id": "AIR_RAID",
@@ -756,7 +860,12 @@
     "cost": 0,
     "cardNumber": "C02",
     "description": "Requires that you lose 1 floater. Steal 5 M€ from any player.",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "CONSCRIPTION",
@@ -774,7 +883,11 @@
       "count": 2
     },
     "cardNumber": "C05",
-    "description": "Requires 2 Earth tags. The next card you play this generation costs 16 M€ less."
+    "description": "Requires 2 Earth tags. The next card you play this generation costs 16 M€ less.",
+    "methods": [
+      "getCardDiscount"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "FLOATER_PROTOTYPES",
@@ -793,7 +906,9 @@
       }
     },
     "cardNumber": "C11",
-    "description": "Add two floaters to ANOTHER card."
+    "description": "Add two floaters to ANOTHER card.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "IMPACTOR_SWARM",
@@ -816,7 +931,9 @@
       "count": 2
     },
     "cardNumber": "C16",
-    "description": "Requires 2 Jovian tags. Gain 12 heat. Remove up to 2 plants from any player."
+    "description": "Requires 2 Jovian tags. Gain 12 heat. Remove up to 2 plants from any player.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "INTERPLANETARY_COLONY_SHIP",
@@ -835,7 +952,9 @@
       }
     },
     "cardNumber": "C17",
-    "description": "Place a colony."
+    "description": "Place a colony.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "MARKET_MANIPULATION",
@@ -847,7 +966,14 @@
     "tags": [
       "EARTH"
     ],
-    "cardNumber": "C23"
+    "cardNumber": "C23",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getDecreasableColonies",
+      "getIncreasableColonies"
+    ],
+    "gameModule": "colonies"
   },
   {
     "id": "SOLAR_PROBE",
@@ -870,7 +996,9 @@
       }
     },
     "cardNumber": "C37",
-    "description": "Draw 1 card for every 3 science tags you have, including this."
+    "description": "Draw 1 card for every 3 science tags you have, including this.",
+    "methods": [],
+    "gameModule": "colonies"
   },
   {
     "id": "DARKSIDE_METEOR_BOMBARDMENT",
@@ -892,7 +1020,9 @@
       }
     },
     "description": "Gain 2 steel and 2 titanium. Raise the mining rate 2 steps.",
-    "cardNumber": "M33"
+    "cardNumber": "M33",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "UNDERGROUND_DETONATORS",
@@ -911,7 +1041,9 @@
       }
     },
     "description": "Gain 1 steel and 1 titanium. Raise the mining rate 1 step.",
-    "cardNumber": "M34"
+    "cardNumber": "M34",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "REVOLTING_COLONISTS",
@@ -927,7 +1059,11 @@
       "habitatRate": 4
     },
     "description": "Requires 4 habitat rate. All players pay 3M€ for each habitat tile they own.",
-    "cardNumber": "M51"
+    "cardNumber": "M51",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "COSMIC_RADIATION",
@@ -943,7 +1079,11 @@
       "miningRate": 4
     },
     "description": "Requires 4 mining rate. All players pay 4M€ for each mining tile they own.",
-    "cardNumber": "M52"
+    "cardNumber": "M52",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "ROAD_PIRACY",
@@ -959,7 +1099,13 @@
       "logisticRate": 3
     },
     "description": "Requires 3 logistic rate. Steal up to 6 steel or 4 titanium from other players. (Resources may be stolen from more than 1 opponent.)",
-    "cardNumber": "M54"
+    "cardNumber": "M54",
+    "methods": [
+      "bespokePlay",
+      "do",
+      "generateOption"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "LUNAR_MINE_URBANIZATION",
@@ -987,7 +1133,12 @@
       "LUNAR_MINE_URBANIZATION"
     ],
     "cardNumber": "M55",
-    "description": "Requires you have 1 mine tile. Increase your M€ production 1 step. Raise the habitat rate 1 step. Remove 1 of your mine tiles (does not affect the mining rate.) Place this special tile there, regardless of placement rules. Gain placement bonuses as usual. This tile counts both as a habitat and a mine tile."
+    "description": "Requires you have 1 mine tile. Increase your M€ production 1 step. Raise the habitat rate 1 step. Remove 1 of your mine tiles (does not affect the mining rate.) Place this special tile there, regardless of placement rules. Gain placement bonuses as usual. This tile counts both as a habitat and a mine tile.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "THORIUM_RUSH",
@@ -1008,7 +1159,9 @@
       }
     },
     "description": "Place 1 habitat tile, 1 mining tile and 1 road tile on The Moon. Raise the habitat rate, mining rate and logistic rate 1 step.",
-    "cardNumber": "M56"
+    "cardNumber": "M56",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "HE3_PRODUCTION_QUOTAS",
@@ -1034,7 +1187,12 @@
       }
     ],
     "description": "Requires that Kelvinists are ruling or that you have 2 delegates there, and 1 mine tile on The Moon. Pay 1 steel per mine tile on The Moon to gain 4 heat per mine tile on The Moon. Raise the mining rate 1 step.",
-    "cardNumber": "M57"
+    "cardNumber": "M57",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "LUNA_CONFERENCE",
@@ -1062,7 +1220,9 @@
       }
     },
     "description": "Requires that Scientists are ruling or that you have 2 delegates there. Gain 2 M€ per road tile on The Moon. Gain 2M€ per habitat tile on The Moon.",
-    "cardNumber": "M58"
+    "cardNumber": "M58",
+    "methods": [],
+    "gameModule": "moon"
   },
   {
     "id": "WE_GROW_AS_ONE",
@@ -1078,7 +1238,11 @@
       "party": "UNITY"
     },
     "description": "Requires that Unity are ruling or that you have 2 delegates there. Increase ALL colony tile tracks 1 step. Increase each colony tile track 1 step if you have a colony on that colony tile.",
-    "cardNumber": "M59"
+    "cardNumber": "M59",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "MOONCRATE_CONVOYS_TO_MARS",
@@ -1096,7 +1260,11 @@
       }
     },
     "description": "Requires that Mars First are ruling or that you have 2 delegates there. Raise the logistic rate 1 step. All players may sell their steel resources for 3M€ each.",
-    "cardNumber": "M60"
+    "cardNumber": "M60",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "AN_OFFER_YOU_CANT_REFUSE",
@@ -1106,7 +1274,14 @@
     "type": "event",
     "cost": 5,
     "description": "Exchange a NON-NEUTRAL opponent delegate with one of your own from the reserve. This exchange may not change the party leader. You may then move your delegate to another party.",
-    "cardNumber": "M62"
+    "cardNumber": "M62",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "isReplaceableDelegate",
+      "moveToAnotherParty"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "PRELIMINARY_DARKSIDE",
@@ -1124,7 +1299,11 @@
       }
     },
     "description": "Gain 3 titanium or 4 steel. Raise the mining rate 1 step.",
-    "cardNumber": "M63"
+    "cardNumber": "M63",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "HOSTILE_TAKEOVER",
@@ -1151,7 +1330,13 @@
       }
     },
     "cardNumber": "M64",
-    "description": "Requires a habitat rate of 2 or higher, and a mining rate of 4 or higher. Add your player marker to a habitat tile and a mining tile owned by any opponent. Those now also count as yours. Increase your M€ production 2 steps."
+    "description": "Requires a habitat rate of 2 or higher, and a mining rate of 4 or higher. Add your player marker to a habitat tile and a mining tile owned by any opponent. Those now also count as yours. Increase your M€ production 2 steps.",
+    "methods": [
+      "availableSpaces",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "SYNDICATE_PIRATE_RAIDS",
@@ -1164,7 +1349,11 @@
     ],
     "cost": 8,
     "description": "ALL OPPONENTS CANNOT RETRIEVE THEIR TRADE FLEETS THIS GENERATION",
-    "cardNumber": "M65"
+    "cardNumber": "M65",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "moon"
   },
   {
     "id": "CONTROLLED_BLOOM",
@@ -1191,7 +1380,9 @@
       }
     },
     "cardNumber": "PFTmp",
-    "description": "Requires 3 oceans. Add 3 microbes to ANY card. Gain 3 plants."
+    "description": "Requires 3 oceans. Add 3 microbes to ANY card. Gain 3 plants.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "DUST_STORM",
@@ -1209,7 +1400,11 @@
       }
     },
     "cardNumber": "Pf08",
-    "description": "Every player loses all energy. Raise the temperature 2 steps."
+    "description": "Every player loses all energy. Raise the temperature 2 steps.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "RETURN_TO_ABANDONED_TECHNOLOGY",
@@ -1221,7 +1416,12 @@
     "tags": [
       "MARS"
     ],
-    "cardNumber": "Pf22"
+    "cardNumber": "Pf22",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "SPACE_DEBRIS_CLEANING_OPERATION",
@@ -1250,7 +1450,11 @@
       "drawCard": 1
     },
     "cardNumber": "Pf24",
-    "description": "Requires any 4 space tags in play. Gain 3 titanium. Add 1 resource to ANY card (not cards that take ANIMAL or SCIENCE resources.) Add 1 data to ANY card. Draw 1 card."
+    "description": "Requires any 4 space tags in play. Gain 3 titanium. Add 1 resource to ANY card (not cards that take ANIMAL or SCIENCE resources.) Add 1 data to ANY card. Draw 1 card.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "DATA_LEAK",
@@ -1266,7 +1470,9 @@
       }
     },
     "cardNumber": "Pf30",
-    "description": "Add 5 data to ANY card."
+    "description": "Add 5 data to ANY card.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "SOLAR_STORM",
@@ -1287,7 +1493,12 @@
       }
     },
     "cardNumber": "Pf32",
-    "description": "Every player loses 2 plants. Remove up to 3 data from any player. Raise your heat production 1 step. Raise the temperature 1 step."
+    "description": "Every player loses 2 plants. Remove up to 3 data from any player. Raise your heat production 1 step. Raise the temperature 1 step.",
+    "methods": [
+      "bespokePlayBefore",
+      "removePlants"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "DECLARATION_OF_INDEPENDENCE",
@@ -1312,7 +1523,9 @@
       }
     },
     "cardNumber": "Pf34",
-    "description": "Requires that you have at least 6 Mars tags in play. Place 2 delegates in any party."
+    "description": "Requires that you have at least 6 Mars tags in play. Place 2 delegates in any party.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "SMALL_COMET",
@@ -1338,7 +1551,11 @@
       }
     },
     "cardNumber": "Pf37",
-    "description": "Every player loses 2 plants. Raise the temperature 1 step. Raise the oxygen 1 step. Place an ocean ON AN AREA NOT RESERVED FOR OCEAN. Gain 1 titanium."
+    "description": "Every player loses 2 plants. Raise the temperature 1 step. Raise the oxygen 1 step. Place an ocean ON AN AREA NOT RESERVED FOR OCEAN. Gain 1 titanium.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "ECONOMIC_HELP",
@@ -1353,7 +1570,12 @@
       }
     },
     "cardNumber": "Pf42",
-    "description": "Raise the lowest non-completed planetary influence track 3 steps. When tied, raise all lowest tracks 2 steps. Increase your M€ production 1 step"
+    "description": "Raise the lowest non-completed planetary influence track 3 steps. When tied, raise all lowest tracks 2 steps. Increase your M€ production 1 step",
+    "methods": [
+      "bespokePlay",
+      "trackOffset"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "EXPEDITION_TO_THE_SURFACE_VENUS",
@@ -1377,7 +1599,9 @@
       }
     },
     "cardNumber": "Pf46",
-    "description": "Draw 2 cards. Raise Venus 1 step. Gain 1M€ for each of your Venus tags, including this."
+    "description": "Draw 2 cards. Raise Venus 1 step. Gain 1M€ for each of your Venus tags, including this.",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "LAST_RESORT_INGENUITY",
@@ -1386,7 +1610,9 @@
     "module": "pathfinders",
     "type": "event",
     "cost": 4,
-    "cardNumber": "Pf47"
+    "cardNumber": "Pf47",
+    "methods": [],
+    "gameModule": "pathfinders"
   },
   {
     "id": "CRASHLANDING",
@@ -1412,7 +1638,14 @@
         }
       ]
     },
-    "cardNumber": "Pf48"
+    "cardNumber": "Pf48",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "grantPlacementBonuses",
+      "playableSpaces"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "CHARITY_DONATION",
@@ -1425,7 +1658,12 @@
     ],
     "cost": 7,
     "victoryPoints": 1,
-    "cardNumber": "Pf58"
+    "cardNumber": "Pf58",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "COORDINATED_RAID",
@@ -1439,7 +1677,12 @@
       "all": true
     },
     "cardNumber": "Pf64",
-    "description": "Requires at least 1 colony in play. Send one of your unused Trade Fleets to any colony tile. Collect the trade bonus and colony bonus for every colony on this tile. Other players do not get their colony bonuses from this action."
+    "description": "Requires at least 1 colony in play. Send one of your unused Trade Fleets to any colony tile. Collect the trade bonus and colony bonus for every colony on this tile. Other players do not get their colony bonuses from this action.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "SOCIAL_EVENTS",
@@ -1453,7 +1696,12 @@
       "MARS"
     ],
     "cardNumber": "PfT10",
-    "description": "Gain 1 TR for every 2 Mars tags you have (including this one.)"
+    "description": "Gain 1 TR for every 2 Mars tags you have (including this one.)",
+    "methods": [
+      "bespokePlay",
+      "computeTr"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "PUBLIC_SPONSORED_GRANT",
@@ -1466,7 +1714,12 @@
       "party": "SCIENTISTS"
     },
     "cardNumber": "PfTVD",
-    "description": "Requires Scientists are ruling or that you have 2 delegates there. All players lose 2M€. Choose a tag (NOT CITY, ? OR PLANETARY TRACK) and draw 2 cards with that tag."
+    "description": "Requires Scientists are ruling or that you have 2 delegates there. All players lose 2M€. Choose a tag (NOT CITY, ? OR PLANETARY TRACK) and draw 2 cards with that tag.",
+    "methods": [
+      "bespokePlay",
+      "draw2Cards"
+    ],
+    "gameModule": "pathfinders"
   },
   {
     "id": "MARTIAN_SURVEY",
@@ -1487,7 +1740,9 @@
       "max": true
     },
     "cardNumber": "P38",
-    "description": "Oxygen must be 4% or lower. Draw two cards."
+    "description": "Oxygen must be 4% or lower. Draw two cards.",
+    "methods": [],
+    "gameModule": "prelude"
   },
   {
     "id": "COLONIAL_ENVOYS",
@@ -1510,7 +1765,9 @@
       }
     },
     "cardNumber": "P70",
-    "description": "Requires that Unity is ruling or that you have 2 delegates there. Place 1 delegate for each colony you have. YOU MAY PLACE THEM IN SEPARATE PARTIES."
+    "description": "Requires that Unity is ruling or that you have 2 delegates there. Place 1 delegate for each colony you have. YOU MAY PLACE THEM IN SEPARATE PARTIES.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "ENVOYS_FROM_VENUS",
@@ -1534,7 +1791,9 @@
       }
     },
     "cardNumber": "P72",
-    "description": "Requires 3 Venus tags. Place 2 delegates in 1 party."
+    "description": "Requires 3 Venus tags. Place 2 delegates in 1 party.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "GHG_SHIPMENT",
@@ -1560,7 +1819,9 @@
       "party": "KELVINISTS"
     },
     "cardNumber": "P75",
-    "description": "Requires that Kelvinists are in power or that you have 2 delegates there. Increase your heat production 1 step. Gain 1 heat for each floater you have."
+    "description": "Requires that Kelvinists are in power or that you have 2 delegates there. Increase your heat production 1 step. Gain 1 heat for each floater you have.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "ISHTAR_EXPEDITION",
@@ -1585,7 +1846,9 @@
       }
     },
     "cardNumber": "P76",
-    "description": "Requires Venus 10%. Gain 3 titanium and draw 2 Venus cards."
+    "description": "Requires Venus 10%. Gain 3 titanium and draw 2 Venus cards.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "JOVIAN_ENVOYS",
@@ -1606,7 +1869,9 @@
       }
     },
     "cardNumber": "P77",
-    "description": "Requires 2 Jovian tags. Place 2 delegates in 1 party."
+    "description": "Requires 2 Jovian tags. Place 2 delegates in 1 party.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "RED_APPEASEMENT",
@@ -1623,7 +1888,12 @@
         "megacredits": 2
       }
     },
-    "cardNumber": "P80"
+    "cardNumber": "P80",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "SOIL_STUDIES",
@@ -1654,7 +1924,9 @@
       }
     },
     "cardNumber": "P81",
-    "description": "Requires that temperature is -4 C or lower. Gain 1 plant per Venus tag, plant tag, and colony you have."
+    "description": "Requires that temperature is -4 C or lower. Gain 1 plant per Venus tag, plant tag, and colony you have.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "SPECIAL_PERMIT",
@@ -1670,7 +1942,12 @@
       "party": "GREENS"
     },
     "cardNumber": "P82",
-    "description": "Requires that Greens are ruling or that you have 2 delegates there. Steal 4 plants from any player."
+    "description": "Requires that Greens are ruling or that you have 2 delegates there. Steal 4 plants from any player.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "prelude2"
   },
   {
     "id": "STRATOSPHERIC_EXPEDITION",
@@ -1695,7 +1972,9 @@
       }
     },
     "cardNumber": "P84",
-    "description": "Add two floaters to ANY CARD. Draw 2 Venus cards."
+    "description": "Add two floaters to ANY CARD. Draw 2 Venus cards.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "UNEXPECTED_APPLICATION",
@@ -1716,7 +1995,9 @@
       }
     },
     "cardNumber": "P86",
-    "description": "Discard 1 card to terraform Venus 1 step."
+    "description": "Discard 1 card to terraform Venus 1 step.",
+    "methods": [],
+    "gameModule": "prelude2"
   },
   {
     "id": "SMALL_ASTEROID",
@@ -1735,7 +2016,9 @@
       "removeAnyPlants": 2
     },
     "cardNumber": "209",
-    "description": "Increase temperature 1 step. Remove up to 2 plants from any player."
+    "description": "Increase temperature 1 step. Remove up to 2 plants from any player.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "PROJECT_INSPECTION",
@@ -1744,7 +2027,13 @@
     "module": "promo",
     "type": "event",
     "cost": 0,
-    "cardNumber": "X02"
+    "cardNumber": "X02",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getActionCards"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "LAW_SUIT",
@@ -1758,7 +2047,15 @@
     "cost": 2,
     "victoryPoints": "special",
     "cardNumber": "X06",
-    "description": "Steal 3 M€ from a player that REMOVED YOUR RESOURCES OR DECREASED YOUR PRODUCTION this generation. Place this card face down in THAT PLAYER'S EVENT PILE."
+    "description": "Steal 3 M€ from a player that REMOVED YOUR RESOURCES OR DECREASED YOUR PRODUCTION this generation. Place this card face down in THAT PLAYER'S EVENT PILE.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getVictoryPoints",
+      "resourceHook",
+      "targets"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "CRASH_SITE_CLEANUP",
@@ -1772,7 +2069,12 @@
     },
     "victoryPoints": 1,
     "description": "Requires that a player removed ANOTHER PLAYER's plants this generation. Gain 1 titanium or 2 steel.",
-    "cardNumber": "X17"
+    "cardNumber": "X17",
+    "methods": [
+      "bespokePlay",
+      "resourceHook"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "DIVERSITY_SUPPORT",
@@ -1789,7 +2091,9 @@
       "resourceTypes": 9
     },
     "cardNumber": "X20",
-    "description": "Requires that you have 9 different types of resources. Gain 1 TR."
+    "description": "Requires that you have 9 different types of resources. Gain 1 TR.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "IMPORTED_NUTRIENTS",
@@ -1812,7 +2116,9 @@
       }
     },
     "cardNumber": "X22",
-    "description": "Gain 4 plants and add 4 microbes to ANOTHER CARD."
+    "description": "Gain 4 plants and add 4 microbes to ANOTHER CARD.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "DEIMOS_DOWN_PROMO",
@@ -1839,7 +2145,9 @@
       }
     },
     "cardNumber": "X31",
-    "description": "Raise temperature 3 steps and gain 4 steel. Place this tile ADJACENT TO no city tile. Remove up to 6 plants from any player."
+    "description": "Raise temperature 3 steps and gain 4 steel. Place this tile ADJACENT TO no city tile. Remove up to 6 plants from any player.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "HARVEST",
@@ -1860,7 +2168,9 @@
       }
     },
     "cardNumber": "X37",
-    "description": "Requires that you have 3 greenery tiles in play. Gain 12 M€."
+    "description": "Requires that you have 3 greenery tiles in play. Gain 12 M€.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "SOIL_ENRICHMENT",
@@ -1874,7 +2184,13 @@
     ],
     "cost": 6,
     "description": "Spend 1 microbe from ANY of your cards to gain 5 plants",
-    "cardNumber": "X67"
+    "cardNumber": "X67",
+    "methods": [
+      "bespokeCanPlay",
+      "eligibleCards",
+      "play"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "PROTECTED_GROWTH",
@@ -1898,7 +2214,9 @@
       "max": true
     },
     "cardNumber": "X73",
-    "description": "Oxygen must be 7% or less. Gain 1 plant per power tag you have."
+    "description": "Oxygen must be 7% or less. Gain 1 plant per power tag you have.",
+    "methods": [],
+    "gameModule": "promo"
   },
   {
     "id": "PUBLIC_PLANS",
@@ -1908,7 +2226,11 @@
     "type": "event",
     "cost": 7,
     "victoryPoints": 1,
-    "cardNumber": "X77"
+    "cardNumber": "X77",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "SHIPMENT_TO_EARTH",
@@ -1930,7 +2252,12 @@
       }
     },
     "cardNumber": "X87",
-    "description": "Lose 3 plants and 3 steel. Raise TR 3 steps. Gain 2 M€ per Earth tag."
+    "description": "Lose 3 plants and 3 steel. Raise TR 3 steps. Gain 2 M€ per Earth tag.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "promo"
   },
   {
     "id": "TRADE_EMBARGO",
@@ -1942,7 +2269,11 @@
       "SPACE"
     ],
     "cost": 4,
-    "cardNumber": "SW01"
+    "cardNumber": "SW01",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "starwars"
   },
   {
     "id": "BEHOLD_THE_EMPEROR",
@@ -1958,7 +2289,11 @@
       "chairman": 1
     },
     "cardNumber": "SW03",
-    "description": "Requires that you are Chairman. The current ruling party will automatically be the ruling party during the next Solar phase, and you will remain the Chairman. (As if the current ruling party were dominant and you were its party leader.)"
+    "description": "Requires that you are Chairman. The current ruling party will automatically be the ruling party during the next Solar phase, and you will remain the Chairman. (As if the current ruling party were dominant and you were its party leader.)",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "starwars"
   },
   {
     "id": "BANNED_DELEGATE",
@@ -1971,7 +2306,12 @@
       "chairman": true
     },
     "cardNumber": "T02",
-    "description": "Requires that you are Chairman. Remove any NON-LEADER delegate."
+    "description": "Requires that you are Chairman. Remove any NON-LEADER delegate.",
+    "methods": [
+      "bespokePlay",
+      "log"
+    ],
+    "gameModule": "turmoil"
   },
   {
     "id": "PUBLIC_CELEBRATIONS",
@@ -1986,7 +2326,9 @@
     },
     "victoryPoints": 2,
     "description": "Requires that you are Chairman.",
-    "cardNumber": "T10"
+    "cardNumber": "T10",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "RECRUITMENT",
@@ -1996,7 +2338,12 @@
     "type": "event",
     "cost": 2,
     "cardNumber": "T11",
-    "description": "Exchange one NEUTRAL NON-LEADER delegate with one of your own from the reserve."
+    "description": "Exchange one NEUTRAL NON-LEADER delegate with one of your own from the reserve.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "turmoil"
   },
   {
     "id": "RED_TOURISM_WAVE",
@@ -2013,7 +2360,11 @@
     },
     "cardNumber": "T12",
     "description": "Requires that Reds are ruling or that you have 2 delegates there. Gain 1 M€ from each EMPTY AREA ADJACENT TO YOUR TILES",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "turmoil"
   },
   {
     "id": "VOTE_OF_NO_CONFIDENCE",
@@ -2029,7 +2380,12 @@
       "partyLeader": 1
     },
     "cardNumber": "T16",
-    "description": "Requires that you have a Party Leader in any party and that the sitting Chairman is neutral. Remove the NEUTRAL Chairman and move your own delegate (from the reserve) there instead. Gain 1 TR."
+    "description": "Requires that you have a Party Leader in any party and that the sitting Chairman is neutral. Remove the NEUTRAL Chairman and move your own delegate (from the reserve) there instead. Gain 1 TR.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "turmoil"
   },
   {
     "id": "POLITICAL_ALLIANCE",
@@ -2045,7 +2401,9 @@
       "partyLeader": 2
     },
     "cardNumber": "X09",
-    "description": "Requires that you have 2 party leaders. Gain 1 TR."
+    "description": "Requires that you have 2 party leaders. Gain 1 TR.",
+    "methods": [],
+    "gameModule": "turmoil"
   },
   {
     "id": "DEEPNUKING",
@@ -2062,7 +2420,9 @@
       "removeAnyPlants": 3
     },
     "cardNumber": "U006",
-    "description": "Excavate 2 underground resources. Remove up to 3 plants from any player."
+    "description": "Excavate 2 underground resources. Remove up to 3 plants from any player.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "RECKLESS_DETONATION",
@@ -2083,7 +2443,12 @@
       }
     },
     "cardNumber": "U009",
-    "description": "Requires 2 corruption. Excavate an underground resource. Remove up to 3 steel or 2 titanium from any player."
+    "description": "Requires 2 corruption. Excavate an underground resource. Remove up to 3 steel or 2 titanium from any player.",
+    "methods": [
+      "bespokePlay",
+      "title"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "SUBNAUTIC_PIRATES",
@@ -2104,7 +2469,13 @@
       }
     ],
     "cardNumber": "U011",
-    "description": "Requires you have 1 corruption and 1 underground token. Steal up to 7 M€ from a player that HAS A TILE NEXT TO AN OCEAN."
+    "description": "Requires you have 1 corruption and 1 underground token. Steal up to 7 M€ from a player that HAS A TILE NEXT TO AN OCEAN.",
+    "methods": [
+      "availableTargets",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "FABRICATED_SCANDAL",
@@ -2122,7 +2493,11 @@
       }
     },
     "cardNumber": "U013",
-    "description": "Gain 1 corruption. The players with the highest TR lose 1 TR. Then the players with the lowest TR gain 1 TR, if possible."
+    "description": "Gain 1 corruption. The players with the highest TR lose 1 TR. Then the players with the lowest TR gain 1 TR, if possible.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "GLOBAL_AUDIT",
@@ -2135,7 +2510,11 @@
       "EARTH"
     ],
     "cardNumber": "U025",
-    "description": "Every player with the lowest number of crime tags INCLUDING EVENTS gains 1 TR, if possible. Players with 0 crime tags gain 1 additional TR."
+    "description": "Every player with the lowest number of crime tags INCLUDING EVENTS gains 1 TR, if possible. Players with 0 crime tags gain 1 additional TR.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "PATENT_MANIPULATION",
@@ -2152,7 +2531,13 @@
     },
     "victoryPoints": -2,
     "cardNumber": "U026",
-    "description": "RETURN 1 OF YOUR PLAYED GREEN OR BLUE CARDS TO YOUR HAND. IT MAY NOT BE A CARD THAT PLACES SPECIAL TILES OR RETURNS PLAYED CARDS TO YOUR HAND."
+    "description": "RETURN 1 OF YOUR PLAYED GREEN OR BLUE CARDS TO YOUR HAND. IT MAY NOT BE A CARD THAT PLACES SPECIAL TILES OR RETURNS PLAYED CARDS TO YOUR HAND.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getCards"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "TUNNELING_LOOPHOLE",
@@ -2173,7 +2558,9 @@
       }
     },
     "cardNumber": "U032",
-    "description": "Requires 1 Earth tag. Until the end of this generation, you can excavate ignoring placement restrictions. Excavate 1 underground resource. Gain 1 corruption."
+    "description": "Requires 1 Earth tag. Until the end of this generation, you can excavate ignoring placement restrictions. Excavate 1 underground resource. Gain 1 corruption.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "NARRATIVE_SPIN",
@@ -2196,7 +2583,9 @@
     },
     "victoryPoints": -1,
     "cardNumber": "U037",
-    "description": "Requires 1 Earth tag. Gain 2 corruption."
+    "description": "Requires 1 Earth tag. Gain 2 corruption.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "PRIVATE_INVESTIGATOR",
@@ -2210,7 +2599,14 @@
       "tr": 1
     },
     "cardNumber": "U038",
-    "description": "Gain 1 TR."
+    "description": "Gain 1 TR.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getVictoryPoints",
+      "targets"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "CORPORATE_BLACKMAIL",
@@ -2227,7 +2623,13 @@
       "corruption": 1
     },
     "cardNumber": "U039",
-    "description": "Requires 1 corruption. Target a player that has at least 3 corruption. That player pays you 10 M€ or 2 corruption - their choice."
+    "description": "Requires 1 corruption. Target a player that has at least 3 corruption. That player pays you 10 M€ or 2 corruption - their choice.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "targets"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "SCAPEGOAT",
@@ -2245,7 +2647,9 @@
       }
     },
     "cardNumber": "U040",
-    "description": "Gain 1 corruption."
+    "description": "Gain 1 corruption.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "SERVER_SABOTAGE",
@@ -2264,7 +2668,11 @@
       "drawCard": 1
     },
     "cardNumber": "U047",
-    "description": "Gain 1 corruption. Draw a card. Remove all underground resources from the board."
+    "description": "Gain 1 corruption. Draw a card. Remove all underground resources from the board.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "PRICE_WARS",
@@ -2284,7 +2692,15 @@
     },
     "cardNumber": "U063",
     "description": "Requires 2 corruption. Until the end of this generation, your steel and titanium are worth 1 more M€ each, and steel and titanium for other players is worth 1 M€ less.",
-    "helpText": "HELP_TEXT"
+    "helpText": "HELP_TEXT",
+    "methods": [
+      "bespokePlay",
+      "decrease",
+      "increase",
+      "onDiscard",
+      "onProductionPhase"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "ANTI_TRUST_CRACKDOWN",
@@ -2301,7 +2717,11 @@
       "corruption": 0,
       "max": true
     },
-    "cardNumber": "U064"
+    "cardNumber": "U064",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "STAGED_PROTESTS",
@@ -2323,7 +2743,9 @@
       }
     },
     "cardNumber": "U066",
-    "description": "Requires 1 corruption. Gain 1 corruption. Until the end of this generation, milestones and awards cost +8 M€."
+    "description": "Requires 1 corruption. Gain 1 corruption. Until the end of this generation, milestones and awards cost +8 M€.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "PLANT_TAX",
@@ -2338,7 +2760,11 @@
       }
     },
     "cardNumber": "U067",
-    "description": "ALL players lose 2 plants. Players can block this with corruption. Gain 1 corruption."
+    "description": "ALL players lose 2 plants. Players can block this with corruption. Gain 1 corruption.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "CRATER_SURVEY",
@@ -2359,7 +2785,9 @@
       }
     },
     "cardNumber": "U069",
-    "description": "Identify 4 underground resources. Claim one of them."
+    "description": "Identify 4 underground resources. Claim one of them.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "INDUCED_TREMOR",
@@ -2369,7 +2797,13 @@
     "type": "event",
     "cost": 5,
     "cardNumber": "U070",
-    "description": "You may discard 1 underground resource of your choice from the board. Then excavate an underground resource."
+    "description": "You may discard 1 underground resource of your choice from the board. Then excavate an underground resource.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "excavate"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "VOLUNTEER_MINING_INITIATIVE",
@@ -2391,7 +2825,9 @@
       }
     },
     "cardNumber": "U073",
-    "description": "Excavate 1 underground resource for every 3 cities in play."
+    "description": "Excavate 1 underground resource for every 3 cities in play.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "CANYON_SURVEY",
@@ -2412,7 +2848,9 @@
       }
     },
     "cardNumber": "U081",
-    "description": "Identify 3 underground resources. Claim 1 of them."
+    "description": "Identify 3 underground resources. Claim 1 of them.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "CLASS_ACTION_LAWSUIT",
@@ -2426,7 +2864,13 @@
     ],
     "victoryPoints": 3,
     "cardNumber": "U082",
-    "description": "The player with more corruption than anybody else discards corruption until they have the same amount as the 2nd highest player, along with 3 M€ per unit of corruption removed this way."
+    "description": "The player with more corruption than anybody else discards corruption until they have the same amount as the 2nd highest player, along with 3 M€ per unit of corruption removed this way.",
+    "methods": [
+      "analyzeCorruption",
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "MERCENARY_SQUAD",
@@ -2442,7 +2886,12 @@
       "corruption": 1
     },
     "cardNumber": "U083",
-    "description": "Requires 1 corruption. Remove up to 2 resources from ANY card"
+    "description": "Requires 1 corruption. Remove up to 2 resources from ANY card",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "PLANETARY_RIGHTS_BUYOUT",
@@ -2463,7 +2912,9 @@
     },
     "victoryPoints": -3,
     "cardNumber": "U085",
-    "description": "Requires 5 corruption. Gain 7 TR"
+    "description": "Requires 5 corruption. Gain 7 TR",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "MEDIA_FRENZY",
@@ -2482,7 +2933,13 @@
       }
     },
     "cardNumber": "U086",
-    "description": "Remove up to 1 corruption from another player. Reveal 2 cards from the deck until you reveal 2 event cards. Take them into hand and discard the rest."
+    "description": "Remove up to 1 corruption from another player. Reveal 2 cards from the deck until you reveal 2 event cards. Take them into hand and discard the rest.",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "opponentsWithCorruption"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "STING_OPERATION",
@@ -2498,7 +2955,14 @@
     "behavior": {
       "drawCard": 2
     },
-    "cardNumber": "U094"
+    "cardNumber": "U094",
+    "methods": [
+      "bespokeCanPlay",
+      "bespokePlay",
+      "getVictoryPoints",
+      "targets"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "FAMILY_CONNECTIONS",
@@ -2518,7 +2982,9 @@
       }
     },
     "cardNumber": "U095",
-    "description": "Gain 1 corruption for every city tag you have."
+    "description": "Gain 1 corruption for every city tag you have.",
+    "methods": [],
+    "gameModule": "underworld"
   },
   {
     "id": "EXPORT_CONVOY",
@@ -2532,7 +2998,14 @@
     ],
     "victoryPoints": -1,
     "cardNumber": "U097",
-    "description": "Pay 4 plants, or 3 microbes, or 2 animals from any of your cards. Gain 20 M€ and 1 corruption."
+    "description": "Pay 4 plants, or 3 microbes, or 2 animals from any of your cards. Gain 20 M€ and 1 corruption.",
+    "methods": [
+      "animalCards",
+      "bespokeCanPlay",
+      "bespokePlay",
+      "microbeCards"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "HIRED_RAIDERS_UNDERWORLD",
@@ -2545,7 +3018,11 @@
       "CRIME"
     ],
     "cardNumber": "UX02",
-    "description": "Steal up to 4 M€, plus 1 extra M€ for each corruption resource you have, from any player."
+    "description": "Steal up to 4 M€, plus 1 extra M€ for each corruption resource you have, from any player.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "underworld"
   },
   {
     "id": "AEROSPORT_TOURNAMENT",
@@ -2566,7 +3043,9 @@
       }
     },
     "cardNumber": "214",
-    "description": "Requires that you have 5 floaters. Gain 1 M€ per each city tile in play."
+    "description": "Requires that you have 5 floaters. Gain 1 M€ per each city tile in play.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "AIR_SCRAPPING_EXPEDITION",
@@ -2584,7 +3063,11 @@
       }
     },
     "cardNumber": "215",
-    "description": "Raise Venus 1 step. Add 3 floaters to ANY Venus CARD."
+    "description": "Raise Venus 1 step. Add 3 floaters to ANY Venus CARD.",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "COMET_FOR_VENUS",
@@ -2602,7 +3085,11 @@
       }
     },
     "description": "Raise Venus 1 step. Remove up to 4M€ from any player WITH A VENUS TAG IN PLAY.",
-    "cardNumber": "218"
+    "cardNumber": "218",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "venus"
   },
   {
     "id": "GHG_IMPORT_FROM_VENUS",
@@ -2624,7 +3111,9 @@
       }
     },
     "description": "Raise Venus 1 step. Increase your heat production 3 steps.",
-    "cardNumber": "228"
+    "cardNumber": "228",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "HYDROGEN_TO_VENUS",
@@ -2649,7 +3138,9 @@
       }
     },
     "cardNumber": "231",
-    "description": "Raise Venus 1 step. Add 1 floater to A VENUS CARD for each Jovian tag you have."
+    "description": "Raise Venus 1 step. Add 1 floater to A VENUS CARD for each Jovian tag you have.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "SPIN_INDUCING_ASTEROID",
@@ -2671,7 +3162,9 @@
       "max": true
     },
     "cardNumber": "246",
-    "description": "Venus must be 10% or lower. Raise Venus 2 steps."
+    "description": "Venus must be 10% or lower. Raise Venus 2 steps.",
+    "methods": [],
+    "gameModule": "venus"
   },
   {
     "id": "WATER_TO_VENUS",
@@ -2689,6 +3182,39 @@
       }
     },
     "cardNumber": "254",
-    "description": "Raise Venus 1 step."
+    "description": "Raise Venus 1 step.",
+    "methods": [],
+    "gameModule": "venus"
+  },
+  {
+    "id": "HIRED_RAIDERS",
+    "name": "Hired Raiders",
+    "class": "HiredRaiders",
+    "module": "base",
+    "type": "event",
+    "cost": 1,
+    "description": "Steal up to 2 steel, or 3 M€ from any player.",
+    "cardNumber": "124",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "corpera"
+  },
+  {
+    "id": "VIRUS",
+    "name": "Virus",
+    "class": "Virus",
+    "module": "base",
+    "type": "event",
+    "tags": [
+      "MICROBE"
+    ],
+    "cost": 1,
+    "description": "Remove up to 2 animals or 5 plants from any player.",
+    "cardNumber": "050",
+    "methods": [
+      "bespokePlay"
+    ],
+    "gameModule": "corpera"
   }
 ]
