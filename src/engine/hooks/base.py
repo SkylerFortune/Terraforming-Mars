@@ -984,6 +984,7 @@ def _sell_patents(state, owner, cards):
     state = P.remove_from_hand(state, owner, cards)
     state = P.discard_cards(state, cards)
     state = P.add_stock(state, owner, "megacredits", len(cards))
+    state = P.log(state, f"{owner} sold {len(cards)} patent(s)")
     return A.finish_standard_project(state, owner, "SELL_PATENTS_STANDARD_PROJECT")
 
 

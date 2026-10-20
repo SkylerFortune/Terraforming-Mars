@@ -204,7 +204,8 @@ def can_convert_plants(state: GameState, pid: str) -> bool:
 
 
 def convert_plants(state: GameState, pid: str) -> GameState:
-    state = P.spend(state, pid, "plants", state.player(pid).plants_per_greenery)
+    n = state.player(pid).plants_per_greenery
+    state = P.log(P.spend(state, pid, "plants", n), f"{pid} converted {n} plants into a greenery")
     return P.ask_place_tile(state, pid, "greenery", rule="greenery")
 
 
@@ -214,6 +215,7 @@ def can_convert_heat(state: GameState, pid: str) -> bool:
 
 def convert_heat(state: GameState, pid: str) -> GameState:
     state = P.spend(state, pid, "heat", HEAT_FOR_TEMPERATURE)
+    state = P.log(state, f"{pid} converted {HEAT_FOR_TEMPERATURE} heat into a temperature step")
     return P.raise_temperature(state, pid, 1)
 
 

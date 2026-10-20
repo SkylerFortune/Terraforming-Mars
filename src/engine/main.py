@@ -19,7 +19,8 @@ from agents.random_agent import RandomAgent
 from engine.game import is_over, new_game
 from engine.game_state import GameOptions, GameState
 from engine.pending import advance, resume
-from engine.scoring import final_scores, ranking
+from engine.cards import card
+from engine.scoring import AWARD_VP, MILESTONE_VP, award_winners, card_vp, final_scores, ranking
 
 DEFAULT_MODULES = ("base", "corpera", "prelude")
 MAX_STEPS = 200_000     # guards against a rule bug looping forever
@@ -60,6 +61,27 @@ def print_result(state: GameState) -> None:
         parts = ", ".join(f"{k} {v}" for k, v in s.items() if k != "total" and v)
         corp = state.player(pid).corporation
         print(f"  {place}. {pid} ({corp}): {s['total']} VP  [{parts}]")
+    print(explain_scores(state))
+
+
+def explain_scores(state: GameState) -> str:
+    """Where the milestone, award and card points came from."""
+    lines = []
+    if state.claimed_milestones:
+        claimed = ", ".join(f"{name} by {pid}" for name, pid in state.claimed_milestones)
+        lines.append(f"Milestones ({MILESTONE_VP} VP each): {claimed}")
+    for name, funder in state.funded_awards:
+        first, second = award_winners(state, name)
+        line = f"Award {name} (funded by {funder}): 1st {', '.join(first)} ({AWARD_VP[0]} VP)"
+        if second:
+            line += f", 2nd {', '.join(second)} ({AWARD_VP[1]} VP)"
+        lines.append(line)
+    for p in state.players:
+        vps = [(cid, card_vp(state, p.id, cid)) for cid in p.tableau + p.events]
+        vps = [f"{card(cid).name} {v:+d}" for cid, v in vps if v]
+        if vps:
+            lines.append(f"Card VP for {p.id}: {', '.join(vps)}")
+    return "\n".join("  " + line for line in lines)
 
 
 def main(argv: list[str] | None = None) -> int:
