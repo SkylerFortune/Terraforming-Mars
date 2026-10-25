@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Terraforming Mars</title>
+</head>
+
+<body>
+    <button id="new">New game</button>
+    <pre id="status"></pre>
+    <h2 id="title"></h2>
+    <div id="options"></div>
+    <script>
+        let gameId = null;
+
+        async function newGame() {
+            const res = await fetch("/games", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ bots: 1, seed: Date.now() % 100000 }),
+            });
+            const game = await res.json();
+            gameId = game.id;
+            render(game);
+        }
+
+        async function answer(picks) {
+            const res = await fetch(`/games/${gameId}/answer`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ picks }),
+            });
+            if (!res.ok) {
+                alert((await res.json()).detail);   // the server said no: show why
+                return;
+            }
+            render(await res.json());
+        }
+
+        function render(game) {
+            document.getElementById("status").textContent =
+                `Generation ${game.generation} · ${game.temperature}°C · ${game.oxygen}% O2 · ${game.oceans} oceans\n` +
+                game.players.map(p => `${p.id}: TR ${p.tr}, ${p.stock.megacredits ?? 0} M€`).join("\n");
+            const options = document.getElementById("options");
+            options.innerHTML = "";
+            const q = game.question;
+            document.getElementById("title").textContent = game.over ? "Game over" : q.title;
+            if (!q) return;
+            if (q.multi) {
+                // Pick several: a checkbox per option and one Confirm button.
+                q.options.forEach((label, i) => {
+                    options.insertAdjacentHTML("beforeend",
+                        `<label><input type="checkbox" value="${i}"> ${label}</label><br>`);
+                });
+                const confirm = document.createElement("button");
+                confirm.textContent = `Confirm (pick ${q.min} to ${q.max})`;
+                confirm.onclick = () => answer(
+                    [...options.querySelectorAll("input:checked")].map(box => Number(box.value)));
+                options.appendChild(confirm);
+            } else {
+                // Pick one: a button per option.
+                q.options.forEach((label, i) => {
+                    const button = document.createElement("button");
+                    button.textContent = label;
+                    button.onclick = () => answer([i]);
+                    options.appendChild(button);
+                });
+            }
+            if (q.allow_pass) {
+                const pass = document.createElement("button");
+                pass.textContent = "Pass";
+                pass.onclick = () => answer(null);
+                options.appendChild(pass);
+            }
+        }
+
+        document.getElementById("new").onclick = newGame;
+    </script>
+</body>
+
+</html>
